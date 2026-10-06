@@ -1,0 +1,42 @@
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.local.*
+config.local/
+credentials/
+secrets/
+
+# Runtime data and source lists
+data/
+runtime/
+storage/
+originals/
+thumbnails/
+exports/
+temp/
+logs/
+backups/
+sites.txt
+网站链接.txt
+图片下载记录.json
+监控站点清单.json
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+*.log
+*.zip
+
+# Tool caches and generated output
+node_modules/
+.venv/
+__pycache__/
+.pytest_cache/
+dist/
+build/
+.DS_Store
+Thumbs.db
+desktop.ini
