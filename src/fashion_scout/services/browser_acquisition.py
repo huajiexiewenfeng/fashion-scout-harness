@@ -1,8 +1,8 @@
 """Authenticated durable inbox, independent of the foreground browser lifetime."""
 import json
 from fashion_scout.domain import ScoutError
-from fashion_scout.domain.browser_source import ADAPTER_VERSION
-from fashion_scout.services.runs import canonical, digest, new_id, timestamp
+from fashion_scout.domain.sites import snapshot_site, product_site
+from fashion_scout.services.runs import canonical, digest, new_id
 
 
 class SourceWait(Exception):
@@ -16,10 +16,36 @@ class BrowserAcquisition:
     def run(self, conn, run_id):
         row = conn.execute("SELECT * FROM runs WHERE id=?", (run_id,)).fetchone()
         view = self.runs._view(row)
-        if (view.snapshot.source_mode != "browser" or
-                view.snapshot.adapter_versions.get("futario") != ADAPTER_VERSION):
+        if view.snapshot.source_mode != "browser":
             raise ScoutError("SOURCE_MODE_CONFLICT", "Run does not accept the browser adapter")
+        self.site(view)
         return row, view
+
+    @staticmethod
+    def site(view):
+        try:
+            return snapshot_site(view.snapshot)
+        except ValueError:
+            raise ScoutError("SOURCE_MODE_CONFLICT", "Run has an unsupported frozen browser site") from None
+
+    def validate_observation(self, view, observation):
+        site = self.site(view)
+        if observation.kind == "listing":
+            valid = site.accepts_listing(observation.page_url, observation.page_number)
+        elif observation.kind == "detail":
+            valid = product_site(observation.product.url, observation.product.handle).id == site.id
+        else:
+            valid = True
+        if not valid:
+            raise ScoutError("SOURCE_SITE_MISMATCH", "Observation differs from the Run's frozen site", 422)
+
+    def validate_ticket(self, conn, view, ticket):
+        site = self.site(view)
+        product = conn.execute("SELECT site_id FROM products WHERE id=?", (ticket["product_id"],)).fetchone()
+        item = conn.execute("SELECT run_id FROM work_items WHERE id=?", (ticket["item_id"],)).fetchone()
+        if (not product or product[0] != site.id or not item or item[0] != view.id
+                or not site.accepts_image(ticket["source_url"])):
+            raise ScoutError("SOURCE_SITE_MISMATCH", "Image ticket is outside the frozen site")
 
     def ensure(self, conn, run_id):
         conn.execute("INSERT OR IGNORE INTO browser_runs(run_id,last_activity) VALUES (?,?)", (run_id, self.runs.clock()))
@@ -54,10 +80,15 @@ class BrowserAcquisition:
     def attach(self, run_id, request):
         payload = {"verb": "attach", **request.model_dump(mode="json", exclude={"request_key"})}
         with self.db.write() as conn:
+            row, view = self.run(conn, run_id)
+            site = self.site(view)
+            if "adapter_version" not in request.model_fields_set:
+                payload["adapter_version"] = site.adapter_version
             prior = self.replay(conn, run_id, request.request_key, payload)
             if prior is not None:
                 return prior
-            row, view = self.run(conn, run_id)
+            if "adapter_version" in request.model_fields_set and request.adapter_version != site.adapter_version:
+                raise ScoutError("SOURCE_ADAPTER_MISMATCH", "Host adapter differs from the frozen site", 422)
             if row["state"] not in ("queued", "running") or row["cancel_requested"]:
                 raise ScoutError("SOURCE_CONTINUE_REQUIRED", "Use explicit browser-continue for a suspended source")
             self.ensure(conn, run_id)
@@ -71,10 +102,10 @@ class BrowserAcquisition:
             sid = session["id"] if session else new_id()
             if session is None:
                 conn.execute("INSERT INTO browser_sessions VALUES (?,?,?,'active',?,?,?)",
-                             (sid, run_id, target, self.runs.clock(), self.runs.clock(), ADAPTER_VERSION))
+                             (sid, run_id, target, self.runs.clock(), self.runs.clock(), site.adapter_version))
             self.session(conn, run_id, sid, touch=True)
             return self.receipt(conn, run_id, request.request_key, payload,
-                {"run_id": run_id, "session_id": sid, "run_epoch": target, "adapter_version": ADAPTER_VERSION,
+                {"run_id": run_id, "site_id": site.id, "session_id": sid, "run_epoch": target, "adapter_version": site.adapter_version,
                  "coverage_scope": "browser.gallery", "limits": view.snapshot.browser.model_dump(),
                  "network_accounting": "browser_background_requests_bytes_and_peer_unknown"})
 
@@ -85,6 +116,7 @@ class BrowserAcquisition:
             if prior is not None:
                 return prior
             _, view = self.session(conn, run_id, request.session_id, touch=True)
+            self.validate_observation(view, request.observation)
             state = conn.execute("SELECT * FROM browser_runs WHERE run_id=?", (run_id,)).fetchone()
             if state["finish_received"]:
                 raise ScoutError("SOURCE_FINISHED", "Source submission was already closed")
@@ -103,10 +135,11 @@ class BrowserAcquisition:
             prior = self.replay(conn, run_id, request.request_key, payload)
             if prior is not None:
                 return prior
-            self.session(conn, run_id, request.session_id, touch=True)
+            _, view = self.session(conn, run_id, request.session_id, touch=True)
             ticket = conn.execute("SELECT * FROM browser_assets WHERE id=? AND run_id=?", (ticket_id, run_id)).fetchone()
             if not ticket:
                 raise ScoutError("SOURCE_TICKET_NOT_FOUND", "Worker has not qualified this image", 404)
+            self.validate_ticket(conn, view, ticket)
             if ticket["state"] not in ("pending", "failed"):
                 raise ScoutError("SOURCE_TICKET_BUSY", "Image is already received or being processed")
             conn.execute("UPDATE browser_assets SET state='failed',issue_code=? WHERE id=?", (request.code, ticket_id))
@@ -119,7 +152,7 @@ class BrowserAcquisition:
             messages = [dict(r) for r in conn.execute("SELECT id,sequence,state,issue_code FROM browser_messages WHERE run_id=? ORDER BY sequence", (run_id,))]
             tickets = [dict(r) for r in conn.execute("SELECT id,product_id,source_image_id,source_url,state,bytes,sha256,issue_code FROM browser_assets WHERE run_id=? ORDER BY product_id,source_image_id", (run_id,))]
             products = [dict(r) for r in conn.execute("SELECT product_id,eligible,rule,detail_error FROM collection_products WHERE run_id=? ORDER BY product_id", (run_id,))]
-            return {"run_id": run_id, "state": row["state"], "epoch": row["epoch"],
+            return {"run_id": run_id, "site_id": self.site(view).id, "state": row["state"], "epoch": row["epoch"],
                     "phase": state["phase"] if state else "waiting_host", "coverage_scope": "browser.gallery",
                     "requires_foreground_host": True, "messages": messages, "tickets": tickets, "products": products,
                     "received_bytes": state["received_bytes"] if state else 0,

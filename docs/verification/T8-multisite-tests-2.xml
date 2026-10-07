@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="15" time="5.883" timestamp="2026-10-07T21:19:44.667465+08:00" hostname="DESKTOP-AKI3LSA"><testcase classname="tests.browser_acquisition.test_multisite" name="test_three_sequential_sites_archive_separate_products_and_preserve_user_state" time="3.771" /><testcase classname="tests.browser_acquisition.test_multisite" name="test_frozen_run_rejects_other_site_and_active_scope[futario]" time="0.130" /><testcase classname="tests.browser_acquisition.test_multisite" name="test_frozen_run_rejects_other_site_and_active_scope[rihoas]" time="0.132" /><testcase classname="tests.browser_acquisition.test_multisite" name="test_frozen_run_rejects_other_site_and_active_scope[simpleretro]" time="0.113" /><testcase classname="tests.browser_acquisition.test_multisite" name="test_real_pagination_url_must_match_page_and_registry[futario]" time="0.001" /><testcase classname="tests.browser_acquisition.test_multisite" name="test_real_pagination_url_must_match_page_and_registry[rihoas]" time="0.001" /><testcase classname="tests.browser_acquisition.test_multisite" name="test_real_pagination_url_must_match_page_and_registry[simpleretro]" time="0.001" /><testcase classname="tests.browser_acquisition.test_multisite" name="test_product_gallery_hosts_and_unrelated_cdn_paths_are_closed[futario]" time="0.001" /><testcase classname="tests.browser_acquisition.test_multisite" name="test_product_gallery_hosts_and_unrelated_cdn_paths_are_closed[rihoas]" time="0.001" /><testcase classname="tests.browser_acquisition.test_multisite" name="test_product_gallery_hosts_and_unrelated_cdn_paths_are_closed[simpleretro]" time="0.001" /><testcase classname="tests.browser_acquisition.test_multisite" name="test_old_futario_frozen_defaults_request_key_and_saved_plan_survive" time="0.184" /><testcase classname="tests.browser_acquisition.test_multisite" name="test_custom_byte_limits_survive_temporary_browser_overrides" time="0.130" /><testcase classname="tests.browser_acquisition.test_multisite" name="test_sites_capabilities_and_fixed_client_payloads" time="0.072"><failure message="fashion_scout.client.ClientError: ('INTENT_INTEGRITY_ERROR', '意图键无效', 4, None)">env = (&lt;starlette.testclient.TestClient object at 0x00000194601FEE00&gt;, &lt;fashion_scout.services.runs.Runs object at 0x0000019...41/test_sites_capabilities_and_fi0/media'), _fixed=False), &lt;fastapi.applications.FastAPI object at 0x00000194601BE0D0&gt;)
+
+    def test_sites_capabilities_and_fixed_client_payloads(env):
+        client, runs, paths, app = env
+        sites = ok(client.get("/v1/sites"))
+        assert {s["id"] for s in sites["items"]} == set(BROWSER_SITES)
+        for site_id, site in BROWSER_SITES.items():
+            raw = {"new_intent": True, "overrides": {"source_mode": "browser", "site_ids": [site_id]}}
+            parsed = fixed_client.validate("start", raw)
+&gt;           assert fixed_client.write_spec("start", parsed, "intent-key")["body"]["overrides"]["site_ids"] == [site_id]
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\browser_acquisition\test_multisite.py:207: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+src\fashion_scout\client.py:235: in write_spec
+    fail('INTENT_INTEGRITY_ERROR', '意图键无效', 4)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+code = 'INTENT_INTEGRITY_ERROR', message = '意图键无效', exit_code = 4
+details = None
+
+    def fail(code, message, exit_code=2, details=None):
+&gt;       raise ClientError(code, message, exit_code, details)
+E       fashion_scout.client.ClientError: ('INTENT_INTEGRITY_ERROR', '意图键无效', 4, None)
+
+src\fashion_scout\client.py:35: ClientError</failure></testcase><testcase classname="tests.api.test_image_visibility" name="test_missing_corrupt_or_metadata_only_products_are_hidden_from_new" time="0.343" /><testcase classname="tests.api.test_image_visibility" name="test_registering_sites_and_reading_views_keeps_37_exclusions" time="0.836" /></testsuite></testsuites>

@@ -4,7 +4,7 @@ from pydantic import Field, model_validator
 from .domain.models import DTO
 from .api.models import EmptyRequest, StrictOverrides, UserPatch, PlanPatch
 from .api.maintenance import VerifyOptions,BackupOptions,StoragePatch
-from .domain.browser_source import Observation, ID as SourceId, GalleryImage
+from .domain.browser_source import Observation, ID as SourceId, AdapterVersion
 
 Id = Annotated[str, Field(min_length=1, max_length=128, pattern=r"^[A-Za-z0-9_-]+$")]
 
@@ -96,16 +96,26 @@ class MaintenanceQuery(DTO):
     maintenance_id:Id
 
 
-class BrowserAttach(ExportCreate, Run):
+class BrowserRun(ExportCreate, Run):
     pass
 
 
-class BrowserObserve(BrowserAttach):
+class BrowserAttach(BrowserRun):
+    adapter_version: AdapterVersion | None = None
+
+    @model_validator(mode='after')
+    def adapter_not_null(self):
+        if 'adapter_version' in self.model_fields_set and self.adapter_version is None:
+            raise ValueError('Omit adapter_version instead of null')
+        return self
+
+
+class BrowserObserve(BrowserRun):
     session_id: SourceId
     observation: Observation
 
 
-class BrowserUpload(BrowserAttach):
+class BrowserUpload(BrowserRun):
     session_id: SourceId
     ticket_id: SourceId
     native_directory: str = Field(min_length=1, max_length=4096)
@@ -116,7 +126,7 @@ class BrowserUpload(BrowserAttach):
     bytes: int = Field(gt=0, le=25 * 1024**2)
 
 
-class BrowserFailure(BrowserAttach):
+class BrowserFailure(BrowserRun):
     session_id: SourceId
     ticket_id: SourceId
     code: Literal['HOST_ASSET_UNAVAILABLE', 'HOST_EXPORT_FAILED', 'HOST_LIMIT_REACHED']
@@ -125,7 +135,7 @@ class BrowserFailure(BrowserAttach):
 MODELS = {
     'browser-attach': BrowserAttach, 'browser-observe': BrowserObserve,
     'browser-upload': BrowserUpload, 'browser-status': Run,
-    'browser-continue': BrowserAttach, 'browser-asset-failure': BrowserFailure,
+    'browser-continue': BrowserRun, 'browser-asset-failure': BrowserFailure,
     'new': Listing, 'favorites': Listing, 'product': Product,
     'progress': Run, 'latest': EmptyRequest, 'sites': EmptyRequest,
     'default-plan': EmptyRequest, 'start': Start, 'retry': RunWrite,

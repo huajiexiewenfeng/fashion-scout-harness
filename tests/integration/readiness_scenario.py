@@ -74,7 +74,7 @@ try:
         evidence['empty_entry']={'runs':0,'source_requests':c.execute('SELECT COUNT(*) FROM collection_http').fetchone()[0],
             'schema':[r[0] for r in c.execute('SELECT version FROM schema_migrations ORDER BY version')]}
     seed=runpy.run_path(str(ROOT/'tests/api/helpers.py'))['seed'];seed(Runs(db),paths,count=4)
-    assert cli('new',{})['data']['total']==4
+    assert cli('new',{})['data']['total']==3
     product=cli('product',{'product_id':'fixture-000'})['data']['product']
     cli('user-state',{'product_id':'fixture-000','expected_revision':product['user_state']['revision'],'favorite':True})
     assert cli('favorites',{})['data']['total']==1

@@ -43,11 +43,23 @@ class Storage(DTO):
 
 
 class BrowserLimits(DTO):
-    max_observations: int = Field(default=40, gt=0, le=1000)
-    max_selected_assets: int = Field(default=12, gt=0, le=2400)
+    max_observations: int = Field(default=100, gt=0, le=1000)
+    max_selected_assets: int = Field(default=240, gt=0, le=2400)
     max_received_bytes: int = Field(default=64 * 1024**2, gt=0)
-    host_seconds: int = Field(default=900, gt=0, le=3600)
-    idle_seconds: int = Field(default=120, gt=0, le=3600)
+    host_seconds: int = Field(default=3600, gt=0, le=3600)
+    idle_seconds: int = Field(default=600, gt=0, le=3600)
+
+
+LEGACY_BROWSER_DEFAULTS = {"max_observations": 40, "max_selected_assets": 12,
+    "max_received_bytes": 64 * 1024**2, "host_seconds": 900, "idle_seconds": 120}
+
+
+def effective_browser_defaults(plan_data: dict) -> dict:
+    """Resolve old program defaults for future Runs; saved plans/old Runs stay intact."""
+    value = dict(plan_data)
+    if value.get("browser") == LEGACY_BROWSER_DEFAULTS:
+        value["browser"] = BrowserLimits().model_dump(mode="json")
+    return value
 
 
 class DefaultPlan(DTO):
@@ -91,12 +103,15 @@ class CreateRun(DTO):
     overrides: Overrides = Field(default_factory=Overrides)
 
 
-def run_request_payload(request: CreateRun) -> dict:
+def run_request_payload(request: CreateRun, *, legacy_browser=False) -> dict:
     """Keep the v1 null/default fingerprint exact unless new fields are explicit."""
     payload = request.model_dump(mode="json", exclude={"request_key"})
     extras = {"source_mode", "browser"} & request.overrides.model_fields_set
     if extras:
-        payload["request_schema"] = 2
+        payload["request_schema"] = 2 if legacy_browser or "browser" not in extras else 3
+        if "browser" in extras:
+            explicit = request.overrides.browser.model_dump(mode="json", exclude_unset=True)
+            payload["overrides"]["browser"] = {**LEGACY_BROWSER_DEFAULTS, **explicit} if legacy_browser else explicit
         for key in {"source_mode", "browser"} - extras:
             payload["overrides"].pop(key)
     else:

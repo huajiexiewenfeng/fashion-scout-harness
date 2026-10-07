@@ -1,0 +1,130 @@
+........s......FFF........F............................................. [ 69%]
+...............................                                          [100%]
+================================== FAILURES ===================================
+________ test_frozen_run_rejects_other_site_and_active_scope[futario] _________
+
+env = (<starlette.testclient.TestClient object at 0x000002198E06FAC0>, <fashion_scout.services.runs.Runs object at 0x0000021...40/test_frozen_run_rejects_other_0/media'), _fixed=False), <fastapi.applications.FastAPI object at 0x000002198E37C050>)
+site_id = 'futario'
+
+    @pytest.mark.parametrize("site_id", list(BROWSER_SITES))
+    def test_frozen_run_rejects_other_site_and_active_scope(env, site_id):
+        client, runs, paths, app = env
+        rid, prefix, sid = start_site(client, site_id)
+        other = "rihoas" if site_id == "futario" else "futario"
+        before = status(client, prefix)
+        for fact in (listing_fact(other), detail_fact(other)):
+            result = client.post(prefix + "/observations", json={"request_key": key(), "session_id": sid, "observation": fact})
+            assert result.status_code == 422 and result.json()["error"]["code"] == "SOURCE_SITE_MISMATCH"
+>       assert status(client, prefix)["observations"] == before["observations"] == 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       KeyError: 'observations'
+
+tests\browser_acquisition\test_multisite.py:119: KeyError
+_________ test_frozen_run_rejects_other_site_and_active_scope[rihoas] _________
+
+env = (<starlette.testclient.TestClient object at 0x000002198E3CC050>, <fashion_scout.services.runs.Runs object at 0x0000021...40/test_frozen_run_rejects_other_1/media'), _fixed=False), <fastapi.applications.FastAPI object at 0x000002198E2B2710>)
+site_id = 'rihoas'
+
+    @pytest.mark.parametrize("site_id", list(BROWSER_SITES))
+    def test_frozen_run_rejects_other_site_and_active_scope(env, site_id):
+        client, runs, paths, app = env
+        rid, prefix, sid = start_site(client, site_id)
+        other = "rihoas" if site_id == "futario" else "futario"
+        before = status(client, prefix)
+        for fact in (listing_fact(other), detail_fact(other)):
+            result = client.post(prefix + "/observations", json={"request_key": key(), "session_id": sid, "observation": fact})
+            assert result.status_code == 422 and result.json()["error"]["code"] == "SOURCE_SITE_MISMATCH"
+>       assert status(client, prefix)["observations"] == before["observations"] == 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       KeyError: 'observations'
+
+tests\browser_acquisition\test_multisite.py:119: KeyError
+______ test_frozen_run_rejects_other_site_and_active_scope[simpleretro] _______
+
+env = (<starlette.testclient.TestClient object at 0x000002198E3CE690>, <fashion_scout.services.runs.Runs object at 0x0000021...40/test_frozen_run_rejects_other_2/media'), _fixed=False), <fastapi.applications.FastAPI object at 0x000002198D859310>)
+site_id = 'simpleretro'
+
+    @pytest.mark.parametrize("site_id", list(BROWSER_SITES))
+    def test_frozen_run_rejects_other_site_and_active_scope(env, site_id):
+        client, runs, paths, app = env
+        rid, prefix, sid = start_site(client, site_id)
+        other = "rihoas" if site_id == "futario" else "futario"
+        before = status(client, prefix)
+        for fact in (listing_fact(other), detail_fact(other)):
+            result = client.post(prefix + "/observations", json={"request_key": key(), "session_id": sid, "observation": fact})
+            assert result.status_code == 422 and result.json()["error"]["code"] == "SOURCE_SITE_MISMATCH"
+>       assert status(client, prefix)["observations"] == before["observations"] == 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       KeyError: 'observations'
+
+tests\browser_acquisition\test_multisite.py:119: KeyError
+______________ test_sites_capabilities_and_fixed_client_payloads ______________
+
+env = (<starlette.testclient.TestClient object at 0x000002198E2D3BD0>, <fashion_scout.services.runs.Runs object at 0x0000021...40/test_sites_capabilities_and_fi0/media'), _fixed=False), <fastapi.applications.FastAPI object at 0x000002198E3F9A90>)
+
+    def test_sites_capabilities_and_fixed_client_payloads(env):
+        client, runs, paths, app = env
+        sites = ok(client.get("/v1/sites"))
+>       assert {s["id"] for s in sites["sites"]} == set(BROWSER_SITES)
+                                 ^^^^^^^^^^^^^^
+E       KeyError: 'sites'
+
+tests\browser_acquisition\test_multisite.py:199: KeyError
+============================== warnings summary ===============================
+.venv\Lib\site-packages\fastapi\testclient.py:1
+  E:\github-workspace\fashion-scout-harness\.venv\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+.venv\Lib\site-packages\_pytest\pathlib.py:95
+  E:\github-workspace\fashion-scout-harness\.venv\Lib\site-packages\_pytest\pathlib.py:95: PytestWarning: (rm_rf) error removing \\?\C:\Users\Administrator\AppData\Local\Temp\pytest-of-Administrator\garbage-f79e3964-7e2c-4f1e-8092-9520181b1723\test_real_reparse_escape_is_no0\media
+  <class 'OSError'>: [WinError 145] Ŀ¼���ǿյġ�: '\\\\?\\C:\\Users\\Administrator\\AppData\\Local\\Temp\\pytest-of-Administrator\\garbage-f79e3964-7e2c-4f1e-8092-9520181b1723\\test_real_reparse_escape_is_no0\\media'
+    warnings.warn(
+
+.venv\Lib\site-packages\_pytest\pathlib.py:95
+  E:\github-workspace\fashion-scout-harness\.venv\Lib\site-packages\_pytest\pathlib.py:95: PytestWarning: (rm_rf) error removing \\?\C:\Users\Administrator\AppData\Local\Temp\pytest-of-Administrator\garbage-f79e3964-7e2c-4f1e-8092-9520181b1723\test_real_reparse_escape_is_no0
+  <class 'OSError'>: [WinError 145] Ŀ¼���ǿյġ�: '\\\\?\\C:\\Users\\Administrator\\AppData\\Local\\Temp\\pytest-of-Administrator\\garbage-f79e3964-7e2c-4f1e-8092-9520181b1723\\test_real_reparse_escape_is_no0'
+    warnings.warn(
+
+.venv\Lib\site-packages\_pytest\pathlib.py:95
+  E:\github-workspace\fashion-scout-harness\.venv\Lib\site-packages\_pytest\pathlib.py:95: PytestWarning: (rm_rf) error removing \\?\C:\Users\Administrator\AppData\Local\Temp\pytest-of-Administrator\garbage-f79e3964-7e2c-4f1e-8092-9520181b1723
+  <class 'OSError'>: [WinError 145] Ŀ¼���ǿյġ�: '\\\\?\\C:\\Users\\Administrator\\AppData\\Local\\Temp\\pytest-of-Administrator\\garbage-f79e3964-7e2c-4f1e-8092-9520181b1723'
+    warnings.warn(
+
+.venv\Lib\site-packages\_pytest\pathlib.py:95
+  E:\github-workspace\fashion-scout-harness\.venv\Lib\site-packages\_pytest\pathlib.py:95: PytestWarning: (rm_rf) error removing \\?\C:\Users\Administrator\AppData\Local\Temp\pytest-of-Administrator\garbage-4e1d9d9b-fdf6-427f-91fe-bb28cecad71e\test_real_reparse_escape_is_no0\media
+  <class 'OSError'>: [WinError 145] Ŀ¼���ǿյġ�: '\\\\?\\C:\\Users\\Administrator\\AppData\\Local\\Temp\\pytest-of-Administrator\\garbage-4e1d9d9b-fdf6-427f-91fe-bb28cecad71e\\test_real_reparse_escape_is_no0\\media'
+    warnings.warn(
+
+.venv\Lib\site-packages\_pytest\pathlib.py:95
+  E:\github-workspace\fashion-scout-harness\.venv\Lib\site-packages\_pytest\pathlib.py:95: PytestWarning: (rm_rf) error removing \\?\C:\Users\Administrator\AppData\Local\Temp\pytest-of-Administrator\garbage-4e1d9d9b-fdf6-427f-91fe-bb28cecad71e\test_real_reparse_escape_is_no0
+  <class 'OSError'>: [WinError 145] Ŀ¼���ǿյġ�: '\\\\?\\C:\\Users\\Administrator\\AppData\\Local\\Temp\\pytest-of-Administrator\\garbage-4e1d9d9b-fdf6-427f-91fe-bb28cecad71e\\test_real_reparse_escape_is_no0'
+    warnings.warn(
+
+.venv\Lib\site-packages\_pytest\pathlib.py:95
+  E:\github-workspace\fashion-scout-harness\.venv\Lib\site-packages\_pytest\pathlib.py:95: PytestWarning: (rm_rf) error removing \\?\C:\Users\Administrator\AppData\Local\Temp\pytest-of-Administrator\garbage-4e1d9d9b-fdf6-427f-91fe-bb28cecad71e
+  <class 'OSError'>: [WinError 145] Ŀ¼���ǿյġ�: '\\\\?\\C:\\Users\\Administrator\\AppData\\Local\\Temp\\pytest-of-Administrator\\garbage-4e1d9d9b-fdf6-427f-91fe-bb28cecad71e'
+    warnings.warn(
+
+.venv\Lib\site-packages\_pytest\pathlib.py:95
+  E:\github-workspace\fashion-scout-harness\.venv\Lib\site-packages\_pytest\pathlib.py:95: PytestWarning: (rm_rf) error removing \\?\C:\Users\Administrator\AppData\Local\Temp\pytest-of-Administrator\garbage-0f548f70-932a-4b9e-b378-a867819fc133\test_real_reparse_escape_is_no0\media
+  <class 'OSError'>: [WinError 145] Ŀ¼���ǿյġ�: '\\\\?\\C:\\Users\\Administrator\\AppData\\Local\\Temp\\pytest-of-Administrator\\garbage-0f548f70-932a-4b9e-b378-a867819fc133\\test_real_reparse_escape_is_no0\\media'
+    warnings.warn(
+
+.venv\Lib\site-packages\_pytest\pathlib.py:95
+  E:\github-workspace\fashion-scout-harness\.venv\Lib\site-packages\_pytest\pathlib.py:95: PytestWarning: (rm_rf) error removing \\?\C:\Users\Administrator\AppData\Local\Temp\pytest-of-Administrator\garbage-0f548f70-932a-4b9e-b378-a867819fc133\test_real_reparse_escape_is_no0
+  <class 'OSError'>: [WinError 145] Ŀ¼���ǿյġ�: '\\\\?\\C:\\Users\\Administrator\\AppData\\Local\\Temp\\pytest-of-Administrator\\garbage-0f548f70-932a-4b9e-b378-a867819fc133\\test_real_reparse_escape_is_no0'
+    warnings.warn(
+
+.venv\Lib\site-packages\_pytest\pathlib.py:95
+  E:\github-workspace\fashion-scout-harness\.venv\Lib\site-packages\_pytest\pathlib.py:95: PytestWarning: (rm_rf) error removing \\?\C:\Users\Administrator\AppData\Local\Temp\pytest-of-Administrator\garbage-0f548f70-932a-4b9e-b378-a867819fc133
+  <class 'OSError'>: [WinError 145] Ŀ¼���ǿյġ�: '\\\\?\\C:\\Users\\Administrator\\AppData\\Local\\Temp\\pytest-of-Administrator\\garbage-0f548f70-932a-4b9e-b378-a867819fc133'
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+SKIPPED [1] tests\browser_acquisition\test_client_compat.py:45: Windows account cannot create a synthetic symlink
+FAILED tests/browser_acquisition/test_multisite.py::test_frozen_run_rejects_other_site_and_active_scope[futario]
+FAILED tests/browser_acquisition/test_multisite.py::test_frozen_run_rejects_other_site_and_active_scope[rihoas]
+FAILED tests/browser_acquisition/test_multisite.py::test_frozen_run_rejects_other_site_and_active_scope[simpleretro]
+FAILED tests/browser_acquisition/test_multisite.py::test_sites_capabilities_and_fixed_client_payloads
+4 failed, 98 passed, 1 skipped, 10 warnings in 69.35s (0:01:09)

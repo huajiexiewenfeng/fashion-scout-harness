@@ -127,11 +127,18 @@ def install(app, paths, instance, port, token):
 
     @app.get("/v1/sites")
     def sites(request: Request):
+        from fashion_scout.domain.sites import BROWSER_SITES
         with db.read() as conn:
             rows = [dict(r) for r in conn.execute("SELECT id,entry,adapter_version,enabled,baseline_complete FROM sites")]
+        for row in rows:
+            if row["id"] in BROWSER_SITES:
+                site = BROWSER_SITES[row["id"]]
+                row.update(name=site.name, browser_adapter_version=site.adapter_version,
+                           source_modes=["http", "browser"] if site.id == "futario" else ["browser"])
         return result(request, {"items": rows, "capability_notes": [{"scope": "product.images", "status": "supported"}, {"scope": "other_media", "status": "unknown"}],
             "source_modes": {"http": {"adapter_version": "futario-json-v1", "coverage_scope": "product.images"},
-                             "browser": {"adapter_version": "futario-browser-host-v1", "coverage_scope": "browser.gallery", "full_product_images": "unknown", "requires_foreground_host": True}}})
+                             "browser": {"adapter_version": "futario-browser-host-v1", "coverage_scope": "browser.gallery", "full_product_images": "unknown", "requires_foreground_host": True,
+                                         "single_site_per_run": True, "site_adapters": {s.id:s.adapter_version for s in BROWSER_SITES.values()}}}})
 
     @app.post("/v1/runs")
     def create_run(payload: CreateRunRequest, request: Request):

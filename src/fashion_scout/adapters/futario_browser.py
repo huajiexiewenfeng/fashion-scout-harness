@@ -7,6 +7,7 @@ from fashion_scout.db.archive import Archive
 from fashion_scout.domain import Outcome, ScoutError
 from fashion_scout.domain.browser_source import Observation, SCOPE
 from fashion_scout.domain.models import SourceProduct, SourceImage
+from fashion_scout.domain.sites import snapshot_site
 from fashion_scout.media.browser_intake import BrowserIntake, receiver_dead
 from fashion_scout.media.images import disk_gate, validate_image
 from fashion_scout.services.browser_acquisition import BrowserAcquisition, SourceWait
@@ -31,7 +32,8 @@ def product_from_dom(value, detail=None):
 class BrowserCollector:
     def __init__(self, context):
         self.ctx, self.runs, self.lease, self.paths = context, context.runs, context.lease, context.paths
-        self.catalog = Catalog(self.runs, self.lease, self.paths, context.collection_started)
+        self.site = snapshot_site(self.runs.get(self.lease.run_id).snapshot)
+        self.catalog = Catalog(self.runs, self.lease, self.paths, context.collection_started, site_id=self.site.id)
         self.snapshot = self.catalog.snapshot
         self.source = BrowserAcquisition(self.runs)
         self.intake = BrowserIntake(self.paths, self.runs)
@@ -46,6 +48,7 @@ class BrowserCollector:
 
     def apply(self, message):
         observation = TypeAdapter(Observation).validate_json(message["observation_json"])
+        self.source.validate_observation(self.catalog.run, observation)
         if observation.kind == "listing":
             if observation.page_number > self.snapshot.discovery.max_pages_per_pass:
                 raise ScoutError("DISCOVERY_BUDGET", "Frozen page observation allowance reached")
@@ -57,19 +60,22 @@ class BrowserCollector:
                     (self.lease.run_id,self.catalog.run.attempt,observation.pass_number,observation.page_number)).fetchone()
             if prior and json.loads(prior[0])!=facts:
                 raise ScoutError("SOURCE_OBSERVATION_CONFLICT", "Listing page facts are already frozen for this attempt")
-            if len(known | {"futario-" + p.source_id for p in observation.products}) > self.snapshot.discovery.max_products:
+            if len(known | {self.site.product_id(p.source_id) for p in observation.products}) > self.snapshot.discovery.max_products:
                 raise ScoutError("PRODUCT_BUDGET", "Frozen product allowance reached")
             for value in observation.products:
                 self.catalog.discover_product(product_from_dom(value))
             self.catalog.page(observation.pass_number, observation.page_number,facts)
         elif observation.kind == "detail":
-            pid = "futario-" + observation.product.source_id
+            pid = self.site.product_id(observation.product.source_id)
             rows = self.catalog.rows()
             row = next((r for r in rows if r["product_id"] == pid), None)
             if not row:
                 raise ScoutError("SOURCE_LISTING_REQUIRED", "Listing must establish numeric product identity first")
             listing = SourceProduct.model_validate_json(row["listing_json"])
-            if listing.url != observation.product.url or listing.handle != observation.product.handle:
+            # The observed collection link may redirect to /products/{handle}.
+            # Both paths are registry-bound; numeric ID and handle stay frozen.
+            if (listing.handle != observation.product.handle
+                    or not self.site.accepts_product(listing.url, observation.product.handle)):
                 raise ScoutError("SOURCE_IDENTITY_CONFLICT", "Detail identity differs from accepted listing")
             if not row["eligible"]:
                 with self.runs.db.write() as conn:
@@ -158,7 +164,8 @@ class BrowserCollector:
             reasons.append("DISCOVERY_UNSTABLE")
         result = {"complete": complete, "passes_ended": ended, "stable_sets": stable,
                   "unique_products": len(sets[0] | sets[1]), "reasons": reasons,
-                  "atomic_source_snapshot": False, "entry": self.snapshot.site_entries["futario"],
+                  "atomic_source_snapshot": False, "entry": self.snapshot.site_entries[self.site.id],
+                  "site_id": self.site.id,
                   "scope": "browser.listing", "media_scope": SCOPE,
                   "network_accounting": "browser_background_requests_bytes_and_peer_unknown"}
         self.catalog.discovery_result(result)

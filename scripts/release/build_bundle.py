@@ -171,11 +171,11 @@ def main():
     digest=args.app_sha256 if explicit else APP_SHA
     created=False
     try:
-        require(output.parent==ROOT/'.runtime' and output.name.startswith(('t6b-','t6c-')),
-                'Output must be a fresh direct .runtime/t6b-* or t6c-* directory')
+        require(output.parent==ROOT/'.runtime' and output.name.startswith(('t6b-','t6c-','t8b-')),
+                'Output must be a fresh direct .runtime/t6b-*, t6c-* or t8b-* directory')
         ordinary(output)
         require(not output.exists(),'Fresh output required; prior candidate is never overwritten')
-        require(cache.parent==ROOT/'.runtime' and cache.name.startswith(('t6b-','t6c-')),'Cache must stay in controlled .runtime')
+        require(cache.parent==ROOT/'.runtime' and cache.name.startswith(('t6b-','t6c-','t8b-')),'Cache must stay in controlled .runtime')
         rows=locked();selected=wheel_input(app,digest,source,rows)
         candidate=(f"FashionScout-{selected['version']}-{args.label or 'local-candidate'}-app-{selected['sha256']}"
                    if explicit or args.label else NAME)
@@ -222,7 +222,8 @@ def main():
                 target.write_text(path.read_text('utf-8-sig'),encoding='utf-8-sig' if path.suffix=='.ps1' else 'utf-8')
         skill_files={}
         skill_root=ROOT/'skills/fashion-scout'
-        for relative in ('SKILL.md','references/setup.md','references/commands.md','references/browser-acquisition.md'):
+        for relative in ('SKILL.md','references/setup.md','references/commands.md','references/browser-acquisition.md',
+                         'references/operations.md','scripts/entry.ps1','agents/openai.yaml'):
             original=skill_root/relative
             ordinary(original)
             require(original.is_file(),'Required conversation Skill material missing: '+relative)

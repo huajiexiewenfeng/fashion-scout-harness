@@ -1,0 +1,54 @@
+........................................................................ [ 55%]
+..........................................................               [100%]
+============================== warnings summary ===============================
+.venv\Lib\site-packages\fastapi\testclient.py:1
+  E:\github-workspace\fashion-scout-harness\.venv\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+.venv\Lib\site-packages\_pytest\pathlib.py:95
+  E:\github-workspace\fashion-scout-harness\.venv\Lib\site-packages\_pytest\pathlib.py:95: PytestWarning: (rm_rf) error removing \\?\C:\Users\Administrator\AppData\Local\Temp\pytest-of-Administrator\garbage-af5f520f-7889-4fd7-a6bf-3a2740f77455\test_real_reparse_escape_is_no0\media
+  <class 'OSError'>: [WinError 145] Ŀ¼���ǿյġ�: '\\\\?\\C:\\Users\\Administrator\\AppData\\Local\\Temp\\pytest-of-Administrator\\garbage-af5f520f-7889-4fd7-a6bf-3a2740f77455\\test_real_reparse_escape_is_no0\\media'
+    warnings.warn(
+
+.venv\Lib\site-packages\_pytest\pathlib.py:95
+  E:\github-workspace\fashion-scout-harness\.venv\Lib\site-packages\_pytest\pathlib.py:95: PytestWarning: (rm_rf) error removing \\?\C:\Users\Administrator\AppData\Local\Temp\pytest-of-Administrator\garbage-af5f520f-7889-4fd7-a6bf-3a2740f77455\test_real_reparse_escape_is_no0
+  <class 'OSError'>: [WinError 145] Ŀ¼���ǿյġ�: '\\\\?\\C:\\Users\\Administrator\\AppData\\Local\\Temp\\pytest-of-Administrator\\garbage-af5f520f-7889-4fd7-a6bf-3a2740f77455\\test_real_reparse_escape_is_no0'
+    warnings.warn(
+
+.venv\Lib\site-packages\_pytest\pathlib.py:95
+  E:\github-workspace\fashion-scout-harness\.venv\Lib\site-packages\_pytest\pathlib.py:95: PytestWarning: (rm_rf) error removing \\?\C:\Users\Administrator\AppData\Local\Temp\pytest-of-Administrator\garbage-af5f520f-7889-4fd7-a6bf-3a2740f77455
+  <class 'OSError'>: [WinError 145] Ŀ¼���ǿյġ�: '\\\\?\\C:\\Users\\Administrator\\AppData\\Local\\Temp\\pytest-of-Administrator\\garbage-af5f520f-7889-4fd7-a6bf-3a2740f77455'
+    warnings.warn(
+
+.venv\Lib\site-packages\_pytest\pathlib.py:95
+  E:\github-workspace\fashion-scout-harness\.venv\Lib\site-packages\_pytest\pathlib.py:95: PytestWarning: (rm_rf) error removing \\?\C:\Users\Administrator\AppData\Local\Temp\pytest-of-Administrator\garbage-43daf7cd-3a84-4a91-8ee5-b60f8fc2265e\test_real_reparse_escape_is_no0\media
+  <class 'OSError'>: [WinError 145] Ŀ¼���ǿյġ�: '\\\\?\\C:\\Users\\Administrator\\AppData\\Local\\Temp\\pytest-of-Administrator\\garbage-43daf7cd-3a84-4a91-8ee5-b60f8fc2265e\\test_real_reparse_escape_is_no0\\media'
+    warnings.warn(
+
+.venv\Lib\site-packages\_pytest\pathlib.py:95
+  E:\github-workspace\fashion-scout-harness\.venv\Lib\site-packages\_pytest\pathlib.py:95: PytestWarning: (rm_rf) error removing \\?\C:\Users\Administrator\AppData\Local\Temp\pytest-of-Administrator\garbage-43daf7cd-3a84-4a91-8ee5-b60f8fc2265e\test_real_reparse_escape_is_no0
+  <class 'OSError'>: [WinError 145] Ŀ¼���ǿյġ�: '\\\\?\\C:\\Users\\Administrator\\AppData\\Local\\Temp\\pytest-of-Administrator\\garbage-43daf7cd-3a84-4a91-8ee5-b60f8fc2265e\\test_real_reparse_escape_is_no0'
+    warnings.warn(
+
+.venv\Lib\site-packages\_pytest\pathlib.py:95
+  E:\github-workspace\fashion-scout-harness\.venv\Lib\site-packages\_pytest\pathlib.py:95: PytestWarning: (rm_rf) error removing \\?\C:\Users\Administrator\AppData\Local\Temp\pytest-of-Administrator\garbage-43daf7cd-3a84-4a91-8ee5-b60f8fc2265e
+  <class 'OSError'>: [WinError 145] Ŀ¼���ǿյġ�: '\\\\?\\C:\\Users\\Administrator\\AppData\\Local\\Temp\\pytest-of-Administrator\\garbage-43daf7cd-3a84-4a91-8ee5-b60f8fc2265e'
+    warnings.warn(
+
+.venv\Lib\site-packages\_pytest\pathlib.py:95
+  E:\github-workspace\fashion-scout-harness\.venv\Lib\site-packages\_pytest\pathlib.py:95: PytestWarning: (rm_rf) error removing \\?\C:\Users\Administrator\AppData\Local\Temp\pytest-of-Administrator\garbage-a59fb4c4-a3e8-47b6-9d12-4fc3ce263aaa\test_real_reparse_escape_is_no0\media
+  <class 'OSError'>: [WinError 145] Ŀ¼���ǿյġ�: '\\\\?\\C:\\Users\\Administrator\\AppData\\Local\\Temp\\pytest-of-Administrator\\garbage-a59fb4c4-a3e8-47b6-9d12-4fc3ce263aaa\\test_real_reparse_escape_is_no0\\media'
+    warnings.warn(
+
+.venv\Lib\site-packages\_pytest\pathlib.py:95
+  E:\github-workspace\fashion-scout-harness\.venv\Lib\site-packages\_pytest\pathlib.py:95: PytestWarning: (rm_rf) error removing \\?\C:\Users\Administrator\AppData\Local\Temp\pytest-of-Administrator\garbage-a59fb4c4-a3e8-47b6-9d12-4fc3ce263aaa\test_real_reparse_escape_is_no0
+  <class 'OSError'>: [WinError 145] Ŀ¼���ǿյġ�: '\\\\?\\C:\\Users\\Administrator\\AppData\\Local\\Temp\\pytest-of-Administrator\\garbage-a59fb4c4-a3e8-47b6-9d12-4fc3ce263aaa\\test_real_reparse_escape_is_no0'
+    warnings.warn(
+
+.venv\Lib\site-packages\_pytest\pathlib.py:95
+  E:\github-workspace\fashion-scout-harness\.venv\Lib\site-packages\_pytest\pathlib.py:95: PytestWarning: (rm_rf) error removing \\?\C:\Users\Administrator\AppData\Local\Temp\pytest-of-Administrator\garbage-a59fb4c4-a3e8-47b6-9d12-4fc3ce263aaa
+  <class 'OSError'>: [WinError 145] Ŀ¼���ǿյġ�: '\\\\?\\C:\\Users\\Administrator\\AppData\\Local\\Temp\\pytest-of-Administrator\\garbage-a59fb4c4-a3e8-47b6-9d12-4fc3ce263aaa'
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+130 passed, 10 warnings in 41.71s

@@ -39,7 +39,7 @@ function card(product){
   const favorite=el("button","favorite-button",product.user_state.favorite?"♥":"♡");favorite.setAttribute("aria-label",product.user_state.favorite?"取消收藏："+product.title:"收藏："+product.title);favorite.setAttribute("aria-pressed",String(product.user_state.favorite));favorite.onclick=()=>toggleFavorite(product.id);node.append(favorite);
   const heading=el("div","card-heading");const title=el("button","card-title",product.title);title.onclick=()=>openGallery(product.id);heading.append(title);
   if(!product.user_state.viewed_at)heading.append(el("span","badge","未看"));else if(product.has_material_update)heading.append(el("span","badge update","看后更新"));node.append(heading);
-  const meta=el("div","card-meta");meta.append(el("span","",names[product.effective_category]||"其他"),el("span","",product.source.source_published_at?"来源标注 "+date(product.source.source_published_at):"来源日期未知"));node.append(meta);
+  const meta=el("div","card-meta");meta.append(el("span","",product.site_name||product.site_id||"Futario"),el("span","",names[product.effective_category]||"其他"),el("span","",product.source.source_published_at?"来源标注 "+date(product.source.source_published_at):"来源日期未知"));node.append(meta);
   if(product.media_state!=="ready")node.append(el("p","missing-note",({queued:"图片待处理",downloading:"图片收集中",partial:"部分图片缺失",failed:"暂未取得完整图集"})[product.media_state]||"图集待确认"));
   return node;
 }

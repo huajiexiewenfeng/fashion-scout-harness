@@ -10,10 +10,10 @@
 | latest | `{}` | 最新 Run，可为 null，含最近完成/成功时间 |
 | progress | `{"run_id":"ID"}` | Run、stage、计数、覆盖、问题与 Worker 状态 |
 | sites / default-plan | `{}` | 只读本机站点能力/默认方案，不探测来源 |
-| start | `{"new_intent":true,"overrides":{"window_days":7}}` | trigger 固定 skill；overrides 可省略；可含已保存站点子集 site_ids、unknown_date_policy=include/exclude |
+| start | `{"new_intent":true,"overrides":{"source_mode":"browser","site_ids":["rihoas"],"window_days":7}}` | trigger 固定 skill；browser 每 Run仅一个已注册站点 futario/rihoas/simpleretro，可临时选站而不改保存方案；HTTP仍受保存站点子集限制；可含 unknown_date_policy、browser临时限额 |
 | retry / cancel | `{"new_intent":true,"run_id":"ID"}` | 原 Run，retry 固定 scope=failed；无 item_ids 或 overrides |
 | browser-status | `{"run_id":"ID"}` | 只读前台来源状态、资格、消息回执和 Worker 图片 tickets |
-| browser-attach / browser-continue | `{"new_intent":true,"run_id":"ID"}` | 来源会话 / 同一等待前台 Run 的业务续采，不是客户端 resume |
+| browser-attach / browser-continue | `{"new_intent":true,"run_id":"ID"}` | 来源会话 / 同一等待前台 Run 的业务续采，不是客户端 resume；attach 可附该站 adapter_version，否则由已冻结 Run确定，错站版本拒绝 |
 | browser-observe | `{"new_intent":true,"run_id":"ID","session_id":"会话ID","observation":{"kind":"finish"}}` | listing/detail/finish 严格事实 DTO，不接受业务成功字段 |
 | browser-upload | `{"new_intent":true,"run_id":"ID","session_id":"会话ID","ticket_id":"ticket","native_directory":"工具导出目录","manifest_path":"工具manifest","asset_id":"工具资产ID","source_url":"原图库URL","sha256":"64位摘要","bytes":123}` | 有资格 ticket 后的有限 native 只读文件；服务仅收字节流 |
 | browser-asset-failure | `{"new_intent":true,"run_id":"ID","session_id":"会话ID","ticket_id":"ticket","code":"HOST_EXPORT_FAILED"}` | 也可 HOST_ASSET_UNAVAILABLE/HOST_LIMIT_REACHED；保留缺失 |

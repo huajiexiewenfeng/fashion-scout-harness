@@ -1,0 +1,50 @@
+T8b validation inputs: E:\github-workspace\fashion-scout-harness\.runtime\t8b-inputs-beb4dc86
+T8b candidate: E:\github-workspace\fashion-scout-harness\.runtime\t8b-inputs-beb4dc86\.runtime\t8b-candidate
+T8b checks: E:\github-workspace\fashion-scout-harness\.runtime\t8b-checks-2c88b1f7
+.......F
+================================== FAILURES ===================================
+__________ test_independent_zip_install_entries_and_synthetic_export __________
+
+release = ({'zip': 'E:\\github-workspace\\fashion-scout-harness\\.runtime\\t8b-inputs-beb4dc86\\.runtime\\t8b-candidate\\Fashion...hionScout\\manifest.json', ...}, WindowsPath('E:/github-workspace/fashion-scout-harness/.runtime/t8b-checks-2c88b1f7'))
+
+    def test_independent_zip_install_entries_and_synthetic_export(release):
+        receipt,work=release
+        label="真实解压 空格 & 单引号's"
+        label+='x'*(100-len(str(work/label/'FashionScout')))
+        package=extract(release,label)
+        assert len(str(package))==100
+        env={k:v for k,v in os.environ.items() if k.upper() not in {'PYTHONPATH','PYTHONHOME','VIRTUAL_ENV'}}
+        env.update(PYTHONDONTWRITEBYTECODE='1',PYTHONUTF8='1')
+        missing=invoke(package,'Open',2,env=env,label='open-before-prepare.json')
+        assert 'Prepare.cmd first' in missing['stdout']
+        invoke(package,'Prepare',env=env,cmd=True,label='install-original.json')
+        data=package/'data';config=data/'control/client.json'
+        assert json.loads(config.read_text('utf-8'))=={'schema':1,'data_root':str(data),'port':8765}
+        assert not (data/'scout.sqlite3').exists() and not (data/'control/runtime.json').exists()
+        python=package/'.local/env/Scripts/python.exe'
+        installed=package/'.local/env/Lib/site-packages'
+        pip=subprocess.run([str(python),'-I','-B','-m','pip','--isolated','--disable-pip-version-check','check'],cwd=package,env=env,
+                           capture_output=True,text=True,encoding='utf-8',timeout=15)
+        (package.parent/'pip-check.json').write_text(json.dumps({'returncode':pip.returncode,'stdout':pip.stdout,'stderr':pip.stderr}),encoding='utf-8')
+        assert pip.returncode==0 and 'No broken requirements' in pip.stdout
+        with zipfile.ZipFile(receipt['app_wheel']) as wheel:
+            for name in wheel.namelist():
+                if name.startswith('fashion_scout/') and not name.endswith('/'):assert (installed/name).read_bytes()==wheel.read(name)
+        # This isolated package never opens/stops the live daily instance on port 8765.
+        with socket.socket() as available:
+            available.bind(('127.0.0.1',0));port=available.getsockname()[1]
+        assert port!=8765
+        request=package.parent/'test-port.json';request.write_text(json.dumps({'port':port}),encoding='utf-8')
+        configured=subprocess.run([str(python),'-I','-B','-m','fashion_scout.client','configure',
+                                   '--data-root',str(data),'--json-input',str(request)],
+                                  cwd=package,env=env,capture_output=True,text=True,encoding='utf-8',timeout=15)
+>       assert configured.returncode==0 and not configured.stderr,configured.stdout+configured.stderr
+E       AssertionError: {"ok": false, "error": {"code": "CLIENT_CONFIG_CONFLICT", "message": "\u5df2\u6709\u914d\u7f6e\u4e0d\u53ef\u9759\u9ed8\u91cd\u7ed1\u5b9a\uff1b\u4fdd\u7559\u539f\u6570\u636e\u6839\u4e0e\u7aef\u53e3", "details": null}, "service": {"checked": false, "web_ready": null, "worker_state": "unknown"}, "intent_id": null, "exit_code": 4}
+E         
+E       assert (4 == 0)
+E        +  where 4 = CompletedProcess(args=["E:\\github-workspace\\fashion-scout-harness\\.runtime\\t8b-checks-2c88b1f7\\真实解压 空格 & 单引号'sx\\...e": {"checked": false, "web_ready": null, "worker_state": "unknown"}, "intent_id": null, "exit_code": 4}\n', stderr='').returncode
+
+tests\release\test_bundle.py:155: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/release/test_bundle.py::test_independent_zip_install_entries_and_synthetic_export
+1 failed, 7 passed in 25.79s

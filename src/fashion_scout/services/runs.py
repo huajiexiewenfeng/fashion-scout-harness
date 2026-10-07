@@ -7,7 +7,8 @@ from typing import Callable
 
 from fashion_scout.db import Database
 from fashion_scout.domain import CreateRun, DefaultPlan, Lease, Outcome, RunView, ScoutError, Snapshot
-from fashion_scout.domain.models import CreateResult, run_request_payload
+from fashion_scout.domain.models import CreateResult, run_request_payload, effective_browser_defaults
+from fashion_scout.domain.sites import BROWSER_SITES
 
 ACTIVE = ("queued", "running", "interrupted", "cancelling")
 
@@ -39,6 +40,10 @@ class Runs:
             conn.execute("INSERT OR IGNORE INTO sites(id,entry,adapter_version,enabled) VALUES (?,?,?,1)",
                          ("futario", "https://futario.com/collections/new-in", "futario-json-v1"))
             conn.execute("UPDATE sites SET adapter_version='futario-json-v1' WHERE id='futario' AND adapter_version='not-implemented'")
+            for site in BROWSER_SITES.values():
+                if site.id != "futario":
+                    conn.execute("INSERT OR IGNORE INTO sites(id,entry,adapter_version,enabled) VALUES (?,?,?,1)",
+                                 (site.id, site.entry, site.adapter_version))
 
     @staticmethod
     def _view(row) -> RunView:
@@ -61,7 +66,7 @@ class Runs:
     def default_plan(self) -> tuple[int, DefaultPlan]:
         with self.db.read() as conn:
             row = conn.execute("SELECT * FROM settings WHERE id=1").fetchone()
-            return row["revision"], DefaultPlan.model_validate_json(row["plan_json"])
+            return row["revision"], DefaultPlan.model_validate_json(canonical(effective_browser_defaults(json.loads(row["plan_json"]))))
 
     def save_default(self, plan: DefaultPlan, expected_revision: int):
         # Revalidate even if a caller uses model_construct or mutates nested containers.
@@ -70,11 +75,20 @@ class Runs:
             enabled = {r[0] for r in conn.execute("SELECT id FROM sites WHERE enabled=1")}
             if not set(plan.site_ids) <= enabled:
                 raise ScoutError("SITE_DISABLED", "Plan contains unavailable sites", 422)
+            self.validate_source_plan(plan)
             changed = conn.execute("UPDATE settings SET revision=revision+1,plan_json=? WHERE id=1 AND revision=?",
                                    (plan.model_dump_json(), expected_revision)).rowcount
             if not changed:
                 raise ScoutError("REVISION_CONFLICT", "Default plan changed")
         return expected_revision + 1
+
+    @staticmethod
+    def validate_source_plan(plan):
+        if plan.source_mode == "browser":
+            if len(plan.site_ids) != 1 or plan.site_ids[0] not in BROWSER_SITES:
+                raise ScoutError("BROWSER_SINGLE_SITE_REQUIRED", "Choose one registered browser site per Run", 422)
+        elif any(s in BROWSER_SITES and s != "futario" for s in plan.site_ids):
+            raise ScoutError("SOURCE_MODE_CONFLICT", "This site only supports normal-page browser acquisition", 422)
 
     def _event(self, conn, run_id: str, kind: str, epoch: int, detail: str = ""):
         conn.execute("INSERT INTO run_events(run_id,kind,at,epoch,detail) VALUES (?,?,?,?,?)",
@@ -88,7 +102,10 @@ class Runs:
             prior = conn.execute("SELECT * FROM run_requests WHERE request_key=?", (request.request_key,)).fetchone()
             if prior:
                 if prior["payload_hash"] != fingerprint:
-                    raise ScoutError("REQUEST_KEY_CONFLICT", "Same request key has different parameters")
+                    prior_run = self._view(conn.execute("SELECT * FROM runs WHERE id=?", (prior["run_id"],)).fetchone())
+                    legacy = prior_run.snapshot.site_ids == ["futario"]
+                    if not legacy or prior["payload_hash"] != digest(run_request_payload(request, legacy_browser=True)):
+                        raise ScoutError("REQUEST_KEY_CONFLICT", "Same request key has different parameters")
                 original = CreateResult.model_validate_json(prior["response_json"])
                 return original.model_copy(update={"run": self._view(conn.execute("SELECT * FROM runs WHERE id=?", (prior["run_id"],)).fetchone()), "reused": True, "reuse_reason": "request_key"})
             active = conn.execute("SELECT * FROM runs WHERE state IN('queued','running','interrupted','cancelling')").fetchone()
@@ -96,24 +113,34 @@ class Runs:
             if active:
                 if ("source_mode" in overrides and overrides["source_mode"] != self._view(active).snapshot.source_mode):
                     raise ScoutError("SOURCE_MODE_CONFLICT", "Active Run has a different frozen source mode")
+                if (self._view(active).snapshot.source_mode == "browser" and "site_ids" in overrides
+                        and overrides["site_ids"] != self._view(active).snapshot.site_ids):
+                    raise ScoutError("SITE_SCOPE_CONFLICT", "Active browser Run belongs to a different frozen site")
                 result = CreateResult(run=self._view(active), reused=True, reuse_reason="active_run",
                                       ignored_overrides=sorted(overrides))
             else:
                 setting = conn.execute("SELECT * FROM settings WHERE id=1").fetchone()
-                plan_data = json.loads(setting["plan_json"])
-                if "site_ids" in overrides and not set(overrides["site_ids"]) <= set(plan_data["site_ids"]):
+                plan_data = effective_browser_defaults(json.loads(setting["plan_json"]))
+                browser_mode = overrides.get("source_mode", plan_data.get("source_mode", "http")) == "browser"
+                # Explicit browser site selection uses the verified registry. Old
+                # saved single-site plans need no automatic settings mutation.
+                if (not browser_mode and "site_ids" in overrides
+                        and not set(overrides["site_ids"]) <= set(plan_data["site_ids"])):
                     raise ScoutError("INVALID_SCOPE", "Temporary sites must be a subset of the saved plan", 422)
+                if "browser" in overrides:
+                    overrides["browser"] = {**plan_data.get("browser", {}), **overrides["browser"]}
                 plan_data.update(overrides)
                 plan = DefaultPlan.model_validate_json(canonical(plan_data))
                 sites = {row["id"]: row for row in conn.execute("SELECT * FROM sites WHERE enabled=1")}
                 if not set(plan.site_ids) <= sites.keys():
                     raise ScoutError("SITE_DISABLED", "Plan contains unavailable sites", 422)
+                self.validate_source_plan(plan)
                 now = self.clock()
                 snapshot = Snapshot(**plan.model_dump(), plan_revision=setting["revision"],
                                     window_start=timestamp(now - timedelta(days=plan.window_days).total_seconds()),
                                     window_end=timestamp(now),
-                                    adapter_versions={s: ("futario-browser-host-v1" if plan.source_mode == "browser" else sites[s]["adapter_version"]) for s in plan.site_ids},
-                                    site_entries={s: sites[s]["entry"] for s in plan.site_ids},
+                                    adapter_versions={s: (BROWSER_SITES[s].adapter_version if plan.source_mode == "browser" else sites[s]["adapter_version"]) for s in plan.site_ids},
+                                    site_entries={s: (BROWSER_SITES[s].entry if plan.source_mode == "browser" else sites[s]["entry"]) for s in plan.site_ids},
                                     discovery_baseline_complete={s: bool(sites[s]["baseline_complete"]) for s in plan.site_ids})
                 run_id = new_id()
                 conn.execute("INSERT INTO runs(id,state,snapshot_json,created_at) VALUES (?,'queued',?,?)",

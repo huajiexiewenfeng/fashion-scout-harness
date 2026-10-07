@@ -1,0 +1,5 @@
+T8b validation inputs: E:\github-workspace\fashion-scout-harness\.runtime\t8b-inputs-6ca6cf5f
+T8b candidate: E:\github-workspace\fashion-scout-harness\.runtime\t8b-inputs-6ca6cf5f\.runtime\t8b-candidate
+T8b checks: E:\github-workspace\fashion-scout-harness\.runtime\t8b-checks-30a9c9f4
+.........
+9 passed in 57.91s

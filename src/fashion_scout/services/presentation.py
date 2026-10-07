@@ -9,6 +9,9 @@ import time
 from pathlib import Path
 
 from fashion_scout.domain import ScoutError
+from fashion_scout.domain.models import Storage
+from fashion_scout.domain.sites import BROWSER_SITES
+from fashion_scout.media.images import validate_image
 from fashion_scout.services.catalog import product_detail
 from fashion_scout.services.runs import canonical, digest, timestamp
 
@@ -103,14 +106,45 @@ class Presentation:
             raise ScoutError("ASSET_MISSING", "未找到图片文件", 404)
         return dict(row), self.asset_path(row)
 
-    def available_images(self, manifest):
+    def renderable_asset(self, aid, cache):
+        if aid not in cache:
+            try:
+                row, path = self.asset(aid)
+                limits = Storage()
+                actual = validate_image(path, limits.max_image_bytes, limits.max_pixels)
+                if (actual["sha256"] != row["sha256"] or actual["bytes"] != row["bytes"]
+                        or any(row[k] not in (None, 0, "UNKNOWN", actual[k]) for k in ("format", "width", "height"))):
+                    raise ScoutError("ASSET_MISSING", "图片完整性检查失败", 404)
+                cache[aid] = row
+            except (ScoutError, OSError):
+                cache[aid] = None
+        if cache[aid] is None:
+            raise ScoutError("ASSET_MISSING", "图片无法读取", 404)
+        return cache[aid]
+
+    def has_renderable_image(self, pid, cache):
+        with self.db.read() as conn:
+            assets = [r[0] for r in conn.execute(
+                "SELECT i.asset_id FROM products p JOIN version_images i ON "
+                "i.version_id=p.latest_available_version_id AND i.revision=p.latest_available_revision "
+                "WHERE p.id=? AND i.asset_id IS NOT NULL ORDER BY i.ordinal", (pid,))]
+        for aid in assets:
+            try:
+                self.renderable_asset(aid, cache)
+                return True
+            except ScoutError:
+                continue
+        return False
+
+    def available_images(self, manifest, cache=None):
+        cache = {} if cache is None else cache
         result, missing = [], []
         for item in manifest.get("images", []):
             aid = item.get("asset_id")
             try:
                 if not aid:
                     raise ScoutError("ASSET_MISSING", "", 404)
-                row, path = self.asset(aid)
+                row = self.renderable_asset(aid, cache)
                 result.append({"asset_id": aid, "sha256": row["sha256"], "verified_at": row["verified_at"],
                                "preview_url": f"/v1/assets/{aid}?rendition=preview",
                                "original_url": f"/v1/assets/{aid}?rendition=original"})
@@ -119,7 +153,8 @@ class Presentation:
                                 "reason": item.get("error_code") or "ASSET_MISSING", "retryable": True})
         return result, missing
 
-    def detail(self, pid, version_id=None, revision=None):
+    def detail(self, pid, version_id=None, revision=None, *, asset_cache=None):
+        asset_cache = {} if asset_cache is None else asset_cache
         raw = product_detail(self.db, pid)
         user = self.user(pid)
         versions = raw["versions"]
@@ -130,12 +165,12 @@ class Presentation:
         if version_id and selected is None:
             raise ScoutError("VERSION_NOT_FOUND", "未找到这份历史图集", 404)
         manifest = json.loads(selected["manifest_json"]) if selected else {}
-        images, missing = self.available_images(manifest)
+        images, missing = self.available_images(manifest, asset_cache)
         latest = raw["current_gallery"] or {}
-        current_images, current_missing = self.available_images(latest)
+        current_images, current_missing = self.available_images(latest, asset_cache)
         latest_available = next((v for v in versions if v["id"] == raw["latest_available_version_id"] and v["revision"] == raw["latest_available_revision"]), None)
         available_manifest = json.loads(latest_available["manifest_json"]) if latest_available else {}
-        available, _ = self.available_images(available_manifest)
+        available, _ = self.available_images(available_manifest, asset_cache)
         # A missing local file is a delivery failure, not a newly observed content set.
         # Use the immutable verified version identity; only display an update when readable images exist.
         content_digest = latest_available["content_digest"] if available and latest_available else None
@@ -143,7 +178,9 @@ class Presentation:
         media_state = raw["media_state"]
         if latest:
             media_state = "ready" if latest.get("complete") and current_images and not current_missing else "partial" if current_images else "failed"
-        return {"id": pid, "title": source.get("title") or "暂无商品名称", "source": source,
+        site = BROWSER_SITES.get(raw["site_id"])
+        return {"id": pid, "site_id": raw["site_id"], "site_name": site.name if site else raw["site_id"],
+                "title": source.get("title") or "暂无商品名称", "source": source,
                 "first_seen_at": raw["first_seen_at"], "first_eligible_at": raw["first_eligible_at"],
                 "effective_category": user["category_override"] or raw["category_key"],
                 "user_state": user, "media_state": media_state, "latest_detail_error": raw["latest_detail_error"],
@@ -166,6 +203,7 @@ class Presentation:
                 "verified_at": min((x["verified_at"] for x in images), default=None), "capability_notes": manifest.get("capability_notes", [])}
 
     def listing(self, view, category, cursor, limit):
+        asset_cache = {}
         def ids():
             with self.db.read() as conn:
                 conn.execute("BEGIN")
@@ -175,9 +213,13 @@ class Presentation:
                 if category:
                     query += " AND COALESCE(u.category_override,p.category_key)=?"
                     args = (category,)
-                return [r[0] for r in conn.execute(query + " ORDER BY (u.viewed_at IS NOT NULL),p.first_seen_at DESC,p.id ASC", args)]
+                candidates = [r[0] for r in conn.execute(query + " ORDER BY (u.viewed_at IS NOT NULL),p.first_seen_at DESC,p.id ASC", args)]
+            # File decoding/hashing runs outside the database read transaction.
+            return candidates if view == "favorites" else [pid for pid in candidates if self.has_renderable_image(pid, asset_cache)]
         page = self.snapshots.page(ids, {"view": view, "category": category, "limit": limit}, cursor, limit)
-        return {**{k: v for k, v in page.items() if k != "ids"}, "items": [self.detail(pid) for pid in page["ids"]]}
+        items = [self.detail(pid, asset_cache=asset_cache) for pid in page["ids"]]
+        return {**{k: v for k, v in page.items() if k != "ids"},
+                "items": items if view == "favorites" else [item for item in items if item["images"]]}
 
     def view_event(self, pid, event):
         with self.db.write() as conn:

@@ -101,6 +101,7 @@ def test_partial_plan_cas_and_unsupported_no_side_effects(api_env):
 def test_frozen_query_chain_mutations_replay_expiry_restart(api_env):
     client,app,runs,paths,token=api_env
     ids=seed(runs,paths,7)
+    visible=[pid for i,pid in enumerate(ids) if i%4!=3]
     before=db_hash(runs)
     first=client.get('/v1/products?limit=2').json();assert [p['id'] for p in first['items']]==ids[:2]
     assert db_hash(runs)==before
@@ -110,12 +111,12 @@ def test_frozen_query_chain_mutations_replay_expiry_restart(api_env):
         conn.execute("UPDATE product_user_state SET excluded=1,category_override='tops',favorite=1 WHERE product_id=?",(ids[2],))
     found=ids[:2]
     replay=client.get('/v1/products',params={'limit':2,'cursor':cursor}).json()
-    assert [p['id'] for p in replay['items']]==ids[2:4]
+    assert [p['id'] for p in replay['items']]==visible[2:4]
     assert client.get('/v1/products',params={'limit':2,'cursor':cursor}).json()['items']==replay['items']
     assert client.get('/v1/products',params={'limit':2,'view':'favorites','cursor':cursor}).status_code==409
     while cursor:
         page=client.get('/v1/products',params={'limit':2,'cursor':cursor}).json();found += [p['id'] for p in page['items']];cursor=page['next_cursor']
-    assert found==ids and len(set(found))==len(found)
+    assert found==visible and len(set(found))==len(found)
     refreshed=client.get('/v1/products').json()['items'];assert refreshed[-1]['id']==ids[0] and ids[2] not in [p['id'] for p in refreshed]
     app.state.presentation.snapshots.entries.clear()
     assert client.get('/v1/products',params={'limit':2,'cursor':first['next_cursor']}).status_code==410

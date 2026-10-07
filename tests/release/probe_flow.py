@@ -47,7 +47,11 @@ with db.read() as connection:
     evidence['empty']={'runs':connection.execute('SELECT COUNT(*) FROM runs').fetchone()[0],
                        'source_requests':connection.execute('SELECT COUNT(*) FROM collection_http').fetchone()[0],
                        'migrations':[r[0] for r in connection.execute('SELECT version FROM schema_migrations ORDER BY version')]}
-assert evidence['empty']=={'runs':0,'source_requests':0,'migrations':list(range(1,10))}
+manifest=json.loads((package/'manifest.json').read_text('utf-8'))
+expected_migrations=sorted(int(Path(name).name[:3]) for name in manifest['source_files']
+                           if name.startswith('fashion_scout/db/migrations/') and name.endswith('.sql'))
+assert expected_migrations==list(range(1,len(expected_migrations)+1)) and len(expected_migrations)>=10
+assert evidence['empty']=={'runs':0,'source_requests':0,'migrations':expected_migrations}
 config = json.loads((paths.root/'control/client.json').read_text('utf-8'))
 conn = Connection(paths,config['port'])
 conn.verify()

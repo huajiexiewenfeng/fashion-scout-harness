@@ -65,7 +65,8 @@ def kit():
     scripts=work/'scripts/release';shutil.copytree(ROOT/'scripts/release',scripts)
     runtime=work/'.runtime';runtime.mkdir()
     for name in ('requirements-win.lock','runtime-win.json','LICENSE'):shutil.copyfile(ROOT/name,work/name)
-    for relative in ('SKILL.md','references/setup.md','references/commands.md','references/browser-acquisition.md'):
+    for relative in ('SKILL.md','references/setup.md','references/commands.md','references/browser-acquisition.md',
+                     'references/operations.md','scripts/entry.ps1','agents/openai.yaml'):
         original=ROOT/'skills/fashion-scout'/relative
         target=work/'skills/fashion-scout'/relative
         target.parent.mkdir(parents=True,exist_ok=True)
@@ -109,7 +110,8 @@ def inspect(output, expected_wheel):
             assert len(value)==member['bytes'] and hashlib.sha256(value).hexdigest()==member['sha256']
         assert len(manifest['dependencies'])==26
         expected_skills={'skills/fashion-scout/'+relative for relative in (
-            'SKILL.md','references/setup.md','references/commands.md','references/browser-acquisition.md')}
+            'SKILL.md','references/setup.md','references/commands.md','references/browser-acquisition.md',
+            'references/operations.md','scripts/entry.ps1','agents/openai.yaml')}
         assert set(manifest['skill_files'])==expected_skills
         for relative,digest in manifest['skill_files'].items():
             original=ROOT/relative

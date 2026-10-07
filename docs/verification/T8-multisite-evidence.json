@@ -1,0 +1,129 @@
+{
+  "at": "2026-10-07T13:25:40.312980+00:00",
+  "task_id": "t8-multisite-browser",
+  "round_id": "p8-multisite",
+  "worker_thread": "01a11078-dc20-7383-b1dc-54c9e37d5ce5",
+  "branch": "main",
+  "head": "857eca53ae4b61a60fa33c4cda8f76af4c45c0aa",
+  "code_snapshot_sha256": "f6c52be52114034507d225693b9312a645d25f43168960e492f8c8ab02d7d880",
+  "owned_input_sha256": {
+    "skills/fashion-scout/SKILL.md": "54d04a276fd37699df39eca42a2e3ed7680856889ba37f7c3d76e70bb786d85d",
+    "skills/fashion-scout/references/browser-acquisition.md": "f0fd095a32ebb7e29ecd90ac797bb17ada8943dda72891e507daabd6334bbe5b",
+    "skills/fashion-scout/references/commands.md": "384242ecbaa26091ee11420421e2926d3beaaa97f3a72f1baaf9a4cf109222e4",
+    "src/fashion_scout/adapters/futario_browser.py": "151454e59d4d975f15fc981997883076e2a3746a3594fb7751ff1a5a98ea2d1c",
+    "src/fashion_scout/api/routes.py": "06ee1ea3918b3930ee19bcdadf5a03dabdd43f2e6a338869a8760cbb0f9fe7af",
+    "src/fashion_scout/client_models.py": "7b579e3638aff664c632dfa49aa33e3cf70347dd4404c32bd48259ab347c7384",
+    "src/fashion_scout/domain/browser_source.py": "0330b3b597a7d200ede79864d3c3eedbb6809abfb22566f6c68dd5c5d6631eed",
+    "src/fashion_scout/domain/models.py": "79731ddd97e35c18c6e87686507b56d563837892b540a691b4ee808d6f26a51b",
+    "src/fashion_scout/domain/sites.py": "3c0b9e852da757baa78b8cb1718e24f4a4fd422daae7b27b2f248f7756b2dec1",
+    "src/fashion_scout/media/browser_intake.py": "29ec17bd714e23d9c6710d9a5eb969380beced89ef8ee41fd1e141eecd8f9708",
+    "src/fashion_scout/services/browser_acquisition.py": "cde956cf7774c75432be397c244bd91e16e29e8e68498adf5295e04ee283f119",
+    "src/fashion_scout/services/catalog.py": "07a6907336715df3dcda47020c25945254e6869226962b2f67ed2b05ee56b740",
+    "src/fashion_scout/services/presentation.py": "0dfe872404bca3e4c2d001a0cda360c13fa38038bf456c116a2fa070f75a900d",
+    "src/fashion_scout/services/runs.py": "5ac02d5c8a48dfdef86de38847c0553d99c48d0458703aa796af09362559f0d9",
+    "src/fashion_scout/static/app.js": "a5e9d8ec6f8683893ee830b8c2b94267cc6adc33a5334d7e9e1a4e60f2ef4718",
+    "tests/api/test_image_visibility.py": "1d4b491adea9d0514df94b5602fb213a38316bafbd26973d330c629dd65a9cb7",
+    "tests/api/test_interface.py": "04961587c1232c912bd7d1a63209e147a77b43d5de41df7d6ff0db42970b9de6",
+    "tests/browser_acquisition/test_multisite.py": "964a4b8abf8dd282f8b6ea70a8d1ed717f3a9b73d0f9930732b6ef1e028317c5",
+    "tests/client/test_local_integration.py": "89b6c4444a8db7f65256ff0109a19237ea45dbe91012c894b5e5ac35c3f9669f",
+    "tests/integration/readiness_scenario.py": "b69cda05eb51285088c25bc6049b2a36956ec7cdcf86e4d4fa358dbe0cdedb82"
+  },
+  "checks": [
+    {
+      "xml": "E:\\github-workspace\\fashion-scout-harness\\docs\\verification\\T8-core-tests-1.xml",
+      "xml_sha256": "3cb2cce18468796319996b819b2c53e3a708898d4cec630b1c3cb2e1408ad7ec",
+      "log": "E:\\github-workspace\\fashion-scout-harness\\docs\\verification\\T8-core-tests-1.txt",
+      "log_sha256": "a01cd9d71107c189506df4c8f910f0731b7f30ae171b0119246657422b569f04",
+      "tests": 103,
+      "passed": 98,
+      "failed": 4,
+      "errors": 0,
+      "skipped": 1
+    },
+    {
+      "xml": "E:\\github-workspace\\fashion-scout-harness\\docs\\verification\\T8-multisite-tests-2.xml",
+      "xml_sha256": "ed429df30e62ec809d21e9adaeab83bfda1ec8eb854773531af5ff98130e769d",
+      "log": "E:\\github-workspace\\fashion-scout-harness\\docs\\verification\\T8-multisite-tests-2.txt",
+      "log_sha256": "d3f4f7f817ca84eb22f4b664a9dd08f62bb713fad4da480c9c35757fca94674c",
+      "tests": 15,
+      "passed": 14,
+      "failed": 1,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "xml": "E:\\github-workspace\\fashion-scout-harness\\docs\\verification\\T8-storage-compat-tests-3.xml",
+      "xml_sha256": "3ded0610cb64deaec15493937baa62b772b06d7d235f5be4af30aa48ac301466",
+      "log": "E:\\github-workspace\\fashion-scout-harness\\docs\\verification\\T8-storage-compat-tests-3.txt",
+      "log_sha256": "e1f70038f8420e3b9f35798c222a14bece0af047554bfcfc67e8c330c4e201d8",
+      "tests": 130,
+      "passed": 130,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "xml": "E:\\github-workspace\\fashion-scout-harness\\docs\\verification\\T8-core-tests-4.xml",
+      "xml_sha256": "b18b60034a01624552f3f8356a7c76e5ff040e305918f1f86d63a2fa67520565",
+      "log": "E:\\github-workspace\\fashion-scout-harness\\docs\\verification\\T8-core-tests-4.txt",
+      "log_sha256": "691479d323b586e754ab99a89e5f1cd3221503d50b4e9700ade58b24af0f9e81",
+      "tests": 67,
+      "passed": 66,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 1
+    }
+  ],
+  "latest_unique_test_results": {
+    "passed": 235,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 1
+  },
+  "check_commands": [
+    ".venv/Scripts/python.exe -m pytest tests/browser_acquisition tests/api/test_interface.py tests/api/test_image_visibility.py tests/core/test_runs.py tests/client -q --junitxml=docs/verification/T8-core-tests-1.xml",
+    ".venv/Scripts/python.exe -m pytest tests/browser_acquisition/test_multisite.py tests/api/test_image_visibility.py -q --junitxml=docs/verification/T8-multisite-tests-2.xml",
+    ".venv/Scripts/python.exe -m pytest tests/browser_acquisition/test_multisite.py::test_sites_capabilities_and_fixed_client_payloads tests/adapters tests/media tests/exports -q --junitxml=docs/verification/T8-storage-compat-tests-3.xml",
+    ".venv/Scripts/python.exe -m pytest tests/browser_acquisition tests/api/test_interface.py tests/api/test_image_visibility.py tests/core/test_runs.py -q --junitxml=docs/verification/T8-core-tests-4.xml",
+    "node --check src/fashion_scout/static/app.js",
+    ".venv/Scripts/python.exe -m compileall -q src/fashion_scout tests/browser_acquisition/test_multisite.py tests/api/test_image_visibility.py"
+  ],
+  "protection": {
+    "baseline": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t8-multisite-20261007-01\\baseline.json",
+    "tracked_files": 392,
+    "unexpected_changes": [],
+    "parallel_t8b_changes": [
+      "scripts/release/build_bundle.py",
+      "scripts/release/templates/PACKAGE-CONTEXT.zh-CN.md",
+      "scripts/release/templates/README.zh-CN.md",
+      "tests/release/probe_flow.py",
+      "tests/release/test_bundle.py",
+      "tests/release/test_input_refresh.py"
+    ],
+    "migrations_001_to_010_unchanged": true,
+    "historical_delivery_evidence_unchanged": true,
+    "branch_head_unchanged": true,
+    "own_commands": "No release build/freeze/install, personal Skill write, daily library access, branch/worktree/reset/commit/push, raw source HTTP or browser source request"
+  },
+  "source_evidence": {
+    "provenance": "Native Manager T8 dispatch and follow-ups in the current verified assignment",
+    "sites": [
+      "futario",
+      "rihoas",
+      "simpleretro"
+    ],
+    "normal_dom_verified_by": "Manager",
+    "this_worker_acquisition": "Synthetic DOM facts and synthetic image bytes through production API/Worker/Archive only",
+    "new_release_live_three_site_patrol": "Not executed; follows Manager acceptance and T8b release/install"
+  },
+  "known_limits": [
+    "one registered site per browser Run",
+    "browser.gallery can close; full product.images remains unknown/partial",
+    "unknown dates remain unknown",
+    "240 images/100 observations/3600s host/600s idle defaults; byte and storage caps retained",
+    "one Windows synthetic symlink test skipped",
+    "first test-only assertion errors retained in logs, final node statuses pass/skip",
+    "legacy exact program defaults resolved for future Runs without settings mutation; custom saved limits retained",
+    "frozen query totals describe original membership; if a later asset becomes unreadable, no empty new款 card is rendered"
+  ]
+}

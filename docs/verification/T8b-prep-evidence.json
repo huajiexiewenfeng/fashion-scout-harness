@@ -1,0 +1,83 @@
+{
+  "stage": "preparation-complete-not-submitted",
+  "final_core_checkpoint_received": false,
+  "final_release_built": false,
+  "live_installation_accessed": false,
+  "personal_skill_modified": false,
+  "input_cases": {
+    "passed": 27,
+    "log": "E:\\github-workspace\\fashion-scout-harness\\docs\\verification\\T8b-prep-release-tests-1.txt",
+    "note": "initial freeze helper isolated import failed; input cases passed"
+  },
+  "installation_cases": {
+    "passed": 9,
+    "seconds": 57.91,
+    "log": "E:\\github-workspace\\fashion-scout-harness\\docs\\verification\\T8b-prep-release-tests-3.txt",
+    "source_requests": 0,
+    "stopped": {
+      "web": false,
+      "worker": false
+    }
+  },
+  "freeze_receipt": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t8b-inputs-6ca6cf5f\\freeze-receipt.json",
+  "pair": {
+    "checkpoint": "unreviewed-validation-snapshot",
+    "app_sha256": "19e5b2317716bb7fe8b56f7473b677d72f2657a4618715eba3c9856a28f16967",
+    "source_sha256": "ac785d91fb6eaba89d6a8f03853bc10b4f5c158b2aed90d03bb3b3bb2975d701",
+    "core_files": 73,
+    "dependency_wheels": 26,
+    "runtime_sha256": "ec43f1a85c29f147d7ae2d13218c52c70b24a983a82ab22d6c607c0593060e10",
+    "skill_resources": [
+      "SKILL.md",
+      "references/setup.md",
+      "references/commands.md",
+      "references/browser-acquisition.md",
+      "references/operations.md",
+      "scripts/entry.ps1",
+      "agents/openai.yaml"
+    ]
+  },
+  "validation_bundle": {
+    "zip": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t8b-inputs-6ca6cf5f\\.runtime\\t8b-candidate\\FashionScout-0.2.0a1-validation-app-19e5b2317716bb7fe8b56f7473b677d72f2657a4618715eba3c9856a28f16967.zip",
+    "zip_sha256": "e65ff705a0de28bbcce359afa9ace66c13ef20246b7fc1e303928687d8b37115",
+    "bytes": 35698038,
+    "manifest": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t8b-inputs-6ca6cf5f\\.runtime\\t8b-candidate\\FashionScout\\manifest.json",
+    "manifest_sha256": "cc075f708ee9142abf002cd51d8d4353e2fa746eacb378785939432a39acdf9a",
+    "candidate": "FashionScout-0.2.0a1-validation-app-19e5b2317716bb7fe8b56f7473b677d72f2657a4618715eba3c9856a28f16967",
+    "files": 121,
+    "dependency_wheels": 26,
+    "core_files_match_wheel": 73,
+    "app_wheel": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t8b-inputs-6ca6cf5f\\.runtime\\app-wheel\\fashion_scout-0.2.0a1-py3-none-any.whl",
+    "app_version": "0.2.0a1",
+    "app_sha256": "19e5b2317716bb7fe8b56f7473b677d72f2657a4618715eba3c9856a28f16967",
+    "source_root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t8b-inputs-6ca6cf5f\\src",
+    "source_sha256": "ac785d91fb6eaba89d6a8f03853bc10b4f5c158b2aed90d03bb3b3bb2975d701",
+    "runtime_sha256": "ec43f1a85c29f147d7ae2d13218c52c70b24a983a82ab22d6c607c0593060e10",
+    "skill_files": {
+      "skills/fashion-scout/SKILL.md": "f76617e6ac52cc2a06ba49f5eb6d67b4352994b9fc835c94335b3c31bdc1cb46",
+      "skills/fashion-scout/references/setup.md": "ab52d1ed278d5bf610bddd8c94b3ab15381bb18a8ee9cadbaec4ec1aa1bf29cc",
+      "skills/fashion-scout/references/commands.md": "81d6fe652dd80ab0dd93488df3a7577fa79087c0a92c1debf1cfdec4bf0a115b",
+      "skills/fashion-scout/references/browser-acquisition.md": "b5180400d77b34a72288ea5cab896ffc10e640cfa2a00825d42f4e5b44bd18a5",
+      "skills/fashion-scout/references/operations.md": "1d27b4a8443c82cebc547a1d3d0f9f9cdd143dfaf553c06728abc5b83f18a689",
+      "skills/fashion-scout/scripts/entry.ps1": "1b2b090aee7f7c1e7a5aeccd812abef2c4a216afb9369dd4a964a7974dc4706d",
+      "skills/fashion-scout/agents/openai.yaml": "6aa9e0b9a4f05137dd3994b7a234dab30d4d41e17fe6422d8a55950403e280f2"
+    },
+    "source_network": "No source-site request by builder; fixed dependency download is opt-in",
+    "data_in_zip": false,
+    "services_started": false,
+    "legacy_defaults": false
+  },
+  "installation_evidence": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t8b-checks-30a9c9f4\\verification.json",
+  "repro_evidence": "E:\\github-workspace\\fashion-scout-harness\\docs\\verification\\T8b-prep-repro-evidence.json",
+  "owned_files": {
+    "scripts/release/freeze_inputs.py": "26be4f9dec6af9eb3389942031c4b21b722523426d1666abebcb084e9a69eb38",
+    "scripts/release/build_bundle.py": "4b7ac50615c35eacc80d8020a09f83992a0d0799ef81c61573ca186ca579bd2b",
+    "scripts/release/templates/README.zh-CN.md": "bc0bb2ef1853d92f3cab0f3e317fb761f669ca7e61cad002d228a57adc85d8b8",
+    "scripts/release/templates/PACKAGE-CONTEXT.zh-CN.md": "b2f4b3c77069570d3aad1c128b0f148a6fa9bc7566e324112506b3871586953a",
+    "tests/release/test_bundle.py": "c9fcfe1565ee7603c402611ca41edc4bec1606789cd72f8d11eaea38221100e1",
+    "tests/release/test_input_refresh.py": "2e6afc2505fa3e4896887785b9f3c0b21e3629d512d49325d8adbd1e87816e66",
+    "tests/release/probe_flow.py": "a91b193ceb378306a7b1494ab087e689f14cb3f2c209ce140c278c040b80899f",
+    "docs/release-upgrade.zh-CN.md": "bcd357ffca2f02749fccd61a292e8f46c9025558ab74f809a15b645f232c2459"
+  },
+  "status": "Await Manager accepted Core checkpoint; daily upgrade and rollback remain unexecuted"
+}

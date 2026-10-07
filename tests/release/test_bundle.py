@@ -21,14 +21,21 @@ def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 
 @pytest.fixture(scope='session')
 def release():
-    output=ROOT/'.runtime'/('t6b-candidate-'+uuid.uuid4().hex[:8])
-    result=subprocess.run([sys.executable,'-B',str(ROOT/'scripts/release/build_bundle.py'),
-                           '--output',str(output)],cwd=ROOT,capture_output=True,text=True,encoding='utf-8',timeout=40)
+    frozen=ROOT/'.runtime'/('t8b-inputs-'+uuid.uuid4().hex[:8])
+    result=subprocess.run([sys.executable,'-I','-B',str(ROOT/'scripts/release/freeze_inputs.py'),
+                           '--output',str(frozen)],cwd=ROOT,capture_output=True,text=True,encoding='utf-8',timeout=75)
+    assert result.returncode==0,result.stdout+result.stderr
+    pair=json.loads((frozen/'freeze-receipt.json').read_text('utf-8'))
+    output=frozen/'.runtime'/'t8b-candidate'
+    result=subprocess.run([sys.executable,'-I','-B',str(frozen/'scripts/release/build_bundle.py'),
+                           '--output',str(output),'--app-wheel',pair['app_wheel'],'--app-sha256',pair['app_sha256'],
+                           '--source-root',pair['source_root'],'--label','validation'],
+                          cwd=frozen,capture_output=True,text=True,encoding='utf-8',timeout=40)
     assert result.returncode==0,result.stderr
     (output/'build.log').write_text(result.stdout+result.stderr,encoding='utf-8')
     receipt=json.loads((output/'build-receipt.json').read_text('utf-8'))
-    work=ROOT/'.runtime'/('t6b-checks-'+uuid.uuid4().hex[:8]);work.mkdir()
-    print('T6b candidate:',output);print('T6b checks:',work)
+    work=ROOT/'.runtime'/('t8b-checks-'+uuid.uuid4().hex[:8]);work.mkdir()
+    print('T8b validation inputs:',frozen);print('T8b candidate:',output);print('T8b checks:',work)
     return receipt,work
 
 
@@ -59,7 +66,8 @@ def test_bundle_immutable_inputs_and_no_user_data(release):
         assert not any('/data/' in n or '/.local/' in n or n.endswith(('.key','.sqlite3')) for n in names)
         manifest=json.loads(archive.read('FashionScout/manifest.json'))
         assert len(manifest['dependencies'])==26
-        assert manifest['app_sha256']=='9beaa9f5e49063fdb5b36d906b8bac5d1d5a46772f4c5b90a10782a77b772f15'
+        assert manifest['app_sha256']==receipt['app_sha256']==sha(Path(receipt['app_wheel']))
+        assert manifest['source_sha256']==receipt['source_sha256']
         assert manifest['runtime_sha256']=='ec43f1a85c29f147d7ae2d13218c52c70b24a983a82ab22d6c607c0593060e10'
         for member in manifest['files']:
             data=archive.read('FashionScout/'+member['path'])
@@ -71,7 +79,8 @@ def test_bundle_immutable_inputs_and_no_user_data(release):
 def test_prepare_rejects_before_touching_data(release,case):
     package=extract(release,case)
     if case=='damaged-wheel':
-        p=package/'payload/fashion_scout-0.2.0a1-py3-none-any.whl';p.write_bytes(p.read_bytes()+b'changed')
+        manifest=json.loads((package/'manifest.json').read_text('utf-8'))
+        p=package/manifest['app_wheel'];p.write_bytes(p.read_bytes()+b'changed')
     elif case=='missing-resource':
         (package/'payload/verify_install.py').unlink()
     else:
@@ -112,19 +121,36 @@ def test_long_path_refused_before_preparation(release):
     assert not (package/'.local').exists() and sha(keep)==original
 
 
+def test_fresh_prepare_configures_default_without_starting(release):
+    package=extract(release,'fresh-default')
+    invoke(package,'Prepare',label='fresh-default-prepare.json')
+    data=package/'data'
+    assert json.loads((data/'control/client.json').read_text('utf-8'))=={'schema':1,'data_root':str(data),'port':8765}
+    assert not (data/'scout.sqlite3').exists() and not (data/'control/runtime.json').exists()
+
+
 def test_independent_zip_install_entries_and_synthetic_export(release):
     receipt,work=release
     label="真实解压 空格 & 单引号's"
     label+='x'*(100-len(str(work/label/'FashionScout')))
     package=extract(release,label)
     assert len(str(package))==100
+    # A confirmed test-only configuration is present before Prepare. Production
+    # configure correctly refuses a later silent port rebind.
+    with socket.socket() as available:
+        available.bind(('127.0.0.1',0));port=available.getsockname()[1]
+    assert port!=8765
+    data=package/'data';(data/'control').mkdir(parents=True)
+    config=data/'control/client.json'
+    config.write_text(json.dumps({'schema':1,'data_root':str(data),'port':port}),encoding='utf-8')
+    original_config=sha(config)
     env={k:v for k,v in os.environ.items() if k.upper() not in {'PYTHONPATH','PYTHONHOME','VIRTUAL_ENV'}}
     env.update(PYTHONDONTWRITEBYTECODE='1',PYTHONUTF8='1')
     missing=invoke(package,'Open',2,env=env,label='open-before-prepare.json')
     assert 'Prepare.cmd first' in missing['stdout']
     invoke(package,'Prepare',env=env,cmd=True,label='install-original.json')
-    data=package/'data';config=data/'control/client.json'
-    assert json.loads(config.read_text('utf-8'))=={'schema':1,'data_root':str(data),'port':8765}
+    assert json.loads(config.read_text('utf-8'))=={'schema':1,'data_root':str(data),'port':port}
+    assert sha(config)==original_config
     assert not (data/'scout.sqlite3').exists() and not (data/'control/runtime.json').exists()
     python=package/'.local/env/Scripts/python.exe'
     installed=package/'.local/env/Lib/site-packages'
@@ -132,7 +158,7 @@ def test_independent_zip_install_entries_and_synthetic_export(release):
                        capture_output=True,text=True,encoding='utf-8',timeout=15)
     (package.parent/'pip-check.json').write_text(json.dumps({'returncode':pip.returncode,'stdout':pip.stdout,'stderr':pip.stderr}),encoding='utf-8')
     assert pip.returncode==0 and 'No broken requirements' in pip.stdout
-    with zipfile.ZipFile(ROOT/'.runtime/t5c-r1-wheel/fashion_scout-0.2.0a1-py3-none-any.whl') as wheel:
+    with zipfile.ZipFile(receipt['app_wheel']) as wheel:
         for name in wheel.namelist():
             if name.startswith('fashion_scout/') and not name.endswith('/'):assert (installed/name).read_bytes()==wheel.read(name)
     audit=package.parent/'imports';audit.mkdir();env['T6A_AUDIT_DIR']=str(audit)
@@ -142,10 +168,10 @@ def test_independent_zip_install_entries_and_synthetic_export(release):
     invoke(package,'Prepare',env=env,label='repeat-prepare.json')
     assert before==(sha(config),sha(sentinel))
     with socket.socket() as occupied:
-        occupied.bind(('127.0.0.1',8765));occupied.listen(1)
+        occupied.bind(('127.0.0.1',port));occupied.listen(1)
         conflict=invoke(package,'Open',3,env=env,label='port-conflict.json')
         assert 'PORT_IN_USE' in conflict['stdout']
-        assert occupied.getsockname()[1]==8765
+        assert occupied.getsockname()[1]==port
     try:
         invoke(package,'Open',env=env,cmd=True,label='open-original.json')
         descriptor=json.loads((data/'control/runtime.json').read_text('utf-8'))

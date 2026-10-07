@@ -1,0 +1,149 @@
+T6c isolated kit: E:\github-workspace\fashion-scout-harness\.runtime\t6c-inputs-d20d18c2
+...........................EEEEEEEE
+=================================== ERRORS ====================================
+_______ ERROR at setup of test_bundle_immutable_inputs_and_no_user_data _______
+
+    @pytest.fixture(scope='session')
+    def release():
+        frozen=ROOT/'.runtime'/('t8b-inputs-'+uuid.uuid4().hex[:8])
+        result=subprocess.run([sys.executable,'-I','-B',str(ROOT/'scripts/release/freeze_inputs.py'),
+                               '--output',str(frozen)],cwd=ROOT,capture_output=True,text=True,encoding='utf-8',timeout=75)
+>       assert result.returncode==0,result.stdout+result.stderr
+E       AssertionError: Traceback (most recent call last):
+E           File "E:\github-workspace\fashion-scout-harness\scripts\release\freeze_inputs.py", line 14, in <module>
+E             from build_bundle import BuildError, ordinary, require, sha, wheel_input, locked
+E         ModuleNotFoundError: No module named 'build_bundle'
+E         
+E       assert 1 == 0
+E        +  where 1 = CompletedProcess(args=['E:\\github-workspace\\fashion-scout-harness\\.venv\\Scripts\\python.exe', '-I', '-B', 'E:\\git...port BuildError, ordinary, require, sha, wheel_input, locked\nModuleNotFoundError: No module named \'build_bundle\'\n').returncode
+
+tests\release\test_bundle.py:27: AssertionError
+_ ERROR at setup of test_prepare_rejects_before_touching_data[damaged-wheel] __
+
+    @pytest.fixture(scope='session')
+    def release():
+        frozen=ROOT/'.runtime'/('t8b-inputs-'+uuid.uuid4().hex[:8])
+        result=subprocess.run([sys.executable,'-I','-B',str(ROOT/'scripts/release/freeze_inputs.py'),
+                               '--output',str(frozen)],cwd=ROOT,capture_output=True,text=True,encoding='utf-8',timeout=75)
+>       assert result.returncode==0,result.stdout+result.stderr
+E       AssertionError: Traceback (most recent call last):
+E           File "E:\github-workspace\fashion-scout-harness\scripts\release\freeze_inputs.py", line 14, in <module>
+E             from build_bundle import BuildError, ordinary, require, sha, wheel_input, locked
+E         ModuleNotFoundError: No module named 'build_bundle'
+E         
+E       assert 1 == 0
+E        +  where 1 = CompletedProcess(args=['E:\\github-workspace\\fashion-scout-harness\\.venv\\Scripts\\python.exe', '-I', '-B', 'E:\\git...port BuildError, ordinary, require, sha, wheel_input, locked\nModuleNotFoundError: No module named \'build_bundle\'\n').returncode
+
+tests\release\test_bundle.py:27: AssertionError
+_ ERROR at setup of test_prepare_rejects_before_touching_data[missing-resource] _
+
+    @pytest.fixture(scope='session')
+    def release():
+        frozen=ROOT/'.runtime'/('t8b-inputs-'+uuid.uuid4().hex[:8])
+        result=subprocess.run([sys.executable,'-I','-B',str(ROOT/'scripts/release/freeze_inputs.py'),
+                               '--output',str(frozen)],cwd=ROOT,capture_output=True,text=True,encoding='utf-8',timeout=75)
+>       assert result.returncode==0,result.stdout+result.stderr
+E       AssertionError: Traceback (most recent call last):
+E           File "E:\github-workspace\fashion-scout-harness\scripts\release\freeze_inputs.py", line 14, in <module>
+E             from build_bundle import BuildError, ordinary, require, sha, wheel_input, locked
+E         ModuleNotFoundError: No module named 'build_bundle'
+E         
+E       assert 1 == 0
+E        +  where 1 = CompletedProcess(args=['E:\\github-workspace\\fashion-scout-harness\\.venv\\Scripts\\python.exe', '-I', '-B', 'E:\\git...port BuildError, ordinary, require, sha, wheel_input, locked\nModuleNotFoundError: No module named \'build_bundle\'\n').returncode
+
+tests\release\test_bundle.py:27: AssertionError
+_ ERROR at setup of test_prepare_rejects_before_touching_data[existing-data] __
+
+    @pytest.fixture(scope='session')
+    def release():
+        frozen=ROOT/'.runtime'/('t8b-inputs-'+uuid.uuid4().hex[:8])
+        result=subprocess.run([sys.executable,'-I','-B',str(ROOT/'scripts/release/freeze_inputs.py'),
+                               '--output',str(frozen)],cwd=ROOT,capture_output=True,text=True,encoding='utf-8',timeout=75)
+>       assert result.returncode==0,result.stdout+result.stderr
+E       AssertionError: Traceback (most recent call last):
+E           File "E:\github-workspace\fashion-scout-harness\scripts\release\freeze_inputs.py", line 14, in <module>
+E             from build_bundle import BuildError, ordinary, require, sha, wheel_input, locked
+E         ModuleNotFoundError: No module named 'build_bundle'
+E         
+E       assert 1 == 0
+E        +  where 1 = CompletedProcess(args=['E:\\github-workspace\\fashion-scout-harness\\.venv\\Scripts\\python.exe', '-I', '-B', 'E:\\git...port BuildError, ordinary, require, sha, wheel_input, locked\nModuleNotFoundError: No module named \'build_bundle\'\n').returncode
+
+tests\release\test_bundle.py:27: AssertionError
+_ ERROR at setup of test_prepare_rejects_before_touching_data[config-conflict] _
+
+    @pytest.fixture(scope='session')
+    def release():
+        frozen=ROOT/'.runtime'/('t8b-inputs-'+uuid.uuid4().hex[:8])
+        result=subprocess.run([sys.executable,'-I','-B',str(ROOT/'scripts/release/freeze_inputs.py'),
+                               '--output',str(frozen)],cwd=ROOT,capture_output=True,text=True,encoding='utf-8',timeout=75)
+>       assert result.returncode==0,result.stdout+result.stderr
+E       AssertionError: Traceback (most recent call last):
+E           File "E:\github-workspace\fashion-scout-harness\scripts\release\freeze_inputs.py", line 14, in <module>
+E             from build_bundle import BuildError, ordinary, require, sha, wheel_input, locked
+E         ModuleNotFoundError: No module named 'build_bundle'
+E         
+E       assert 1 == 0
+E        +  where 1 = CompletedProcess(args=['E:\\github-workspace\\fashion-scout-harness\\.venv\\Scripts\\python.exe', '-I', '-B', 'E:\\git...port BuildError, ordinary, require, sha, wheel_input, locked\nModuleNotFoundError: No module named \'build_bundle\'\n').returncode
+
+tests\release\test_bundle.py:27: AssertionError
+_ ERROR at setup of test_real_prepare_failure_preserves_existing_configuration _
+
+    @pytest.fixture(scope='session')
+    def release():
+        frozen=ROOT/'.runtime'/('t8b-inputs-'+uuid.uuid4().hex[:8])
+        result=subprocess.run([sys.executable,'-I','-B',str(ROOT/'scripts/release/freeze_inputs.py'),
+                               '--output',str(frozen)],cwd=ROOT,capture_output=True,text=True,encoding='utf-8',timeout=75)
+>       assert result.returncode==0,result.stdout+result.stderr
+E       AssertionError: Traceback (most recent call last):
+E           File "E:\github-workspace\fashion-scout-harness\scripts\release\freeze_inputs.py", line 14, in <module>
+E             from build_bundle import BuildError, ordinary, require, sha, wheel_input, locked
+E         ModuleNotFoundError: No module named 'build_bundle'
+E         
+E       assert 1 == 0
+E        +  where 1 = CompletedProcess(args=['E:\\github-workspace\\fashion-scout-harness\\.venv\\Scripts\\python.exe', '-I', '-B', 'E:\\git...port BuildError, ordinary, require, sha, wheel_input, locked\nModuleNotFoundError: No module named \'build_bundle\'\n').returncode
+
+tests\release\test_bundle.py:27: AssertionError
+_________ ERROR at setup of test_long_path_refused_before_preparation _________
+
+    @pytest.fixture(scope='session')
+    def release():
+        frozen=ROOT/'.runtime'/('t8b-inputs-'+uuid.uuid4().hex[:8])
+        result=subprocess.run([sys.executable,'-I','-B',str(ROOT/'scripts/release/freeze_inputs.py'),
+                               '--output',str(frozen)],cwd=ROOT,capture_output=True,text=True,encoding='utf-8',timeout=75)
+>       assert result.returncode==0,result.stdout+result.stderr
+E       AssertionError: Traceback (most recent call last):
+E           File "E:\github-workspace\fashion-scout-harness\scripts\release\freeze_inputs.py", line 14, in <module>
+E             from build_bundle import BuildError, ordinary, require, sha, wheel_input, locked
+E         ModuleNotFoundError: No module named 'build_bundle'
+E         
+E       assert 1 == 0
+E        +  where 1 = CompletedProcess(args=['E:\\github-workspace\\fashion-scout-harness\\.venv\\Scripts\\python.exe', '-I', '-B', 'E:\\git...port BuildError, ordinary, require, sha, wheel_input, locked\nModuleNotFoundError: No module named \'build_bundle\'\n').returncode
+
+tests\release\test_bundle.py:27: AssertionError
+_ ERROR at setup of test_independent_zip_install_entries_and_synthetic_export _
+
+    @pytest.fixture(scope='session')
+    def release():
+        frozen=ROOT/'.runtime'/('t8b-inputs-'+uuid.uuid4().hex[:8])
+        result=subprocess.run([sys.executable,'-I','-B',str(ROOT/'scripts/release/freeze_inputs.py'),
+                               '--output',str(frozen)],cwd=ROOT,capture_output=True,text=True,encoding='utf-8',timeout=75)
+>       assert result.returncode==0,result.stdout+result.stderr
+E       AssertionError: Traceback (most recent call last):
+E           File "E:\github-workspace\fashion-scout-harness\scripts\release\freeze_inputs.py", line 14, in <module>
+E             from build_bundle import BuildError, ordinary, require, sha, wheel_input, locked
+E         ModuleNotFoundError: No module named 'build_bundle'
+E         
+E       assert 1 == 0
+E        +  where 1 = CompletedProcess(args=['E:\\github-workspace\\fashion-scout-harness\\.venv\\Scripts\\python.exe', '-I', '-B', 'E:\\git...port BuildError, ordinary, require, sha, wheel_input, locked\nModuleNotFoundError: No module named \'build_bundle\'\n').returncode
+
+tests\release\test_bundle.py:27: AssertionError
+=========================== short test summary info ===========================
+ERROR tests/release/test_bundle.py::test_bundle_immutable_inputs_and_no_user_data
+ERROR tests/release/test_bundle.py::test_prepare_rejects_before_touching_data[damaged-wheel]
+ERROR tests/release/test_bundle.py::test_prepare_rejects_before_touching_data[missing-resource]
+ERROR tests/release/test_bundle.py::test_prepare_rejects_before_touching_data[existing-data]
+ERROR tests/release/test_bundle.py::test_prepare_rejects_before_touching_data[config-conflict]
+ERROR tests/release/test_bundle.py::test_real_prepare_failure_preserves_existing_configuration
+ERROR tests/release/test_bundle.py::test_long_path_refused_before_preparation
+ERROR tests/release/test_bundle.py::test_independent_zip_install_entries_and_synthetic_export
+27 passed, 8 errors in 27.98s

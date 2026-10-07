@@ -8,10 +8,13 @@ from fashion_scout.services.runs import canonical, digest, new_id, timestamp
 
 
 class Catalog:
-    def __init__(self, runs, lease, paths, execution_started=None):
+    def __init__(self, runs, lease, paths, execution_started=None, site_id="futario"):
         self.runs, self.lease, self.paths = runs, lease, paths
+        self.site_id = site_id
         self.run = runs.get(lease.run_id)
         self.snapshot = self.run.snapshot
+        if site_id not in self.snapshot.site_ids:
+            raise ScoutError("SOURCE_SITE_MISMATCH", "Catalog site is outside the frozen Run")
         self.execution_started = time.monotonic() if execution_started is None else execution_started
         with runs.db.write() as conn:
             runs.fence(conn, lease)
@@ -91,7 +94,7 @@ class Catalog:
                          (identifier, self.lease.run_id, code, int(retryable), evidence))
 
     def discover_product(self, product):
-        pid = "futario-" + product.source_id
+        pid = self.site_id + "-" + product.source_id
         now = timestamp(time.time())
         with self.runs.db.write() as conn:
             self.runs.fence(conn, self.lease)
@@ -100,7 +103,7 @@ class Catalog:
             known_archive = existing is not None and existing["latest_available_version_id"] is not None
             if known_archive:
                 eligible, rule = True, "recheck_archived"
-            elif self.snapshot.discovery_baseline_complete["futario"] and not seen:
+            elif self.snapshot.discovery_baseline_complete[self.site_id] and not seen:
                 eligible, rule = True, "first_discovered_after_baseline"
             elif product.source_published_at is None:
                 eligible, rule = self.snapshot.unknown_date_policy == "include", "unknown_" + self.snapshot.unknown_date_policy
@@ -110,7 +113,7 @@ class Catalog:
                 start = datetime.fromisoformat(self.snapshot.window_start.replace("Z", "+00:00"))
                 end = datetime.fromisoformat(self.snapshot.window_end.replace("Z", "+00:00"))
                 eligible, rule = start <= date <= end, "source_date_window"
-            conn.execute("INSERT OR IGNORE INTO products(id,site_id,source_id,first_seen_at) VALUES (?,'futario',?,?)", (pid, product.source_id, now))
+            conn.execute("INSERT OR IGNORE INTO products(id,site_id,source_id,first_seen_at) VALUES (?,?,?,?)", (pid, self.site_id, product.source_id, now))
             conn.execute("INSERT OR IGNORE INTO product_user_state(product_id) VALUES (?)", (pid,))
             conn.execute("INSERT OR IGNORE INTO collection_products(run_id,product_id,seen_before_run,eligible,rule,listing_json) VALUES (?,?,?,?,?,?)", (self.lease.run_id, pid, int(seen), int(eligible), rule, product.model_dump_json()))
             frozen = conn.execute("SELECT eligible,rule FROM collection_products WHERE run_id=? AND product_id=?", (self.lease.run_id, pid)).fetchone()
@@ -129,9 +132,9 @@ class Catalog:
         with self.runs.db.write() as conn:
             self.runs.fence(conn, self.lease)
             conn.execute("UPDATE collection_runs SET discovery_complete=?,discovery_json=? WHERE run_id=?", (int(result["complete"]), canonical(result), self.lease.run_id))
-            conn.execute("INSERT INTO site_runs VALUES (?,'futario',?) ON CONFLICT(run_id,site_id) DO UPDATE SET coverage_json=excluded.coverage_json", (self.lease.run_id, canonical(result)))
+            conn.execute("INSERT INTO site_runs VALUES (?,?,?) ON CONFLICT(run_id,site_id) DO UPDATE SET coverage_json=excluded.coverage_json", (self.lease.run_id, self.site_id, canonical(result)))
             if result["complete"]:
-                conn.execute("UPDATE sites SET baseline_complete=1 WHERE id='futario'")
+                conn.execute("UPDATE sites SET baseline_complete=1 WHERE id=?", (self.site_id,))
 
     def rows(self):
         with self.runs.db.read() as conn:

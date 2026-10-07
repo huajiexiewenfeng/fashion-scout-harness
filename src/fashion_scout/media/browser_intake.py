@@ -53,6 +53,7 @@ class BrowserIntake:
             ticket = conn.execute("SELECT * FROM browser_assets WHERE id=? AND run_id=?", (ticket_id, run_id)).fetchone()
             if not ticket:
                 raise ScoutError("SOURCE_TICKET_NOT_FOUND", "Worker qualification must precede export", 404)
+            self.source.validate_ticket(conn, view, ticket)
             if ticket["source_url"] != source_url:
                 raise ScoutError("SOURCE_ASSET_URL_MISMATCH", "Export URL differs from the qualified gallery ticket", 422)
             if ticket["state"] == "uploading":

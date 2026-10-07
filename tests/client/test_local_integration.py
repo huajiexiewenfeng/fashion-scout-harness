@@ -61,7 +61,7 @@ def test_real_cli_lifecycle_and_cross_process_recovery():
             assert db.execute('SELECT COUNT(*) FROM runs').fetchone()[0]==0
             assert db.execute('SELECT COUNT(*) FROM collection_http').fetchone()[0]==0
         seed(runs,paths,count=4)  # atomic terminal-only synthetic fixture
-        assert call('new',{})['data']['total']==4
+        assert call('new',{})['data']['total']==3
         call('sites',{})
         before=call('default-plan',{})['data']
         product=call('product',{'product_id':'fixture-000'})['data']['product']
