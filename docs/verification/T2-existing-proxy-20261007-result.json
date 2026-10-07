@@ -1,0 +1,213 @@
+{
+  "kind": "existing-proxy-comparison-diagnostic-only",
+  "method": "GET",
+  "url": "https://futario.com/collections/new-in/products.json?limit=2&page=1",
+  "started_utc": "2026-10-07T05:55:40.309291+00:00",
+  "authorization": "E:\\github-workspace\\.team\\fashion-scout\\manager-t2-existing-proxy-comparison-20261007.md",
+  "authorization_sha256": "c6679efaf634aa82bf0a631d5ee7fdfcf4e963469eabe72557524e700de5afd6",
+  "historical_conservative_attempts": 8,
+  "source_attempts_reserved": 1,
+  "total_conservative_attempts": 9,
+  "remaining_attempts_max": 31,
+  "browser_attempt_8": "ERR_BLOCKED_BY_CLIENT; no source HTTP status available",
+  "source_peer_pinned": false,
+  "source_peer": null,
+  "proxy_peer": [
+    "127.0.0.1",
+    7897
+  ],
+  "diagnostic_security_boundary": "Current authorized loopback proxy CONNECT resolves the public origin; end-to-end source numeric peer cannot be verified.",
+  "max_network_seconds": 30,
+  "max_200_body_bytes": 2097152,
+  "max_error_body_bytes": 16384,
+  "retries": 0,
+  "redirect_followups": 0,
+  "details_requested": 0,
+  "images_requested": 0,
+  "production_worker_started": false,
+  "persisted_before": {
+    "throttle": [
+      {
+        "site_id": "futario",
+        "not_before": 1791297004.4749758,
+        "mode": "server_foreground_reconciled",
+        "request_seq": null,
+        "recorded_at": 1791296944.4746
+      }
+    ],
+    "responses": [],
+    "request_count": 1,
+    "asset_count": 0,
+    "schema_versions": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "counters": [
+      {
+        "run_id": "f097800bb3344468b174059282955973",
+        "started_at": 1791285951.6355758,
+        "request_count": 1,
+        "image_requests": 0,
+        "discovery_requests": 1,
+        "downloaded_bytes": 0,
+        "discovery_complete": 0,
+        "discovery_json": "{\"atomic_source_snapshot\":false,\"complete\":false,\"entry\":\"https://futario.com/collections/new-in\",\"passes_ended\":[false],\"reasons\":[\"DISCOVERY_NOT_TERMINAL\",\"RETRY_DEFERRED\"],\"stable_sets\":false,\"unique_products\":0}"
+      }
+    ],
+    "runs": [
+      {
+        "id": "f097800bb3344468b174059282955973",
+        "state": "failed",
+        "attempt": 1
+      }
+    ]
+  },
+  "status": 429,
+  "body_bytes": 18,
+  "latest_prior_not_before": 1791351663.7538998,
+  "proxy_preflight": {
+    "enabled": true,
+    "scheme": "http",
+    "host_class": "loopback",
+    "port": 7897,
+    "authentication": false,
+    "PAC": false,
+    "listener_family": "mihomo",
+    "same_observed_listener": true
+  },
+  "attempt_reserved_utc": "2026-10-07T05:55:40.326071+00:00",
+  "connect_request_line": "CONNECT futario.com:443 HTTP/1.1",
+  "sni_verified_configuration": "futario.com",
+  "received_utc": "2026-10-07T05:55:41.011530+00:00",
+  "actual_request_headers": [
+    [
+      "host",
+      "futario.com"
+    ],
+    [
+      "accept",
+      "*/*"
+    ],
+    [
+      "connection",
+      "keep-alive"
+    ],
+    [
+      "user-agent",
+      "FashionScout/0.2 (bounded local research)"
+    ],
+    [
+      "accept-encoding",
+      "identity"
+    ]
+  ],
+  "raw_selected_headers": [
+    [
+      "Date",
+      "Wed, 07 Oct 2026 05:55:40 GMT"
+    ],
+    [
+      "Content-Type",
+      "text/plain"
+    ],
+    [
+      "Content-Length",
+      "18"
+    ],
+    [
+      "retry-after",
+      "60"
+    ],
+    [
+      "server",
+      "cloudflare"
+    ],
+    [
+      "CF-RAY",
+      "a46aa882ff2688bd-LAX"
+    ]
+  ],
+  "retry_after_raw": "60",
+  "date_raw": "Wed, 07 Oct 2026 05:55:40 GMT",
+  "fresh_not_before": 1791352601.0115564,
+  "observed_transport_peer": [
+    "127.0.0.1",
+    7897
+  ],
+  "tls": {
+    "version": "TLSv1.3",
+    "certificate_sha256": "e8723e35c0617837e35470ffa1c58b1b41d7ba14d6b7a6228a2d819a8c9b2003",
+    "hostname": "futario.com",
+    "certificate_hostname_check": true
+  },
+  "error_capture": {
+    "raw_body_file": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t2-existing-proxy-20261007-01\\private-error\\response-body.bin",
+    "raw_body_sha256": "fa2dd01ed96d38758e89e354653c39f366bc7a34e485772c8aa2174b53a465d3",
+    "captured_bytes": 18,
+    "capture_limit": 16384,
+    "at_limit_or_truncated": false,
+    "content_type": "text/plain",
+    "declared_encoding": null,
+    "encoding_used": "utf-8",
+    "decode_warning": null,
+    "sanitized_text_excerpt": "local_rate_limited",
+    "public_error_code": null,
+    "raw_capture_precedes_sanitization": true,
+    "raw_copied_to_public_docs": false,
+    "html_or_script_executed": false
+  },
+  "body_sha256": "fa2dd01ed96d38758e89e354653c39f366bc7a34e485772c8aa2174b53a465d3",
+  "outcome": "http_429_with_preserved_error",
+  "network_elapsed_seconds": 0.706,
+  "finished_utc": "2026-10-07T05:55:41.019313+00:00",
+  "persisted_after": {
+    "throttle": [
+      {
+        "site_id": "futario",
+        "not_before": 1791297004.4749758,
+        "mode": "server_foreground_reconciled",
+        "request_seq": null,
+        "recorded_at": 1791296944.4746
+      }
+    ],
+    "responses": [],
+    "request_count": 1,
+    "asset_count": 0,
+    "schema_versions": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "counters": [
+      {
+        "run_id": "f097800bb3344468b174059282955973",
+        "started_at": 1791285951.6355758,
+        "request_count": 1,
+        "image_requests": 0,
+        "discovery_requests": 1,
+        "downloaded_bytes": 0,
+        "discovery_complete": 0,
+        "discovery_json": "{\"atomic_source_snapshot\":false,\"complete\":false,\"entry\":\"https://futario.com/collections/new-in\",\"passes_ended\":[false],\"reasons\":[\"DISCOVERY_NOT_TERMINAL\",\"RETRY_DEFERRED\"],\"stable_sets\":false,\"unique_products\":0}"
+      }
+    ],
+    "runs": [
+      {
+        "id": "f097800bb3344468b174059282955973",
+        "state": "failed",
+        "attempt": 1
+      }
+    ]
+  },
+  "old_root_files_unchanged": true,
+  "concurrent_T6b_allowed_file_changes": [],
+  "unexpected_protected_file_changes": [],
+  "protected_file_count": 284,
+  "no_in_flight_source_request": true
+}

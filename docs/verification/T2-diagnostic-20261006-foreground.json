@@ -1,0 +1,123 @@
+{
+  "kind": "single-foreground-diagnostic-not-production-retry",
+  "started_utc": "2026-10-06T14:29:03.123547+00:00",
+  "method": "GET",
+  "url": "https://futario.com/collections/new-in/products.json?limit=2&page=1",
+  "resolver_mode": "google_doh",
+  "max_source_attempts": 1,
+  "max_body_bytes": 2097152,
+  "max_network_seconds": 30,
+  "automatic_redirects": false,
+  "automatic_retries": 0,
+  "source_attempts_reserved": 1,
+  "source_connection_established": true,
+  "dns_records": [
+    {
+      "address": "104.21.68.184",
+      "port": 443,
+      "public": true
+    },
+    {
+      "address": "172.67.197.209",
+      "port": 443,
+      "public": true
+    }
+  ],
+  "persisted_before": {
+    "throttle": [
+      {
+        "site_id": "futario",
+        "not_before": null,
+        "mode": "legacy_response_not_saved",
+        "request_seq": null,
+        "recorded_at": 1791286123.4316926
+      }
+    ],
+    "responses": [],
+    "request_count": 1,
+    "asset_count": 0
+  },
+  "status": 429,
+  "peer": [
+    "104.21.68.184",
+    443
+  ],
+  "received_utc": "2026-10-06T14:29:04.474600+00:00",
+  "raw_selected_headers": [
+    [
+      "Date",
+      "Tue, 06 Oct 2026 14:29:04 GMT"
+    ],
+    [
+      "Content-Type",
+      "text/plain"
+    ],
+    [
+      "Content-Length",
+      "18"
+    ],
+    [
+      "retry-after",
+      "60"
+    ],
+    [
+      "server",
+      "cloudflare"
+    ],
+    [
+      "CF-RAY",
+      "a4655b2cfceacc9f-LAX"
+    ]
+  ],
+  "body_bytes": 0,
+  "body_sha256": null,
+  "product_listing_valid": false,
+  "attempt_reserved_utc": "2026-10-06T14:29:03.123822+00:00",
+  "dns_observed_utc": "2026-10-06T14:29:03.793554+00:00",
+  "peer_matches_fresh_first_address": true,
+  "tls": {
+    "version": "TLSv1.3",
+    "cipher": [
+      "TLS_AES_256_GCM_SHA384",
+      "TLSv1.3",
+      256
+    ],
+    "certificate_sha256": "e8723e35c0617837e35470ffa1c58b1b41d7ba14d6b7a6228a2d819a8c9b2003",
+    "verified_by": "unchanged PinnedTransport certifi default SSLContext; HTTPS hostname/SNI futario.com"
+  },
+  "retry_after_raw": "60",
+  "date_raw": "Tue, 06 Oct 2026 14:29:04 GMT",
+  "fresh_cooldown_guidance": {
+    "mode": "delay_seconds",
+    "seconds": 60,
+    "not_before_unix": 1791297004.4749758,
+    "basis": "fresh_response_receipt_plus_raw_retry_after"
+  },
+  "outcome": "stopped_http_429",
+  "body_policy": "not_read_non_200_no_followup",
+  "network_elapsed_seconds": 1.351,
+  "finished_utc": "2026-10-06T14:29:04.475329+00:00",
+  "persisted_after": {
+    "throttle": [
+      {
+        "site_id": "futario",
+        "not_before": null,
+        "mode": "legacy_response_not_saved",
+        "request_seq": null,
+        "recorded_at": 1791286123.4316926
+      }
+    ],
+    "responses": [],
+    "request_count": 1,
+    "asset_count": 0
+  },
+  "production_files_unchanged": true,
+  "protected_files_unchanged": true,
+  "protected_file_count": 150,
+  "historical_conservative_attempts": 3,
+  "total_conservative_attempts": 4,
+  "remaining_authorized_attempts_max": 36,
+  "details_requested": 0,
+  "images_requested": 0,
+  "production_worker_started": false
+}

@@ -1,0 +1,3 @@
+T6a package root: E:\github-workspace\fashion-scout-harness\.runtime\t6a-package-bd0a82ab
+.
+1 passed in 14.22s

@@ -1,0 +1,58 @@
+{
+  "version": "T3-local-v2/R1",
+  "captured_at": "2026-10-06T12:35:53.283486+00:00",
+  "new_checks": {
+    "ui": "15 passed (3 retained intent + 12 state/fault cases)",
+    "api": "14 passed, 2.05s"
+  },
+  "prior_checks_reused": "v1 full 119 passed; no protected backend changes in R1",
+  "production_changed_from_v1": [
+    "src/fashion_scout/static/app.js",
+    "src/fashion_scout/static/intent.js"
+  ],
+  "t2_unchanged_files": 72,
+  "t2_allowed_differences": [
+    "pyproject.toml",
+    "src/fashion_scout/health.py",
+    "src/fashion_scout/launcher.py"
+  ],
+  "wheel": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t3-wheel-r1\\fashion_scout-0.2.0a1-py3-none-any.whl",
+  "wheel_sha256": "363d062be9d8cfb67de8a1d5a7e319bef9b6a9a8a8017cfd064a6cbc6b6a4706",
+  "qa_runtime_status": {
+    "app_instance_id": "66e0f38b-cdf3-4a4e-a4e8-6c1a1e2e99de",
+    "web_ready": false,
+    "worker_state": "offline",
+    "resuming_run_ids": []
+  },
+  "source_sha256": {
+    "docs/verification/T3-api-contract.md": "7982b3e13ffe0912b6fb573189129258fdedf88b02324b94e9662920a63165a3",
+    "docs/verification/T3-R1-api-tests.txt": "dabd44593555d11b329fdee1e54403ce918fc57944f229db3db0ca0ce16dfec1",
+    "docs/verification/T3-R1-browser-evidence.json": "ebe3a16cb0bdf29b1055d3ac391e55b59f4e6ee0543229952195aab7ba654eb1",
+    "docs/verification/T3-R1-screenshots/01-category-updated.jpg": "48762b0477ad4cf99ab765456348998c8166c7ead9328a303055c54ad6974de5",
+    "docs/verification/T3-R1-screenshots/02-latest-view-clears-update.jpg": "5759597e3b4afceac008d09859033c883f9d3e1ee282df5fddb648dac22f04d9",
+    "docs/verification/T3-R1-screenshots/03-history-selection.jpg": "5826966c634af95a467e9ee726ab1b8b81a226ef65229ef879e80844b865a611",
+    "docs/verification/T3-R1-screenshots/04-history-retains-update.jpg": "c04f551534671e5f285a452b438e0ad7d361f9ae1ab9665a89bb4a5ec949ffcc",
+    "docs/verification/T3-R1-ui-tests.txt": "d0ef6365a5ca4cb4ccff1b46015387966443217ddc4a851716fe88c2efaf6617",
+    "docs/verification/T3-R1-wheel.txt": "fabd0dea5cb0a6b082f11c2628e7a2b451402814ed451cbf7e754957dc0ea80e",
+    "docs/verification/T3-R1.md": "5371af2b0d844ec8cc0574d26a221d9f6c69aded005deab0f865ae29c6232166",
+    "docs/verification/T3.md": "646dd4e03e9e81b021e3c99e1858e61fb30d1cbdfd5b9634ecb068c0d8ecf625",
+    "pyproject.toml": "6d41fb8d9bedb4ad6ec6d35631ce411f9dc7d71675dd1efac6f6af58f87b76af",
+    "src/fashion_scout/api/__init__.py": "1234035fbdf7ed7b36ccc7e34c1c9ac757e2b65274d51052ba1f856667473b3a",
+    "src/fashion_scout/api/models.py": "d664019aa3e0effff22d9af5f70e1a51f5f72dbe3885204bccfef53371b855af",
+    "src/fashion_scout/api/routes.py": "61f1f60093abbd450af70527b94d5bf6c9309c1f931fed8c2277ddb484eeb495",
+    "src/fashion_scout/api/security.py": "f28c676bcb7143ce843ea2fa24a10f52166e0e12bc014976669d844af71239ce",
+    "src/fashion_scout/health.py": "a4d008fd4e9271db0db45e11037410eccf13f5160f83bd7fae680b4b1d36edf2",
+    "src/fashion_scout/launcher.py": "79065c066ef564cf4d1b3d77503600e3f8ee6a8954e49f6e6d1cd9a78d02ff3d",
+    "src/fashion_scout/services/presentation.py": "0262f3a9f62fde45e59773c932ebb1e41e4d80a2a240551fba485e7b1aaedc5c",
+    "src/fashion_scout/static/app.css": "71e1fd89263a9566b5779b1249955fff540cbb8e659512d5212f7d3ae5150e01",
+    "src/fashion_scout/static/app.js": "47364606e4de54688acc1b8ca00d6b6973b138a90bef8444e254a6157f17c7ac",
+    "src/fashion_scout/static/bootstrap.js": "ab7688ef2289b5a7795f53d5443c97eae064a01ef355b226a3e44b84b60e53f6",
+    "src/fashion_scout/static/intent.js": "2ec34fbfc9f683d82a87ff8d7c96e9f6a1ffa2bc88705982f9e47a95f24b1dad",
+    "src/fashion_scout/templates/bootstrap.html": "9362e71b57fcd0c9821187e23dcd96eb81d17174b8c3eb9f7e791de94e4eee97",
+    "src/fashion_scout/templates/index.html": "535376c6aa2512db6bc18d21d3cf49e87a8ad9e1a1a1e14299605e2e7dadc6c9",
+    "tests/ui/intent.test.mjs": "b5152b7dfa5fc0e5d9ec634c061c3cd9bd50248e0b1dd6efcbf5a70bdca80065",
+    "tests/ui/scenarios.py": "1ce9aa15f21eaf8eeeee096065eb25e4d5b2b71a34d6b94f1c5ad9148e53ccd0",
+    "tests/ui/state-transitions.test.mjs": "4a92b1d55d3642d897ef4ff5aa662d3be8d29320924a2f2dbe2401247e218366",
+    "tests/ui/verify_rework.py": "c47e7654b64617bbc2439067c254fad7b9312672d380f8aa9997f5c63b70f2bb"
+  }
+}

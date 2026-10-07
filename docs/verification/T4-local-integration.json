@@ -1,0 +1,2734 @@
+{
+  "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t4-integration-721b6c0d9006",
+  "port": 53139,
+  "commands": [
+    {
+      "command": "configure",
+      "exit": 0,
+      "response": {
+        "ok": true,
+        "data": {
+          "configured": true,
+          "data_root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t4-integration-721b6c0d9006",
+          "port": 53139,
+          "service_started": false
+        },
+        "service": {
+          "checked": false,
+          "web_ready": null,
+          "worker_state": "unknown"
+        },
+        "intent_id": null,
+        "exit_code": 0
+      }
+    },
+    {
+      "command": "latest",
+      "exit": 3,
+      "response": {
+        "ok": false,
+        "error": {
+          "code": "SERVICE_OFFLINE",
+          "message": "服务未启动；可使用固定 ensure 命令",
+          "details": null
+        },
+        "service": {
+          "checked": false,
+          "web_ready": null,
+          "worker_state": "unknown"
+        },
+        "intent_id": null,
+        "exit_code": 3
+      }
+    },
+    {
+      "command": "ensure",
+      "exit": 0,
+      "response": {
+        "ok": true,
+        "data": {
+          "request_id": "1eb4417232644482b17ee7784f5f2c14",
+          "app_instance_id": "ad1db303-5de2-4203-9d63-98ab751a4684",
+          "schema_version": 7,
+          "web_ready": true,
+          "worker_state": "online",
+          "heartbeat_at": 1791291735.945241,
+          "worker_pid": 16668,
+          "worker_born": 1791291735.587638,
+          "pid": 86912,
+          "born": 1791291734.8087013,
+          "source_adapter": "futario-json-v1",
+          "api_base_url": "http://127.0.0.1:53139",
+          "resuming_run_ids": [],
+          "started_roles": [
+            "web",
+            "worker"
+          ],
+          "may_resume_accepted_runs": true,
+          "notice": "服务启动或打开页面可恢复此前已接受任务；不会创建新巡检。"
+        },
+        "service": {
+          "request_id": "1eb4417232644482b17ee7784f5f2c14",
+          "app_instance_id": "ad1db303-5de2-4203-9d63-98ab751a4684",
+          "schema_version": 7,
+          "web_ready": true,
+          "worker_state": "online",
+          "heartbeat_at": 1791291735.945241,
+          "worker_pid": 16668,
+          "worker_born": 1791291735.587638,
+          "pid": 86912,
+          "born": 1791291734.8087013,
+          "source_adapter": "futario-json-v1",
+          "api_base_url": "http://127.0.0.1:53139",
+          "resuming_run_ids": [],
+          "started_roles": [
+            "web",
+            "worker"
+          ],
+          "checked": true
+        },
+        "intent_id": null,
+        "exit_code": 0
+      }
+    },
+    {
+      "command": "latest",
+      "exit": 0,
+      "response": {
+        "ok": true,
+        "data": {
+          "latest_run": null,
+          "latest_completed_at": null,
+          "latest_successful_at": null,
+          "request_id": "44f65c37638d48e0a364be3773e6b012"
+        },
+        "service": {
+          "request_id": "ab2513f871b445eebae2ff622c2f08fb",
+          "app_instance_id": "ad1db303-5de2-4203-9d63-98ab751a4684",
+          "schema_version": 7,
+          "web_ready": true,
+          "worker_state": "online",
+          "heartbeat_at": 1791291736.2076154,
+          "worker_pid": 16668,
+          "worker_born": 1791291735.587638,
+          "pid": 86912,
+          "born": 1791291734.8087013,
+          "source_adapter": "futario-json-v1",
+          "checked": true
+        },
+        "intent_id": null,
+        "exit_code": 0
+      }
+    },
+    {
+      "command": "new",
+      "exit": 0,
+      "response": {
+        "ok": true,
+        "data": {
+          "snapshot_id": "8675e84fd76cf113741ddf88f3ff38b2",
+          "snapshot_expires_at": "2026-10-06T13:17:16.589Z",
+          "next_cursor": null,
+          "total": 0,
+          "items": [],
+          "latest_run_summary": {
+            "latest_run": null,
+            "latest_completed_at": null,
+            "latest_successful_at": null
+          },
+          "request_id": "156c28bfb56f415ab1e10897e6a36d15"
+        },
+        "service": {
+          "request_id": "6ec3792c088644f98d652992d7e2ae67",
+          "app_instance_id": "ad1db303-5de2-4203-9d63-98ab751a4684",
+          "schema_version": 7,
+          "web_ready": true,
+          "worker_state": "online",
+          "heartbeat_at": 1791291736.469311,
+          "worker_pid": 16668,
+          "worker_born": 1791291735.587638,
+          "pid": 86912,
+          "born": 1791291734.8087013,
+          "source_adapter": "futario-json-v1",
+          "checked": true
+        },
+        "intent_id": null,
+        "exit_code": 0
+      }
+    },
+    {
+      "command": "new",
+      "exit": 0,
+      "response": {
+        "ok": true,
+        "data": {
+          "snapshot_id": "880ffe5f8993a435816a1f6be610b499",
+          "snapshot_expires_at": "2026-10-06T13:17:16.993Z",
+          "next_cursor": null,
+          "total": 4,
+          "items": [
+            {
+              "id": "fixture-000",
+              "title": "秋日松弛感 · 羊毛针织衫",
+              "source": {
+                "date_reason": "synthetic_fixture",
+                "source_id": "0",
+                "source_published_at": null,
+                "title": "秋日松弛感 · 羊毛针织衫",
+                "url": "https://example.invalid/products/0"
+              },
+              "first_seen_at": "2026-10-01T12:00:00Z",
+              "first_eligible_at": "2026-10-01T12:00:00Z",
+              "effective_category": "knitwear",
+              "user_state": {
+                "product_id": "fixture-000",
+                "favorite": false,
+                "excluded": false,
+                "category_override": null,
+                "revision": 1,
+                "viewed_at": null,
+                "seen_version_id": null,
+                "seen_version_revision": null,
+                "seen_content_digest": null
+              },
+              "media_state": "ready",
+              "latest_detail_error": null,
+              "has_material_update": false,
+              "latest_available_version_id": "fixture-version-0",
+              "latest_available_revision": 1,
+              "latest_complete_version_id": "fixture-version-0",
+              "latest_complete_revision": 1,
+              "latest_observed_version_id": "fixture-version-0",
+              "latest_observed_revision": 1,
+              "version_id": "fixture-version-0",
+              "version_revision": 1,
+              "images": [
+                {
+                  "asset_id": "fixture-asset-0-0",
+                  "sha256": "0d582e182a323b091b2372d6225d00e4b49dece3e2f5994fd446add256e0a3eb",
+                  "verified_at": "2026-10-01T12:00:00Z",
+                  "preview_url": "/v1/assets/fixture-asset-0-0?rendition=preview",
+                  "original_url": "/v1/assets/fixture-asset-0-0?rendition=original"
+                },
+                {
+                  "asset_id": "fixture-asset-0-1",
+                  "sha256": "5a18cbda52772733fc25f651db1b5c3117f95b66d1be7befb34735809f298f0a",
+                  "verified_at": "2026-10-01T12:00:00Z",
+                  "preview_url": "/v1/assets/fixture-asset-0-1?rendition=preview",
+                  "original_url": "/v1/assets/fixture-asset-0-1?rendition=original"
+                }
+              ],
+              "album": {
+                "expected_count": 2,
+                "stored_count": 2,
+                "missing": [],
+                "coverage_scope": [
+                  "product.images"
+                ],
+                "coverage_complete": true,
+                "verified_at": "2026-10-01T12:00:00Z",
+                "capability_notes": []
+              },
+              "latest_observed_album": {
+                "expected_count": 2,
+                "stored_count": 2,
+                "missing": [],
+                "coverage_scope": [
+                  "product.images"
+                ],
+                "coverage_complete": true,
+                "verified_at": "2026-10-01T12:00:00Z",
+                "capability_notes": []
+              },
+              "using_previous_images": false,
+              "versions": [
+                {
+                  "id": "fixture-version-0",
+                  "revision": 1,
+                  "content_digest": "fe9a3d4ca464658eee6700d0f51926bd534daf56ccb478a5136bca3e17c267e9"
+                }
+              ]
+            },
+            {
+              "id": "fixture-001",
+              "title": "暖砂色 · 简约长款风衣",
+              "source": {
+                "date_reason": "synthetic_fixture",
+                "source_id": "1",
+                "source_published_at": null,
+                "title": "暖砂色 · 简约长款风衣",
+                "url": "https://example.invalid/products/1"
+              },
+              "first_seen_at": "2026-10-01T12:00:00Z",
+              "first_eligible_at": "2026-10-01T12:00:00Z",
+              "effective_category": "outerwear",
+              "user_state": {
+                "product_id": "fixture-001",
+                "favorite": false,
+                "excluded": false,
+                "category_override": null,
+                "revision": 1,
+                "viewed_at": null,
+                "seen_version_id": null,
+                "seen_version_revision": null,
+                "seen_content_digest": null
+              },
+              "media_state": "ready",
+              "latest_detail_error": null,
+              "has_material_update": false,
+              "latest_available_version_id": "fixture-version-1",
+              "latest_available_revision": 1,
+              "latest_complete_version_id": "fixture-version-1",
+              "latest_complete_revision": 1,
+              "latest_observed_version_id": "fixture-version-1",
+              "latest_observed_revision": 1,
+              "version_id": "fixture-version-1",
+              "version_revision": 1,
+              "images": [
+                {
+                  "asset_id": "fixture-asset-1-0",
+                  "sha256": "5a18cbda52772733fc25f651db1b5c3117f95b66d1be7befb34735809f298f0a",
+                  "verified_at": "2026-10-01T12:00:00Z",
+                  "preview_url": "/v1/assets/fixture-asset-1-0?rendition=preview",
+                  "original_url": "/v1/assets/fixture-asset-1-0?rendition=original"
+                },
+                {
+                  "asset_id": "fixture-asset-1-1",
+                  "sha256": "15631173a30fb10e3d2fde1e8b3febb29c3b346738689e41563a120320cb3fd3",
+                  "verified_at": "2026-10-01T12:00:00Z",
+                  "preview_url": "/v1/assets/fixture-asset-1-1?rendition=preview",
+                  "original_url": "/v1/assets/fixture-asset-1-1?rendition=original"
+                }
+              ],
+              "album": {
+                "expected_count": 2,
+                "stored_count": 2,
+                "missing": [],
+                "coverage_scope": [
+                  "product.images"
+                ],
+                "coverage_complete": true,
+                "verified_at": "2026-10-01T12:00:00Z",
+                "capability_notes": []
+              },
+              "latest_observed_album": {
+                "expected_count": 2,
+                "stored_count": 2,
+                "missing": [],
+                "coverage_scope": [
+                  "product.images"
+                ],
+                "coverage_complete": true,
+                "verified_at": "2026-10-01T12:00:00Z",
+                "capability_notes": []
+              },
+              "using_previous_images": false,
+              "versions": [
+                {
+                  "id": "fixture-version-1",
+                  "revision": 1,
+                  "content_digest": "a5a96edd3c1452a3fbdd3d6411ae8f128bbcd3a522f058d1465f17c59393bf71"
+                }
+              ]
+            },
+            {
+              "id": "fixture-002",
+              "title": "雾蓝色 · 轻盈衬衫",
+              "source": {
+                "date_reason": "synthetic_fixture",
+                "source_id": "2",
+                "source_published_at": null,
+                "title": "雾蓝色 · 轻盈衬衫",
+                "url": "https://example.invalid/products/2"
+              },
+              "first_seen_at": "2026-10-01T12:00:00Z",
+              "first_eligible_at": "2026-10-01T12:00:00Z",
+              "effective_category": "tops",
+              "user_state": {
+                "product_id": "fixture-002",
+                "favorite": false,
+                "excluded": false,
+                "category_override": null,
+                "revision": 1,
+                "viewed_at": null,
+                "seen_version_id": null,
+                "seen_version_revision": null,
+                "seen_content_digest": null
+              },
+              "media_state": "ready",
+              "latest_detail_error": null,
+              "has_material_update": false,
+              "latest_available_version_id": "fixture-version-2",
+              "latest_available_revision": 1,
+              "latest_complete_version_id": "fixture-version-2",
+              "latest_complete_revision": 1,
+              "latest_observed_version_id": "fixture-version-2",
+              "latest_observed_revision": 1,
+              "version_id": "fixture-version-2",
+              "version_revision": 1,
+              "images": [
+                {
+                  "asset_id": "fixture-asset-2-0",
+                  "sha256": "15631173a30fb10e3d2fde1e8b3febb29c3b346738689e41563a120320cb3fd3",
+                  "verified_at": "2026-10-01T12:00:00Z",
+                  "preview_url": "/v1/assets/fixture-asset-2-0?rendition=preview",
+                  "original_url": "/v1/assets/fixture-asset-2-0?rendition=original"
+                },
+                {
+                  "asset_id": "fixture-asset-2-1",
+                  "sha256": "f4742a8a0ff69b0a6a33078d5d354c41d223e8a96d49e1e46ffa793713ba1ba6",
+                  "verified_at": "2026-10-01T12:00:00Z",
+                  "preview_url": "/v1/assets/fixture-asset-2-1?rendition=preview",
+                  "original_url": "/v1/assets/fixture-asset-2-1?rendition=original"
+                }
+              ],
+              "album": {
+                "expected_count": 2,
+                "stored_count": 2,
+                "missing": [],
+                "coverage_scope": [
+                  "product.images"
+                ],
+                "coverage_complete": true,
+                "verified_at": "2026-10-01T12:00:00Z",
+                "capability_notes": []
+              },
+              "latest_observed_album": {
+                "expected_count": 2,
+                "stored_count": 2,
+                "missing": [],
+                "coverage_scope": [
+                  "product.images"
+                ],
+                "coverage_complete": true,
+                "verified_at": "2026-10-01T12:00:00Z",
+                "capability_notes": []
+              },
+              "using_previous_images": false,
+              "versions": [
+                {
+                  "id": "fixture-version-2",
+                  "revision": 1,
+                  "content_digest": "df89b47681c067391cc4ed705ab518f2f6054cb01ce1fae6bc1099eb0501fdef"
+                }
+              ]
+            },
+            {
+              "id": "fixture-003",
+              "title": "米杏色 · 垂感连衣裙",
+              "source": {
+                "date_reason": "synthetic_fixture",
+                "source_id": "3",
+                "source_published_at": null,
+                "title": "米杏色 · 垂感连衣裙",
+                "url": "https://example.invalid/products/3"
+              },
+              "first_seen_at": "2026-10-01T12:00:00Z",
+              "first_eligible_at": "2026-10-01T12:00:00Z",
+              "effective_category": "dress",
+              "user_state": {
+                "product_id": "fixture-003",
+                "favorite": false,
+                "excluded": false,
+                "category_override": null,
+                "revision": 1,
+                "viewed_at": null,
+                "seen_version_id": null,
+                "seen_version_revision": null,
+                "seen_content_digest": null
+              },
+              "media_state": "failed",
+              "latest_detail_error": null,
+              "has_material_update": false,
+              "latest_available_version_id": null,
+              "latest_available_revision": null,
+              "latest_complete_version_id": null,
+              "latest_complete_revision": null,
+              "latest_observed_version_id": "fixture-version-3",
+              "latest_observed_revision": 1,
+              "version_id": "fixture-version-3",
+              "version_revision": 1,
+              "images": [],
+              "album": {
+                "expected_count": 2,
+                "stored_count": 0,
+                "missing": [
+                  {
+                    "source_image_id": "3-0",
+                    "source_url": "https://example.invalid/3-0.png",
+                    "reason": "HTTP_404",
+                    "retryable": true
+                  },
+                  {
+                    "source_image_id": "3-1",
+                    "source_url": "https://example.invalid/3-1.png",
+                    "reason": "HTTP_404",
+                    "retryable": true
+                  }
+                ],
+                "coverage_scope": [
+                  "product.images"
+                ],
+                "coverage_complete": false,
+                "verified_at": null,
+                "capability_notes": []
+              },
+              "latest_observed_album": {
+                "expected_count": 2,
+                "stored_count": 0,
+                "missing": [
+                  {
+                    "source_image_id": "3-0",
+                    "source_url": "https://example.invalid/3-0.png",
+                    "reason": "HTTP_404",
+                    "retryable": true
+                  },
+                  {
+                    "source_image_id": "3-1",
+                    "source_url": "https://example.invalid/3-1.png",
+                    "reason": "HTTP_404",
+                    "retryable": true
+                  }
+                ],
+                "coverage_scope": [
+                  "product.images"
+                ],
+                "coverage_complete": false,
+                "verified_at": null,
+                "capability_notes": []
+              },
+              "using_previous_images": false,
+              "versions": [
+                {
+                  "id": "fixture-version-3",
+                  "revision": 1,
+                  "content_digest": "508b6bc35f55fa8cb458a1dbdd57b891deab16a3974acb5ea3f70da8a1bf2de9"
+                }
+              ]
+            }
+          ],
+          "latest_run_summary": {
+            "latest_run": {
+              "id": "synthetic-fixture-run",
+              "state": "succeeded",
+              "snapshot": {
+                "site_ids": [
+                  "futario"
+                ],
+                "window_days": 14,
+                "unknown_date_policy": "include",
+                "discovery": {
+                  "page_size": 20,
+                  "max_pages_per_pass": 30,
+                  "passes": 2,
+                  "max_requests": 60,
+                  "max_products": 600
+                },
+                "max_details": 300,
+                "network": {
+                  "resolver_mode": "system",
+                  "detail_concurrency": 1,
+                  "image_concurrency": 2,
+                  "min_interval_ms": 1000,
+                  "max_attempts": 3,
+                  "max_http_requests": 3000,
+                  "max_image_requests": 2400,
+                  "run_total_seconds": 3600,
+                  "timeouts": {
+                    "connect": 10,
+                    "pool": 10,
+                    "read": 30,
+                    "write": 30,
+                    "total": 120
+                  }
+                },
+                "storage": {
+                  "max_image_bytes": 26214400,
+                  "max_pixels": 50000000,
+                  "run_download_bytes": 2147483648,
+                  "min_free_bytes": 5368709120,
+                  "preview_cache_bytes": 536870912
+                },
+                "plan_revision": 1,
+                "window_start": "2026-09-17T12:00:00Z",
+                "window_end": "2026-10-01T12:00:00Z",
+                "adapter_versions": {
+                  "futario": "futario-json-v1"
+                },
+                "site_entries": {
+                  "futario": "https://example.invalid"
+                },
+                "new_run_trigger": "manual",
+                "discovery_baseline_complete": {
+                  "futario": false
+                }
+              },
+              "created_at": "2026-10-01T12:00:00Z",
+              "started_at": null,
+              "finished_at": "2026-10-01T12:00:00Z",
+              "epoch": 0,
+              "attempt": 1,
+              "issue_code": null,
+              "resumed_at": null,
+              "stage": "accepted",
+              "counts": {},
+              "plan_revision": 1,
+              "worker_state": "online",
+              "coverage": [],
+              "issues": []
+            },
+            "latest_completed_at": "2026-10-01T12:00:00Z",
+            "latest_successful_at": "2026-10-01T12:00:00Z"
+          },
+          "request_id": "ef8eb2ced5fe4102a00272a0be1537ef"
+        },
+        "service": {
+          "request_id": "a749d79121aa47e4978f771ef9b92b66",
+          "app_instance_id": "ad1db303-5de2-4203-9d63-98ab751a4684",
+          "schema_version": 7,
+          "web_ready": true,
+          "worker_state": "online",
+          "heartbeat_at": 1791291736.756577,
+          "worker_pid": 16668,
+          "worker_born": 1791291735.587638,
+          "pid": 86912,
+          "born": 1791291734.8087013,
+          "source_adapter": "futario-json-v1",
+          "checked": true
+        },
+        "intent_id": null,
+        "exit_code": 0
+      }
+    },
+    {
+      "command": "sites",
+      "exit": 0,
+      "response": {
+        "ok": true,
+        "data": {
+          "items": [
+            {
+              "id": "futario",
+              "entry": "https://futario.com/collections/new-in",
+              "adapter_version": "futario-json-v1",
+              "enabled": 1,
+              "baseline_complete": 0
+            }
+          ],
+          "capability_notes": [
+            {
+              "scope": "product.images",
+              "status": "supported"
+            },
+            {
+              "scope": "other_media",
+              "status": "unknown"
+            }
+          ],
+          "request_id": "4e997ea7c3d84916a7b205436756b00b"
+        },
+        "service": {
+          "request_id": "7445be038601482cb41b63b6405fc587",
+          "app_instance_id": "ad1db303-5de2-4203-9d63-98ab751a4684",
+          "schema_version": 7,
+          "web_ready": true,
+          "worker_state": "online",
+          "heartbeat_at": 1791291737.0144289,
+          "worker_pid": 16668,
+          "worker_born": 1791291735.587638,
+          "pid": 86912,
+          "born": 1791291734.8087013,
+          "source_adapter": "futario-json-v1",
+          "checked": true
+        },
+        "intent_id": null,
+        "exit_code": 0
+      }
+    },
+    {
+      "command": "default-plan",
+      "exit": 0,
+      "response": {
+        "ok": true,
+        "data": {
+          "revision": 1,
+          "plan": {
+            "site_ids": [
+              "futario"
+            ],
+            "window_days": 14,
+            "unknown_date_policy": "include",
+            "discovery": {
+              "page_size": 20,
+              "max_pages_per_pass": 30,
+              "passes": 2,
+              "max_requests": 60,
+              "max_products": 600
+            },
+            "max_details": 300,
+            "network": {
+              "resolver_mode": "system",
+              "detail_concurrency": 1,
+              "image_concurrency": 2,
+              "min_interval_ms": 1000,
+              "max_attempts": 3,
+              "max_http_requests": 3000,
+              "max_image_requests": 2400,
+              "run_total_seconds": 3600,
+              "timeouts": {
+                "connect": 10,
+                "pool": 10,
+                "read": 30,
+                "write": 30,
+                "total": 120
+              }
+            },
+            "storage": {
+              "max_image_bytes": 26214400,
+              "max_pixels": 50000000,
+              "run_download_bytes": 2147483648,
+              "min_free_bytes": 5368709120,
+              "preview_cache_bytes": 536870912
+            }
+          },
+          "available": {
+            "window_days": [
+              7,
+              14
+            ],
+            "unknown_date_policy": [
+              "include",
+              "exclude"
+            ]
+          },
+          "request_id": "74252e7615624befb0a885ad6ef772ef"
+        },
+        "service": {
+          "request_id": "41b238dac5f34e7eb3a4be004a3b13d6",
+          "app_instance_id": "ad1db303-5de2-4203-9d63-98ab751a4684",
+          "schema_version": 7,
+          "web_ready": true,
+          "worker_state": "online",
+          "heartbeat_at": 1791291737.277805,
+          "worker_pid": 16668,
+          "worker_born": 1791291735.587638,
+          "pid": 86912,
+          "born": 1791291734.8087013,
+          "source_adapter": "futario-json-v1",
+          "checked": true
+        },
+        "intent_id": null,
+        "exit_code": 0
+      }
+    },
+    {
+      "command": "product",
+      "exit": 0,
+      "response": {
+        "ok": true,
+        "data": {
+          "product": {
+            "id": "fixture-000",
+            "title": "秋日松弛感 · 羊毛针织衫",
+            "source": {
+              "date_reason": "synthetic_fixture",
+              "source_id": "0",
+              "source_published_at": null,
+              "title": "秋日松弛感 · 羊毛针织衫",
+              "url": "https://example.invalid/products/0"
+            },
+            "first_seen_at": "2026-10-01T12:00:00Z",
+            "first_eligible_at": "2026-10-01T12:00:00Z",
+            "effective_category": "knitwear",
+            "user_state": {
+              "product_id": "fixture-000",
+              "favorite": false,
+              "excluded": false,
+              "category_override": null,
+              "revision": 1,
+              "viewed_at": null,
+              "seen_version_id": null,
+              "seen_version_revision": null,
+              "seen_content_digest": null
+            },
+            "media_state": "ready",
+            "latest_detail_error": null,
+            "has_material_update": false,
+            "latest_available_version_id": "fixture-version-0",
+            "latest_available_revision": 1,
+            "latest_complete_version_id": "fixture-version-0",
+            "latest_complete_revision": 1,
+            "latest_observed_version_id": "fixture-version-0",
+            "latest_observed_revision": 1,
+            "version_id": "fixture-version-0",
+            "version_revision": 1,
+            "images": [
+              {
+                "asset_id": "fixture-asset-0-0",
+                "sha256": "0d582e182a323b091b2372d6225d00e4b49dece3e2f5994fd446add256e0a3eb",
+                "verified_at": "2026-10-01T12:00:00Z",
+                "preview_url": "/v1/assets/fixture-asset-0-0?rendition=preview",
+                "original_url": "/v1/assets/fixture-asset-0-0?rendition=original"
+              },
+              {
+                "asset_id": "fixture-asset-0-1",
+                "sha256": "5a18cbda52772733fc25f651db1b5c3117f95b66d1be7befb34735809f298f0a",
+                "verified_at": "2026-10-01T12:00:00Z",
+                "preview_url": "/v1/assets/fixture-asset-0-1?rendition=preview",
+                "original_url": "/v1/assets/fixture-asset-0-1?rendition=original"
+              }
+            ],
+            "album": {
+              "expected_count": 2,
+              "stored_count": 2,
+              "missing": [],
+              "coverage_scope": [
+                "product.images"
+              ],
+              "coverage_complete": true,
+              "verified_at": "2026-10-01T12:00:00Z",
+              "capability_notes": []
+            },
+            "latest_observed_album": {
+              "expected_count": 2,
+              "stored_count": 2,
+              "missing": [],
+              "coverage_scope": [
+                "product.images"
+              ],
+              "coverage_complete": true,
+              "verified_at": "2026-10-01T12:00:00Z",
+              "capability_notes": []
+            },
+            "using_previous_images": false,
+            "versions": [
+              {
+                "id": "fixture-version-0",
+                "revision": 1,
+                "content_digest": "fe9a3d4ca464658eee6700d0f51926bd534daf56ccb478a5136bca3e17c267e9"
+              }
+            ]
+          },
+          "request_id": "dd9ffa7272fb4390b4fd1549aa4827a1"
+        },
+        "service": {
+          "request_id": "aae2d7df973e4a63a163f57613f5794b",
+          "app_instance_id": "ad1db303-5de2-4203-9d63-98ab751a4684",
+          "schema_version": 7,
+          "web_ready": true,
+          "worker_state": "online",
+          "heartbeat_at": 1791291737.8014965,
+          "worker_pid": 16668,
+          "worker_born": 1791291735.587638,
+          "pid": 86912,
+          "born": 1791291734.8087013,
+          "source_adapter": "futario-json-v1",
+          "checked": true
+        },
+        "intent_id": null,
+        "exit_code": 0
+      }
+    },
+    {
+      "command": "user-state",
+      "exit": 0,
+      "response": {
+        "ok": true,
+        "data": {
+          "intent_id": "e49608f516244ebc9bccffbca43cece5",
+          "intent_state": "accepted",
+          "result": {
+            "user_state": {
+              "product_id": "fixture-000",
+              "favorite": true,
+              "excluded": false,
+              "category_override": "tops",
+              "revision": 2,
+              "viewed_at": null,
+              "seen_version_id": null,
+              "seen_version_revision": null,
+              "seen_content_digest": null
+            },
+            "request_id": "ea82e6c056d642e1b621207a14af464c"
+          }
+        },
+        "service": {
+          "request_id": "20f803ba1e2c4b5f9dec8e86e84cc9dd",
+          "app_instance_id": "ad1db303-5de2-4203-9d63-98ab751a4684",
+          "schema_version": 7,
+          "web_ready": true,
+          "worker_state": "online",
+          "heartbeat_at": 1791291738.0649927,
+          "worker_pid": 16668,
+          "worker_born": 1791291735.587638,
+          "pid": 86912,
+          "born": 1791291734.8087013,
+          "source_adapter": "futario-json-v1",
+          "checked": true
+        },
+        "intent_id": "e49608f516244ebc9bccffbca43cece5",
+        "exit_code": 0
+      }
+    },
+    {
+      "command": "favorites",
+      "exit": 0,
+      "response": {
+        "ok": true,
+        "data": {
+          "snapshot_id": "630d3e675be0e4ffe73179fdb764aa9f",
+          "snapshot_expires_at": "2026-10-06T13:17:18.470Z",
+          "next_cursor": null,
+          "total": 1,
+          "items": [
+            {
+              "id": "fixture-000",
+              "title": "秋日松弛感 · 羊毛针织衫",
+              "source": {
+                "date_reason": "synthetic_fixture",
+                "source_id": "0",
+                "source_published_at": null,
+                "title": "秋日松弛感 · 羊毛针织衫",
+                "url": "https://example.invalid/products/0"
+              },
+              "first_seen_at": "2026-10-01T12:00:00Z",
+              "first_eligible_at": "2026-10-01T12:00:00Z",
+              "effective_category": "tops",
+              "user_state": {
+                "product_id": "fixture-000",
+                "favorite": true,
+                "excluded": false,
+                "category_override": "tops",
+                "revision": 2,
+                "viewed_at": null,
+                "seen_version_id": null,
+                "seen_version_revision": null,
+                "seen_content_digest": null
+              },
+              "media_state": "ready",
+              "latest_detail_error": null,
+              "has_material_update": false,
+              "latest_available_version_id": "fixture-version-0",
+              "latest_available_revision": 1,
+              "latest_complete_version_id": "fixture-version-0",
+              "latest_complete_revision": 1,
+              "latest_observed_version_id": "fixture-version-0",
+              "latest_observed_revision": 1,
+              "version_id": "fixture-version-0",
+              "version_revision": 1,
+              "images": [
+                {
+                  "asset_id": "fixture-asset-0-0",
+                  "sha256": "0d582e182a323b091b2372d6225d00e4b49dece3e2f5994fd446add256e0a3eb",
+                  "verified_at": "2026-10-01T12:00:00Z",
+                  "preview_url": "/v1/assets/fixture-asset-0-0?rendition=preview",
+                  "original_url": "/v1/assets/fixture-asset-0-0?rendition=original"
+                },
+                {
+                  "asset_id": "fixture-asset-0-1",
+                  "sha256": "5a18cbda52772733fc25f651db1b5c3117f95b66d1be7befb34735809f298f0a",
+                  "verified_at": "2026-10-01T12:00:00Z",
+                  "preview_url": "/v1/assets/fixture-asset-0-1?rendition=preview",
+                  "original_url": "/v1/assets/fixture-asset-0-1?rendition=original"
+                }
+              ],
+              "album": {
+                "expected_count": 2,
+                "stored_count": 2,
+                "missing": [],
+                "coverage_scope": [
+                  "product.images"
+                ],
+                "coverage_complete": true,
+                "verified_at": "2026-10-01T12:00:00Z",
+                "capability_notes": []
+              },
+              "latest_observed_album": {
+                "expected_count": 2,
+                "stored_count": 2,
+                "missing": [],
+                "coverage_scope": [
+                  "product.images"
+                ],
+                "coverage_complete": true,
+                "verified_at": "2026-10-01T12:00:00Z",
+                "capability_notes": []
+              },
+              "using_previous_images": false,
+              "versions": [
+                {
+                  "id": "fixture-version-0",
+                  "revision": 1,
+                  "content_digest": "fe9a3d4ca464658eee6700d0f51926bd534daf56ccb478a5136bca3e17c267e9"
+                }
+              ]
+            }
+          ],
+          "latest_run_summary": {
+            "latest_run": {
+              "id": "synthetic-fixture-run",
+              "state": "succeeded",
+              "snapshot": {
+                "site_ids": [
+                  "futario"
+                ],
+                "window_days": 14,
+                "unknown_date_policy": "include",
+                "discovery": {
+                  "page_size": 20,
+                  "max_pages_per_pass": 30,
+                  "passes": 2,
+                  "max_requests": 60,
+                  "max_products": 600
+                },
+                "max_details": 300,
+                "network": {
+                  "resolver_mode": "system",
+                  "detail_concurrency": 1,
+                  "image_concurrency": 2,
+                  "min_interval_ms": 1000,
+                  "max_attempts": 3,
+                  "max_http_requests": 3000,
+                  "max_image_requests": 2400,
+                  "run_total_seconds": 3600,
+                  "timeouts": {
+                    "connect": 10,
+                    "pool": 10,
+                    "read": 30,
+                    "write": 30,
+                    "total": 120
+                  }
+                },
+                "storage": {
+                  "max_image_bytes": 26214400,
+                  "max_pixels": 50000000,
+                  "run_download_bytes": 2147483648,
+                  "min_free_bytes": 5368709120,
+                  "preview_cache_bytes": 536870912
+                },
+                "plan_revision": 1,
+                "window_start": "2026-09-17T12:00:00Z",
+                "window_end": "2026-10-01T12:00:00Z",
+                "adapter_versions": {
+                  "futario": "futario-json-v1"
+                },
+                "site_entries": {
+                  "futario": "https://example.invalid"
+                },
+                "new_run_trigger": "manual",
+                "discovery_baseline_complete": {
+                  "futario": false
+                }
+              },
+              "created_at": "2026-10-01T12:00:00Z",
+              "started_at": null,
+              "finished_at": "2026-10-01T12:00:00Z",
+              "epoch": 0,
+              "attempt": 1,
+              "issue_code": null,
+              "resumed_at": null,
+              "stage": "accepted",
+              "counts": {},
+              "plan_revision": 1,
+              "worker_state": "online",
+              "coverage": [],
+              "issues": []
+            },
+            "latest_completed_at": "2026-10-01T12:00:00Z",
+            "latest_successful_at": "2026-10-01T12:00:00Z"
+          },
+          "request_id": "11b5b102faa648dfb5069940bc9de79c"
+        },
+        "service": {
+          "request_id": "67206bab12aa4dd3917639a0c5ce1a7e",
+          "app_instance_id": "ad1db303-5de2-4203-9d63-98ab751a4684",
+          "schema_version": 7,
+          "web_ready": true,
+          "worker_state": "online",
+          "heartbeat_at": 1791291738.3265047,
+          "worker_pid": 16668,
+          "worker_born": 1791291735.587638,
+          "pid": 86912,
+          "born": 1791291734.8087013,
+          "source_adapter": "futario-json-v1",
+          "checked": true
+        },
+        "intent_id": null,
+        "exit_code": 0
+      }
+    },
+    {
+      "command": "product",
+      "exit": 0,
+      "response": {
+        "ok": true,
+        "data": {
+          "product": {
+            "id": "fixture-000",
+            "title": "秋日松弛感 · 羊毛针织衫",
+            "source": {
+              "date_reason": "synthetic_fixture",
+              "source_id": "0",
+              "source_published_at": null,
+              "title": "秋日松弛感 · 羊毛针织衫",
+              "url": "https://example.invalid/products/0"
+            },
+            "first_seen_at": "2026-10-01T12:00:00Z",
+            "first_eligible_at": "2026-10-01T12:00:00Z",
+            "effective_category": "tops",
+            "user_state": {
+              "product_id": "fixture-000",
+              "favorite": true,
+              "excluded": false,
+              "category_override": "tops",
+              "revision": 2,
+              "viewed_at": null,
+              "seen_version_id": null,
+              "seen_version_revision": null,
+              "seen_content_digest": null
+            },
+            "media_state": "ready",
+            "latest_detail_error": null,
+            "has_material_update": false,
+            "latest_available_version_id": "fixture-version-0",
+            "latest_available_revision": 1,
+            "latest_complete_version_id": "fixture-version-0",
+            "latest_complete_revision": 1,
+            "latest_observed_version_id": "fixture-version-0",
+            "latest_observed_revision": 1,
+            "version_id": "fixture-version-0",
+            "version_revision": 1,
+            "images": [
+              {
+                "asset_id": "fixture-asset-0-0",
+                "sha256": "0d582e182a323b091b2372d6225d00e4b49dece3e2f5994fd446add256e0a3eb",
+                "verified_at": "2026-10-01T12:00:00Z",
+                "preview_url": "/v1/assets/fixture-asset-0-0?rendition=preview",
+                "original_url": "/v1/assets/fixture-asset-0-0?rendition=original"
+              },
+              {
+                "asset_id": "fixture-asset-0-1",
+                "sha256": "5a18cbda52772733fc25f651db1b5c3117f95b66d1be7befb34735809f298f0a",
+                "verified_at": "2026-10-01T12:00:00Z",
+                "preview_url": "/v1/assets/fixture-asset-0-1?rendition=preview",
+                "original_url": "/v1/assets/fixture-asset-0-1?rendition=original"
+              }
+            ],
+            "album": {
+              "expected_count": 2,
+              "stored_count": 2,
+              "missing": [],
+              "coverage_scope": [
+                "product.images"
+              ],
+              "coverage_complete": true,
+              "verified_at": "2026-10-01T12:00:00Z",
+              "capability_notes": []
+            },
+            "latest_observed_album": {
+              "expected_count": 2,
+              "stored_count": 2,
+              "missing": [],
+              "coverage_scope": [
+                "product.images"
+              ],
+              "coverage_complete": true,
+              "verified_at": "2026-10-01T12:00:00Z",
+              "capability_notes": []
+            },
+            "using_previous_images": false,
+            "versions": [
+              {
+                "id": "fixture-version-0",
+                "revision": 1,
+                "content_digest": "fe9a3d4ca464658eee6700d0f51926bd534daf56ccb478a5136bca3e17c267e9"
+              }
+            ]
+          },
+          "request_id": "70965fcbf28d4626b93c2b5c7262dd25"
+        },
+        "service": {
+          "request_id": "ada8340fcc394385a6418c616db82b8a",
+          "app_instance_id": "ad1db303-5de2-4203-9d63-98ab751a4684",
+          "schema_version": 7,
+          "web_ready": true,
+          "worker_state": "online",
+          "heartbeat_at": 1791291738.588412,
+          "worker_pid": 16668,
+          "worker_born": 1791291735.587638,
+          "pid": 86912,
+          "born": 1791291734.8087013,
+          "source_adapter": "futario-json-v1",
+          "checked": true
+        },
+        "intent_id": null,
+        "exit_code": 0
+      }
+    },
+    {
+      "command": "user-state",
+      "exit": 4,
+      "response": {
+        "ok": false,
+        "error": {
+          "code": "REVISION_CONFLICT",
+          "message": "本机 API 拒绝请求；请核对当前状态，勿盲目覆盖或换键",
+          "details": {
+            "http_status": 409,
+            "response": {
+              "error": {
+                "code": "REVISION_CONFLICT",
+                "message": "这款商品的状态已改变，请刷新后再操作",
+                "retryable": false,
+                "details": {}
+              },
+              "request_id": "95cb2503a6cd49b39f5b7d0ee883225c"
+            }
+          }
+        },
+        "service": {
+          "request_id": "076125f3529944f49ecd10a1278ea3ad",
+          "app_instance_id": "ad1db303-5de2-4203-9d63-98ab751a4684",
+          "schema_version": 7,
+          "web_ready": true,
+          "worker_state": "online",
+          "heartbeat_at": 1791291738.8504844,
+          "worker_pid": 16668,
+          "worker_born": 1791291735.587638,
+          "pid": 86912,
+          "born": 1791291734.8087013,
+          "source_adapter": "futario-json-v1",
+          "checked": true
+        },
+        "intent_id": "1e59d8638fd94fed9e3e1ae520b989f0",
+        "exit_code": 4
+      }
+    },
+    {
+      "command": "start",
+      "exit": 73,
+      "fault": "process exit after real API response"
+    },
+    {
+      "command": "intents",
+      "exit": 0,
+      "response": {
+        "ok": true,
+        "data": {
+          "items": [
+            {
+              "intent_id": "2363dc5adaa04bd09abd4929515fcdd4",
+              "command": "start",
+              "state": "sending",
+              "created_at": 1791291739.3238423,
+              "payload": {
+                "request_key": "0f56b17d9ec84fd7be39f2cde23405b9",
+                "trigger": "skill",
+                "overrides": {
+                  "window_days": 7
+                }
+              }
+            },
+            {
+              "intent_id": "1e59d8638fd94fed9e3e1ae520b989f0",
+              "command": "user-state",
+              "state": "rejected",
+              "created_at": 1791291739.0029588,
+              "payload": {
+                "expected_revision": 1,
+                "favorite": false
+              }
+            },
+            {
+              "intent_id": "e49608f516244ebc9bccffbca43cece5",
+              "command": "user-state",
+              "state": "accepted",
+              "created_at": 1791291738.088879,
+              "payload": {
+                "expected_revision": 1,
+                "favorite": true,
+                "category_override": "tops"
+              }
+            }
+          ],
+          "intent_directory": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t4-integration-721b6c0d9006\\control\\client-intents"
+        },
+        "service": {
+          "checked": false,
+          "web_ready": null,
+          "worker_state": "unknown"
+        },
+        "intent_id": null,
+        "exit_code": 0
+      }
+    },
+    {
+      "command": "resume",
+      "exit": 0,
+      "response": {
+        "ok": true,
+        "data": {
+          "intent_id": "2363dc5adaa04bd09abd4929515fcdd4",
+          "intent_state": "accepted",
+          "result": {
+            "run": {
+              "id": "a7914c28ffd741238b69aa2cd45c19f7",
+              "state": "queued",
+              "snapshot": {
+                "site_ids": [
+                  "futario"
+                ],
+                "window_days": 7,
+                "unknown_date_policy": "include",
+                "discovery": {
+                  "page_size": 20,
+                  "max_pages_per_pass": 30,
+                  "passes": 2,
+                  "max_requests": 60,
+                  "max_products": 600
+                },
+                "max_details": 300,
+                "network": {
+                  "resolver_mode": "system",
+                  "detail_concurrency": 1,
+                  "image_concurrency": 2,
+                  "min_interval_ms": 1000,
+                  "max_attempts": 3,
+                  "max_http_requests": 3000,
+                  "max_image_requests": 2400,
+                  "run_total_seconds": 3600,
+                  "timeouts": {
+                    "connect": 10,
+                    "pool": 10,
+                    "read": 30,
+                    "write": 30,
+                    "total": 120
+                  }
+                },
+                "storage": {
+                  "max_image_bytes": 26214400,
+                  "max_pixels": 50000000,
+                  "run_download_bytes": 2147483648,
+                  "min_free_bytes": 5368709120,
+                  "preview_cache_bytes": 536870912
+                },
+                "plan_revision": 1,
+                "window_start": "2026-09-29T13:02:19.382Z",
+                "window_end": "2026-10-06T13:02:19.382Z",
+                "adapter_versions": {
+                  "futario": "futario-json-v1"
+                },
+                "site_entries": {
+                  "futario": "https://futario.com/collections/new-in"
+                },
+                "new_run_trigger": "manual",
+                "discovery_baseline_complete": {
+                  "futario": false
+                }
+              },
+              "created_at": "2026-10-06T13:02:19.382Z",
+              "started_at": null,
+              "finished_at": null,
+              "epoch": 0,
+              "attempt": 1,
+              "issue_code": null,
+              "resumed_at": null,
+              "stage": "accepted",
+              "counts": {},
+              "plan_revision": 1,
+              "worker_state": "online",
+              "coverage": [],
+              "issues": []
+            },
+            "request_id": "0a5efdad2dcd42688beb2eeab867cf94",
+            "reconciled_by_request": true,
+            "reused": null,
+            "reuse_reason": null,
+            "ignored_overrides": null,
+            "notice": "已核对原键对应任务；首次复用/忽略参数回执未取得，不推测。"
+          }
+        },
+        "service": {
+          "request_id": "e7e870042a854193bdaa5d5f1ff5dde8",
+          "app_instance_id": "ad1db303-5de2-4203-9d63-98ab751a4684",
+          "schema_version": 7,
+          "web_ready": true,
+          "worker_state": "offline",
+          "heartbeat_at": 1791291738.8504844,
+          "worker_pid": 16668,
+          "worker_born": 1791291735.587638,
+          "pid": 86912,
+          "born": 1791291734.8087013,
+          "source_adapter": "futario-json-v1",
+          "checked": true
+        },
+        "intent_id": "2363dc5adaa04bd09abd4929515fcdd4",
+        "exit_code": 0
+      }
+    },
+    {
+      "command": "default-plan",
+      "exit": 0,
+      "response": {
+        "ok": true,
+        "data": {
+          "revision": 1,
+          "plan": {
+            "site_ids": [
+              "futario"
+            ],
+            "window_days": 14,
+            "unknown_date_policy": "include",
+            "discovery": {
+              "page_size": 20,
+              "max_pages_per_pass": 30,
+              "passes": 2,
+              "max_requests": 60,
+              "max_products": 600
+            },
+            "max_details": 300,
+            "network": {
+              "resolver_mode": "system",
+              "detail_concurrency": 1,
+              "image_concurrency": 2,
+              "min_interval_ms": 1000,
+              "max_attempts": 3,
+              "max_http_requests": 3000,
+              "max_image_requests": 2400,
+              "run_total_seconds": 3600,
+              "timeouts": {
+                "connect": 10,
+                "pool": 10,
+                "read": 30,
+                "write": 30,
+                "total": 120
+              }
+            },
+            "storage": {
+              "max_image_bytes": 26214400,
+              "max_pixels": 50000000,
+              "run_download_bytes": 2147483648,
+              "min_free_bytes": 5368709120,
+              "preview_cache_bytes": 536870912
+            }
+          },
+          "available": {
+            "window_days": [
+              7,
+              14
+            ],
+            "unknown_date_policy": [
+              "include",
+              "exclude"
+            ]
+          },
+          "request_id": "77a6a6deeae64afe88fbadc48f46916c"
+        },
+        "service": {
+          "request_id": "f00b37dc1b7b471b8ef89af2f1cd4af7",
+          "app_instance_id": "ad1db303-5de2-4203-9d63-98ab751a4684",
+          "schema_version": 7,
+          "web_ready": true,
+          "worker_state": "offline",
+          "heartbeat_at": 1791291738.8504844,
+          "worker_pid": 16668,
+          "worker_born": 1791291735.587638,
+          "pid": 86912,
+          "born": 1791291734.8087013,
+          "source_adapter": "futario-json-v1",
+          "checked": true
+        },
+        "intent_id": null,
+        "exit_code": 0
+      }
+    },
+    {
+      "command": "default-plan",
+      "exit": 0,
+      "response": {
+        "ok": true,
+        "data": {
+          "revision": 1,
+          "plan": {
+            "site_ids": [
+              "futario"
+            ],
+            "window_days": 14,
+            "unknown_date_policy": "include",
+            "discovery": {
+              "page_size": 20,
+              "max_pages_per_pass": 30,
+              "passes": 2,
+              "max_requests": 60,
+              "max_products": 600
+            },
+            "max_details": 300,
+            "network": {
+              "resolver_mode": "system",
+              "detail_concurrency": 1,
+              "image_concurrency": 2,
+              "min_interval_ms": 1000,
+              "max_attempts": 3,
+              "max_http_requests": 3000,
+              "max_image_requests": 2400,
+              "run_total_seconds": 3600,
+              "timeouts": {
+                "connect": 10,
+                "pool": 10,
+                "read": 30,
+                "write": 30,
+                "total": 120
+              }
+            },
+            "storage": {
+              "max_image_bytes": 26214400,
+              "max_pixels": 50000000,
+              "run_download_bytes": 2147483648,
+              "min_free_bytes": 5368709120,
+              "preview_cache_bytes": 536870912
+            }
+          },
+          "available": {
+            "window_days": [
+              7,
+              14
+            ],
+            "unknown_date_policy": [
+              "include",
+              "exclude"
+            ]
+          },
+          "request_id": "c8841e9d1f9d422094a8918431d5e232"
+        },
+        "service": {
+          "request_id": "3bd3c378305a423aa29931409e289d5e",
+          "app_instance_id": "ad1db303-5de2-4203-9d63-98ab751a4684",
+          "schema_version": 7,
+          "web_ready": true,
+          "worker_state": "offline",
+          "heartbeat_at": 1791291738.8504844,
+          "worker_pid": 16668,
+          "worker_born": 1791291735.587638,
+          "pid": 86912,
+          "born": 1791291734.8087013,
+          "source_adapter": "futario-json-v1",
+          "checked": true
+        },
+        "intent_id": null,
+        "exit_code": 0
+      }
+    },
+    {
+      "command": "start",
+      "exit": 0,
+      "response": {
+        "ok": true,
+        "data": {
+          "intent_id": "cd619f17dcca4f34b62ede54cde58851",
+          "intent_state": "accepted",
+          "result": {
+            "run": {
+              "id": "a7914c28ffd741238b69aa2cd45c19f7",
+              "state": "queued",
+              "snapshot": {
+                "site_ids": [
+                  "futario"
+                ],
+                "window_days": 7,
+                "unknown_date_policy": "include",
+                "discovery": {
+                  "page_size": 20,
+                  "max_pages_per_pass": 30,
+                  "passes": 2,
+                  "max_requests": 60,
+                  "max_products": 600
+                },
+                "max_details": 300,
+                "network": {
+                  "resolver_mode": "system",
+                  "detail_concurrency": 1,
+                  "image_concurrency": 2,
+                  "min_interval_ms": 1000,
+                  "max_attempts": 3,
+                  "max_http_requests": 3000,
+                  "max_image_requests": 2400,
+                  "run_total_seconds": 3600,
+                  "timeouts": {
+                    "connect": 10,
+                    "pool": 10,
+                    "read": 30,
+                    "write": 30,
+                    "total": 120
+                  }
+                },
+                "storage": {
+                  "max_image_bytes": 26214400,
+                  "max_pixels": 50000000,
+                  "run_download_bytes": 2147483648,
+                  "min_free_bytes": 5368709120,
+                  "preview_cache_bytes": 536870912
+                },
+                "plan_revision": 1,
+                "window_start": "2026-09-29T13:02:19.382Z",
+                "window_end": "2026-10-06T13:02:19.382Z",
+                "adapter_versions": {
+                  "futario": "futario-json-v1"
+                },
+                "site_entries": {
+                  "futario": "https://futario.com/collections/new-in"
+                },
+                "new_run_trigger": "manual",
+                "discovery_baseline_complete": {
+                  "futario": false
+                }
+              },
+              "created_at": "2026-10-06T13:02:19.382Z",
+              "started_at": null,
+              "finished_at": null,
+              "epoch": 0,
+              "attempt": 1,
+              "issue_code": null,
+              "resumed_at": null,
+              "stage": "accepted",
+              "counts": {},
+              "plan_revision": 1,
+              "worker_state": "online",
+              "coverage": [],
+              "issues": []
+            },
+            "reused": true,
+            "reuse_reason": "active_run",
+            "ignored_overrides": [
+              "window_days"
+            ],
+            "request_id": "43f9fa0dcd704ebb8681280cf6267b23"
+          }
+        },
+        "service": {
+          "request_id": "70837bf3cd564d8294f58864536b8578",
+          "app_instance_id": "ad1db303-5de2-4203-9d63-98ab751a4684",
+          "schema_version": 7,
+          "web_ready": true,
+          "worker_state": "offline",
+          "heartbeat_at": 1791291738.8504844,
+          "worker_pid": 16668,
+          "worker_born": 1791291735.587638,
+          "pid": 86912,
+          "born": 1791291734.8087013,
+          "source_adapter": "futario-json-v1",
+          "checked": true
+        },
+        "intent_id": "cd619f17dcca4f34b62ede54cde58851",
+        "exit_code": 0
+      }
+    },
+    {
+      "command": "cancel",
+      "exit": 73,
+      "fault": "process exit after real API response"
+    },
+    {
+      "command": "intents",
+      "exit": 0,
+      "response": {
+        "ok": true,
+        "data": {
+          "items": [
+            {
+              "intent_id": "9c46c50e5d2244948cb708b8a45b1a00",
+              "command": "cancel",
+              "state": "sending",
+              "created_at": 1791291741.0538075,
+              "payload": {
+                "request_key": "6281acfb2d2147b4bf0a99d07db79cd6"
+              }
+            },
+            {
+              "intent_id": "cd619f17dcca4f34b62ede54cde58851",
+              "command": "start",
+              "state": "accepted",
+              "created_at": 1791291740.7275574,
+              "payload": {
+                "request_key": "f9c87218a12447189a6f30056d4cefba",
+                "trigger": "skill",
+                "overrides": {
+                  "window_days": 14
+                }
+              }
+            },
+            {
+              "intent_id": "2363dc5adaa04bd09abd4929515fcdd4",
+              "command": "start",
+              "state": "accepted",
+              "created_at": 1791291739.3238423,
+              "payload": {
+                "request_key": "0f56b17d9ec84fd7be39f2cde23405b9",
+                "trigger": "skill",
+                "overrides": {
+                  "window_days": 7
+                }
+              }
+            },
+            {
+              "intent_id": "1e59d8638fd94fed9e3e1ae520b989f0",
+              "command": "user-state",
+              "state": "rejected",
+              "created_at": 1791291739.0029588,
+              "payload": {
+                "expected_revision": 1,
+                "favorite": false
+              }
+            },
+            {
+              "intent_id": "e49608f516244ebc9bccffbca43cece5",
+              "command": "user-state",
+              "state": "accepted",
+              "created_at": 1791291738.088879,
+              "payload": {
+                "expected_revision": 1,
+                "favorite": true,
+                "category_override": "tops"
+              }
+            }
+          ],
+          "intent_directory": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t4-integration-721b6c0d9006\\control\\client-intents"
+        },
+        "service": {
+          "checked": false,
+          "web_ready": null,
+          "worker_state": "unknown"
+        },
+        "intent_id": null,
+        "exit_code": 0
+      }
+    },
+    {
+      "command": "resume",
+      "exit": 0,
+      "response": {
+        "ok": true,
+        "data": {
+          "intent_id": "9c46c50e5d2244948cb708b8a45b1a00",
+          "intent_state": "accepted",
+          "result": {
+            "run": {
+              "id": "a7914c28ffd741238b69aa2cd45c19f7",
+              "state": "cancelled",
+              "snapshot": {
+                "site_ids": [
+                  "futario"
+                ],
+                "window_days": 7,
+                "unknown_date_policy": "include",
+                "discovery": {
+                  "page_size": 20,
+                  "max_pages_per_pass": 30,
+                  "passes": 2,
+                  "max_requests": 60,
+                  "max_products": 600
+                },
+                "max_details": 300,
+                "network": {
+                  "resolver_mode": "system",
+                  "detail_concurrency": 1,
+                  "image_concurrency": 2,
+                  "min_interval_ms": 1000,
+                  "max_attempts": 3,
+                  "max_http_requests": 3000,
+                  "max_image_requests": 2400,
+                  "run_total_seconds": 3600,
+                  "timeouts": {
+                    "connect": 10,
+                    "pool": 10,
+                    "read": 30,
+                    "write": 30,
+                    "total": 120
+                  }
+                },
+                "storage": {
+                  "max_image_bytes": 26214400,
+                  "max_pixels": 50000000,
+                  "run_download_bytes": 2147483648,
+                  "min_free_bytes": 5368709120,
+                  "preview_cache_bytes": 536870912
+                },
+                "plan_revision": 1,
+                "window_start": "2026-09-29T13:02:19.382Z",
+                "window_end": "2026-10-06T13:02:19.382Z",
+                "adapter_versions": {
+                  "futario": "futario-json-v1"
+                },
+                "site_entries": {
+                  "futario": "https://futario.com/collections/new-in"
+                },
+                "new_run_trigger": "manual",
+                "discovery_baseline_complete": {
+                  "futario": false
+                }
+              },
+              "created_at": "2026-10-06T13:02:19.382Z",
+              "started_at": null,
+              "finished_at": "2026-10-06T13:02:21.111Z",
+              "epoch": 1,
+              "attempt": 1,
+              "issue_code": null,
+              "resumed_at": null,
+              "stage": "cancel_requested",
+              "counts": {},
+              "plan_revision": 1,
+              "worker_state": "online",
+              "coverage": [],
+              "issues": []
+            },
+            "request_id": "1754d46492d6421ca7ce5143dee39709"
+          }
+        },
+        "service": {
+          "request_id": "1e0c0ace44c846fd91af3b214f2356d8",
+          "app_instance_id": "ad1db303-5de2-4203-9d63-98ab751a4684",
+          "schema_version": 7,
+          "web_ready": true,
+          "worker_state": "offline",
+          "heartbeat_at": 1791291738.8504844,
+          "worker_pid": 16668,
+          "worker_born": 1791291735.587638,
+          "pid": 86912,
+          "born": 1791291734.8087013,
+          "source_adapter": "futario-json-v1",
+          "checked": true
+        },
+        "intent_id": "9c46c50e5d2244948cb708b8a45b1a00",
+        "exit_code": 0
+      }
+    },
+    {
+      "command": "retry",
+      "exit": 73,
+      "fault": "process exit after real API response"
+    },
+    {
+      "command": "intents",
+      "exit": 0,
+      "response": {
+        "ok": true,
+        "data": {
+          "items": [
+            {
+              "intent_id": "202b97beac544cc797116023d7e00859",
+              "command": "retry",
+              "state": "sending",
+              "created_at": 1791291741.890749,
+              "payload": {
+                "request_key": "57538e29c4ad4c998667c7b80b93e373",
+                "scope": "failed"
+              }
+            },
+            {
+              "intent_id": "9c46c50e5d2244948cb708b8a45b1a00",
+              "command": "cancel",
+              "state": "accepted",
+              "created_at": 1791291741.0538075,
+              "payload": {
+                "request_key": "6281acfb2d2147b4bf0a99d07db79cd6"
+              }
+            },
+            {
+              "intent_id": "cd619f17dcca4f34b62ede54cde58851",
+              "command": "start",
+              "state": "accepted",
+              "created_at": 1791291740.7275574,
+              "payload": {
+                "request_key": "f9c87218a12447189a6f30056d4cefba",
+                "trigger": "skill",
+                "overrides": {
+                  "window_days": 14
+                }
+              }
+            },
+            {
+              "intent_id": "2363dc5adaa04bd09abd4929515fcdd4",
+              "command": "start",
+              "state": "accepted",
+              "created_at": 1791291739.3238423,
+              "payload": {
+                "request_key": "0f56b17d9ec84fd7be39f2cde23405b9",
+                "trigger": "skill",
+                "overrides": {
+                  "window_days": 7
+                }
+              }
+            },
+            {
+              "intent_id": "1e59d8638fd94fed9e3e1ae520b989f0",
+              "command": "user-state",
+              "state": "rejected",
+              "created_at": 1791291739.0029588,
+              "payload": {
+                "expected_revision": 1,
+                "favorite": false
+              }
+            },
+            {
+              "intent_id": "e49608f516244ebc9bccffbca43cece5",
+              "command": "user-state",
+              "state": "accepted",
+              "created_at": 1791291738.088879,
+              "payload": {
+                "expected_revision": 1,
+                "favorite": true,
+                "category_override": "tops"
+              }
+            }
+          ],
+          "intent_directory": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t4-integration-721b6c0d9006\\control\\client-intents"
+        },
+        "service": {
+          "checked": false,
+          "web_ready": null,
+          "worker_state": "unknown"
+        },
+        "intent_id": null,
+        "exit_code": 0
+      }
+    },
+    {
+      "command": "resume",
+      "exit": 0,
+      "response": {
+        "ok": true,
+        "data": {
+          "intent_id": "202b97beac544cc797116023d7e00859",
+          "intent_state": "accepted",
+          "result": {
+            "run": {
+              "id": "a7914c28ffd741238b69aa2cd45c19f7",
+              "state": "queued",
+              "snapshot": {
+                "site_ids": [
+                  "futario"
+                ],
+                "window_days": 7,
+                "unknown_date_policy": "include",
+                "discovery": {
+                  "page_size": 20,
+                  "max_pages_per_pass": 30,
+                  "passes": 2,
+                  "max_requests": 60,
+                  "max_products": 600
+                },
+                "max_details": 300,
+                "network": {
+                  "resolver_mode": "system",
+                  "detail_concurrency": 1,
+                  "image_concurrency": 2,
+                  "min_interval_ms": 1000,
+                  "max_attempts": 3,
+                  "max_http_requests": 3000,
+                  "max_image_requests": 2400,
+                  "run_total_seconds": 3600,
+                  "timeouts": {
+                    "connect": 10,
+                    "pool": 10,
+                    "read": 30,
+                    "write": 30,
+                    "total": 120
+                  }
+                },
+                "storage": {
+                  "max_image_bytes": 26214400,
+                  "max_pixels": 50000000,
+                  "run_download_bytes": 2147483648,
+                  "min_free_bytes": 5368709120,
+                  "preview_cache_bytes": 536870912
+                },
+                "plan_revision": 1,
+                "window_start": "2026-09-29T13:02:19.382Z",
+                "window_end": "2026-10-06T13:02:19.382Z",
+                "adapter_versions": {
+                  "futario": "futario-json-v1"
+                },
+                "site_entries": {
+                  "futario": "https://futario.com/collections/new-in"
+                },
+                "new_run_trigger": "manual",
+                "discovery_baseline_complete": {
+                  "futario": false
+                }
+              },
+              "created_at": "2026-10-06T13:02:19.382Z",
+              "started_at": null,
+              "finished_at": null,
+              "epoch": 2,
+              "attempt": 2,
+              "issue_code": null,
+              "resumed_at": "2026-10-06T13:02:21.949Z",
+              "stage": "manual_retry",
+              "counts": {},
+              "plan_revision": 1,
+              "worker_state": "online",
+              "coverage": [],
+              "issues": []
+            },
+            "request_id": "2bd6c8cb860b42368f094224a2f38c74"
+          }
+        },
+        "service": {
+          "request_id": "9077585e50c2422096ee726e7454c2a3",
+          "app_instance_id": "ad1db303-5de2-4203-9d63-98ab751a4684",
+          "schema_version": 7,
+          "web_ready": true,
+          "worker_state": "offline",
+          "heartbeat_at": 1791291738.8504844,
+          "worker_pid": 16668,
+          "worker_born": 1791291735.587638,
+          "pid": 86912,
+          "born": 1791291734.8087013,
+          "source_adapter": "futario-json-v1",
+          "checked": true
+        },
+        "intent_id": "202b97beac544cc797116023d7e00859",
+        "exit_code": 0
+      }
+    },
+    {
+      "command": "cancel",
+      "exit": 0,
+      "response": {
+        "ok": true,
+        "data": {
+          "intent_id": "0549488a678c4e3489c1bd34a1ea8c5c",
+          "intent_state": "accepted",
+          "result": {
+            "run": {
+              "id": "a7914c28ffd741238b69aa2cd45c19f7",
+              "state": "cancelled",
+              "snapshot": {
+                "site_ids": [
+                  "futario"
+                ],
+                "window_days": 7,
+                "unknown_date_policy": "include",
+                "discovery": {
+                  "page_size": 20,
+                  "max_pages_per_pass": 30,
+                  "passes": 2,
+                  "max_requests": 60,
+                  "max_products": 600
+                },
+                "max_details": 300,
+                "network": {
+                  "resolver_mode": "system",
+                  "detail_concurrency": 1,
+                  "image_concurrency": 2,
+                  "min_interval_ms": 1000,
+                  "max_attempts": 3,
+                  "max_http_requests": 3000,
+                  "max_image_requests": 2400,
+                  "run_total_seconds": 3600,
+                  "timeouts": {
+                    "connect": 10,
+                    "pool": 10,
+                    "read": 30,
+                    "write": 30,
+                    "total": 120
+                  }
+                },
+                "storage": {
+                  "max_image_bytes": 26214400,
+                  "max_pixels": 50000000,
+                  "run_download_bytes": 2147483648,
+                  "min_free_bytes": 5368709120,
+                  "preview_cache_bytes": 536870912
+                },
+                "plan_revision": 1,
+                "window_start": "2026-09-29T13:02:19.382Z",
+                "window_end": "2026-10-06T13:02:19.382Z",
+                "adapter_versions": {
+                  "futario": "futario-json-v1"
+                },
+                "site_entries": {
+                  "futario": "https://futario.com/collections/new-in"
+                },
+                "new_run_trigger": "manual",
+                "discovery_baseline_complete": {
+                  "futario": false
+                }
+              },
+              "created_at": "2026-10-06T13:02:19.382Z",
+              "started_at": null,
+              "finished_at": "2026-10-06T13:02:22.746Z",
+              "epoch": 3,
+              "attempt": 2,
+              "issue_code": null,
+              "resumed_at": "2026-10-06T13:02:21.949Z",
+              "stage": "cancel_requested",
+              "counts": {},
+              "plan_revision": 1,
+              "worker_state": "online",
+              "coverage": [],
+              "issues": []
+            },
+            "request_id": "5162ee237ee84873829629cdffcc636d"
+          }
+        },
+        "service": {
+          "request_id": "588a9ab8badc47d0bce8d80ea8ae18af",
+          "app_instance_id": "ad1db303-5de2-4203-9d63-98ab751a4684",
+          "schema_version": 7,
+          "web_ready": true,
+          "worker_state": "offline",
+          "heartbeat_at": 1791291738.8504844,
+          "worker_pid": 16668,
+          "worker_born": 1791291735.587638,
+          "pid": 86912,
+          "born": 1791291734.8087013,
+          "source_adapter": "futario-json-v1",
+          "checked": true
+        },
+        "intent_id": "0549488a678c4e3489c1bd34a1ea8c5c",
+        "exit_code": 0
+      }
+    },
+    {
+      "command": "progress",
+      "exit": 0,
+      "response": {
+        "ok": true,
+        "data": {
+          "run": {
+            "id": "a7914c28ffd741238b69aa2cd45c19f7",
+            "state": "cancelled",
+            "snapshot": {
+              "site_ids": [
+                "futario"
+              ],
+              "window_days": 7,
+              "unknown_date_policy": "include",
+              "discovery": {
+                "page_size": 20,
+                "max_pages_per_pass": 30,
+                "passes": 2,
+                "max_requests": 60,
+                "max_products": 600
+              },
+              "max_details": 300,
+              "network": {
+                "resolver_mode": "system",
+                "detail_concurrency": 1,
+                "image_concurrency": 2,
+                "min_interval_ms": 1000,
+                "max_attempts": 3,
+                "max_http_requests": 3000,
+                "max_image_requests": 2400,
+                "run_total_seconds": 3600,
+                "timeouts": {
+                  "connect": 10,
+                  "pool": 10,
+                  "read": 30,
+                  "write": 30,
+                  "total": 120
+                }
+              },
+              "storage": {
+                "max_image_bytes": 26214400,
+                "max_pixels": 50000000,
+                "run_download_bytes": 2147483648,
+                "min_free_bytes": 5368709120,
+                "preview_cache_bytes": 536870912
+              },
+              "plan_revision": 1,
+              "window_start": "2026-09-29T13:02:19.382Z",
+              "window_end": "2026-10-06T13:02:19.382Z",
+              "adapter_versions": {
+                "futario": "futario-json-v1"
+              },
+              "site_entries": {
+                "futario": "https://futario.com/collections/new-in"
+              },
+              "new_run_trigger": "manual",
+              "discovery_baseline_complete": {
+                "futario": false
+              }
+            },
+            "created_at": "2026-10-06T13:02:19.382Z",
+            "started_at": null,
+            "finished_at": "2026-10-06T13:02:22.746Z",
+            "epoch": 3,
+            "attempt": 2,
+            "issue_code": null,
+            "resumed_at": "2026-10-06T13:02:21.949Z",
+            "stage": "cancel_requested",
+            "counts": {},
+            "plan_revision": 1,
+            "worker_state": "online",
+            "coverage": [],
+            "issues": []
+          },
+          "request_id": "5cc0ecc94ac943b6b13cf15a2f58db5f"
+        },
+        "service": {
+          "request_id": "7385587923734cc48627e430dc4e0353",
+          "app_instance_id": "ad1db303-5de2-4203-9d63-98ab751a4684",
+          "schema_version": 7,
+          "web_ready": true,
+          "worker_state": "offline",
+          "heartbeat_at": 1791291738.8504844,
+          "worker_pid": 16668,
+          "worker_born": 1791291735.587638,
+          "pid": 86912,
+          "born": 1791291734.8087013,
+          "source_adapter": "futario-json-v1",
+          "checked": true
+        },
+        "intent_id": null,
+        "exit_code": 0
+      }
+    },
+    {
+      "command": "set-default-plan",
+      "exit": 0,
+      "response": {
+        "ok": true,
+        "data": {
+          "intent_id": "c75124d72b224873969541d3aaa4f34a",
+          "intent_state": "accepted",
+          "result": {
+            "revision": 2,
+            "plan": {
+              "site_ids": [
+                "futario"
+              ],
+              "window_days": 7,
+              "unknown_date_policy": "include",
+              "discovery": {
+                "page_size": 20,
+                "max_pages_per_pass": 30,
+                "passes": 2,
+                "max_requests": 60,
+                "max_products": 600
+              },
+              "max_details": 300,
+              "network": {
+                "resolver_mode": "system",
+                "detail_concurrency": 1,
+                "image_concurrency": 2,
+                "min_interval_ms": 1000,
+                "max_attempts": 3,
+                "max_http_requests": 3000,
+                "max_image_requests": 2400,
+                "run_total_seconds": 3600,
+                "timeouts": {
+                  "connect": 10,
+                  "pool": 10,
+                  "read": 30,
+                  "write": 30,
+                  "total": 120
+                }
+              },
+              "storage": {
+                "max_image_bytes": 26214400,
+                "max_pixels": 50000000,
+                "run_download_bytes": 2147483648,
+                "min_free_bytes": 5368709120,
+                "preview_cache_bytes": 536870912
+              }
+            },
+            "request_id": "a5233e1f9f7e446fb05575e2a4feb18b"
+          }
+        },
+        "service": {
+          "request_id": "ced6695eab5e46619539301950de2bc8",
+          "app_instance_id": "ad1db303-5de2-4203-9d63-98ab751a4684",
+          "schema_version": 7,
+          "web_ready": true,
+          "worker_state": "offline",
+          "heartbeat_at": 1791291738.8504844,
+          "worker_pid": 16668,
+          "worker_born": 1791291735.587638,
+          "pid": 86912,
+          "born": 1791291734.8087013,
+          "source_adapter": "futario-json-v1",
+          "checked": true
+        },
+        "intent_id": "c75124d72b224873969541d3aaa4f34a",
+        "exit_code": 0
+      }
+    },
+    {
+      "command": "set-default-plan",
+      "exit": 4,
+      "response": {
+        "ok": false,
+        "error": {
+          "code": "REVISION_CONFLICT",
+          "message": "本机 API 拒绝请求；请核对当前状态，勿盲目覆盖或换键",
+          "details": {
+            "http_status": 409,
+            "response": {
+              "error": {
+                "code": "REVISION_CONFLICT",
+                "message": "默认方案已改变，请刷新",
+                "retryable": false,
+                "details": {}
+              },
+              "request_id": "9caf9705f8cf4c95ad5438b9d3b37e56"
+            }
+          }
+        },
+        "service": {
+          "request_id": "5158c2d17a324dc19cce9b64a8067a5e",
+          "app_instance_id": "ad1db303-5de2-4203-9d63-98ab751a4684",
+          "schema_version": 7,
+          "web_ready": true,
+          "worker_state": "offline",
+          "heartbeat_at": 1791291738.8504844,
+          "worker_pid": 16668,
+          "worker_born": 1791291735.587638,
+          "pid": 86912,
+          "born": 1791291734.8087013,
+          "source_adapter": "futario-json-v1",
+          "checked": true
+        },
+        "intent_id": "04fc553bd0a7494a8498ec393cd03dca",
+        "exit_code": 4
+      }
+    },
+    {
+      "command": "default-plan",
+      "exit": 0,
+      "response": {
+        "ok": true,
+        "data": {
+          "revision": 2,
+          "plan": {
+            "site_ids": [
+              "futario"
+            ],
+            "window_days": 7,
+            "unknown_date_policy": "include",
+            "discovery": {
+              "page_size": 20,
+              "max_pages_per_pass": 30,
+              "passes": 2,
+              "max_requests": 60,
+              "max_products": 600
+            },
+            "max_details": 300,
+            "network": {
+              "resolver_mode": "system",
+              "detail_concurrency": 1,
+              "image_concurrency": 2,
+              "min_interval_ms": 1000,
+              "max_attempts": 3,
+              "max_http_requests": 3000,
+              "max_image_requests": 2400,
+              "run_total_seconds": 3600,
+              "timeouts": {
+                "connect": 10,
+                "pool": 10,
+                "read": 30,
+                "write": 30,
+                "total": 120
+              }
+            },
+            "storage": {
+              "max_image_bytes": 26214400,
+              "max_pixels": 50000000,
+              "run_download_bytes": 2147483648,
+              "min_free_bytes": 5368709120,
+              "preview_cache_bytes": 536870912
+            }
+          },
+          "available": {
+            "window_days": [
+              7,
+              14
+            ],
+            "unknown_date_policy": [
+              "include",
+              "exclude"
+            ]
+          },
+          "request_id": "27b2f69e0ad14e72a64ffde0846683c7"
+        },
+        "service": {
+          "request_id": "793de24d80c7448892edca292ee97e63",
+          "app_instance_id": "ad1db303-5de2-4203-9d63-98ab751a4684",
+          "schema_version": 7,
+          "web_ready": true,
+          "worker_state": "offline",
+          "heartbeat_at": 1791291738.8504844,
+          "worker_pid": 16668,
+          "worker_born": 1791291735.587638,
+          "pid": 86912,
+          "born": 1791291734.8087013,
+          "source_adapter": "futario-json-v1",
+          "checked": true
+        },
+        "intent_id": null,
+        "exit_code": 0
+      }
+    },
+    {
+      "command": "set-default-plan",
+      "exit": 73,
+      "fault": "process exit after real API response"
+    },
+    {
+      "command": "intents",
+      "exit": 0,
+      "response": {
+        "ok": true,
+        "data": {
+          "items": [
+            {
+              "intent_id": "8703f491b5ba4c1da63a28fce7aa425f",
+              "command": "set-default-plan",
+              "state": "sending",
+              "created_at": 1791291744.16974,
+              "payload": {
+                "expected_revision": 2,
+                "window_days": 14
+              }
+            },
+            {
+              "intent_id": "04fc553bd0a7494a8498ec393cd03dca",
+              "command": "set-default-plan",
+              "state": "rejected",
+              "created_at": 1791291743.5764384,
+              "payload": {
+                "expected_revision": 1,
+                "window_days": 14
+              }
+            },
+            {
+              "intent_id": "c75124d72b224873969541d3aaa4f34a",
+              "command": "set-default-plan",
+              "state": "accepted",
+              "created_at": 1791291743.2719007,
+              "payload": {
+                "expected_revision": 1,
+                "window_days": 7
+              }
+            },
+            {
+              "intent_id": "0549488a678c4e3489c1bd34a1ea8c5c",
+              "command": "cancel",
+              "state": "accepted",
+              "created_at": 1791291742.690824,
+              "payload": {
+                "request_key": "b2f55d74b86b42989ca5190bf7140f6f"
+              }
+            },
+            {
+              "intent_id": "202b97beac544cc797116023d7e00859",
+              "command": "retry",
+              "state": "accepted",
+              "created_at": 1791291741.890749,
+              "payload": {
+                "request_key": "57538e29c4ad4c998667c7b80b93e373",
+                "scope": "failed"
+              }
+            },
+            {
+              "intent_id": "9c46c50e5d2244948cb708b8a45b1a00",
+              "command": "cancel",
+              "state": "accepted",
+              "created_at": 1791291741.0538075,
+              "payload": {
+                "request_key": "6281acfb2d2147b4bf0a99d07db79cd6"
+              }
+            },
+            {
+              "intent_id": "cd619f17dcca4f34b62ede54cde58851",
+              "command": "start",
+              "state": "accepted",
+              "created_at": 1791291740.7275574,
+              "payload": {
+                "request_key": "f9c87218a12447189a6f30056d4cefba",
+                "trigger": "skill",
+                "overrides": {
+                  "window_days": 14
+                }
+              }
+            },
+            {
+              "intent_id": "2363dc5adaa04bd09abd4929515fcdd4",
+              "command": "start",
+              "state": "accepted",
+              "created_at": 1791291739.3238423,
+              "payload": {
+                "request_key": "0f56b17d9ec84fd7be39f2cde23405b9",
+                "trigger": "skill",
+                "overrides": {
+                  "window_days": 7
+                }
+              }
+            },
+            {
+              "intent_id": "1e59d8638fd94fed9e3e1ae520b989f0",
+              "command": "user-state",
+              "state": "rejected",
+              "created_at": 1791291739.0029588,
+              "payload": {
+                "expected_revision": 1,
+                "favorite": false
+              }
+            },
+            {
+              "intent_id": "e49608f516244ebc9bccffbca43cece5",
+              "command": "user-state",
+              "state": "accepted",
+              "created_at": 1791291738.088879,
+              "payload": {
+                "expected_revision": 1,
+                "favorite": true,
+                "category_override": "tops"
+              }
+            }
+          ],
+          "intent_directory": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t4-integration-721b6c0d9006\\control\\client-intents"
+        },
+        "service": {
+          "checked": false,
+          "web_ready": null,
+          "worker_state": "unknown"
+        },
+        "intent_id": null,
+        "exit_code": 0
+      }
+    },
+    {
+      "command": "resume",
+      "exit": 4,
+      "response": {
+        "ok": false,
+        "error": {
+          "code": "CAS_REVIEW_REQUIRED",
+          "message": "上次写入结果不确定；已读取当前状态，须核对意图后再决定，不自动重放",
+          "details": {
+            "intent_id": "8703f491b5ba4c1da63a28fce7aa425f",
+            "current": {
+              "revision": 3,
+              "plan": {
+                "site_ids": [
+                  "futario"
+                ],
+                "window_days": 14,
+                "unknown_date_policy": "include",
+                "discovery": {
+                  "page_size": 20,
+                  "max_pages_per_pass": 30,
+                  "passes": 2,
+                  "max_requests": 60,
+                  "max_products": 600
+                },
+                "max_details": 300,
+                "network": {
+                  "resolver_mode": "system",
+                  "detail_concurrency": 1,
+                  "image_concurrency": 2,
+                  "min_interval_ms": 1000,
+                  "max_attempts": 3,
+                  "max_http_requests": 3000,
+                  "max_image_requests": 2400,
+                  "run_total_seconds": 3600,
+                  "timeouts": {
+                    "connect": 10,
+                    "pool": 10,
+                    "read": 30,
+                    "write": 30,
+                    "total": 120
+                  }
+                },
+                "storage": {
+                  "max_image_bytes": 26214400,
+                  "max_pixels": 50000000,
+                  "run_download_bytes": 2147483648,
+                  "min_free_bytes": 5368709120,
+                  "preview_cache_bytes": 536870912
+                }
+              },
+              "available": {
+                "window_days": [
+                  7,
+                  14
+                ],
+                "unknown_date_policy": [
+                  "include",
+                  "exclude"
+                ]
+              },
+              "request_id": "28aa019eed76474d90736ce51cc6884e"
+            }
+          }
+        },
+        "service": {
+          "request_id": "e974a2f77cbe464f9a58977789779f00",
+          "app_instance_id": "ad1db303-5de2-4203-9d63-98ab751a4684",
+          "schema_version": 7,
+          "web_ready": true,
+          "worker_state": "offline",
+          "heartbeat_at": 1791291738.8504844,
+          "worker_pid": 16668,
+          "worker_born": 1791291735.587638,
+          "pid": 86912,
+          "born": 1791291734.8087013,
+          "source_adapter": "futario-json-v1",
+          "checked": true
+        },
+        "intent_id": "8703f491b5ba4c1da63a28fce7aa425f",
+        "exit_code": 4
+      }
+    },
+    {
+      "command": "default-plan",
+      "exit": 0,
+      "response": {
+        "ok": true,
+        "data": {
+          "revision": 3,
+          "plan": {
+            "site_ids": [
+              "futario"
+            ],
+            "window_days": 14,
+            "unknown_date_policy": "include",
+            "discovery": {
+              "page_size": 20,
+              "max_pages_per_pass": 30,
+              "passes": 2,
+              "max_requests": 60,
+              "max_products": 600
+            },
+            "max_details": 300,
+            "network": {
+              "resolver_mode": "system",
+              "detail_concurrency": 1,
+              "image_concurrency": 2,
+              "min_interval_ms": 1000,
+              "max_attempts": 3,
+              "max_http_requests": 3000,
+              "max_image_requests": 2400,
+              "run_total_seconds": 3600,
+              "timeouts": {
+                "connect": 10,
+                "pool": 10,
+                "read": 30,
+                "write": 30,
+                "total": 120
+              }
+            },
+            "storage": {
+              "max_image_bytes": 26214400,
+              "max_pixels": 50000000,
+              "run_download_bytes": 2147483648,
+              "min_free_bytes": 5368709120,
+              "preview_cache_bytes": 536870912
+            }
+          },
+          "available": {
+            "window_days": [
+              7,
+              14
+            ],
+            "unknown_date_policy": [
+              "include",
+              "exclude"
+            ]
+          },
+          "request_id": "c0aea5d6d6dc4400adf94a7d6d1d4ac3"
+        },
+        "service": {
+          "request_id": "ad1388bf6dc1480ba43958ad2b77b5ae",
+          "app_instance_id": "ad1db303-5de2-4203-9d63-98ab751a4684",
+          "schema_version": 7,
+          "web_ready": true,
+          "worker_state": "offline",
+          "heartbeat_at": 1791291738.8504844,
+          "worker_pid": 16668,
+          "worker_born": 1791291735.587638,
+          "pid": 86912,
+          "born": 1791291734.8087013,
+          "source_adapter": "futario-json-v1",
+          "checked": true
+        },
+        "intent_id": null,
+        "exit_code": 0
+      }
+    },
+    {
+      "command": "export",
+      "exit": 5,
+      "response": {
+        "ok": false,
+        "error": {
+          "code": "FEATURE_UNAVAILABLE",
+          "message": "当前 T4 未接入导出、维护或存储修改",
+          "details": null
+        },
+        "service": {
+          "checked": false,
+          "web_ready": null,
+          "worker_state": "unknown"
+        },
+        "intent_id": null,
+        "exit_code": 5
+      }
+    },
+    {
+      "command": "maintenance",
+      "exit": 5,
+      "response": {
+        "ok": false,
+        "error": {
+          "code": "FEATURE_UNAVAILABLE",
+          "message": "当前 T4 未接入导出、维护或存储修改",
+          "details": null
+        },
+        "service": {
+          "checked": false,
+          "web_ready": null,
+          "worker_state": "unknown"
+        },
+        "intent_id": null,
+        "exit_code": 5
+      }
+    },
+    {
+      "command": "storage",
+      "exit": 5,
+      "response": {
+        "ok": false,
+        "error": {
+          "code": "FEATURE_UNAVAILABLE",
+          "message": "当前 T4 未接入导出、维护或存储修改",
+          "details": null
+        },
+        "service": {
+          "checked": false,
+          "web_ready": null,
+          "worker_state": "unknown"
+        },
+        "intent_id": null,
+        "exit_code": 5
+      }
+    }
+  ],
+  "real_http": true,
+  "source_requests": 0,
+  "worker_stopped_before_explicit_run": true,
+  "run_count": 2,
+  "run_request_count": 2,
+  "view_events": 0,
+  "stop": {
+    "stopped": true,
+    "forced_roles": []
+  },
+  "after_stop": {
+    "app_instance_id": "ad1db303-5de2-4203-9d63-98ab751a4684",
+    "web_ready": false,
+    "worker_state": "offline",
+    "resuming_run_ids": []
+  }
+}

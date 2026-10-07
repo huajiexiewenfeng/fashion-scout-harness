@@ -1,0 +1,287 @@
+[
+  {
+    "label": "newer-content-before-browsing",
+    "runs": [
+      {
+        "id": "synthetic-fixture-run",
+        "state": "succeeded",
+        "created_at": "2026-10-01T12:00:00Z"
+      },
+      {
+        "id": "ec0484ffba5b41208c2240600a2c783a",
+        "state": "cancelled",
+        "created_at": "2026-10-06T12:15:51.377Z"
+      }
+    ],
+    "favorites": [
+      "fixture-000",
+      "fixture-003"
+    ],
+    "view_events": [
+      {
+        "product_id": "fixture-000",
+        "version_id": "fixture-version-0",
+        "version_revision": 1,
+        "viewed_at": "2026-10-06T12:11:28.139Z"
+      }
+    ],
+    "user_states": [
+      {
+        "product_id": "fixture-000",
+        "category_override": null,
+        "revision": 2,
+        "seen_version_revision": 1,
+        "seen_content_digest": "fe9a3d4ca464658eee6700d0f51926bd534daf56ccb478a5136bca3e17c267e9"
+      },
+      {
+        "product_id": "fixture-001",
+        "category_override": null,
+        "revision": 1,
+        "seen_version_revision": null,
+        "seen_content_digest": null
+      },
+      {
+        "product_id": "fixture-002",
+        "category_override": null,
+        "revision": 1,
+        "seen_version_revision": null,
+        "seen_content_digest": null
+      },
+      {
+        "product_id": "fixture-003",
+        "category_override": null,
+        "revision": 2,
+        "seen_version_revision": null,
+        "seen_content_digest": null
+      },
+      {
+        "product_id": "fixture-004",
+        "category_override": null,
+        "revision": 1,
+        "seen_version_revision": null,
+        "seen_content_digest": null
+      },
+      {
+        "product_id": "fixture-005",
+        "category_override": null,
+        "revision": 1,
+        "seen_version_revision": null,
+        "seen_content_digest": null
+      },
+      {
+        "product_id": "fixture-006",
+        "category_override": null,
+        "revision": 1,
+        "seen_version_revision": null,
+        "seen_content_digest": null
+      },
+      {
+        "product_id": "fixture-007",
+        "category_override": null,
+        "revision": 1,
+        "seen_version_revision": null,
+        "seen_content_digest": null
+      }
+    ],
+    "source_http_count": 0,
+    "run_request_count": 1
+  },
+  {
+    "label": "latest-view-category-reset",
+    "runs": [
+      {
+        "id": "synthetic-fixture-run",
+        "state": "succeeded",
+        "created_at": "2026-10-01T12:00:00Z"
+      },
+      {
+        "id": "ec0484ffba5b41208c2240600a2c783a",
+        "state": "cancelled",
+        "created_at": "2026-10-06T12:15:51.377Z"
+      }
+    ],
+    "favorites": [
+      "fixture-000",
+      "fixture-003"
+    ],
+    "view_events": [
+      {
+        "product_id": "fixture-000",
+        "version_id": "fixture-version-0",
+        "version_revision": 1,
+        "viewed_at": "2026-10-06T12:11:28.139Z"
+      },
+      {
+        "product_id": "fixture-000",
+        "version_id": "fixture-version-0",
+        "version_revision": 2,
+        "viewed_at": "2026-10-06T12:32:59.719Z"
+      }
+    ],
+    "user_states": [
+      {
+        "product_id": "fixture-000",
+        "category_override": null,
+        "revision": 4,
+        "seen_version_revision": 2,
+        "seen_content_digest": "c049e9b66792a8c52a7bbbf98052ac5c19dc7d47b148a9c6b60293102c20db27"
+      },
+      {
+        "product_id": "fixture-001",
+        "category_override": null,
+        "revision": 1,
+        "seen_version_revision": null,
+        "seen_content_digest": null
+      },
+      {
+        "product_id": "fixture-002",
+        "category_override": null,
+        "revision": 1,
+        "seen_version_revision": null,
+        "seen_content_digest": null
+      },
+      {
+        "product_id": "fixture-003",
+        "category_override": null,
+        "revision": 2,
+        "seen_version_revision": null,
+        "seen_content_digest": null
+      },
+      {
+        "product_id": "fixture-004",
+        "category_override": null,
+        "revision": 1,
+        "seen_version_revision": null,
+        "seen_content_digest": null
+      },
+      {
+        "product_id": "fixture-005",
+        "category_override": null,
+        "revision": 1,
+        "seen_version_revision": null,
+        "seen_content_digest": null
+      },
+      {
+        "product_id": "fixture-006",
+        "category_override": null,
+        "revision": 1,
+        "seen_version_revision": null,
+        "seen_content_digest": null
+      },
+      {
+        "product_id": "fixture-007",
+        "category_override": null,
+        "revision": 1,
+        "seen_version_revision": null,
+        "seen_content_digest": null
+      }
+    ],
+    "source_http_count": 0,
+    "run_request_count": 1
+  },
+  {
+    "label": "historical-view-retains-update",
+    "runs": [
+      {
+        "id": "synthetic-fixture-run",
+        "state": "succeeded",
+        "created_at": "2026-10-01T12:00:00Z"
+      },
+      {
+        "id": "ec0484ffba5b41208c2240600a2c783a",
+        "state": "cancelled",
+        "created_at": "2026-10-06T12:15:51.377Z"
+      }
+    ],
+    "favorites": [
+      "fixture-000",
+      "fixture-003"
+    ],
+    "view_events": [
+      {
+        "product_id": "fixture-000",
+        "version_id": "fixture-version-0",
+        "version_revision": 1,
+        "viewed_at": "2026-10-06T12:11:28.139Z"
+      },
+      {
+        "product_id": "fixture-000",
+        "version_id": "fixture-version-0",
+        "version_revision": 2,
+        "viewed_at": "2026-10-06T12:32:59.719Z"
+      },
+      {
+        "product_id": "fixture-000",
+        "version_id": "fixture-version-0",
+        "version_revision": 2,
+        "viewed_at": "2026-10-06T12:33:38.500Z"
+      },
+      {
+        "product_id": "fixture-000",
+        "version_id": "fixture-version-0",
+        "version_revision": 1,
+        "viewed_at": "2026-10-06T12:33:38.771Z"
+      }
+    ],
+    "user_states": [
+      {
+        "product_id": "fixture-000",
+        "category_override": null,
+        "revision": 4,
+        "seen_version_revision": 1,
+        "seen_content_digest": "fe9a3d4ca464658eee6700d0f51926bd534daf56ccb478a5136bca3e17c267e9"
+      },
+      {
+        "product_id": "fixture-001",
+        "category_override": null,
+        "revision": 1,
+        "seen_version_revision": null,
+        "seen_content_digest": null
+      },
+      {
+        "product_id": "fixture-002",
+        "category_override": null,
+        "revision": 1,
+        "seen_version_revision": null,
+        "seen_content_digest": null
+      },
+      {
+        "product_id": "fixture-003",
+        "category_override": null,
+        "revision": 2,
+        "seen_version_revision": null,
+        "seen_content_digest": null
+      },
+      {
+        "product_id": "fixture-004",
+        "category_override": null,
+        "revision": 1,
+        "seen_version_revision": null,
+        "seen_content_digest": null
+      },
+      {
+        "product_id": "fixture-005",
+        "category_override": null,
+        "revision": 1,
+        "seen_version_revision": null,
+        "seen_content_digest": null
+      },
+      {
+        "product_id": "fixture-006",
+        "category_override": null,
+        "revision": 1,
+        "seen_version_revision": null,
+        "seen_content_digest": null
+      },
+      {
+        "product_id": "fixture-007",
+        "category_override": null,
+        "revision": 1,
+        "seen_version_revision": null,
+        "seen_content_digest": null
+      }
+    ],
+    "source_http_count": 0,
+    "run_request_count": 1
+  }
+]

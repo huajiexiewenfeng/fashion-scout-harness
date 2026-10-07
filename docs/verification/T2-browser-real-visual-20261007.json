@@ -1,0 +1,14 @@
+{
+  "at": 1791367071.206534,
+  "supplement_to_sha256": "129519c58bab7c1bda8a69255e8063318d32c35c1924aea6f831ad80d6bebfe2",
+  "screenshot": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t2-browser-live-20261007-01\\rendered-gallery.jpg",
+  "screenshot_sha256": "046ea0afa653fca60d56de3a8ba351edc8ab091b868820b9a6a941c05ecdd833",
+  "bytes": 144588,
+  "format": "JPEG",
+  "width": 2545,
+  "height": 1208,
+  "capture": "supported CUA Tab.screenshot, saved unchanged bytes",
+  "preview_url": "http://127.0.0.1:55016/",
+  "source_actions_finished": true,
+  "same_reviewed_code": true
+}

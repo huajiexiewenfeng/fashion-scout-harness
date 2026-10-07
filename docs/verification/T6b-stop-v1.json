@@ -1,0 +1,6 @@
+{
+  "argv": "\"C:\\WINDOWS\\System32\\cmd.exe\" /d /s /c \"\"E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\03 Stop.cmd\"\"",
+  "returncode": 0,
+  "stdout": "{\"verified\": true, \"python\": \"3.13.16\", \"sqlite\": \"3.53.1\", \"module\": \"E:\\\\github-workspace\\\\fashion-scout-harness\\\\.runtime\\\\t6b-checks-57799f5f\\\\\\u771f\\u5b9e\\u89e3\\u538b \\u7a7a\\u683c & \\u5355\\u5f15\\u53f7'sx\\\\FashionScout\\\\.local\\\\env\\\\Lib\\\\site-packages\\\\fashion_scout\\\\__init__.py\", \"installed_files\": 4893}\n{\"stopped\": true, \"forced_roles\": []}\nThis package instance was stopped.\n",
+  "stderr": ""
+}

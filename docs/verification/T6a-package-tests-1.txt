@@ -1,0 +1,43 @@
+T6a package root: E:\github-workspace\fashion-scout-harness\.runtime\t6a-package-3164de71
+F
+================================== FAILURES ===================================
+_________________ test_readiness_shipped_wheel_isolated_entry _________________
+
+    def test_readiness_shipped_wheel_isolated_entry():
+        assert hashlib.sha256(WHEEL.read_bytes()).hexdigest()==EXPECTED
+        work=ROOT/'.runtime'/('t6a-package-'+uuid.uuid4().hex[:8]);work.mkdir()
+        envdir=work/'env';venv.EnvBuilder(with_pip=False).create(envdir)
+        site=envdir/'Lib/site-packages';audit=work/'imports';audit.mkdir()
+        with zipfile.ZipFile(WHEEL) as z:
+            names=z.namelist();assert all(not Path(n).is_absolute() and '..' not in Path(n).parts for n in names)
+            assert len([n for n in names if n.endswith('.sql')])==9
+            z.extractall(site)
+            package_names=[n for n in names if n.startswith('fashion_scout/') and not n.endswith('/')]
+            for name in package_names:assert (site/name).read_bytes()==z.read(name)
+        # A plain path .pth reuses installed dependencies without executing the old editable .pth.
+        (site/'locked-dependencies.pth').write_text(str(ROOT/'.venv/Lib/site-packages')+'\n',encoding='utf-8')
+        shutil.copyfile(ROOT/'tests/integration/readiness_sitecustomize.py',site/'sitecustomize.py')
+        env={k:v for k,v in os.environ.items() if k.upper() not in {'PYTHONPATH','PYTHONHOME','VIRTUAL_ENV'}}
+        env.update(T6A_AUDIT_DIR=str(audit),PYTHONDONTWRITEBYTECODE='1',PYTHONUTF8='1')
+        command=[str(envdir/'Scripts/python.exe'),'-B',str(ROOT/'tests/integration/readiness_scenario.py'),str(ROOT),str(work)]
+        result=subprocess.run(command,cwd=work,env=env,capture_output=True,text=True,encoding='utf-8',timeout=110)
+        (work/'commands.txt').write_text(result.stdout+'\n'+result.stderr,encoding='utf-8')
+        print('T6a package root:',work);assert result.returncode==0,result.stdout[-3500:]+result.stderr
+        records=[json.loads(p.read_text('utf-8')) for p in audit.glob('*.json')]
+        roles=set();seen=set()
+        for record in records:
+            assert not record['blocked_network'] and not record['editable_finders'],record
+            assert str(ROOT/'src') not in record['sys_path']
+            for name,path in record['modules'].items():
+                if name!='__main__' or 'fashion_scout' in path:
+                    assert Path(path).is_relative_to(site/'fashion_scout'),path;seen.add(name)
+                if name=='__main__' and Path(path).name in {'health.py','worker.py'}:roles.add(Path(path).stem)
+>       assert roles=={'health','worker'} and 'fashion_scout.maintenance.restore' in seen
+E       AssertionError: assert ({'health', 'worker'} == {'health', 'worker'}
+E         
+E         Use -v to get more diff and 'fashion_scout.maintenance.restore' in {'__main__', 'fashion_scout', 'fashion_scout.adapters', 'fashion_scout.adapters.futario', 'fashion_scout.api', 'fashion_scout.api.exports', ...})
+
+tests\integration\test_readiness_package.py:46: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/integration/test_readiness_package.py::test_readiness_shipped_wheel_isolated_entry
+1 failed in 13.67s

@@ -1,0 +1,347 @@
+{
+  "observed_utc": "2026-10-07T05:37:46.1810834+00:00",
+  "raw_proxy_values_saved": false,
+  "pac_content_read": false,
+  "system_settings_changed": false,
+  "errors": [],
+  "environment": {
+    "HTTP_PROXY": {
+      "present": false
+    },
+    "HTTPS_PROXY": {
+      "present": false
+    },
+    "ALL_PROXY": {
+      "present": false
+    },
+    "NO_PROXY": {
+      "present": false,
+      "value_redacted": true
+    },
+    "SSL_CERT_FILE": {
+      "present": false,
+      "value_redacted": true
+    },
+    "SSL_CERT_DIR": {
+      "present": false,
+      "value_redacted": true
+    }
+  },
+  "wininet": {
+    "proxy_enabled": true,
+    "pac_configured": false,
+    "proxy": {
+      "present": true,
+      "endpoints": [
+        {
+          "scheme": "http",
+          "credentials_present": false,
+          "port": 7897,
+          "host_class": "loopback"
+        }
+      ]
+    },
+    "proxy_bypass_list_present": true
+  },
+  "winhttp": {
+    "raw_output_saved": false,
+    "ports": [],
+    "mode": "direct"
+  },
+  "adapters": [
+    {
+      "interface_index": 24,
+      "status": "Disconnected",
+      "hardware_interface": false,
+      "virtual": true,
+      "family": "unclassified",
+      "name_redacted": true
+    },
+    {
+      "interface_index": 23,
+      "status": "Not Present",
+      "hardware_interface": false,
+      "virtual": true,
+      "family": "unclassified",
+      "name_redacted": true
+    },
+    {
+      "interface_index": 48,
+      "status": "Up",
+      "hardware_interface": false,
+      "virtual": true,
+      "family": "hyper-v",
+      "name_redacted": true
+    },
+    {
+      "interface_index": 21,
+      "status": "Up",
+      "hardware_interface": false,
+      "virtual": true,
+      "family": "unclassified",
+      "name_redacted": true
+    },
+    {
+      "interface_index": 20,
+      "status": "Disconnected",
+      "hardware_interface": false,
+      "virtual": true,
+      "family": "unclassified",
+      "name_redacted": true
+    },
+    {
+      "interface_index": 19,
+      "status": "Disconnected",
+      "hardware_interface": false,
+      "virtual": true,
+      "family": "unclassified",
+      "name_redacted": true
+    },
+    {
+      "interface_index": 18,
+      "status": "Up",
+      "hardware_interface": false,
+      "virtual": true,
+      "family": "unclassified",
+      "name_redacted": true
+    },
+    {
+      "interface_index": 17,
+      "status": "Disconnected",
+      "hardware_interface": false,
+      "virtual": true,
+      "family": "unclassified",
+      "name_redacted": true
+    },
+    {
+      "interface_index": 16,
+      "status": "Not Present",
+      "hardware_interface": false,
+      "virtual": true,
+      "family": "unclassified",
+      "name_redacted": true
+    },
+    {
+      "interface_index": 15,
+      "status": "Disconnected",
+      "hardware_interface": false,
+      "virtual": true,
+      "family": "unclassified",
+      "name_redacted": true
+    },
+    {
+      "interface_index": 14,
+      "status": "Up",
+      "hardware_interface": false,
+      "virtual": true,
+      "family": "unclassified",
+      "name_redacted": true
+    },
+    {
+      "interface_index": 13,
+      "status": "Disconnected",
+      "hardware_interface": false,
+      "virtual": true,
+      "family": "unclassified",
+      "name_redacted": true
+    },
+    {
+      "interface_index": 11,
+      "status": "Disconnected",
+      "hardware_interface": false,
+      "virtual": true,
+      "family": "unclassified",
+      "name_redacted": true
+    },
+    {
+      "interface_index": 10,
+      "status": "Up",
+      "hardware_interface": false,
+      "virtual": true,
+      "family": "unclassified",
+      "name_redacted": true
+    },
+    {
+      "interface_index": 9,
+      "status": "Not Present",
+      "hardware_interface": false,
+      "virtual": true,
+      "family": "unclassified",
+      "name_redacted": true
+    },
+    {
+      "interface_index": 8,
+      "status": "Disconnected",
+      "hardware_interface": false,
+      "virtual": true,
+      "family": "unclassified",
+      "name_redacted": true
+    },
+    {
+      "interface_index": 7,
+      "status": "Up",
+      "hardware_interface": true,
+      "virtual": false,
+      "family": "unclassified",
+      "name_redacted": true
+    },
+    {
+      "interface_index": 51,
+      "status": "Up",
+      "hardware_interface": false,
+      "virtual": true,
+      "family": "hyper-v",
+      "name_redacted": true
+    },
+    {
+      "interface_index": 5,
+      "status": "Up",
+      "hardware_interface": false,
+      "virtual": true,
+      "family": "unclassified",
+      "name_redacted": true
+    },
+    {
+      "interface_index": 4,
+      "status": "Up",
+      "hardware_interface": false,
+      "virtual": true,
+      "family": "tunnel",
+      "name_redacted": true
+    },
+    {
+      "interface_index": 3,
+      "status": "Disconnected",
+      "hardware_interface": true,
+      "virtual": false,
+      "family": "unclassified",
+      "name_redacted": true
+    },
+    {
+      "interface_index": 2,
+      "status": "Not Present",
+      "hardware_interface": false,
+      "virtual": true,
+      "family": "unclassified",
+      "name_redacted": true
+    }
+  ],
+  "dns_interfaces": [
+    {
+      "interface_index": 4,
+      "server_addresses_redacted": true,
+      "server_classes": [
+        "benchmark"
+      ],
+      "address_family": "2"
+    },
+    {
+      "interface_index": 4,
+      "server_addresses_redacted": true,
+      "server_classes": [
+        "ipv6_redacted"
+      ],
+      "address_family": "23"
+    },
+    {
+      "interface_index": 20,
+      "server_addresses_redacted": true,
+      "server_classes": [
+        "ipv6_redacted",
+        "ipv6_redacted",
+        "ipv6_redacted"
+      ],
+      "address_family": "23"
+    },
+    {
+      "interface_index": 15,
+      "server_addresses_redacted": true,
+      "server_classes": [
+        "ipv6_redacted",
+        "ipv6_redacted",
+        "ipv6_redacted"
+      ],
+      "address_family": "23"
+    },
+    {
+      "interface_index": 10,
+      "server_addresses_redacted": true,
+      "server_classes": [
+        "ipv6_redacted",
+        "ipv6_redacted",
+        "ipv6_redacted"
+      ],
+      "address_family": "23"
+    },
+    {
+      "interface_index": 21,
+      "server_addresses_redacted": true,
+      "server_classes": [
+        "ipv6_redacted",
+        "ipv6_redacted",
+        "ipv6_redacted"
+      ],
+      "address_family": "23"
+    },
+    {
+      "interface_index": 7,
+      "server_addresses_redacted": true,
+      "server_classes": [
+        "private"
+      ],
+      "address_family": "2"
+    },
+    {
+      "interface_index": 7,
+      "server_addresses_redacted": true,
+      "server_classes": [
+        "link_local"
+      ],
+      "address_family": "23"
+    },
+    {
+      "interface_index": 24,
+      "server_addresses_redacted": true,
+      "server_classes": [
+        "ipv6_redacted",
+        "ipv6_redacted",
+        "ipv6_redacted"
+      ],
+      "address_family": "23"
+    },
+    {
+      "interface_index": 3,
+      "server_addresses_redacted": true,
+      "server_classes": [
+        "private"
+      ],
+      "address_family": "2"
+    },
+    {
+      "interface_index": 51,
+      "server_addresses_redacted": true,
+      "server_classes": [
+        "ipv6_redacted",
+        "ipv6_redacted",
+        "ipv6_redacted"
+      ],
+      "address_family": "23"
+    }
+  ],
+  "routing": [
+    {
+      "interface_index": 4,
+      "next_hop_class": "benchmark",
+      "next_hop_redacted": true,
+      "destination": "0.0.0.0/0",
+      "route_metric": 0
+    },
+    {
+      "interface_index": 7,
+      "next_hop_class": "private",
+      "next_hop_redacted": true,
+      "destination": "0.0.0.0/0",
+      "route_metric": 0
+    }
+  ]
+}

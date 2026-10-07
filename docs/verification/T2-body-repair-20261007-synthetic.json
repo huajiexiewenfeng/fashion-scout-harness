@@ -1,0 +1,132 @@
+{
+  "kind": "synthetic-only-no-source-request",
+  "checks_passed": 6,
+  "checks": [
+    {
+      "name": "ordinary_429",
+      "passed": true,
+      "evidence": {
+        "raw_body_file": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t2-body-repair-20261007-01\\synthetic\\ordinary_429\\response-body.bin",
+        "raw_body_sha256": "ad718123430d2b7e7eee71a7e96c2357373d1d2d44c66479deb3db26b9fb3944",
+        "captured_bytes": 18,
+        "capture_limit": 16384,
+        "at_limit_or_truncated": false,
+        "content_type": "text/plain",
+        "declared_encoding": null,
+        "encoding_used": "utf-8",
+        "decode_warning": null,
+        "sanitized_text_excerpt": "Too Many Requests",
+        "public_error_code": null,
+        "raw_capture_precedes_sanitization": true,
+        "raw_copied_to_public_docs": false,
+        "html_or_script_executed": false
+      }
+    },
+    {
+      "name": "standard_code",
+      "passed": true,
+      "evidence": {
+        "raw_body_file": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t2-body-repair-20261007-01\\synthetic\\standard_code\\response-body.bin",
+        "raw_body_sha256": "c99027606c91276dd05cbbb11b55a058218d55698259d3736038537a429382e0",
+        "captured_bytes": 18,
+        "capture_limit": 16384,
+        "at_limit_or_truncated": false,
+        "content_type": "text/plain",
+        "declared_encoding": null,
+        "encoding_used": "utf-8",
+        "decode_warning": null,
+        "sanitized_text_excerpt": "error code: 1015",
+        "public_error_code": 1015,
+        "raw_capture_precedes_sanitization": true,
+        "raw_copied_to_public_docs": false,
+        "html_or_script_executed": false
+      }
+    },
+    {
+      "name": "sensitive_fields",
+      "passed": true,
+      "evidence": {
+        "raw_body_file": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t2-body-repair-20261007-01\\synthetic\\sensitive_fields\\response-body.bin",
+        "raw_body_sha256": "a00119b83ec3e799c3a39540cf7bcc64aac503ac98da38db255a1759d5c3b4bf",
+        "captured_bytes": 92,
+        "capture_limit": 16384,
+        "at_limit_or_truncated": false,
+        "content_type": "text/plain",
+        "declared_encoding": null,
+        "encoding_used": "utf-8",
+        "decode_warning": null,
+        "sanitized_text_excerpt": "Please wait. token=[redacted] email=[email redacted] Bearer [redacted]",
+        "public_error_code": null,
+        "raw_capture_precedes_sanitization": true,
+        "raw_copied_to_public_docs": false,
+        "html_or_script_executed": false
+      }
+    },
+    {
+      "name": "html",
+      "passed": true,
+      "evidence": {
+        "raw_body_file": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t2-body-repair-20261007-01\\synthetic\\html\\response-body.bin",
+        "raw_body_sha256": "521763bc009596f2917c7684025a4e953575c40642da5fca4325f2bd7829edea",
+        "captured_bytes": 70,
+        "capture_limit": 16384,
+        "at_limit_or_truncated": false,
+        "content_type": "text/html",
+        "declared_encoding": null,
+        "encoding_used": "utf-8",
+        "decode_warning": null,
+        "sanitized_text_excerpt": "Rate limited.",
+        "public_error_code": null,
+        "raw_capture_precedes_sanitization": true,
+        "raw_copied_to_public_docs": false,
+        "html_or_script_executed": false
+      }
+    },
+    {
+      "name": "binary",
+      "passed": true,
+      "evidence": {
+        "raw_body_file": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t2-body-repair-20261007-01\\synthetic\\binary\\response-body.bin",
+        "raw_body_sha256": "2ce4b24ec867576611e9991283b013e13a856e61f1d619b7ad6e6fcb821c883a",
+        "captured_bytes": 16,
+        "capture_limit": 16384,
+        "at_limit_or_truncated": false,
+        "content_type": "application/octet-stream",
+        "declared_encoding": null,
+        "encoding_used": null,
+        "decode_warning": "binary_or_unknown_encoding",
+        "sanitized_text_excerpt": "[binary body retained privately]",
+        "public_error_code": null,
+        "raw_capture_precedes_sanitization": true,
+        "raw_copied_to_public_docs": false,
+        "html_or_script_executed": false
+      }
+    },
+    {
+      "name": "over_cap",
+      "passed": true,
+      "evidence": {
+        "raw_body_file": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t2-body-repair-20261007-01\\synthetic\\over_cap\\response-body.bin",
+        "raw_body_sha256": "1bd4db450abc8914c2fac721cace2704ff4c16028e6d07293154dad289835694",
+        "captured_bytes": 16384,
+        "capture_limit": 16384,
+        "at_limit_or_truncated": true,
+        "content_type": "text/plain",
+        "declared_encoding": null,
+        "encoding_used": "utf-8",
+        "decode_warning": null,
+        "sanitized_text_excerpt": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "public_error_code": null,
+        "raw_capture_precedes_sanitization": true,
+        "raw_copied_to_public_docs": false,
+        "html_or_script_executed": false
+      }
+    }
+  ],
+  "source_requests": 0,
+  "production_files_changed": false,
+  "actual_old_source_body_restored": false,
+  "optional_source_get": "deferred_pending_manager_browser_evidence",
+  "total_conservative_attempts": 7,
+  "remaining_attempts_max": 33
+}

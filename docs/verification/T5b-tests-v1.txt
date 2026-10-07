@@ -1,0 +1,61 @@
+..............F.......................F................................. [ 44%]
+........................................................................ [ 89%]
+.................                                                        [100%]
+================================== FAILURES ===================================
+_______________________ test_environment_and_migrations _______________________
+
+service = (<fashion_scout.services.runs.Runs object at 0x000001F17567DC50>, Paths(root=WindowsPath('E:/github-workspace/fashion-...dowsPath('E:/github-workspace/fashion-scout-harness/.runtime/t5b-regression-1/test_environment_and_migration0/media')))
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000001F1757E3A80>
+
+    def test_environment_and_migrations(service, monkeypatch):
+        from fashion_scout.db.store import environment_check
+        runs, paths = service
+        with runs.db.read() as conn:
+            assert conn.execute("PRAGMA journal_mode").fetchone()[0] == "wal"
+            assert conn.execute("PRAGMA synchronous").fetchone()[0] == 2
+            assert conn.execute("PRAGMA foreign_keys").fetchone()[0] == 1
+            assert conn.execute("PRAGMA busy_timeout").fetchone()[0] == 5000
+>           assert conn.execute("SELECT COUNT(*) FROM schema_migrations").fetchone()[0] == 7
+E           assert 8 == 7
+
+tests\core\test_runs.py:27: AssertionError
+___________ test_migration_from_v2_preserves_journal_and_checksums ____________
+
+tmp_path = WindowsPath('E:/github-workspace/fashion-scout-harness/.runtime/t5b-regression-1/test_migration_from_v2_preserv0')
+
+    def test_migration_from_v2_preserves_journal_and_checksums(tmp_path):
+        from pathlib import Path
+        from fashion_scout.db import Database
+        import fashion_scout.db.store
+        db = Database(tmp_path / "upgrade.sqlite3")
+        migrations = Path(fashion_scout.db.store.__file__).parent / "migrations"
+        with db.read() as conn:
+            conn.execute("CREATE TABLE schema_migrations(version INTEGER PRIMARY KEY,sha256 TEXT NOT NULL)")
+            for version, name in [(1, "001_core.sql"), (2, "002_catalog_contract.sql")]:
+                source = (migrations / name).read_text("utf-8")
+                conn.executescript(source)
+                conn.execute("INSERT INTO schema_migrations VALUES (?,?)", (version, hashlib.sha256(source.encode()).hexdigest()))
+            conn.execute("INSERT INTO runs(id,state,snapshot_json,created_at) VALUES ('old','failed','{}','then')")
+            conn.execute("INSERT INTO work_items(id,run_id,item_key,state) VALUES ('item','old','image','pending')")
+            conn.execute("INSERT INTO storage_roots VALUES ('root','C:/media','media')")
+            conn.execute("INSERT INTO archive_journal VALUES ('journal','old','item',1,'root','temp/a','originals/a',?,1,'failed','OLD_FAILURE')", ("0" * 64,))
+            before = [tuple(row) for row in conn.execute("SELECT * FROM schema_migrations ORDER BY version")]
+        db.initialize()
+        db.initialize()
+        with db.read() as conn:
+            assert [tuple(row) for row in conn.execute("SELECT * FROM schema_migrations WHERE version<3 ORDER BY version")] == before
+            assert conn.execute("SELECT state,error_code,recovery_state,generation FROM archive_journal").fetchone()[:] == ("failed", "OLD_FAILURE", "active", 0)
+>           assert conn.execute("SELECT COUNT(*) FROM schema_migrations").fetchone()[0] == 7
+E           assert 8 == 7
+
+tests\core\test_worker_repairs.py:223: AssertionError
+============================== warnings summary ===============================
+.venv\Lib\site-packages\fastapi\testclient.py:1
+  E:\github-workspace\fashion-scout-harness\.venv\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED tests/core/test_runs.py::test_environment_and_migrations - assert 8 == 7
+FAILED tests/core/test_worker_repairs.py::test_migration_from_v2_preserves_journal_and_checksums
+2 failed, 159 passed, 1 warning in 52.93s

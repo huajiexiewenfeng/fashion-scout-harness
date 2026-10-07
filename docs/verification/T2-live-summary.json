@@ -1,0 +1,33 @@
+{
+  "kind": "real-site-incomplete",
+  "captured_utc": "2026-10-06T11:36:47.531130+00:00",
+  "run_id": "f097800bb3344468b174059282955973",
+  "state": "failed",
+  "issue_code": "COLLECTION_INCOMPLETE",
+  "source_issue_codes": [
+    "RETRY_DEFERRED"
+  ],
+  "data_root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t2-live-smoke",
+  "original_result_sha256": "136a7b3a26d4034245a61bba2ae78bd1b14f4f3f52b7409e989a73efd2b8811e",
+  "prior_attempts": 2,
+  "worker_attempts": 1,
+  "total_conservative_attempts": 3,
+  "remaining_attempts_max": 37,
+  "detail_requests": 0,
+  "image_requests": 0,
+  "verified_assets": 0,
+  "downloaded_response_bytes": 0,
+  "original_http_status": null,
+  "original_retry_after": null,
+  "original_peer": null,
+  "response_evidence_note": "Original HTTP response was not persisted. Do not infer a server deadline from synthetic fixtures.",
+  "current_throttle": [
+    {
+      "site_id": "futario",
+      "not_before": null,
+      "mode": "legacy_response_not_saved",
+      "request_seq": null,
+      "recorded_at": 1791286123.4316926
+    }
+  ]
+}

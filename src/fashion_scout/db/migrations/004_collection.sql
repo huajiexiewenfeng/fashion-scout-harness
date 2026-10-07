@@ -1,0 +1,13 @@
+CREATE TABLE run_seen_products (run_id TEXT NOT NULL REFERENCES runs(id), product_id TEXT NOT NULL REFERENCES products(id), PRIMARY KEY(run_id,product_id));
+CREATE TABLE collection_runs (run_id TEXT PRIMARY KEY REFERENCES runs(id), started_at REAL NOT NULL, request_count INTEGER NOT NULL DEFAULT 0, image_requests INTEGER NOT NULL DEFAULT 0, discovery_requests INTEGER NOT NULL DEFAULT 0, downloaded_bytes INTEGER NOT NULL DEFAULT 0, discovery_complete INTEGER NOT NULL DEFAULT 0, discovery_json TEXT NOT NULL DEFAULT '{}');
+CREATE TABLE collection_http (seq INTEGER PRIMARY KEY, run_id TEXT NOT NULL REFERENCES runs(id), attempt INTEGER NOT NULL, kind TEXT NOT NULL, url TEXT NOT NULL, at TEXT NOT NULL);
+CREATE TABLE collection_products (run_id TEXT NOT NULL REFERENCES runs(id), product_id TEXT NOT NULL REFERENCES products(id), seen_before_run INTEGER NOT NULL, eligible INTEGER NOT NULL, rule TEXT NOT NULL, listing_json TEXT NOT NULL, detail_json TEXT, detail_error TEXT, PRIMARY KEY(run_id,product_id));
+CREATE TABLE collection_images (run_id TEXT NOT NULL REFERENCES runs(id), product_id TEXT NOT NULL REFERENCES products(id), source_image_id TEXT NOT NULL, item_id TEXT NOT NULL REFERENCES work_items(id), source_url TEXT NOT NULL, ordinal INTEGER NOT NULL, variant_json TEXT NOT NULL, asset_id TEXT REFERENCES assets(id), error_code TEXT, PRIMARY KEY(run_id,product_id,source_image_id));
+CREATE TABLE collection_page_attempts (run_id TEXT NOT NULL REFERENCES runs(id), attempt INTEGER NOT NULL, pass INTEGER NOT NULL, page INTEGER NOT NULL, signature TEXT NOT NULL, evidence_json TEXT NOT NULL, PRIMARY KEY(run_id,attempt,pass,page));
+ALTER TABLE products ADD COLUMN category_raw TEXT;
+ALTER TABLE products ADD COLUMN category_key TEXT NOT NULL DEFAULT 'other';
+ALTER TABLE products ADD COLUMN latest_available_revision INTEGER;
+ALTER TABLE products ADD COLUMN latest_complete_revision INTEGER;
+ALTER TABLE products ADD COLUMN latest_observed_version_id TEXT;
+ALTER TABLE products ADD COLUMN latest_observed_revision INTEGER;
+ALTER TABLE product_versions ADD COLUMN content_digest TEXT;

@@ -13,7 +13,7 @@ runtime/
 storage/
 originals/
 thumbnails/
-exports/
+/exports/
 temp/
 logs/
 backups/
@@ -33,6 +33,8 @@ sites.txt
 # Tool caches and generated output
 node_modules/
 .venv/
+.runtime/
+*.egg-info/
 __pycache__/
 .pytest_cache/
 dist/

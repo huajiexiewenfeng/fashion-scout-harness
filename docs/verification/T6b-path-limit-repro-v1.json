@@ -1,0 +1,27 @@
+{
+  "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-a7a39863\\真实解压 空格 & 单引号's\\FashionScout-0.2.0a1-local-candidate-v1",
+  "root_length": 126,
+  "expected_zip_path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-a7a39863\\真实解压 空格 & 单引号's\\FashionScout-0.2.0a1-local-candidate-v1\\data\\exports\\f0e1091bb4da4bc1b70c9729396dfb46\\attempt-000001\\export-4baff48672335bf8ab03e2ae7c1fb9ae007509513f6f757f6f2348220c0dce1a.zip",
+  "expected_zip_length": 263,
+  "actual_job_result": {
+    "state": "failed",
+    "snapshot_sha256": "84ef073c245c37cdf235906a5a42be601cf9354f92284b29ebb5a4d926444f82",
+    "path": null,
+    "sha256": null,
+    "bytes": null,
+    "reused": false,
+    "missing_count": 0,
+    "unknown_count": 0,
+    "error_code": "OUTPUT_WRITE_FAILED"
+  },
+  "short_file_created": true,
+  "probe_path_length": 266,
+  "long_path_error": {
+    "type": "FileNotFoundError",
+    "errno": 2,
+    "winerror": null,
+    "message": "[Errno 2] No such file or directory: \"E:\\\\github-workspace\\\\fashion-scout-harness\\\\.runtime\\\\t6b-checks-a7a39863\\\\真实解压 空格 & 单引号's\\\\FashionScout-0.2.0a1-local-candidate-v1\\\\data\\\\exports\\\\f0e1091bb4da4bc1b70c9729396dfb46\\\\attempt-000001\\\\t6b-probe-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.tmp\""
+  },
+  "source_requests": 0,
+  "scope": "Only own isolated T6b root; no production edits"
+}

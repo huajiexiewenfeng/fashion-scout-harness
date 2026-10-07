@@ -1,0 +1,52 @@
+{
+  "observed_utc": "2026-10-07T05:38:45.7352837+00:00",
+  "network_requests": 0,
+  "private_addresses_saved": false,
+  "errors": [],
+  "interface_metrics": [
+    {
+      "automatic_metric": "Enabled",
+      "interface_metric": 55,
+      "interface_index": 7,
+      "connection_state": "Connected"
+    },
+    {
+      "automatic_metric": "Disabled",
+      "interface_metric": null,
+      "interface_index": 4,
+      "connection_state": "Connected"
+    }
+  ],
+  "selected_routes": [
+    {
+      "interfaces": [
+        4
+      ],
+      "public_destination": "104.21.68.184",
+      "route_prefixes": [
+        "0.0.0.0/0"
+      ],
+      "network_request_made": false
+    },
+    {
+      "interfaces": [
+        4
+      ],
+      "public_destination": "172.67.197.209",
+      "route_prefixes": [
+        "0.0.0.0/0"
+      ],
+      "network_request_made": false
+    },
+    {
+      "interfaces": [
+        4
+      ],
+      "public_destination": "8.8.8.8",
+      "route_prefixes": [
+        "0.0.0.0/0"
+      ],
+      "network_request_made": false
+    }
+  ]
+}

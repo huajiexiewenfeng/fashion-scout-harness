@@ -1,0 +1,9 @@
+{
+  "implementation": "CPython",
+  "version": "3.13.16",
+  "platform": "x86_64-pc-windows-msvc",
+  "sqlite_minimum": "3.51.3",
+  "release": "20261003",
+  "url": "https://github.com/astral-sh/python-build-standalone/releases/download/20261003/cpython-3.13.16%2B20261003-x86_64-pc-windows-msvc-install_only_stripped.tar.gz",
+  "sha256": "ec43f1a85c29f147d7ae2d13218c52c70b24a983a82ab22d6c607c0593060e10"
+}

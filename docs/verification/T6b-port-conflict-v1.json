@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "-NoLogo",
+    "-NoProfile",
+    "-ExecutionPolicy",
+    "Bypass",
+    "-File",
+    "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\package.ps1",
+    "-Action",
+    "Open"
+  ],
+  "returncode": 3,
+  "stdout": "{\"verified\": true, \"python\": \"3.13.16\", \"sqlite\": \"3.53.1\", \"module\": \"E:\\\\github-workspace\\\\fashion-scout-harness\\\\.runtime\\\\t6b-checks-57799f5f\\\\\\u771f\\u5b9e\\u89e3\\u538b \\u7a7a\\u683c & \\u5355\\u5f15\\u53f7'sx\\\\FashionScout\\\\.local\\\\env\\\\Lib\\\\site-packages\\\\fashion_scout\\\\__init__.py\", \"installed_files\": 4893}\n{\"ok\": false, \"error\": {\"code\": \"PORT_IN_USE\", \"message\": \"\\u672c\\u673a\\u73af\\u5883\\u6216\\u5b9e\\u4f8b\\u6821\\u9a8c\\u672a\\u901a\\u8fc7\"}, \"service\": {\"checked\": false, \"web_ready\": null, \"worker_state\": \"unknown\"}, \"intent_id\": null, \"exit_code\": 3}\nFashion Scout: Open/status failed with exit 3. A busy port or identity conflict is not force-stopped; keep the printed error.\n",
+  "stderr": ""
+}

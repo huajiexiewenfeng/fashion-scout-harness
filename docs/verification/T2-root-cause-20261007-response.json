@@ -1,0 +1,220 @@
+{
+  "kind": "single-root-cause-error-body-diagnostic-not-production-retry",
+  "started_utc": "2026-10-07T05:40:02.355177+00:00",
+  "method": "GET",
+  "url": "https://futario.com/collections/new-in",
+  "resolver_mode": "google_doh",
+  "max_source_attempts": 1,
+  "max_body_bytes": 16384,
+  "max_network_seconds": 30,
+  "automatic_redirects": false,
+  "automatic_retries": 0,
+  "source_attempts_reserved": 1,
+  "source_connection_established": true,
+  "dns_records": [
+    {
+      "address": "172.67.197.209",
+      "port": 443,
+      "public": true
+    },
+    {
+      "address": "104.21.68.184",
+      "port": 443,
+      "public": true
+    }
+  ],
+  "persisted_before": {
+    "throttle": [
+      {
+        "site_id": "futario",
+        "not_before": 1791297004.4749758,
+        "mode": "server_foreground_reconciled",
+        "request_seq": null,
+        "recorded_at": 1791296944.4746
+      }
+    ],
+    "responses": [],
+    "request_count": 1,
+    "asset_count": 0,
+    "schema_versions": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "counters": [
+      {
+        "run_id": "f097800bb3344468b174059282955973",
+        "started_at": 1791285951.6355758,
+        "request_count": 1,
+        "image_requests": 0,
+        "discovery_requests": 1,
+        "downloaded_bytes": 0,
+        "discovery_complete": 0,
+        "discovery_json": "{\"atomic_source_snapshot\":false,\"complete\":false,\"entry\":\"https://futario.com/collections/new-in\",\"passes_ended\":[false],\"reasons\":[\"DISCOVERY_NOT_TERMINAL\",\"RETRY_DEFERRED\"],\"stable_sets\":false,\"unique_products\":0}"
+      }
+    ],
+    "runs": [
+      {
+        "id": "f097800bb3344468b174059282955973",
+        "state": "failed",
+        "attempt": 1
+      }
+    ]
+  },
+  "status": 429,
+  "peer": [
+    "172.67.197.209",
+    443
+  ],
+  "received_utc": "2026-10-07T05:40:03.753852+00:00",
+  "raw_selected_headers": [
+    [
+      "Date",
+      "Wed, 07 Oct 2026 05:40:03 GMT"
+    ],
+    [
+      "Content-Type",
+      "text/plain"
+    ],
+    [
+      "Content-Length",
+      "18"
+    ],
+    [
+      "retry-after",
+      "60"
+    ],
+    [
+      "server",
+      "cloudflare"
+    ],
+    [
+      "CF-RAY",
+      "a46a91a10a939dea-LAX"
+    ]
+  ],
+  "body_bytes": 18,
+  "body_sha256": "fa2dd01ed96d38758e89e354653c39f366bc7a34e485772c8aa2174b53a465d3",
+  "product_listing_valid": false,
+  "latest_prior_received_utc": "2026-10-07T05:27:41.726111+00:00",
+  "latest_prior_not_before": 1791350921.7261615,
+  "prior_budget_evidence": {
+    "diagnostic": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t2-entry-diagnostic-20261007-01\\result.json",
+    "sha256": "1255dca0dd32d2654377fd4e5dd8780799c5b8b92165962101478026cad118d7",
+    "reconcile_receipt": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t2-diagnostic-20261006-reconcile\\receipt.json",
+    "reconcile_sha256": "d4310ef74ef094e23d7cd6c6cb0ac4d016fcb2b1df402cb285d05894a7929977",
+    "prior_total": 6,
+    "remaining_before": 34
+  },
+  "attempt_reserved_utc": "2026-10-07T05:40:02.356793+00:00",
+  "configured_request_headers": {
+    "accept": "*/*",
+    "connection": "keep-alive",
+    "user-agent": "FashionScout/0.2 (bounded local research)",
+    "accept-encoding": "identity"
+  },
+  "dns_observed_utc": "2026-10-07T05:40:03.009430+00:00",
+  "actual_request_headers": [
+    [
+      "host",
+      "futario.com"
+    ],
+    [
+      "accept",
+      "*/*"
+    ],
+    [
+      "connection",
+      "keep-alive"
+    ],
+    [
+      "user-agent",
+      "FashionScout/0.2 (bounded local research)"
+    ],
+    [
+      "accept-encoding",
+      "identity"
+    ]
+  ],
+  "peer_matches_fresh_first_address": true,
+  "tls": {
+    "version": "TLSv1.3",
+    "cipher": [
+      "TLS_AES_256_GCM_SHA384",
+      "TLSv1.3",
+      256
+    ],
+    "certificate_sha256": "e8723e35c0617837e35470ffa1c58b1b41d7ba14d6b7a6228a2d819a8c9b2003",
+    "verified_by": "unchanged PinnedTransport certifi default SSLContext; HTTPS hostname/SNI futario.com"
+  },
+  "retry_after_raw": "60",
+  "date_raw": "Wed, 07 Oct 2026 05:40:03 GMT",
+  "fresh_cooldown_guidance": {
+    "mode": "delay_seconds",
+    "seconds": 60,
+    "not_before_unix": 1791351663.7538998,
+    "basis": "fresh_response_receipt_plus_raw_retry_after"
+  },
+  "body_policy": "error_explanation_only_16KiB_max_no_followup",
+  "public_error_code": null,
+  "sanitized_body_text": "[nontrivial body redacted; SHA256 and type retained]",
+  "body_text_redaction": "raw body not saved; only public code or marker",
+  "body_challenge_markers": false,
+  "outcome": "bounded_http_429_error_observation",
+  "response_content_executed": false,
+  "network_elapsed_seconds": 1.397,
+  "finished_utc": "2026-10-07T05:40:03.754461+00:00",
+  "persisted_after": {
+    "throttle": [
+      {
+        "site_id": "futario",
+        "not_before": 1791297004.4749758,
+        "mode": "server_foreground_reconciled",
+        "request_seq": null,
+        "recorded_at": 1791296944.4746
+      }
+    ],
+    "responses": [],
+    "request_count": 1,
+    "asset_count": 0,
+    "schema_versions": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "counters": [
+      {
+        "run_id": "f097800bb3344468b174059282955973",
+        "started_at": 1791285951.6355758,
+        "request_count": 1,
+        "image_requests": 0,
+        "discovery_requests": 1,
+        "downloaded_bytes": 0,
+        "discovery_complete": 0,
+        "discovery_json": "{\"atomic_source_snapshot\":false,\"complete\":false,\"entry\":\"https://futario.com/collections/new-in\",\"passes_ended\":[false],\"reasons\":[\"DISCOVERY_NOT_TERMINAL\",\"RETRY_DEFERRED\"],\"stable_sets\":false,\"unique_products\":0}"
+      }
+    ],
+    "runs": [
+      {
+        "id": "f097800bb3344468b174059282955973",
+        "state": "failed",
+        "attempt": 1
+      }
+    ]
+  },
+  "production_files_unchanged": true,
+  "protected_files_unchanged": true,
+  "protected_file_count": 251,
+  "historical_conservative_attempts": 6,
+  "total_conservative_attempts": 7,
+  "remaining_authorized_attempts_max": 33,
+  "details_requested": 0,
+  "images_requested": 0,
+  "production_worker_started": false
+}

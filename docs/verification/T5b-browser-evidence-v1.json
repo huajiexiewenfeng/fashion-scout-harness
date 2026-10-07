@@ -1,0 +1,58 @@
+{
+  "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5b-browser-v1",
+  "job_count": 1,
+  "attempt_count": 1,
+  "run_count": 1,
+  "source_requests": 0,
+  "favorites": 2,
+  "exports": [
+    {
+      "id": "5c7d730707ba4244a59570fd1de1862a",
+      "state": "partial",
+      "created_at": "2026-10-06T14:56:12.136Z",
+      "finished_at": "2026-10-06T14:56:37.104Z",
+      "attempt": 1,
+      "resumed_at": null,
+      "worker_state": "online",
+      "counts": {
+        "products": 2,
+        "assets": 2
+      },
+      "missing_count": 2,
+      "unknown_count": 0,
+      "issues": [],
+      "download_url": "/v1/exports/5c7d730707ba4244a59570fd1de1862a/download",
+      "sha256": "2847cac526d884f4698166911175a4f972606e679fe93447c8b1e58a4bccb62f"
+    }
+  ],
+  "browser_download": {
+    "path": "C:\\Users\\Administrator\\Downloads\\fashion-scout-5c7d730707ba4244a59570fd1de1862a.zip",
+    "bytes": 25591,
+    "sha256": "2847cac526d884f4698166911175a4f972606e679fe93447c8b1e58a4bccb62f"
+  },
+  "download_copy": "E:\\github-workspace\\fashion-scout-harness\\docs\\verification\\T5b-browser-download.zip",
+  "stop": {
+    "stopped": true,
+    "forced_roles": []
+  },
+  "ui": {
+    "empty_disabled": true,
+    "explicit_click_count": 1,
+    "reload_kept_same_job": true,
+    "pending_disabled": true,
+    "actual_browser_download": true,
+    "console_warnings_or_errors": [],
+    "desktop_viewport": [
+      1440,
+      1000
+    ],
+    "desktop_document_width": 1425,
+    "desktop_scroll_width": 1425,
+    "mobile_viewport": [
+      390,
+      844
+    ],
+    "mobile_document_width": 375,
+    "mobile_scroll_width": 375
+  }
+}

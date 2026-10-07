@@ -1,0 +1,1073 @@
+{
+  "zip": {
+    "zip": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-candidate-faa57b90\\FashionScout-0.2.0a1-local-candidate-v1.zip",
+    "zip_sha256": "6fa3a026a87da7d7c03da6daa075c55efc526eb0a5b108deb8d3ca32fe1a0960",
+    "bytes": 35656479,
+    "manifest": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-candidate-faa57b90\\FashionScout\\manifest.json",
+    "manifest_sha256": "03e28a4696e205d921369a3bb94791001f56310631b261a826058064e9f56684",
+    "files": 113,
+    "dependency_wheels": 26,
+    "app_sha256": "9beaa9f5e49063fdb5b36d906b8bac5d1d5a46772f4c5b90a10782a77b772f15",
+    "runtime_sha256": "ec43f1a85c29f147d7ae2d13218c52c70b24a983a82ab22d6c607c0593060e10",
+    "source_network": "No Futario/CDN; existing runtime and verified wheel cache reused",
+    "data_in_zip": false,
+    "services_started": false
+  },
+  "package": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout",
+  "provenance": [
+    {
+      "pid": 18680,
+      "executable": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Scripts\\python.exe",
+      "argv": [
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\payload\\verify_install.py",
+        "check",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout"
+      ],
+      "modules": {
+        "fashion_scout": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\__init__.py"
+      },
+      "sys_path": [
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\python313.zip",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\DLLs",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\Lib",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages"
+      ],
+      "editable_finders": [],
+      "blocked_network": [],
+      "browser_open_intercepted": []
+    },
+    {
+      "pid": 22408,
+      "executable": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Scripts\\python.exe",
+      "argv": [
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\client.py",
+        "request",
+        "open",
+        "--data-root",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\data",
+        "--json-input",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\payload\\empty.json"
+      ],
+      "modules": {
+        "__main__": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\client.py",
+        "fashion_scout": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\__init__.py",
+        "fashion_scout.domain.models": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\domain\\models.py",
+        "fashion_scout.domain.errors": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\domain\\errors.py",
+        "fashion_scout.domain": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\domain\\__init__.py",
+        "fashion_scout.config": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\config.py",
+        "fashion_scout.db.store": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\db\\store.py",
+        "fashion_scout.db": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\db\\__init__.py",
+        "fashion_scout.processes": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\processes.py",
+        "fashion_scout.services": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\services\\__init__.py",
+        "fashion_scout.services.runs": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\services\\runs.py",
+        "fashion_scout.launcher": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\launcher.py",
+        "fashion_scout.api": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\api\\__init__.py",
+        "fashion_scout.api.models": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\api\\models.py",
+        "fashion_scout.maintenance": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\__init__.py",
+        "fashion_scout.maintenance.inventory": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\inventory.py",
+        "fashion_scout.maintenance.presentation": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\presentation.py",
+        "fashion_scout.maintenance.jobs": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\jobs.py",
+        "fashion_scout.exports.models": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\models.py",
+        "fashion_scout.exports.manifest": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\manifest.py",
+        "fashion_scout.exports.engine": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\engine.py",
+        "fashion_scout.exports": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\__init__.py",
+        "fashion_scout.maintenance.storage": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\storage.py",
+        "fashion_scout.api.maintenance": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\api\\maintenance.py",
+        "fashion_scout.client_models": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\client_models.py"
+      },
+      "sys_path": [
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\python313.zip",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\DLLs",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\Lib",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages"
+      ],
+      "editable_finders": [],
+      "blocked_network": [],
+      "browser_open_intercepted": []
+    },
+    {
+      "pid": 25652,
+      "executable": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Scripts\\python.exe",
+      "argv": [
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\client.py",
+        "request",
+        "export",
+        "--data-root",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\data",
+        "--json-input",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\flow\\export.json"
+      ],
+      "modules": {
+        "__main__": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\client.py",
+        "fashion_scout": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\__init__.py",
+        "fashion_scout.domain.models": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\domain\\models.py",
+        "fashion_scout.domain.errors": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\domain\\errors.py",
+        "fashion_scout.domain": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\domain\\__init__.py",
+        "fashion_scout.config": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\config.py",
+        "fashion_scout.db.store": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\db\\store.py",
+        "fashion_scout.db": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\db\\__init__.py",
+        "fashion_scout.processes": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\processes.py",
+        "fashion_scout.services": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\services\\__init__.py",
+        "fashion_scout.services.runs": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\services\\runs.py",
+        "fashion_scout.launcher": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\launcher.py",
+        "fashion_scout.api": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\api\\__init__.py",
+        "fashion_scout.api.models": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\api\\models.py",
+        "fashion_scout.maintenance": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\__init__.py",
+        "fashion_scout.maintenance.inventory": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\inventory.py",
+        "fashion_scout.maintenance.presentation": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\presentation.py",
+        "fashion_scout.maintenance.jobs": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\jobs.py",
+        "fashion_scout.exports.models": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\models.py",
+        "fashion_scout.exports.manifest": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\manifest.py",
+        "fashion_scout.exports.engine": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\engine.py",
+        "fashion_scout.exports": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\__init__.py",
+        "fashion_scout.maintenance.storage": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\storage.py",
+        "fashion_scout.api.maintenance": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\api\\maintenance.py",
+        "fashion_scout.client_models": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\client_models.py"
+      },
+      "sys_path": [
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\python313.zip",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\DLLs",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\Lib",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages"
+      ],
+      "editable_finders": [],
+      "blocked_network": [],
+      "browser_open_intercepted": []
+    },
+    {
+      "pid": 29924,
+      "executable": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Scripts\\python.exe",
+      "argv": [
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\client.py",
+        "request",
+        "user-state",
+        "--data-root",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\data",
+        "--json-input",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\flow\\user-state.json"
+      ],
+      "modules": {
+        "__main__": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\client.py",
+        "fashion_scout": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\__init__.py",
+        "fashion_scout.domain.models": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\domain\\models.py",
+        "fashion_scout.domain.errors": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\domain\\errors.py",
+        "fashion_scout.domain": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\domain\\__init__.py",
+        "fashion_scout.config": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\config.py",
+        "fashion_scout.db.store": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\db\\store.py",
+        "fashion_scout.db": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\db\\__init__.py",
+        "fashion_scout.processes": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\processes.py",
+        "fashion_scout.services": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\services\\__init__.py",
+        "fashion_scout.services.runs": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\services\\runs.py",
+        "fashion_scout.launcher": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\launcher.py",
+        "fashion_scout.api": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\api\\__init__.py",
+        "fashion_scout.api.models": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\api\\models.py",
+        "fashion_scout.maintenance": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\__init__.py",
+        "fashion_scout.maintenance.inventory": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\inventory.py",
+        "fashion_scout.maintenance.presentation": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\presentation.py",
+        "fashion_scout.maintenance.jobs": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\jobs.py",
+        "fashion_scout.exports.models": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\models.py",
+        "fashion_scout.exports.manifest": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\manifest.py",
+        "fashion_scout.exports.engine": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\engine.py",
+        "fashion_scout.exports": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\__init__.py",
+        "fashion_scout.maintenance.storage": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\storage.py",
+        "fashion_scout.api.maintenance": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\api\\maintenance.py",
+        "fashion_scout.client_models": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\client_models.py"
+      },
+      "sys_path": [
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\python313.zip",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\DLLs",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\Lib",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages"
+      ],
+      "editable_finders": [],
+      "blocked_network": [],
+      "browser_open_intercepted": []
+    },
+    {
+      "pid": 33320,
+      "executable": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Scripts\\python.exe",
+      "argv": [
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\health.py",
+        "--data-root",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\data",
+        "--instance",
+        "68070f5c-e4b2-4ac6-8ac2-8b77a0934b32",
+        "--port",
+        "8765"
+      ],
+      "modules": {
+        "__main__": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\health.py",
+        "fashion_scout": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\__init__.py",
+        "fashion_scout.domain.models": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\domain\\models.py",
+        "fashion_scout.domain.errors": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\domain\\errors.py",
+        "fashion_scout.domain": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\domain\\__init__.py",
+        "fashion_scout.config": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\config.py",
+        "fashion_scout.db.store": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\db\\store.py",
+        "fashion_scout.db": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\db\\__init__.py",
+        "fashion_scout.processes": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\processes.py",
+        "fashion_scout.api": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\api\\__init__.py",
+        "fashion_scout.services": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\services\\__init__.py",
+        "fashion_scout.services.runs": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\services\\runs.py",
+        "fashion_scout.adapters": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\adapters\\__init__.py",
+        "fashion_scout.media": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\media\\__init__.py",
+        "fashion_scout.media.http": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\media\\http.py",
+        "fashion_scout.adapters.futario": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\adapters\\futario.py",
+        "fashion_scout.services.catalog": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\services\\catalog.py",
+        "fashion_scout.services.presentation": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\services\\presentation.py",
+        "fashion_scout.api.models": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\api\\models.py",
+        "fashion_scout.api.security": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\api\\security.py",
+        "fashion_scout.api.routes": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\api\\routes.py",
+        "fashion_scout.exports.models": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\models.py",
+        "fashion_scout.exports.manifest": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\manifest.py",
+        "fashion_scout.exports.engine": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\engine.py",
+        "fashion_scout.exports": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\__init__.py",
+        "fashion_scout.exports.capture": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\capture.py",
+        "fashion_scout.exports.jobs": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\jobs.py",
+        "fashion_scout.api.exports": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\api\\exports.py",
+        "fashion_scout.maintenance": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\__init__.py",
+        "fashion_scout.maintenance.inventory": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\inventory.py",
+        "fashion_scout.maintenance.presentation": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\presentation.py",
+        "fashion_scout.maintenance.jobs": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\jobs.py",
+        "fashion_scout.maintenance.storage": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\storage.py",
+        "fashion_scout.api.maintenance": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\api\\maintenance.py"
+      },
+      "sys_path": [
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\python313.zip",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\DLLs",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\Lib",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages"
+      ],
+      "editable_finders": [],
+      "blocked_network": [],
+      "browser_open_intercepted": []
+    },
+    {
+      "pid": 39728,
+      "executable": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Scripts\\python.exe",
+      "argv": [
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\launcher.py",
+        "stop",
+        "--data-root",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\data",
+        "--graceful",
+        "--json"
+      ],
+      "modules": {
+        "__main__": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\launcher.py",
+        "fashion_scout": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\__init__.py",
+        "fashion_scout.domain.models": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\domain\\models.py",
+        "fashion_scout.domain.errors": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\domain\\errors.py",
+        "fashion_scout.domain": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\domain\\__init__.py",
+        "fashion_scout.config": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\config.py",
+        "fashion_scout.db.store": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\db\\store.py",
+        "fashion_scout.db": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\db\\__init__.py",
+        "fashion_scout.processes": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\processes.py",
+        "fashion_scout.services": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\services\\__init__.py",
+        "fashion_scout.services.runs": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\services\\runs.py"
+      },
+      "sys_path": [
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\python313.zip",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\DLLs",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\Lib",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages"
+      ],
+      "editable_finders": [],
+      "blocked_network": [],
+      "browser_open_intercepted": []
+    },
+    {
+      "pid": 41668,
+      "executable": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Scripts\\python.exe",
+      "argv": [
+        "E:\\github-workspace\\fashion-scout-harness\\tests\\release\\probe_flow.py",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout",
+        "E:\\github-workspace\\fashion-scout-harness",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\flow"
+      ],
+      "modules": {
+        "fashion_scout": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\__init__.py",
+        "fashion_scout.domain.models": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\domain\\models.py",
+        "fashion_scout.domain.errors": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\domain\\errors.py",
+        "fashion_scout.domain": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\domain\\__init__.py",
+        "fashion_scout.config": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\config.py",
+        "fashion_scout.db.store": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\db\\store.py",
+        "fashion_scout.db": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\db\\__init__.py",
+        "fashion_scout.processes": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\processes.py",
+        "fashion_scout.services": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\services\\__init__.py",
+        "fashion_scout.services.runs": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\services\\runs.py",
+        "fashion_scout.launcher": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\launcher.py",
+        "fashion_scout.api": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\api\\__init__.py",
+        "fashion_scout.api.models": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\api\\models.py",
+        "fashion_scout.maintenance": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\__init__.py",
+        "fashion_scout.maintenance.inventory": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\inventory.py",
+        "fashion_scout.maintenance.presentation": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\presentation.py",
+        "fashion_scout.maintenance.jobs": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\jobs.py",
+        "fashion_scout.exports.models": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\models.py",
+        "fashion_scout.exports.manifest": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\manifest.py",
+        "fashion_scout.exports.engine": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\engine.py",
+        "fashion_scout.exports": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\__init__.py",
+        "fashion_scout.maintenance.storage": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\storage.py",
+        "fashion_scout.api.maintenance": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\api\\maintenance.py",
+        "fashion_scout.client_models": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\client_models.py",
+        "fashion_scout.client": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\client.py",
+        "fashion_scout.exports.capture": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\capture.py",
+        "fashion_scout.exports.jobs": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\jobs.py",
+        "fashion_scout.maintenance.files": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\files.py",
+        "fashion_scout.maintenance.backup": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\backup.py"
+      },
+      "sys_path": [
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\python313.zip",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\DLLs",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\Lib",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages"
+      ],
+      "editable_finders": [],
+      "blocked_network": [],
+      "browser_open_intercepted": []
+    },
+    {
+      "pid": 44720,
+      "executable": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Scripts\\python.exe",
+      "argv": [
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\payload\\verify_install.py",
+        "check",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout"
+      ],
+      "modules": {
+        "fashion_scout": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\__init__.py"
+      },
+      "sys_path": [
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\python313.zip",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\DLLs",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\Lib",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages"
+      ],
+      "editable_finders": [],
+      "blocked_network": [],
+      "browser_open_intercepted": []
+    },
+    {
+      "pid": 47744,
+      "executable": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Scripts\\python.exe",
+      "argv": [
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\client.py",
+        "request",
+        "product",
+        "--data-root",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\data",
+        "--json-input",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\flow\\product.json"
+      ],
+      "modules": {
+        "__main__": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\client.py",
+        "fashion_scout": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\__init__.py",
+        "fashion_scout.domain.models": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\domain\\models.py",
+        "fashion_scout.domain.errors": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\domain\\errors.py",
+        "fashion_scout.domain": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\domain\\__init__.py",
+        "fashion_scout.config": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\config.py",
+        "fashion_scout.db.store": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\db\\store.py",
+        "fashion_scout.db": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\db\\__init__.py",
+        "fashion_scout.processes": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\processes.py",
+        "fashion_scout.services": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\services\\__init__.py",
+        "fashion_scout.services.runs": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\services\\runs.py",
+        "fashion_scout.launcher": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\launcher.py",
+        "fashion_scout.api": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\api\\__init__.py",
+        "fashion_scout.api.models": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\api\\models.py",
+        "fashion_scout.maintenance": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\__init__.py",
+        "fashion_scout.maintenance.inventory": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\inventory.py",
+        "fashion_scout.maintenance.presentation": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\presentation.py",
+        "fashion_scout.maintenance.jobs": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\jobs.py",
+        "fashion_scout.exports.models": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\models.py",
+        "fashion_scout.exports.manifest": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\manifest.py",
+        "fashion_scout.exports.engine": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\engine.py",
+        "fashion_scout.exports": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\__init__.py",
+        "fashion_scout.maintenance.storage": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\storage.py",
+        "fashion_scout.api.maintenance": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\api\\maintenance.py",
+        "fashion_scout.client_models": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\client_models.py"
+      },
+      "sys_path": [
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\python313.zip",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\DLLs",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\Lib",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages"
+      ],
+      "editable_finders": [],
+      "blocked_network": [],
+      "browser_open_intercepted": []
+    },
+    {
+      "pid": 50532,
+      "executable": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Scripts\\python.exe",
+      "argv": [
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\client.py",
+        "request",
+        "open",
+        "--data-root",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\data",
+        "--json-input",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\payload\\empty.json"
+      ],
+      "modules": {
+        "__main__": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\client.py",
+        "fashion_scout": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\__init__.py",
+        "fashion_scout.domain.models": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\domain\\models.py",
+        "fashion_scout.domain.errors": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\domain\\errors.py",
+        "fashion_scout.domain": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\domain\\__init__.py",
+        "fashion_scout.config": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\config.py",
+        "fashion_scout.db.store": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\db\\store.py",
+        "fashion_scout.db": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\db\\__init__.py",
+        "fashion_scout.processes": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\processes.py",
+        "fashion_scout.services": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\services\\__init__.py",
+        "fashion_scout.services.runs": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\services\\runs.py",
+        "fashion_scout.launcher": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\launcher.py",
+        "fashion_scout.api": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\api\\__init__.py",
+        "fashion_scout.api.models": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\api\\models.py",
+        "fashion_scout.maintenance": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\__init__.py",
+        "fashion_scout.maintenance.inventory": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\inventory.py",
+        "fashion_scout.maintenance.presentation": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\presentation.py",
+        "fashion_scout.maintenance.jobs": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\jobs.py",
+        "fashion_scout.exports.models": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\models.py",
+        "fashion_scout.exports.manifest": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\manifest.py",
+        "fashion_scout.exports.engine": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\engine.py",
+        "fashion_scout.exports": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\__init__.py",
+        "fashion_scout.maintenance.storage": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\storage.py",
+        "fashion_scout.api.maintenance": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\api\\maintenance.py",
+        "fashion_scout.client_models": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\client_models.py"
+      },
+      "sys_path": [
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\python313.zip",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\DLLs",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\Lib",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages"
+      ],
+      "editable_finders": [],
+      "blocked_network": [],
+      "browser_open_intercepted": [
+        {
+          "origin": "http://127.0.0.1:8765",
+          "bootstrap": true,
+          "one_time_code_present": true
+        }
+      ]
+    },
+    {
+      "pid": 59372,
+      "executable": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Scripts\\python.exe",
+      "argv": [
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\client.py",
+        "request",
+        "backup",
+        "--data-root",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\data",
+        "--json-input",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\flow\\backup.json"
+      ],
+      "modules": {
+        "__main__": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\client.py",
+        "fashion_scout": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\__init__.py",
+        "fashion_scout.domain.models": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\domain\\models.py",
+        "fashion_scout.domain.errors": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\domain\\errors.py",
+        "fashion_scout.domain": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\domain\\__init__.py",
+        "fashion_scout.config": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\config.py",
+        "fashion_scout.db.store": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\db\\store.py",
+        "fashion_scout.db": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\db\\__init__.py",
+        "fashion_scout.processes": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\processes.py",
+        "fashion_scout.services": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\services\\__init__.py",
+        "fashion_scout.services.runs": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\services\\runs.py",
+        "fashion_scout.launcher": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\launcher.py",
+        "fashion_scout.api": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\api\\__init__.py",
+        "fashion_scout.api.models": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\api\\models.py",
+        "fashion_scout.maintenance": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\__init__.py",
+        "fashion_scout.maintenance.inventory": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\inventory.py",
+        "fashion_scout.maintenance.presentation": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\presentation.py",
+        "fashion_scout.maintenance.jobs": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\jobs.py",
+        "fashion_scout.exports.models": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\models.py",
+        "fashion_scout.exports.manifest": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\manifest.py",
+        "fashion_scout.exports.engine": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\engine.py",
+        "fashion_scout.exports": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\__init__.py",
+        "fashion_scout.maintenance.storage": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\storage.py",
+        "fashion_scout.api.maintenance": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\api\\maintenance.py",
+        "fashion_scout.client_models": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\client_models.py"
+      },
+      "sys_path": [
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\python313.zip",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\DLLs",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\Lib",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages"
+      ],
+      "editable_finders": [],
+      "blocked_network": [],
+      "browser_open_intercepted": []
+    },
+    {
+      "pid": 73472,
+      "executable": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Scripts\\python.exe",
+      "argv": [
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\payload\\verify_install.py",
+        "check",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout"
+      ],
+      "modules": {
+        "fashion_scout": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\__init__.py"
+      },
+      "sys_path": [
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\python313.zip",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\DLLs",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\Lib",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages"
+      ],
+      "editable_finders": [],
+      "blocked_network": [],
+      "browser_open_intercepted": []
+    },
+    {
+      "pid": 74080,
+      "executable": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Scripts\\python.exe",
+      "argv": [
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\worker.py",
+        "--data-root",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\data",
+        "--instance",
+        "68070f5c-e4b2-4ac6-8ac2-8b77a0934b32"
+      ],
+      "modules": {
+        "__main__": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\worker.py",
+        "fashion_scout": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\__init__.py",
+        "fashion_scout.domain.models": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\domain\\models.py",
+        "fashion_scout.domain.errors": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\domain\\errors.py",
+        "fashion_scout.domain": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\domain\\__init__.py",
+        "fashion_scout.config": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\config.py",
+        "fashion_scout.db.store": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\db\\store.py",
+        "fashion_scout.db": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\db\\__init__.py",
+        "fashion_scout.services": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\services\\__init__.py",
+        "fashion_scout.services.runs": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\services\\runs.py",
+        "fashion_scout.db.archive": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\db\\archive.py",
+        "fashion_scout.processes": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\processes.py",
+        "fashion_scout.adapters": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\adapters\\__init__.py",
+        "fashion_scout.media": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\media\\__init__.py",
+        "fashion_scout.media.http": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\media\\http.py",
+        "fashion_scout.adapters.futario": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\adapters\\futario.py",
+        "fashion_scout.media.images": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\media\\images.py",
+        "fashion_scout.services.catalog": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\services\\catalog.py",
+        "fashion_scout.services.collect": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\services\\collect.py",
+        "fashion_scout.exports.models": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\models.py",
+        "fashion_scout.exports.manifest": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\manifest.py",
+        "fashion_scout.exports.engine": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\engine.py",
+        "fashion_scout.exports": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\__init__.py",
+        "fashion_scout.exports.capture": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\capture.py",
+        "fashion_scout.exports.jobs": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\jobs.py",
+        "fashion_scout.exports.runner": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\runner.py",
+        "fashion_scout.maintenance": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\__init__.py",
+        "fashion_scout.maintenance.inventory": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\inventory.py",
+        "fashion_scout.maintenance.presentation": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\presentation.py",
+        "fashion_scout.maintenance.jobs": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\jobs.py",
+        "fashion_scout.maintenance.files": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\files.py",
+        "fashion_scout.maintenance.backup": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\backup.py",
+        "fashion_scout.maintenance.runner": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\runner.py"
+      },
+      "sys_path": [
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\python313.zip",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\DLLs",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\Lib",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages"
+      ],
+      "editable_finders": [],
+      "blocked_network": [],
+      "browser_open_intercepted": []
+    },
+    {
+      "pid": 75048,
+      "executable": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Scripts\\python.exe",
+      "argv": [
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\client.py",
+        "request",
+        "favorites",
+        "--data-root",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\data",
+        "--json-input",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\flow\\favorites.json"
+      ],
+      "modules": {
+        "__main__": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\client.py",
+        "fashion_scout": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\__init__.py",
+        "fashion_scout.domain.models": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\domain\\models.py",
+        "fashion_scout.domain.errors": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\domain\\errors.py",
+        "fashion_scout.domain": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\domain\\__init__.py",
+        "fashion_scout.config": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\config.py",
+        "fashion_scout.db.store": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\db\\store.py",
+        "fashion_scout.db": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\db\\__init__.py",
+        "fashion_scout.processes": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\processes.py",
+        "fashion_scout.services": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\services\\__init__.py",
+        "fashion_scout.services.runs": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\services\\runs.py",
+        "fashion_scout.launcher": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\launcher.py",
+        "fashion_scout.api": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\api\\__init__.py",
+        "fashion_scout.api.models": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\api\\models.py",
+        "fashion_scout.maintenance": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\__init__.py",
+        "fashion_scout.maintenance.inventory": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\inventory.py",
+        "fashion_scout.maintenance.presentation": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\presentation.py",
+        "fashion_scout.maintenance.jobs": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\jobs.py",
+        "fashion_scout.exports.models": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\models.py",
+        "fashion_scout.exports.manifest": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\manifest.py",
+        "fashion_scout.exports.engine": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\engine.py",
+        "fashion_scout.exports": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\__init__.py",
+        "fashion_scout.maintenance.storage": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\storage.py",
+        "fashion_scout.api.maintenance": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\api\\maintenance.py",
+        "fashion_scout.client_models": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\client_models.py"
+      },
+      "sys_path": [
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\python313.zip",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\DLLs",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\Lib",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages"
+      ],
+      "editable_finders": [],
+      "blocked_network": [],
+      "browser_open_intercepted": []
+    },
+    {
+      "pid": 75928,
+      "executable": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Scripts\\python.exe",
+      "argv": [
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\client.py",
+        "request",
+        "open",
+        "--data-root",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\data",
+        "--json-input",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\payload\\empty.json"
+      ],
+      "modules": {
+        "__main__": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\client.py",
+        "fashion_scout": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\__init__.py",
+        "fashion_scout.domain.models": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\domain\\models.py",
+        "fashion_scout.domain.errors": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\domain\\errors.py",
+        "fashion_scout.domain": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\domain\\__init__.py",
+        "fashion_scout.config": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\config.py",
+        "fashion_scout.db.store": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\db\\store.py",
+        "fashion_scout.db": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\db\\__init__.py",
+        "fashion_scout.processes": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\processes.py",
+        "fashion_scout.services": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\services\\__init__.py",
+        "fashion_scout.services.runs": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\services\\runs.py",
+        "fashion_scout.launcher": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\launcher.py",
+        "fashion_scout.api": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\api\\__init__.py",
+        "fashion_scout.api.models": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\api\\models.py",
+        "fashion_scout.maintenance": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\__init__.py",
+        "fashion_scout.maintenance.inventory": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\inventory.py",
+        "fashion_scout.maintenance.presentation": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\presentation.py",
+        "fashion_scout.maintenance.jobs": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\jobs.py",
+        "fashion_scout.exports.models": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\models.py",
+        "fashion_scout.exports.manifest": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\manifest.py",
+        "fashion_scout.exports.engine": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\engine.py",
+        "fashion_scout.exports": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\__init__.py",
+        "fashion_scout.maintenance.storage": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\storage.py",
+        "fashion_scout.api.maintenance": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\api\\maintenance.py",
+        "fashion_scout.client_models": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\client_models.py"
+      },
+      "sys_path": [
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\python313.zip",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\DLLs",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\Lib",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages"
+      ],
+      "editable_finders": [],
+      "blocked_network": [],
+      "browser_open_intercepted": [
+        {
+          "origin": "http://127.0.0.1:8765",
+          "bootstrap": true,
+          "one_time_code_present": true
+        }
+      ]
+    },
+    {
+      "pid": 77408,
+      "executable": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Scripts\\python.exe",
+      "argv": [
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\client.py",
+        "request",
+        "new",
+        "--data-root",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\data",
+        "--json-input",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\flow\\new.json"
+      ],
+      "modules": {
+        "__main__": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\client.py",
+        "fashion_scout": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\__init__.py",
+        "fashion_scout.domain.models": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\domain\\models.py",
+        "fashion_scout.domain.errors": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\domain\\errors.py",
+        "fashion_scout.domain": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\domain\\__init__.py",
+        "fashion_scout.config": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\config.py",
+        "fashion_scout.db.store": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\db\\store.py",
+        "fashion_scout.db": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\db\\__init__.py",
+        "fashion_scout.processes": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\processes.py",
+        "fashion_scout.services": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\services\\__init__.py",
+        "fashion_scout.services.runs": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\services\\runs.py",
+        "fashion_scout.launcher": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\launcher.py",
+        "fashion_scout.api": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\api\\__init__.py",
+        "fashion_scout.api.models": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\api\\models.py",
+        "fashion_scout.maintenance": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\__init__.py",
+        "fashion_scout.maintenance.inventory": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\inventory.py",
+        "fashion_scout.maintenance.presentation": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\presentation.py",
+        "fashion_scout.maintenance.jobs": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\jobs.py",
+        "fashion_scout.exports.models": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\models.py",
+        "fashion_scout.exports.manifest": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\manifest.py",
+        "fashion_scout.exports.engine": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\engine.py",
+        "fashion_scout.exports": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\exports\\__init__.py",
+        "fashion_scout.maintenance.storage": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\maintenance\\storage.py",
+        "fashion_scout.api.maintenance": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\api\\maintenance.py",
+        "fashion_scout.client_models": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\client_models.py"
+      },
+      "sys_path": [
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\python313.zip",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\DLLs",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\Lib",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages"
+      ],
+      "editable_finders": [],
+      "blocked_network": [],
+      "browser_open_intercepted": []
+    },
+    {
+      "pid": 78696,
+      "executable": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Scripts\\python.exe",
+      "argv": [
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\payload\\verify_install.py",
+        "check",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout"
+      ],
+      "modules": {
+        "fashion_scout": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\__init__.py"
+      },
+      "sys_path": [
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\python313.zip",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\DLLs",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\Lib",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages"
+      ],
+      "editable_finders": [],
+      "blocked_network": [],
+      "browser_open_intercepted": []
+    },
+    {
+      "pid": 78996,
+      "executable": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Scripts\\python.exe",
+      "argv": [
+        "-c",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\data"
+      ],
+      "modules": {
+        "fashion_scout": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\__init__.py",
+        "fashion_scout.domain.models": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\domain\\models.py",
+        "fashion_scout.domain.errors": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\domain\\errors.py",
+        "fashion_scout.domain": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\domain\\__init__.py",
+        "fashion_scout.config": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\config.py",
+        "fashion_scout.db.store": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\db\\store.py",
+        "fashion_scout.db": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\db\\__init__.py",
+        "fashion_scout.processes": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\processes.py",
+        "fashion_scout.services": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\services\\__init__.py",
+        "fashion_scout.services.runs": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\services\\runs.py",
+        "fashion_scout.launcher": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\launcher.py"
+      },
+      "sys_path": [
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\python313.zip",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\DLLs",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\Lib",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages"
+      ],
+      "editable_finders": [],
+      "blocked_network": [],
+      "browser_open_intercepted": []
+    },
+    {
+      "pid": 79256,
+      "executable": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Scripts\\python.exe",
+      "argv": [
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\payload\\verify_install.py",
+        "check",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout"
+      ],
+      "modules": {
+        "fashion_scout": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\__init__.py"
+      },
+      "sys_path": [
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\python313.zip",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\DLLs",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python\\Lib",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\python",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages"
+      ],
+      "editable_finders": [],
+      "blocked_network": [],
+      "browser_open_intercepted": []
+    }
+  ],
+  "stopped": {
+    "web": false,
+    "worker": false
+  },
+  "flow": {
+    "synthetic_only": true,
+    "commands": [
+      {
+        "argv": [
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Scripts\\python.exe",
+          "-I",
+          "-B",
+          "-m",
+          "fashion_scout.client",
+          "request",
+          "new",
+          "--data-root",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\data",
+          "--json-input",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\flow\\new.json"
+        ],
+        "returncode": 0,
+        "stdout": "{\"ok\": true, \"data\": {\"snapshot_id\": \"6576e7479686aea5b4207f3f2c79e8a8\", \"snapshot_expires_at\": \"2026-10-07T06:10:20.846Z\", \"next_cursor\": null, \"total\": 1, \"items\": [{\"id\": \"fixture-000\", \"title\": \"\\u79cb\\u65e5\\u677e\\u5f1b\\u611f \\u00b7 \\u7f8a\\u6bdb\\u9488\\u7ec7\\u886b\", \"source\": {\"date_reason\": \"synthetic_fixture\", \"source_id\": \"0\", \"source_published_at\": null, \"title\": \"\\u79cb\\u65e5\\u677e\\u5f1b\\u611f \\u00b7 \\u7f8a\\u6bdb\\u9488\\u7ec7\\u886b\", \"url\": \"https://example.invalid/products/0\"}, \"first_seen_at\": \"2026-10-01T12:00:00Z\", \"first_eligible_at\": \"2026-10-01T12:00:00Z\", \"effective_category\": \"knitwear\", \"user_state\": {\"product_id\": \"fixture-000\", \"favorite\": false, \"excluded\": false, \"category_override\": null, \"revision\": 1, \"viewed_at\": null, \"seen_version_id\": null, \"seen_version_revision\": null, \"seen_content_digest\": null}, \"media_state\": \"ready\", \"latest_detail_error\": null, \"has_material_update\": false, \"latest_available_version_id\": \"fixture-version-0\", \"latest_available_revision\": 1, \"latest_complete_version_id\": \"fixture-version-0\", \"latest_complete_revision\": 1, \"latest_observed_version_id\": \"fixture-version-0\", \"latest_observed_revision\": 1, \"version_id\": \"fixture-version-0\", \"version_revision\": 1, \"images\": [{\"asset_id\": \"fixture-asset-0-0\", \"sha256\": \"0d582e182a323b091b2372d6225d00e4b49dece3e2f5994fd446add256e0a3eb\", \"verified_at\": \"2026-10-01T12:00:00Z\", \"preview_url\": \"/v1/assets/fixture-asset-0-0?rendition=preview\", \"original_url\": \"/v1/assets/fixture-asset-0-0?rendition=original\"}, {\"asset_id\": \"fixture-asset-0-1\", \"sha256\": \"5a18cbda52772733fc25f651db1b5c3117f95b66d1be7befb34735809f298f0a\", \"verified_at\": \"2026-10-01T12:00:00Z\", \"preview_url\": \"/v1/assets/fixture-asset-0-1?rendition=preview\", \"original_url\": \"/v1/assets/fixture-asset-0-1?rendition=original\"}], \"album\": {\"expected_count\": 2, \"stored_count\": 2, \"missing\": [], \"coverage_scope\": [\"product.images\"], \"coverage_complete\": true, \"verified_at\": \"2026-10-01T12:00:00Z\", \"capability_notes\": []}, \"latest_observed_album\": {\"expected_count\": 2, \"stored_count\": 2, \"missing\": [], \"coverage_scope\": [\"product.images\"], \"coverage_complete\": true, \"verified_at\": \"2026-10-01T12:00:00Z\", \"capability_notes\": []}, \"using_previous_images\": false, \"versions\": [{\"id\": \"fixture-version-0\", \"revision\": 1, \"content_digest\": \"fe9a3d4ca464658eee6700d0f51926bd534daf56ccb478a5136bca3e17c267e9\"}]}], \"latest_run_summary\": {\"latest_run\": {\"id\": \"synthetic-fixture-run\", \"state\": \"succeeded\", \"snapshot\": {\"site_ids\": [\"futario\"], \"window_days\": 14, \"unknown_date_policy\": \"include\", \"discovery\": {\"page_size\": 20, \"max_pages_per_pass\": 30, \"passes\": 2, \"max_requests\": 60, \"max_products\": 600}, \"max_details\": 300, \"network\": {\"resolver_mode\": \"system\", \"detail_concurrency\": 1, \"image_concurrency\": 2, \"min_interval_ms\": 1000, \"max_attempts\": 3, \"max_http_requests\": 3000, \"max_image_requests\": 2400, \"run_total_seconds\": 3600, \"timeouts\": {\"connect\": 10, \"pool\": 10, \"read\": 30, \"write\": 30, \"total\": 120}}, \"storage\": {\"max_image_bytes\": 26214400, \"max_pixels\": 50000000, \"run_download_bytes\": 2147483648, \"min_free_bytes\": 5368709120, \"preview_cache_bytes\": 536870912}, \"plan_revision\": 1, \"window_start\": \"2026-09-17T12:00:00Z\", \"window_end\": \"2026-10-01T12:00:00Z\", \"adapter_versions\": {\"futario\": \"futario-json-v1\"}, \"site_entries\": {\"futario\": \"https://example.invalid\"}, \"new_run_trigger\": \"manual\", \"discovery_baseline_complete\": {\"futario\": false}}, \"created_at\": \"2026-10-01T12:00:00Z\", \"started_at\": null, \"finished_at\": \"2026-10-01T12:00:00Z\", \"epoch\": 0, \"attempt\": 1, \"issue_code\": null, \"resumed_at\": null, \"stage\": \"accepted\", \"counts\": {}, \"plan_revision\": 1, \"worker_state\": \"online\", \"coverage\": [], \"issues\": []}, \"latest_completed_at\": \"2026-10-01T12:00:00Z\", \"latest_successful_at\": \"2026-10-01T12:00:00Z\"}, \"request_id\": \"2b347557eabb4a6686b52bf1a621825b\"}, \"service\": {\"request_id\": \"87c81447291c44ebb5e1865bc8b71882\", \"app_instance_id\": \"68070f5c-e4b2-4ac6-8ac2-8b77a0934b32\", \"schema_version\": 9, \"web_ready\": true, \"worker_state\": \"online\", \"heartbeat_at\": 1791352520.7680342, \"worker_pid\": 74080, \"worker_born\": 1791352515.8246076, \"pid\": 33320, \"born\": 1791352514.7615087, \"source_adapter\": \"futario-json-v1\", \"checked\": true}, \"intent_id\": null, \"exit_code\": 0}\n",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Scripts\\python.exe",
+          "-I",
+          "-B",
+          "-m",
+          "fashion_scout.client",
+          "request",
+          "product",
+          "--data-root",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\data",
+          "--json-input",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\flow\\product.json"
+        ],
+        "returncode": 0,
+        "stdout": "{\"ok\": true, \"data\": {\"product\": {\"id\": \"fixture-000\", \"title\": \"\\u79cb\\u65e5\\u677e\\u5f1b\\u611f \\u00b7 \\u7f8a\\u6bdb\\u9488\\u7ec7\\u886b\", \"source\": {\"date_reason\": \"synthetic_fixture\", \"source_id\": \"0\", \"source_published_at\": null, \"title\": \"\\u79cb\\u65e5\\u677e\\u5f1b\\u611f \\u00b7 \\u7f8a\\u6bdb\\u9488\\u7ec7\\u886b\", \"url\": \"https://example.invalid/products/0\"}, \"first_seen_at\": \"2026-10-01T12:00:00Z\", \"first_eligible_at\": \"2026-10-01T12:00:00Z\", \"effective_category\": \"knitwear\", \"user_state\": {\"product_id\": \"fixture-000\", \"favorite\": false, \"excluded\": false, \"category_override\": null, \"revision\": 1, \"viewed_at\": null, \"seen_version_id\": null, \"seen_version_revision\": null, \"seen_content_digest\": null}, \"media_state\": \"ready\", \"latest_detail_error\": null, \"has_material_update\": false, \"latest_available_version_id\": \"fixture-version-0\", \"latest_available_revision\": 1, \"latest_complete_version_id\": \"fixture-version-0\", \"latest_complete_revision\": 1, \"latest_observed_version_id\": \"fixture-version-0\", \"latest_observed_revision\": 1, \"version_id\": \"fixture-version-0\", \"version_revision\": 1, \"images\": [{\"asset_id\": \"fixture-asset-0-0\", \"sha256\": \"0d582e182a323b091b2372d6225d00e4b49dece3e2f5994fd446add256e0a3eb\", \"verified_at\": \"2026-10-01T12:00:00Z\", \"preview_url\": \"/v1/assets/fixture-asset-0-0?rendition=preview\", \"original_url\": \"/v1/assets/fixture-asset-0-0?rendition=original\"}, {\"asset_id\": \"fixture-asset-0-1\", \"sha256\": \"5a18cbda52772733fc25f651db1b5c3117f95b66d1be7befb34735809f298f0a\", \"verified_at\": \"2026-10-01T12:00:00Z\", \"preview_url\": \"/v1/assets/fixture-asset-0-1?rendition=preview\", \"original_url\": \"/v1/assets/fixture-asset-0-1?rendition=original\"}], \"album\": {\"expected_count\": 2, \"stored_count\": 2, \"missing\": [], \"coverage_scope\": [\"product.images\"], \"coverage_complete\": true, \"verified_at\": \"2026-10-01T12:00:00Z\", \"capability_notes\": []}, \"latest_observed_album\": {\"expected_count\": 2, \"stored_count\": 2, \"missing\": [], \"coverage_scope\": [\"product.images\"], \"coverage_complete\": true, \"verified_at\": \"2026-10-01T12:00:00Z\", \"capability_notes\": []}, \"using_previous_images\": false, \"versions\": [{\"id\": \"fixture-version-0\", \"revision\": 1, \"content_digest\": \"fe9a3d4ca464658eee6700d0f51926bd534daf56ccb478a5136bca3e17c267e9\"}]}, \"request_id\": \"bca86ece0928461eae3b4393f52ef6b0\"}, \"service\": {\"request_id\": \"415b19a4aa254641bebcc609aa0243d0\", \"app_instance_id\": \"68070f5c-e4b2-4ac6-8ac2-8b77a0934b32\", \"schema_version\": 9, \"web_ready\": true, \"worker_state\": \"online\", \"heartbeat_at\": 1791352521.554657, \"worker_pid\": 74080, \"worker_born\": 1791352515.8246076, \"pid\": 33320, \"born\": 1791352514.7615087, \"source_adapter\": \"futario-json-v1\", \"checked\": true}, \"intent_id\": null, \"exit_code\": 0}\n",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Scripts\\python.exe",
+          "-I",
+          "-B",
+          "-m",
+          "fashion_scout.client",
+          "request",
+          "user-state",
+          "--data-root",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\data",
+          "--json-input",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\flow\\user-state.json"
+        ],
+        "returncode": 0,
+        "stdout": "{\"ok\": true, \"data\": {\"intent_id\": \"ea1942837a8c4ccaa388a9772b21323f\", \"intent_state\": \"accepted\", \"result\": {\"user_state\": {\"product_id\": \"fixture-000\", \"favorite\": true, \"excluded\": false, \"category_override\": null, \"revision\": 2, \"viewed_at\": null, \"seen_version_id\": null, \"seen_version_revision\": null, \"seen_content_digest\": null}, \"request_id\": \"8af0b5e6a0ba451b9505f894338e98cc\"}}, \"service\": {\"request_id\": \"fe8fa02fccc64da18f83522ecc352eab\", \"app_instance_id\": \"68070f5c-e4b2-4ac6-8ac2-8b77a0934b32\", \"schema_version\": 9, \"web_ready\": true, \"worker_state\": \"online\", \"heartbeat_at\": 1791352522.3406124, \"worker_pid\": 74080, \"worker_born\": 1791352515.8246076, \"pid\": 33320, \"born\": 1791352514.7615087, \"source_adapter\": \"futario-json-v1\", \"checked\": true}, \"intent_id\": \"ea1942837a8c4ccaa388a9772b21323f\", \"exit_code\": 0}\n",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Scripts\\python.exe",
+          "-I",
+          "-B",
+          "-m",
+          "fashion_scout.client",
+          "request",
+          "favorites",
+          "--data-root",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\data",
+          "--json-input",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\flow\\favorites.json"
+        ],
+        "returncode": 0,
+        "stdout": "{\"ok\": true, \"data\": {\"snapshot_id\": \"e7cd4592b2b27f288aa4a1baba9a0b59\", \"snapshot_expires_at\": \"2026-10-07T06:10:23.340Z\", \"next_cursor\": null, \"total\": 1, \"items\": [{\"id\": \"fixture-000\", \"title\": \"\\u79cb\\u65e5\\u677e\\u5f1b\\u611f \\u00b7 \\u7f8a\\u6bdb\\u9488\\u7ec7\\u886b\", \"source\": {\"date_reason\": \"synthetic_fixture\", \"source_id\": \"0\", \"source_published_at\": null, \"title\": \"\\u79cb\\u65e5\\u677e\\u5f1b\\u611f \\u00b7 \\u7f8a\\u6bdb\\u9488\\u7ec7\\u886b\", \"url\": \"https://example.invalid/products/0\"}, \"first_seen_at\": \"2026-10-01T12:00:00Z\", \"first_eligible_at\": \"2026-10-01T12:00:00Z\", \"effective_category\": \"knitwear\", \"user_state\": {\"product_id\": \"fixture-000\", \"favorite\": true, \"excluded\": false, \"category_override\": null, \"revision\": 2, \"viewed_at\": null, \"seen_version_id\": null, \"seen_version_revision\": null, \"seen_content_digest\": null}, \"media_state\": \"ready\", \"latest_detail_error\": null, \"has_material_update\": false, \"latest_available_version_id\": \"fixture-version-0\", \"latest_available_revision\": 1, \"latest_complete_version_id\": \"fixture-version-0\", \"latest_complete_revision\": 1, \"latest_observed_version_id\": \"fixture-version-0\", \"latest_observed_revision\": 1, \"version_id\": \"fixture-version-0\", \"version_revision\": 1, \"images\": [{\"asset_id\": \"fixture-asset-0-0\", \"sha256\": \"0d582e182a323b091b2372d6225d00e4b49dece3e2f5994fd446add256e0a3eb\", \"verified_at\": \"2026-10-01T12:00:00Z\", \"preview_url\": \"/v1/assets/fixture-asset-0-0?rendition=preview\", \"original_url\": \"/v1/assets/fixture-asset-0-0?rendition=original\"}, {\"asset_id\": \"fixture-asset-0-1\", \"sha256\": \"5a18cbda52772733fc25f651db1b5c3117f95b66d1be7befb34735809f298f0a\", \"verified_at\": \"2026-10-01T12:00:00Z\", \"preview_url\": \"/v1/assets/fixture-asset-0-1?rendition=preview\", \"original_url\": \"/v1/assets/fixture-asset-0-1?rendition=original\"}], \"album\": {\"expected_count\": 2, \"stored_count\": 2, \"missing\": [], \"coverage_scope\": [\"product.images\"], \"coverage_complete\": true, \"verified_at\": \"2026-10-01T12:00:00Z\", \"capability_notes\": []}, \"latest_observed_album\": {\"expected_count\": 2, \"stored_count\": 2, \"missing\": [], \"coverage_scope\": [\"product.images\"], \"coverage_complete\": true, \"verified_at\": \"2026-10-01T12:00:00Z\", \"capability_notes\": []}, \"using_previous_images\": false, \"versions\": [{\"id\": \"fixture-version-0\", \"revision\": 1, \"content_digest\": \"fe9a3d4ca464658eee6700d0f51926bd534daf56ccb478a5136bca3e17c267e9\"}]}], \"latest_run_summary\": {\"latest_run\": {\"id\": \"synthetic-fixture-run\", \"state\": \"succeeded\", \"snapshot\": {\"site_ids\": [\"futario\"], \"window_days\": 14, \"unknown_date_policy\": \"include\", \"discovery\": {\"page_size\": 20, \"max_pages_per_pass\": 30, \"passes\": 2, \"max_requests\": 60, \"max_products\": 600}, \"max_details\": 300, \"network\": {\"resolver_mode\": \"system\", \"detail_concurrency\": 1, \"image_concurrency\": 2, \"min_interval_ms\": 1000, \"max_attempts\": 3, \"max_http_requests\": 3000, \"max_image_requests\": 2400, \"run_total_seconds\": 3600, \"timeouts\": {\"connect\": 10, \"pool\": 10, \"read\": 30, \"write\": 30, \"total\": 120}}, \"storage\": {\"max_image_bytes\": 26214400, \"max_pixels\": 50000000, \"run_download_bytes\": 2147483648, \"min_free_bytes\": 5368709120, \"preview_cache_bytes\": 536870912}, \"plan_revision\": 1, \"window_start\": \"2026-09-17T12:00:00Z\", \"window_end\": \"2026-10-01T12:00:00Z\", \"adapter_versions\": {\"futario\": \"futario-json-v1\"}, \"site_entries\": {\"futario\": \"https://example.invalid\"}, \"new_run_trigger\": \"manual\", \"discovery_baseline_complete\": {\"futario\": false}}, \"created_at\": \"2026-10-01T12:00:00Z\", \"started_at\": null, \"finished_at\": \"2026-10-01T12:00:00Z\", \"epoch\": 0, \"attempt\": 1, \"issue_code\": null, \"resumed_at\": null, \"stage\": \"accepted\", \"counts\": {}, \"plan_revision\": 1, \"worker_state\": \"online\", \"coverage\": [], \"issues\": []}, \"latest_completed_at\": \"2026-10-01T12:00:00Z\", \"latest_successful_at\": \"2026-10-01T12:00:00Z\"}, \"request_id\": \"a4fe84d861b54ee09327efba322425e6\"}, \"service\": {\"request_id\": \"e685e038a1864f3faf430255ad6d7909\", \"app_instance_id\": \"68070f5c-e4b2-4ac6-8ac2-8b77a0934b32\", \"schema_version\": 9, \"web_ready\": true, \"worker_state\": \"online\", \"heartbeat_at\": 1791352523.1236603, \"worker_pid\": 74080, \"worker_born\": 1791352515.8246076, \"pid\": 33320, \"born\": 1791352514.7615087, \"source_adapter\": \"futario-json-v1\", \"checked\": true}, \"intent_id\": null, \"exit_code\": 0}\n",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Scripts\\python.exe",
+          "-I",
+          "-B",
+          "-m",
+          "fashion_scout.client",
+          "request",
+          "export",
+          "--data-root",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\data",
+          "--json-input",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\flow\\export.json"
+        ],
+        "returncode": 0,
+        "stdout": "{\"ok\": true, \"data\": {\"intent_id\": \"bd80e237fd5340b9a3b3c58a1bee4dd0\", \"intent_state\": \"accepted\", \"result\": {\"export\": {\"id\": \"124d5f89b89843178e59ae8415fd8ab0\", \"state\": \"queued\", \"created_at\": \"2026-10-07T05:55:24.191Z\", \"finished_at\": null, \"attempt\": 1, \"resumed_at\": null, \"worker_state\": \"online\", \"counts\": {\"products\": 1, \"assets\": 2}, \"missing_count\": 0, \"unknown_count\": 0, \"issues\": [], \"download_url\": null, \"sha256\": null}, \"reused\": false, \"request_id\": \"9c414044a6554d3196507fe54ba1b735\"}}, \"service\": {\"request_id\": \"5e85fcb079324285af4cfd558f2d3e60\", \"app_instance_id\": \"68070f5c-e4b2-4ac6-8ac2-8b77a0934b32\", \"schema_version\": 9, \"web_ready\": true, \"worker_state\": \"online\", \"heartbeat_at\": 1791352523.9056, \"worker_pid\": 74080, \"worker_born\": 1791352515.8246076, \"pid\": 33320, \"born\": 1791352514.7615087, \"source_adapter\": \"futario-json-v1\", \"checked\": true}, \"intent_id\": \"bd80e237fd5340b9a3b3c58a1bee4dd0\", \"exit_code\": 0}\n",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Scripts\\python.exe",
+          "-I",
+          "-B",
+          "-m",
+          "fashion_scout.client",
+          "request",
+          "backup",
+          "--data-root",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\data",
+          "--json-input",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\flow\\backup.json"
+        ],
+        "returncode": 0,
+        "stdout": "{\"ok\": true, \"data\": {\"intent_id\": \"55988ac93e494787b733650656d65f19\", \"intent_state\": \"accepted\", \"result\": {\"maintenance\": {\"id\": \"d9b38197285e40d68596d039cc09b084\", \"kind\": \"backup\", \"state\": \"queued\", \"created_at\": \"2026-10-07T05:55:25.364Z\", \"finished_at\": null, \"resumed_at\": null, \"worker_state\": \"online\", \"result\": {}, \"issue_code\": null, \"backup_available\": null, \"finding_groups\": []}, \"reused\": false, \"request_id\": \"3d37fee291bc4a658df48e9e56597f04\"}}, \"service\": {\"request_id\": \"805c8c6b8ce2472b80957c5e6bd1ae1b\", \"app_instance_id\": \"68070f5c-e4b2-4ac6-8ac2-8b77a0934b32\", \"schema_version\": 9, \"web_ready\": true, \"worker_state\": \"online\", \"heartbeat_at\": 1791352525.3152745, \"worker_pid\": 74080, \"worker_born\": 1791352515.8246076, \"pid\": 33320, \"born\": 1791352514.7615087, \"source_adapter\": \"futario-json-v1\", \"checked\": true}, \"intent_id\": \"55988ac93e494787b733650656d65f19\", \"exit_code\": 0}\n",
+        "stderr": ""
+      }
+    ],
+    "empty": {
+      "runs": 0,
+      "source_requests": 0,
+      "migrations": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "http": {
+      "session_exchange": true,
+      "page": 200,
+      "resources": 5,
+      "unauthorized": 401
+    },
+    "export": {
+      "id": "124d5f89b89843178e59ae8415fd8ab0",
+      "state": "succeeded",
+      "created_at": "2026-10-07T05:55:24.191Z",
+      "finished_at": "2026-10-07T05:55:24.517Z",
+      "attempt": 1,
+      "resumed_at": null,
+      "worker_state": "online",
+      "counts": {
+        "products": 1,
+        "assets": 2
+      },
+      "missing_count": 0,
+      "unknown_count": 0,
+      "issues": [],
+      "download_url": "/v1/exports/124d5f89b89843178e59ae8415fd8ab0/download",
+      "sha256": "f0386c716b1ded1f7977d89713d0bcba2ca3450dda9f7d90344bdd15277b5ef3"
+    },
+    "backup": {
+      "id": "d9b38197285e40d68596d039cc09b084",
+      "kind": "backup",
+      "state": "succeeded",
+      "created_at": "2026-10-07T05:55:25.364Z",
+      "finished_at": "2026-10-07T05:55:25.536Z",
+      "resumed_at": null,
+      "worker_state": "online",
+      "result": {
+        "backup_id": "d9b38197285e40d68596d039cc09b084",
+        "checked_at": "2026-10-07T05:55:25.536Z",
+        "counts": {
+          "assets": 2,
+          "damaged": 0,
+          "missing": 0,
+          "products": 1,
+          "unknown": 0,
+          "verified": 2
+        },
+        "issues": [],
+        "manifest_sha256": "aa58d03415d748d35af1a0adbd584b84b9924b9a32e12956822acc7f2666c1b2",
+        "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\data\\backups\\d9b38197285e40d68596d039cc09b084",
+        "reused": false,
+        "state": "succeeded"
+      },
+      "issue_code": null,
+      "backup_available": true,
+      "finding_groups": []
+    },
+    "path_budget": {
+      "package_root_characters": 100,
+      "derived": {
+        "default_original": {
+          "suffix": "/data/media/originals/aa/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.webp",
+          "suffix_characters": 94,
+          "at_root_100": 194
+        },
+        "archive_temp_int64_epoch": {
+          "suffix": "/data/media/temp/ffffffffffffffffffffffffffffffff/9223372036854775807/ffffffffffffffffffffffffffffffff.part",
+          "suffix_characters": 107,
+          "at_root_100": 207
+        },
+        "export_final_int64_attempt": {
+          "suffix": "/data/exports/ffffffffffffffffffffffffffffffff/attempt-9223372036854775807/export-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.zip",
+          "suffix_characters": 150,
+          "at_root_100": 250
+        },
+        "backup_staged_asset": {
+          "suffix": "/data/maintenance/ffffffffffffffffffffffffffffffff/stage-ffffffffffff/assets/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.bin",
+          "suffix_characters": 145,
+          "at_root_100": 245
+        },
+        "backup_final_asset": {
+          "suffix": "/data/backups/ffffffffffffffffffffffffffffffff/assets/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.bin",
+          "suffix_characters": 122,
+          "at_root_100": 222
+        }
+      },
+      "actual_installed_longest": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\setuptools\\config\\_validate_pyproject\\__pycache__\\fastjsonschema_validations.cpython-313.pyc",
+      "actual_installed_characters": 222,
+      "actual_backup_member_max": 222,
+      "scope": "Fresh default internal data/media/backup paths; external roots and restore targets need separate checks"
+    },
+    "final_counts": {
+      "runs": 1,
+      "source_requests": 0,
+      "run_intents": 0
+    },
+    "module": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-checks-57799f5f\\真实解压 空格 & 单引号'sx\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\launcher.py"
+  },
+  "browser_action": "intercepted test-only OS open",
+  "source_requests": 0,
+  "whole_machine_restart_tested": false,
+  "clean_new_computer_tested": false
+}

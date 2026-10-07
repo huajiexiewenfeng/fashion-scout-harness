@@ -1,0 +1,3 @@
+T6c isolated kit: E:\github-workspace\fashion-scout-harness\.runtime\t6c-inputs-ae307604
+.........................
+25 passed in 19.68s

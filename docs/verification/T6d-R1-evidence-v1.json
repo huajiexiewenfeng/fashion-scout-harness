@@ -1,0 +1,1090 @@
+{
+  "at": "2026-10-07T10:42:12.622737+00:00",
+  "scope": "T6d R1 fixture inputs plus documentation-only v2",
+  "baseline_count": 31,
+  "allowed_changed": [
+    "scripts\\release\\templates\\PACKAGE-CONTEXT.zh-CN.md",
+    "scripts\\release\\templates\\README.zh-CN.md",
+    "tests\\release\\test_input_refresh.py"
+  ],
+  "unchanged_count": 28,
+  "baseline_sha256": {
+    "scripts\\release\\build_bundle.py": "5fead4c4f5c9e37d4ee800991a6c30f10600eca7d9a2e9274f61874e33add778",
+    "scripts\\release\\templates\\01 Prepare.cmd": "7806a631ddee6689aa3166bc1357723e474a1bbdba452caba1ec62b7599d0ebf",
+    "scripts\\release\\templates\\02 Open.cmd": "0ae328526c31753fb03dbd4d9f4895d292c45a88395a8476248fd73d250ce101",
+    "scripts\\release\\templates\\03 Stop.cmd": "12c3b3c02a2ec5cdafe81ebf3a31891355381f5a235b0d575c941593cdc2d662",
+    "scripts\\release\\templates\\PACKAGE-CONTEXT.zh-CN.md": "febc3462fe5b0918167fb16c7d7aaabd49c5d45f3c0faaace4a67c2b350cceb0",
+    "scripts\\release\\templates\\package.ps1": "8905a980d66f8a68b86fc3c0a27580a0286d1db3b5350ea262983b38d8eade88",
+    "scripts\\release\\templates\\README.zh-CN.md": "73f080b329d8623a31ce50a6e05306e6c17ae2fa47d84abd5dccd4c21222784f",
+    "scripts\\release\\templates\\verify_install.py": "ce3e4fd3a960be5eaa3138f669029bc3c2c5490c044317cc4520458d332b411b",
+    "tests\\release\\probe_flow.py": "47a723d03a95d7238988e4cc58d60440eb1b7369a96d8e53a3bc8004459ddae0",
+    "tests\\release\\test_bundle.py": "b1a9fed81bbdcba9d4a6af6fa869f471c0710f3390aa1e3e1a38e2eaab6e786c",
+    "tests\\release\\test_input_refresh.py": "8a1dda20cdc60e7230579cd3dd8757d32e04f6e2e51678707c276b9ab1c173b0",
+    "tests\\release\\verify_delivery.py": "8b2b2bab5320dd7c7c13aada805319384c81dd9a92e972af5df0e6fbfd9c13fa",
+    "tests\\release\\verify_input_delivery.py": "2dc3fbc7905d59ad6c49b6de6198cc4d139290f8a18217364648a2d62e7351e0",
+    "tests\\release\\verify_input_delivery_r1.py": "cd389d4933a120009f03768034efa83cea73414b13b20dc522122c34d07ecbec",
+    "skills\\fashion-scout\\SKILL.md": "af239c9a4aa66fdcca2792663a4ea679f90306feec1c098cc397514bd5274799",
+    "skills\\fashion-scout\\references\\browser-acquisition.md": "d5397ede612a2285c80d2d590557cd25cf81c2641c9e1d9c4da21f8c8af3e37d",
+    "skills\\fashion-scout\\references\\commands.md": "81d6fe652dd80ab0dd93488df3a7577fa79087c0a92c1debf1cfdec4bf0a115b",
+    "skills\\fashion-scout\\references\\setup.md": "340831af96c46b7c7722e8bf7ae745e4dd15919c4ad27d12654279a2936f9070",
+    "docs\\verification\\T6d-baseline.json": "b27d3bd915a69cd476078ee0813fd894d3b99e96f191999c5eb3151435b254ac",
+    "docs\\verification\\T6d-build-v1.txt": "590f26b2eda3b41c066645f6122efef8ef130943a6e90e881ffbf37e14ae5368",
+    "docs\\verification\\T6d-evidence-v1.json": "1bd4689f1a2fe927172eb1a6b1ca647b53055d2f973c44c27f64279f54956fc7",
+    "docs\\verification\\T6d-http-check.py": "4b178708041326fac816350caa71acb11e30094686867616455cba05b3b47f51",
+    "docs\\verification\\T6d-http-evidence-v1.json": "2b58cc9986e4692e521b61d32611cc9c48af76a74a77bdfd182c3be9f72ced86",
+    "docs\\verification\\T6d-http-v1.txt": "fea8dcbee88931289b79366e577b347a8653e2b2b25bf2dd72180cb5d4fc0342",
+    "docs\\verification\\T6d-input-evidence-v1.json": "8fa385f160f3e0f6902a44b9f3c07ef8b67649bb3cfb4182713dbb3c6daab469",
+    "docs\\verification\\T6d-manifest-v1.json": "f22a985d019b0efd2710d82c0f49b3dd3aa3e80be75e0ba03954519e9d0817b3",
+    "docs\\verification\\T6d-smoke-evidence-v1.json": "55a1d5660bc6ecf69b90662f7df7584932aed6fa5d969df9f62b66e1737e1f2b",
+    "docs\\verification\\T6d-smoke-v1.txt": "2e59676a39a63a4770b789eed37e0cbe1eb3b9107baf3ae849bb82e7231b6443",
+    "docs\\verification\\T6d-smoke.py": "51ace82d2c9c5a4cb43512168322e53f798ceca3f358df74595d7976baa6d196",
+    "docs\\verification\\T6d-verify.py": "e070d9bef3c24023297b7abc1126b674e5ab1a45fc75aff2341378ef63c8dd2e",
+    "docs\\verification\\T6d.md": "683fca3f1132d4f04f32616fe75e4a471c9b2be3f0a1cb172d8f526e642645e6"
+  },
+  "current_sha256": {
+    "scripts\\release\\build_bundle.py": "5fead4c4f5c9e37d4ee800991a6c30f10600eca7d9a2e9274f61874e33add778",
+    "scripts\\release\\templates\\01 Prepare.cmd": "7806a631ddee6689aa3166bc1357723e474a1bbdba452caba1ec62b7599d0ebf",
+    "scripts\\release\\templates\\02 Open.cmd": "0ae328526c31753fb03dbd4d9f4895d292c45a88395a8476248fd73d250ce101",
+    "scripts\\release\\templates\\03 Stop.cmd": "12c3b3c02a2ec5cdafe81ebf3a31891355381f5a235b0d575c941593cdc2d662",
+    "scripts\\release\\templates\\PACKAGE-CONTEXT.zh-CN.md": "94b00815a198c3528456672dfb65cdfcc426ce81dc9d42b4edc12665f5afe927",
+    "scripts\\release\\templates\\package.ps1": "8905a980d66f8a68b86fc3c0a27580a0286d1db3b5350ea262983b38d8eade88",
+    "scripts\\release\\templates\\README.zh-CN.md": "53356c821f281f7401abef4acd7cd2db8ac88d58a0f297bf792efd9570ca2d3c",
+    "scripts\\release\\templates\\verify_install.py": "ce3e4fd3a960be5eaa3138f669029bc3c2c5490c044317cc4520458d332b411b",
+    "tests\\release\\probe_flow.py": "47a723d03a95d7238988e4cc58d60440eb1b7369a96d8e53a3bc8004459ddae0",
+    "tests\\release\\test_bundle.py": "b1a9fed81bbdcba9d4a6af6fa869f471c0710f3390aa1e3e1a38e2eaab6e786c",
+    "tests\\release\\test_input_refresh.py": "de09df7eaed169f540804618a86e245f49ab95f9df571061f7e204700abd03b7",
+    "tests\\release\\verify_delivery.py": "8b2b2bab5320dd7c7c13aada805319384c81dd9a92e972af5df0e6fbfd9c13fa",
+    "tests\\release\\verify_input_delivery.py": "2dc3fbc7905d59ad6c49b6de6198cc4d139290f8a18217364648a2d62e7351e0",
+    "tests\\release\\verify_input_delivery_r1.py": "cd389d4933a120009f03768034efa83cea73414b13b20dc522122c34d07ecbec",
+    "skills\\fashion-scout\\SKILL.md": "af239c9a4aa66fdcca2792663a4ea679f90306feec1c098cc397514bd5274799",
+    "skills\\fashion-scout\\references\\browser-acquisition.md": "d5397ede612a2285c80d2d590557cd25cf81c2641c9e1d9c4da21f8c8af3e37d",
+    "skills\\fashion-scout\\references\\commands.md": "81d6fe652dd80ab0dd93488df3a7577fa79087c0a92c1debf1cfdec4bf0a115b",
+    "skills\\fashion-scout\\references\\setup.md": "340831af96c46b7c7722e8bf7ae745e4dd15919c4ad27d12654279a2936f9070",
+    "docs\\verification\\T6d-baseline.json": "b27d3bd915a69cd476078ee0813fd894d3b99e96f191999c5eb3151435b254ac",
+    "docs\\verification\\T6d-build-v1.txt": "590f26b2eda3b41c066645f6122efef8ef130943a6e90e881ffbf37e14ae5368",
+    "docs\\verification\\T6d-evidence-v1.json": "1bd4689f1a2fe927172eb1a6b1ca647b53055d2f973c44c27f64279f54956fc7",
+    "docs\\verification\\T6d-http-check.py": "4b178708041326fac816350caa71acb11e30094686867616455cba05b3b47f51",
+    "docs\\verification\\T6d-http-evidence-v1.json": "2b58cc9986e4692e521b61d32611cc9c48af76a74a77bdfd182c3be9f72ced86",
+    "docs\\verification\\T6d-http-v1.txt": "fea8dcbee88931289b79366e577b347a8653e2b2b25bf2dd72180cb5d4fc0342",
+    "docs\\verification\\T6d-input-evidence-v1.json": "8fa385f160f3e0f6902a44b9f3c07ef8b67649bb3cfb4182713dbb3c6daab469",
+    "docs\\verification\\T6d-manifest-v1.json": "f22a985d019b0efd2710d82c0f49b3dd3aa3e80be75e0ba03954519e9d0817b3",
+    "docs\\verification\\T6d-smoke-evidence-v1.json": "55a1d5660bc6ecf69b90662f7df7584932aed6fa5d969df9f62b66e1737e1f2b",
+    "docs\\verification\\T6d-smoke-v1.txt": "2e59676a39a63a4770b789eed37e0cbe1eb3b9107baf3ae849bb82e7231b6443",
+    "docs\\verification\\T6d-smoke.py": "51ace82d2c9c5a4cb43512168322e53f798ceca3f358df74595d7976baa6d196",
+    "docs\\verification\\T6d-verify.py": "e070d9bef3c24023297b7abc1126b674e5ab1a45fc75aff2341378ef63c8dd2e",
+    "docs\\verification\\T6d.md": "683fca3f1132d4f04f32616fe75e4a471c9b2be3f0a1cb172d8f526e642645e6"
+  },
+  "v1_receipt": {
+    "zip": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-final-browser-v1\\FashionScout-0.2.0a1-browser-v1-app-5938b20f707c73ebc0042d115abdd7e04d3bf62dd9799362be595afa52393753.zip",
+    "zip_sha256": "283f97f86dab387f05eaa48a2f6c93c7def5bda54765d85b42cf4013a225c925",
+    "bytes": 35692990,
+    "manifest": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-final-browser-v1\\FashionScout\\manifest.json",
+    "manifest_sha256": "f22a985d019b0efd2710d82c0f49b3dd3aa3e80be75e0ba03954519e9d0817b3",
+    "candidate": "FashionScout-0.2.0a1-browser-v1-app-5938b20f707c73ebc0042d115abdd7e04d3bf62dd9799362be595afa52393753",
+    "files": 118,
+    "dependency_wheels": 26,
+    "core_files_match_wheel": 72,
+    "app_wheel": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t2-browser-live-20261007-01\\wheel\\fashion_scout-0.2.0a1-py3-none-any.whl",
+    "app_version": "0.2.0a1",
+    "app_sha256": "5938b20f707c73ebc0042d115abdd7e04d3bf62dd9799362be595afa52393753",
+    "source_root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t2-browser-live-20261007-01\\source\\src",
+    "source_sha256": "648aa86c96f8b11f61099333de2f0be618b623775010ec16c2b0ced69d15f949",
+    "runtime_sha256": "ec43f1a85c29f147d7ae2d13218c52c70b24a983a82ab22d6c607c0593060e10",
+    "skill_files": {
+      "skills/fashion-scout/SKILL.md": "af239c9a4aa66fdcca2792663a4ea679f90306feec1c098cc397514bd5274799",
+      "skills/fashion-scout/references/setup.md": "340831af96c46b7c7722e8bf7ae745e4dd15919c4ad27d12654279a2936f9070",
+      "skills/fashion-scout/references/commands.md": "81d6fe652dd80ab0dd93488df3a7577fa79087c0a92c1debf1cfdec4bf0a115b",
+      "skills/fashion-scout/references/browser-acquisition.md": "d5397ede612a2285c80d2d590557cd25cf81c2641c9e1d9c4da21f8c8af3e37d"
+    },
+    "source_network": "No source-site request by builder; fixed dependency download is opt-in",
+    "data_in_zip": false,
+    "services_started": false,
+    "legacy_defaults": false
+  },
+  "v2_receipt": {
+    "zip": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-final-browser-v2\\FashionScout-0.2.0a1-browser-v2-app-5938b20f707c73ebc0042d115abdd7e04d3bf62dd9799362be595afa52393753.zip",
+    "zip_sha256": "e84136524449677efb8c72b2a3042f414b36c25cd10c325182e639eb14cedc42",
+    "bytes": 35693175,
+    "manifest": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-final-browser-v2\\FashionScout\\manifest.json",
+    "manifest_sha256": "f79f619e62c732736ea4a647e486510cb36ca3eb887c3f9bf5b8da646dd7dc2f",
+    "candidate": "FashionScout-0.2.0a1-browser-v2-app-5938b20f707c73ebc0042d115abdd7e04d3bf62dd9799362be595afa52393753",
+    "files": 118,
+    "dependency_wheels": 26,
+    "core_files_match_wheel": 72,
+    "app_wheel": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t2-browser-live-20261007-01\\wheel\\fashion_scout-0.2.0a1-py3-none-any.whl",
+    "app_version": "0.2.0a1",
+    "app_sha256": "5938b20f707c73ebc0042d115abdd7e04d3bf62dd9799362be595afa52393753",
+    "source_root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t2-browser-live-20261007-01\\source\\src",
+    "source_sha256": "648aa86c96f8b11f61099333de2f0be618b623775010ec16c2b0ced69d15f949",
+    "runtime_sha256": "ec43f1a85c29f147d7ae2d13218c52c70b24a983a82ab22d6c607c0593060e10",
+    "skill_files": {
+      "skills/fashion-scout/SKILL.md": "af239c9a4aa66fdcca2792663a4ea679f90306feec1c098cc397514bd5274799",
+      "skills/fashion-scout/references/setup.md": "340831af96c46b7c7722e8bf7ae745e4dd15919c4ad27d12654279a2936f9070",
+      "skills/fashion-scout/references/commands.md": "81d6fe652dd80ab0dd93488df3a7577fa79087c0a92c1debf1cfdec4bf0a115b",
+      "skills/fashion-scout/references/browser-acquisition.md": "d5397ede612a2285c80d2d590557cd25cf81c2641c9e1d9c4da21f8c8af3e37d"
+    },
+    "source_network": "No source-site request by builder; fixed dependency download is opt-in",
+    "data_in_zip": false,
+    "services_started": false,
+    "legacy_defaults": false
+  },
+  "manifest_top_differences": [
+    "candidate",
+    "files"
+  ],
+  "manifest_file_differences": [
+    "PACKAGE-CONTEXT.zh-CN.md",
+    "README.zh-CN.md"
+  ],
+  "zip_byte_differences": [
+    "FashionScout/PACKAGE-CONTEXT.zh-CN.md",
+    "FashionScout/README.zh-CN.md",
+    "FashionScout/manifest.json"
+  ],
+  "unchanged_manifest_files": 116,
+  "source_members_unchanged": 72,
+  "skill_files_unchanged": 4,
+  "command_records": [
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\logs\\concurrent-build.json",
+      "sha256": "d079ffb55a0577e5e0ed7661d3c6559b4a3c7970bc06d16a2f6c558cf54e4ea8",
+      "record": [
+        {
+          "argv": [
+            "E:\\github-workspace\\fashion-scout-harness\\.venv\\Scripts\\python.exe",
+            "-I",
+            "-B",
+            "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\scripts\\release\\build_bundle.py",
+            "--output",
+            "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\.runtime\\t6c-race"
+          ],
+          "returncode": 2,
+          "stdout": "",
+          "stderr": "Build refused: [WinError 183] 当文件已存在时，无法创建该文件。: 'E:\\\\github-workspace\\\\fashion-scout-harness\\\\.runtime\\\\t6c-inputs-1bc09368\\\\.runtime\\\\t6c-race'\n"
+        },
+        {
+          "argv": [
+            "E:\\github-workspace\\fashion-scout-harness\\.venv\\Scripts\\python.exe",
+            "-I",
+            "-B",
+            "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\scripts\\release\\build_bundle.py",
+            "--output",
+            "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\.runtime\\t6c-race"
+          ],
+          "returncode": 0,
+          "stdout": "{\"zip\": \"E:\\\\github-workspace\\\\fashion-scout-harness\\\\.runtime\\\\t6c-inputs-1bc09368\\\\.runtime\\\\t6c-race\\\\FashionScout-0.2.0a1-local-candidate-v1.zip\", \"zip_sha256\": \"d1d0e666758e09af70c758c58b11d9a9dba84f623a29c0c7a673814832646a97\", \"bytes\": 35676189, \"manifest\": \"E:\\\\github-workspace\\\\fashion-scout-harness\\\\.runtime\\\\t6c-inputs-1bc09368\\\\.runtime\\\\t6c-race\\\\FashionScout\\\\manifest.json\", \"manifest_sha256\": \"51d198f810ce01dc552f771213e55e3191b16a5d728b19c22cfb9dacf07ac6ab\", \"candidate\": \"FashionScout-0.2.0a1-local-candidate-v1\", \"files\": 118, \"dependency_wheels\": 26, \"core_files_match_wheel\": 66, \"app_wheel\": \"E:\\\\github-workspace\\\\fashion-scout-harness\\\\.runtime\\\\t6c-inputs-1bc09368\\\\.runtime\\\\t5c-r1-wheel\\\\fashion_scout-0.2.0a1-py3-none-any.whl\", \"app_version\": \"0.2.0a1\", \"app_sha256\": \"9beaa9f5e49063fdb5b36d906b8bac5d1d5a46772f4c5b90a10782a77b772f15\", \"source_root\": \"E:\\\\github-workspace\\\\fashion-scout-harness\\\\.runtime\\\\t6c-inputs-1bc09368\\\\src\", \"source_sha256\": \"8b8c9f5af7e5c83a7f7755a081558e0523270ab9fd15c7f9af6d4888c5cb7310\", \"runtime_sha256\": \"ec43f1a85c29f147d7ae2d13218c52c70b24a983a82ab22d6c607c0593060e10\", \"skill_files\": {\"skills/fashion-scout/SKILL.md\": \"af239c9a4aa66fdcca2792663a4ea679f90306feec1c098cc397514bd5274799\", \"skills/fashion-scout/references/setup.md\": \"340831af96c46b7c7722e8bf7ae745e4dd15919c4ad27d12654279a2936f9070\", \"skills/fashion-scout/references/commands.md\": \"81d6fe652dd80ab0dd93488df3a7577fa79087c0a92c1debf1cfdec4bf0a115b\", \"skills/fashion-scout/references/browser-acquisition.md\": \"d5397ede612a2285c80d2d590557cd25cf81c2641c9e1d9c4da21f8c8af3e37d\"}, \"source_network\": \"No source-site request by builder; fixed dependency download is opt-in\", \"data_in_zip\": false, \"services_started\": false, \"legacy_defaults\": true}\n",
+          "stderr": ""
+        }
+      ]
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\logs\\manifest-reject-59c16d.json",
+      "sha256": "38c4cf7bbb1c250fd2b64968f4000a63e156aef01d5f33f5ca35db31c1e9b086",
+      "record": {
+        "returncode": 2,
+        "stdout": "Fashion Scout: Unsupported application wheel member.\n",
+        "stderr": ""
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\logs\\manifest-reject-9264ea.json",
+      "sha256": "e70d1b146afb496cb45b5c0be78197732359944363f41ac7892e6ceae91a074c",
+      "record": {
+        "returncode": 2,
+        "stdout": "Fashion Scout: Selected application hash conflicts with manifest.\n",
+        "stderr": ""
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\logs\\manifest-reject-c6443a.json",
+      "sha256": "38c4cf7bbb1c250fd2b64968f4000a63e156aef01d5f33f5ca35db31c1e9b086",
+      "record": {
+        "returncode": 2,
+        "stdout": "Fashion Scout: Unsupported application wheel member.\n",
+        "stderr": ""
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\logs\\plus-preflight-r1.json",
+      "sha256": "e1ba12b839e4e82d36e1ad3f753ccbfcb3bdc5d4c636ca830488aa27659c0427",
+      "record": {
+        "argv": [
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+          "-NoLogo",
+          "-NoProfile",
+          "-ExecutionPolicy",
+          "Bypass",
+          "-File",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\p-plus\\FashionScout\\package.ps1",
+          "-Action",
+          "Status"
+        ],
+        "returncode": 2,
+        "stdout": "Fashion Scout: Run 01 Prepare.cmd first. Existing data was preserved.\n",
+        "stderr": ""
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\logs\\plus-reject-absolute.json",
+      "sha256": "207b512dd8c040e6913b4021662f6aada60e9f436feee26860b8c5b6a59ef0b2",
+      "record": {
+        "argv": [
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+          "-NoLogo",
+          "-NoProfile",
+          "-ExecutionPolicy",
+          "Bypass",
+          "-File",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\p-r1\\FashionScout\\package.ps1",
+          "-Action",
+          "Status"
+        ],
+        "case": "absolute",
+        "returncode": 2,
+        "stdout": "Fashion Scout: Invalid manifest member.\n",
+        "stderr": ""
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\logs\\plus-reject-backslash.json",
+      "sha256": "a20147d2a1bf2f441ea78a9c7ff1e2917ff3c74c26b691aea9113128cb2d24b3",
+      "record": {
+        "argv": [
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+          "-NoLogo",
+          "-NoProfile",
+          "-ExecutionPolicy",
+          "Bypass",
+          "-File",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\p-r1\\FashionScout\\package.ps1",
+          "-Action",
+          "Status"
+        ],
+        "case": "backslash",
+        "returncode": 2,
+        "stdout": "Fashion Scout: Invalid manifest member.\n",
+        "stderr": ""
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\logs\\plus-reject-bad-hash.json",
+      "sha256": "a33ddb95ef3094ac08a3b423ad40868fda7f909e49198590399622bd2bb33f6e",
+      "record": {
+        "argv": [
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+          "-NoLogo",
+          "-NoProfile",
+          "-ExecutionPolicy",
+          "Bypass",
+          "-File",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\p-r1\\FashionScout\\package.ps1",
+          "-Action",
+          "Status"
+        ],
+        "case": "bad-hash",
+        "returncode": 2,
+        "stdout": "Fashion Scout: Package hash mismatch: payload/fashion_scout-0.2.0a1+browser-py3-none-any.whl\n",
+        "stderr": ""
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\logs\\plus-reject-duplicate.json",
+      "sha256": "4ecc5f16d84890dbf253b236564ec2877cb14bd12045892c7679e280ad07602f",
+      "record": {
+        "argv": [
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+          "-NoLogo",
+          "-NoProfile",
+          "-ExecutionPolicy",
+          "Bypass",
+          "-File",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\p-r1\\FashionScout\\package.ps1",
+          "-Action",
+          "Status"
+        ],
+        "case": "duplicate",
+        "returncode": 2,
+        "stdout": "Fashion Scout: Invalid manifest member.\n",
+        "stderr": ""
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\logs\\plus-reject-metachar.json",
+      "sha256": "51dbc37cd0f0754ec23a3be8efc76575dfe0595dc8e550259a337d8be88f6228",
+      "record": {
+        "argv": [
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+          "-NoLogo",
+          "-NoProfile",
+          "-ExecutionPolicy",
+          "Bypass",
+          "-File",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\p-r1\\FashionScout\\package.ps1",
+          "-Action",
+          "Status"
+        ],
+        "case": "metachar",
+        "returncode": 2,
+        "stdout": "Fashion Scout: Invalid manifest member.\n",
+        "stderr": ""
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\logs\\plus-reject-parent.json",
+      "sha256": "cb114001e0f0ce42371333300a7d800c30580098df397511a1c6f0ed0fb3dd49",
+      "record": {
+        "argv": [
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+          "-NoLogo",
+          "-NoProfile",
+          "-ExecutionPolicy",
+          "Bypass",
+          "-File",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\p-r1\\FashionScout\\package.ps1",
+          "-Action",
+          "Status"
+        ],
+        "case": "parent",
+        "returncode": 2,
+        "stdout": "Fashion Scout: Invalid manifest member.\n",
+        "stderr": ""
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\logs\\preflight-next.json",
+      "sha256": "9f929c49948f8f4928d7ef81196fb2fa0aea025da860bc8ab8aabba6900ab169",
+      "record": {
+        "argv": [
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+          "-NoLogo",
+          "-NoProfile",
+          "-ExecutionPolicy",
+          "Bypass",
+          "-File",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\p-next\\FashionScout\\package.ps1",
+          "-Action",
+          "Status"
+        ],
+        "returncode": 2,
+        "stdout": "Fashion Scout: Run 01 Prepare.cmd first. Existing data was preserved.\n",
+        "stderr": ""
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\logs\\preflight-one.json",
+      "sha256": "5bc57cd446fb954531e97053b92e062c15ab23b384d10437fd15ce8b561558db",
+      "record": {
+        "argv": [
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+          "-NoLogo",
+          "-NoProfile",
+          "-ExecutionPolicy",
+          "Bypass",
+          "-File",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\p-one\\FashionScout\\package.ps1",
+          "-Action",
+          "Status"
+        ],
+        "returncode": 2,
+        "stdout": "Fashion Scout: Run 01 Prepare.cmd first. Existing data was preserved.\n",
+        "stderr": ""
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\logs\\preflight-two.json",
+      "sha256": "39ed6f5acfec2595bb081631263530509ddb207d9a32560fdf01dd1072623da9",
+      "record": {
+        "argv": [
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+          "-NoLogo",
+          "-NoProfile",
+          "-ExecutionPolicy",
+          "Bypass",
+          "-File",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\p-two\\FashionScout\\package.ps1",
+          "-Action",
+          "Status"
+        ],
+        "returncode": 2,
+        "stdout": "Fashion Scout: Run 01 Prepare.cmd first. Existing data was preserved.\n",
+        "stderr": ""
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\logs\\t6c-binding-2b3fc0.json",
+      "sha256": "7f40fdb23b9fd76ed28028998c9375e23ece664975a97151a6627cd00ddae827",
+      "record": {
+        "argv": [
+          "E:\\github-workspace\\fashion-scout-harness\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-B",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\scripts\\release\\build_bundle.py",
+          "--output",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\.runtime\\t6c-binding",
+          "--app-wheel",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\wheel-binding\\fashion_scout-0.2.0a2-py3-none-any.whl",
+          "--app-sha256",
+          "1e9ecd40dfbcb1901e2300947d3732aa92b56aee0b5b0b75ab33bd95d660f51d",
+          "--source-root",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\source-binding"
+        ],
+        "returncode": 0,
+        "stdout": "{\"zip\": \"E:\\\\github-workspace\\\\fashion-scout-harness\\\\.runtime\\\\t6c-inputs-1bc09368\\\\.runtime\\\\t6c-binding\\\\FashionScout-0.2.0a2-local-candidate-app-1e9ecd40dfbcb1901e2300947d3732aa92b56aee0b5b0b75ab33bd95d660f51d.zip\", \"zip_sha256\": \"63b4120938aa258194c6c433e75081d6d69a9630c6046bf1964f20e30a008402\", \"bytes\": 35675974, \"manifest\": \"E:\\\\github-workspace\\\\fashion-scout-harness\\\\.runtime\\\\t6c-inputs-1bc09368\\\\.runtime\\\\t6c-binding\\\\FashionScout\\\\manifest.json\", \"manifest_sha256\": \"121fa8085c617bb3cb8653eff58c6c37f247cc9bfc3f2470ba15a1e19c4a6084\", \"candidate\": \"FashionScout-0.2.0a2-local-candidate-app-1e9ecd40dfbcb1901e2300947d3732aa92b56aee0b5b0b75ab33bd95d660f51d\", \"files\": 118, \"dependency_wheels\": 26, \"core_files_match_wheel\": 66, \"app_wheel\": \"E:\\\\github-workspace\\\\fashion-scout-harness\\\\.runtime\\\\t6c-inputs-1bc09368\\\\wheel-binding\\\\fashion_scout-0.2.0a2-py3-none-any.whl\", \"app_version\": \"0.2.0a2\", \"app_sha256\": \"1e9ecd40dfbcb1901e2300947d3732aa92b56aee0b5b0b75ab33bd95d660f51d\", \"source_root\": \"E:\\\\github-workspace\\\\fashion-scout-harness\\\\.runtime\\\\t6c-inputs-1bc09368\\\\source-binding\", \"source_sha256\": \"6b4579f817b80c84a4dcef4a7884ee234a6ceffa56585314470fdf60e90ce9ab\", \"runtime_sha256\": \"ec43f1a85c29f147d7ae2d13218c52c70b24a983a82ab22d6c607c0593060e10\", \"skill_files\": {\"skills/fashion-scout/SKILL.md\": \"af239c9a4aa66fdcca2792663a4ea679f90306feec1c098cc397514bd5274799\", \"skills/fashion-scout/references/setup.md\": \"340831af96c46b7c7722e8bf7ae745e4dd15919c4ad27d12654279a2936f9070\", \"skills/fashion-scout/references/commands.md\": \"81d6fe652dd80ab0dd93488df3a7577fa79087c0a92c1debf1cfdec4bf0a115b\", \"skills/fashion-scout/references/browser-acquisition.md\": \"d5397ede612a2285c80d2d590557cd25cf81c2641c9e1d9c4da21f8c8af3e37d\"}, \"source_network\": \"No source-site request by builder; fixed dependency download is opt-in\", \"data_in_zip\": false, \"services_started\": false, \"legacy_defaults\": false}\n",
+        "stderr": ""
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\logs\\t6c-default-7ca046.json",
+      "sha256": "e9a91c52f02d680861e386ce42a538fb09b3097415f931a82786cc2ae9f880ea",
+      "record": {
+        "argv": [
+          "E:\\github-workspace\\fashion-scout-harness\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-B",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\scripts\\release\\build_bundle.py",
+          "--output",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\.runtime\\t6c-default"
+        ],
+        "returncode": 2,
+        "stdout": "",
+        "stderr": "Build refused: Fresh output required; prior candidate is never overwritten\n"
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\logs\\t6c-default-c8e7d0.json",
+      "sha256": "44252ba797c073611fd155424b143672e3f787edad034e479c26362a37f163f1",
+      "record": {
+        "argv": [
+          "E:\\github-workspace\\fashion-scout-harness\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-B",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\scripts\\release\\build_bundle.py",
+          "--output",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\.runtime\\t6c-default"
+        ],
+        "returncode": 0,
+        "stdout": "{\"zip\": \"E:\\\\github-workspace\\\\fashion-scout-harness\\\\.runtime\\\\t6c-inputs-1bc09368\\\\.runtime\\\\t6c-default\\\\FashionScout-0.2.0a1-local-candidate-v1.zip\", \"zip_sha256\": \"d1d0e666758e09af70c758c58b11d9a9dba84f623a29c0c7a673814832646a97\", \"bytes\": 35676189, \"manifest\": \"E:\\\\github-workspace\\\\fashion-scout-harness\\\\.runtime\\\\t6c-inputs-1bc09368\\\\.runtime\\\\t6c-default\\\\FashionScout\\\\manifest.json\", \"manifest_sha256\": \"51d198f810ce01dc552f771213e55e3191b16a5d728b19c22cfb9dacf07ac6ab\", \"candidate\": \"FashionScout-0.2.0a1-local-candidate-v1\", \"files\": 118, \"dependency_wheels\": 26, \"core_files_match_wheel\": 66, \"app_wheel\": \"E:\\\\github-workspace\\\\fashion-scout-harness\\\\.runtime\\\\t6c-inputs-1bc09368\\\\.runtime\\\\t5c-r1-wheel\\\\fashion_scout-0.2.0a1-py3-none-any.whl\", \"app_version\": \"0.2.0a1\", \"app_sha256\": \"9beaa9f5e49063fdb5b36d906b8bac5d1d5a46772f4c5b90a10782a77b772f15\", \"source_root\": \"E:\\\\github-workspace\\\\fashion-scout-harness\\\\.runtime\\\\t6c-inputs-1bc09368\\\\src\", \"source_sha256\": \"8b8c9f5af7e5c83a7f7755a081558e0523270ab9fd15c7f9af6d4888c5cb7310\", \"runtime_sha256\": \"ec43f1a85c29f147d7ae2d13218c52c70b24a983a82ab22d6c607c0593060e10\", \"skill_files\": {\"skills/fashion-scout/SKILL.md\": \"af239c9a4aa66fdcca2792663a4ea679f90306feec1c098cc397514bd5274799\", \"skills/fashion-scout/references/setup.md\": \"340831af96c46b7c7722e8bf7ae745e4dd15919c4ad27d12654279a2936f9070\", \"skills/fashion-scout/references/commands.md\": \"81d6fe652dd80ab0dd93488df3a7577fa79087c0a92c1debf1cfdec4bf0a115b\", \"skills/fashion-scout/references/browser-acquisition.md\": \"d5397ede612a2285c80d2d590557cd25cf81c2641c9e1d9c4da21f8c8af3e37d\"}, \"source_network\": \"No source-site request by builder; fixed dependency download is opt-in\", \"data_in_zip\": false, \"services_started\": false, \"legacy_defaults\": true}\n",
+        "stderr": ""
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\logs\\t6c-escaped-de9a64.json",
+      "sha256": "7b3700e6c4a02de5e3b1dce3015c78b3375a9fbff0263692ce766f62804a6d5c",
+      "record": {
+        "argv": [
+          "E:\\github-workspace\\fashion-scout-harness\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-B",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\scripts\\release\\build_bundle.py",
+          "--output",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\.runtime\\..\\t6c-escaped",
+          "--app-wheel",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\.runtime\\t5c-r1-wheel\\fashion_scout-0.2.0a1-py3-none-any.whl",
+          "--app-sha256",
+          "9beaa9f5e49063fdb5b36d906b8bac5d1d5a46772f4c5b90a10782a77b772f15",
+          "--source-root",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\src"
+        ],
+        "returncode": 2,
+        "stdout": "",
+        "stderr": "Build refused: Output must be a fresh direct .runtime/t6b-* or t6c-* directory\n"
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\logs\\t6c-next-f1f19b.json",
+      "sha256": "717279a0b8868d566c387a568102ee1daade7ac6368034e94f960e7acc6dac5a",
+      "record": {
+        "argv": [
+          "E:\\github-workspace\\fashion-scout-harness\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-B",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\scripts\\release\\build_bundle.py",
+          "--output",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\.runtime\\t6c-next",
+          "--app-wheel",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\wheel-next\\fashion_scout-0.2.0a2-py3-none-any.whl",
+          "--app-sha256",
+          "0d34a80a44c4df693036105cf51502dcd2a284b565ae21bd3f4f949089e02fbb",
+          "--source-root",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\source-next",
+          "--label",
+          "reviewed-input"
+        ],
+        "returncode": 0,
+        "stdout": "{\"zip\": \"E:\\\\github-workspace\\\\fashion-scout-harness\\\\.runtime\\\\t6c-inputs-1bc09368\\\\.runtime\\\\t6c-next\\\\FashionScout-0.2.0a2-reviewed-input-app-0d34a80a44c4df693036105cf51502dcd2a284b565ae21bd3f4f949089e02fbb.zip\", \"zip_sha256\": \"0600a9166f52828b39c6e12ecaa71be1b862ca010f4bd56aabf8586fab5a5cdf\", \"bytes\": 35676192, \"manifest\": \"E:\\\\github-workspace\\\\fashion-scout-harness\\\\.runtime\\\\t6c-inputs-1bc09368\\\\.runtime\\\\t6c-next\\\\FashionScout\\\\manifest.json\", \"manifest_sha256\": \"5a33d03066bbb4e7dd7cf0a65b496c9d6fd4e043b51f4a09a861daf044f1a256\", \"candidate\": \"FashionScout-0.2.0a2-reviewed-input-app-0d34a80a44c4df693036105cf51502dcd2a284b565ae21bd3f4f949089e02fbb\", \"files\": 118, \"dependency_wheels\": 26, \"core_files_match_wheel\": 67, \"app_wheel\": \"E:\\\\github-workspace\\\\fashion-scout-harness\\\\.runtime\\\\t6c-inputs-1bc09368\\\\wheel-next\\\\fashion_scout-0.2.0a2-py3-none-any.whl\", \"app_version\": \"0.2.0a2\", \"app_sha256\": \"0d34a80a44c4df693036105cf51502dcd2a284b565ae21bd3f4f949089e02fbb\", \"source_root\": \"E:\\\\github-workspace\\\\fashion-scout-harness\\\\.runtime\\\\t6c-inputs-1bc09368\\\\source-next\", \"source_sha256\": \"4aa607e17ef0f616018c9dd47ec6ac1c7097e98cf7292e206cad89f2dbaccbef\", \"runtime_sha256\": \"ec43f1a85c29f147d7ae2d13218c52c70b24a983a82ab22d6c607c0593060e10\", \"skill_files\": {\"skills/fashion-scout/SKILL.md\": \"af239c9a4aa66fdcca2792663a4ea679f90306feec1c098cc397514bd5274799\", \"skills/fashion-scout/references/setup.md\": \"340831af96c46b7c7722e8bf7ae745e4dd15919c4ad27d12654279a2936f9070\", \"skills/fashion-scout/references/commands.md\": \"81d6fe652dd80ab0dd93488df3a7577fa79087c0a92c1debf1cfdec4bf0a115b\", \"skills/fashion-scout/references/browser-acquisition.md\": \"d5397ede612a2285c80d2d590557cd25cf81c2641c9e1d9c4da21f8c8af3e37d\"}, \"source_network\": \"No source-site request by builder; fixed dependency download is opt-in\", \"data_in_zip\": false, \"services_started\": false, \"legacy_defaults\": false}\n",
+        "stderr": ""
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\logs\\t6c-one-fe8d55.json",
+      "sha256": "d06d5efcf18b0f1d45af4eeb6e63f3f193b0735983bf9816c51e52bacb492045",
+      "record": {
+        "argv": [
+          "E:\\github-workspace\\fashion-scout-harness\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-B",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\scripts\\release\\build_bundle.py",
+          "--output",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\.runtime\\t6c-one",
+          "--app-wheel",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\wheel-one\\fashion_scout-0.2.0a1-py3-none-any.whl",
+          "--app-sha256",
+          "1ec5f3acef75f6ae84a2051cdad48812edb2f7ce36aa8a9709d2ed8109c835ae",
+          "--source-root",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\source-one",
+          "--label",
+          "reviewed-input"
+        ],
+        "returncode": 0,
+        "stdout": "{\"zip\": \"E:\\\\github-workspace\\\\fashion-scout-harness\\\\.runtime\\\\t6c-inputs-1bc09368\\\\.runtime\\\\t6c-one\\\\FashionScout-0.2.0a1-reviewed-input-app-1ec5f3acef75f6ae84a2051cdad48812edb2f7ce36aa8a9709d2ed8109c835ae.zip\", \"zip_sha256\": \"31b484a312cb596663a0f881903af603d52f36c44e1e18304372f88354be6e0d\", \"bytes\": 35675972, \"manifest\": \"E:\\\\github-workspace\\\\fashion-scout-harness\\\\.runtime\\\\t6c-inputs-1bc09368\\\\.runtime\\\\t6c-one\\\\FashionScout\\\\manifest.json\", \"manifest_sha256\": \"494cb1566e7169414e62f6d76bb89b1f7014dcc23fcc8723cfb349aecaa84766\", \"candidate\": \"FashionScout-0.2.0a1-reviewed-input-app-1ec5f3acef75f6ae84a2051cdad48812edb2f7ce36aa8a9709d2ed8109c835ae\", \"files\": 118, \"dependency_wheels\": 26, \"core_files_match_wheel\": 66, \"app_wheel\": \"E:\\\\github-workspace\\\\fashion-scout-harness\\\\.runtime\\\\t6c-inputs-1bc09368\\\\wheel-one\\\\fashion_scout-0.2.0a1-py3-none-any.whl\", \"app_version\": \"0.2.0a1\", \"app_sha256\": \"1ec5f3acef75f6ae84a2051cdad48812edb2f7ce36aa8a9709d2ed8109c835ae\", \"source_root\": \"E:\\\\github-workspace\\\\fashion-scout-harness\\\\.runtime\\\\t6c-inputs-1bc09368\\\\source-one\", \"source_sha256\": \"e45dc38241dde2aa55b70b2c79a87b11bf0bc954c0a397fc35da1888af492422\", \"runtime_sha256\": \"ec43f1a85c29f147d7ae2d13218c52c70b24a983a82ab22d6c607c0593060e10\", \"skill_files\": {\"skills/fashion-scout/SKILL.md\": \"af239c9a4aa66fdcca2792663a4ea679f90306feec1c098cc397514bd5274799\", \"skills/fashion-scout/references/setup.md\": \"340831af96c46b7c7722e8bf7ae745e4dd15919c4ad27d12654279a2936f9070\", \"skills/fashion-scout/references/commands.md\": \"81d6fe652dd80ab0dd93488df3a7577fa79087c0a92c1debf1cfdec4bf0a115b\", \"skills/fashion-scout/references/browser-acquisition.md\": \"d5397ede612a2285c80d2d590557cd25cf81c2641c9e1d9c4da21f8c8af3e37d\"}, \"source_network\": \"No source-site request by builder; fixed dependency download is opt-in\", \"data_in_zip\": false, \"services_started\": false, \"legacy_defaults\": false}\n",
+        "stderr": ""
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\logs\\t6c-plus-r1-454c98.json",
+      "sha256": "6953003c7cdca680b20adf8ac374a84d15090af2b4ee2bb54521aac5453d2ba7",
+      "record": {
+        "argv": [
+          "E:\\github-workspace\\fashion-scout-harness\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-B",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\scripts\\release\\build_bundle.py",
+          "--output",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\.runtime\\t6c-plus-r1",
+          "--app-wheel",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\wheel-plus-r1\\fashion_scout-0.2.0a1+browser-py3-none-any.whl",
+          "--app-sha256",
+          "f3e7c0b71b9a5ae554e8bf64a8724d80d8bdcf307c798dd391b8372aee978523",
+          "--source-root",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\source-plus-r1"
+        ],
+        "returncode": 0,
+        "stdout": "{\"zip\": \"E:\\\\github-workspace\\\\fashion-scout-harness\\\\.runtime\\\\t6c-inputs-1bc09368\\\\.runtime\\\\t6c-plus-r1\\\\FashionScout-0.2.0a1+browser-local-candidate-app-f3e7c0b71b9a5ae554e8bf64a8724d80d8bdcf307c798dd391b8372aee978523.zip\", \"zip_sha256\": \"19c3366138905ac52b3a204980d070d25c3ccd16e3a011ccdb5306f26447b57f\", \"bytes\": 35676037, \"manifest\": \"E:\\\\github-workspace\\\\fashion-scout-harness\\\\.runtime\\\\t6c-inputs-1bc09368\\\\.runtime\\\\t6c-plus-r1\\\\FashionScout\\\\manifest.json\", \"manifest_sha256\": \"d4f2bdfd8e1c6551a5eb7fb6441c4bfd121b18a6bf0e7bde09c0d1f19e706800\", \"candidate\": \"FashionScout-0.2.0a1+browser-local-candidate-app-f3e7c0b71b9a5ae554e8bf64a8724d80d8bdcf307c798dd391b8372aee978523\", \"files\": 118, \"dependency_wheels\": 26, \"core_files_match_wheel\": 66, \"app_wheel\": \"E:\\\\github-workspace\\\\fashion-scout-harness\\\\.runtime\\\\t6c-inputs-1bc09368\\\\wheel-plus-r1\\\\fashion_scout-0.2.0a1+browser-py3-none-any.whl\", \"app_version\": \"0.2.0a1+browser\", \"app_sha256\": \"f3e7c0b71b9a5ae554e8bf64a8724d80d8bdcf307c798dd391b8372aee978523\", \"source_root\": \"E:\\\\github-workspace\\\\fashion-scout-harness\\\\.runtime\\\\t6c-inputs-1bc09368\\\\source-plus-r1\", \"source_sha256\": \"23b51eef8c92d8fe0bf14b2ca00b74ec19025f72b518c715c401e323405af2dc\", \"runtime_sha256\": \"ec43f1a85c29f147d7ae2d13218c52c70b24a983a82ab22d6c607c0593060e10\", \"skill_files\": {\"skills/fashion-scout/SKILL.md\": \"af239c9a4aa66fdcca2792663a4ea679f90306feec1c098cc397514bd5274799\", \"skills/fashion-scout/references/setup.md\": \"340831af96c46b7c7722e8bf7ae745e4dd15919c4ad27d12654279a2936f9070\", \"skills/fashion-scout/references/commands.md\": \"81d6fe652dd80ab0dd93488df3a7577fa79087c0a92c1debf1cfdec4bf0a115b\", \"skills/fashion-scout/references/browser-acquisition.md\": \"d5397ede612a2285c80d2d590557cd25cf81c2641c9e1d9c4da21f8c8af3e37d\"}, \"source_network\": \"No source-site request by builder; fixed dependency download is opt-in\", \"data_in_zip\": false, \"services_started\": false, \"legacy_defaults\": false}\n",
+        "stderr": ""
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\logs\\t6c-plus-sec-b22c92.json",
+      "sha256": "ba7917c7b69afd14e4939eaf43122cf0a75f3567584f11c1f2b4e01ddd3cb12b",
+      "record": {
+        "argv": [
+          "E:\\github-workspace\\fashion-scout-harness\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-B",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\scripts\\release\\build_bundle.py",
+          "--output",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\.runtime\\t6c-plus-sec",
+          "--app-wheel",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\wheel-plus-sec\\fashion_scout-0.2.0a1+browser-py3-none-any.whl",
+          "--app-sha256",
+          "9f397dda5f21f3ae9dfe82e622bd8ad8ffcf733a7c75b622f3e259e28179100d",
+          "--source-root",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\source-plus-sec"
+        ],
+        "returncode": 0,
+        "stdout": "{\"zip\": \"E:\\\\github-workspace\\\\fashion-scout-harness\\\\.runtime\\\\t6c-inputs-1bc09368\\\\.runtime\\\\t6c-plus-sec\\\\FashionScout-0.2.0a1+browser-local-candidate-app-9f397dda5f21f3ae9dfe82e622bd8ad8ffcf733a7c75b622f3e259e28179100d.zip\", \"zip_sha256\": \"910b62b440e1c44f77501cc3d0da18951888977dd580df9320c1c71f54b68056\", \"bytes\": 35676037, \"manifest\": \"E:\\\\github-workspace\\\\fashion-scout-harness\\\\.runtime\\\\t6c-inputs-1bc09368\\\\.runtime\\\\t6c-plus-sec\\\\FashionScout\\\\manifest.json\", \"manifest_sha256\": \"825cb6c67775677a17723b31ecafd1512d998e8058ef11d2df0682d716495c5a\", \"candidate\": \"FashionScout-0.2.0a1+browser-local-candidate-app-9f397dda5f21f3ae9dfe82e622bd8ad8ffcf733a7c75b622f3e259e28179100d\", \"files\": 118, \"dependency_wheels\": 26, \"core_files_match_wheel\": 66, \"app_wheel\": \"E:\\\\github-workspace\\\\fashion-scout-harness\\\\.runtime\\\\t6c-inputs-1bc09368\\\\wheel-plus-sec\\\\fashion_scout-0.2.0a1+browser-py3-none-any.whl\", \"app_version\": \"0.2.0a1+browser\", \"app_sha256\": \"9f397dda5f21f3ae9dfe82e622bd8ad8ffcf733a7c75b622f3e259e28179100d\", \"source_root\": \"E:\\\\github-workspace\\\\fashion-scout-harness\\\\.runtime\\\\t6c-inputs-1bc09368\\\\source-plus-sec\", \"source_sha256\": \"836f76e0aa33b23bd78f28f8a52b9b6b5f3f6c2a8768bdab3d12a2969aa463e7\", \"runtime_sha256\": \"ec43f1a85c29f147d7ae2d13218c52c70b24a983a82ab22d6c607c0593060e10\", \"skill_files\": {\"skills/fashion-scout/SKILL.md\": \"af239c9a4aa66fdcca2792663a4ea679f90306feec1c098cc397514bd5274799\", \"skills/fashion-scout/references/setup.md\": \"340831af96c46b7c7722e8bf7ae745e4dd15919c4ad27d12654279a2936f9070\", \"skills/fashion-scout/references/commands.md\": \"81d6fe652dd80ab0dd93488df3a7577fa79087c0a92c1debf1cfdec4bf0a115b\", \"skills/fashion-scout/references/browser-acquisition.md\": \"d5397ede612a2285c80d2d590557cd25cf81c2641c9e1d9c4da21f8c8af3e37d\"}, \"source_network\": \"No source-site request by builder; fixed dependency download is opt-in\", \"data_in_zip\": false, \"services_started\": false, \"legacy_defaults\": false}\n",
+        "stderr": ""
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\logs\\t6c-reject-bad-hash-eeb28a.json",
+      "sha256": "d6b9fe67d166f369bb42ba098fc8e5eb16f21b6b64f1e72dac1293942ec91c55",
+      "record": {
+        "argv": [
+          "E:\\github-workspace\\fashion-scout-harness\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-B",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\scripts\\release\\build_bundle.py",
+          "--output",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\.runtime\\t6c-reject-bad-hash",
+          "--app-wheel",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\.runtime\\t5c-r1-wheel\\fashion_scout-0.2.0a1-py3-none-any.whl",
+          "--app-sha256",
+          "0000000000000000000000000000000000000000000000000000000000000000",
+          "--source-root",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\src"
+        ],
+        "returncode": 2,
+        "stdout": "",
+        "stderr": "Build refused: Application wheel hash mismatch\n"
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\logs\\t6c-reject-bad-hash-format-92759a.json",
+      "sha256": "d93cfb4205ef1e9d417b3a90f2208a20464da84c66c54609f462ab2c4c63d413",
+      "record": {
+        "argv": [
+          "E:\\github-workspace\\fashion-scout-harness\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-B",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\scripts\\release\\build_bundle.py",
+          "--output",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\.runtime\\t6c-reject-bad-hash-format",
+          "--app-wheel",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\.runtime\\t5c-r1-wheel\\fashion_scout-0.2.0a1-py3-none-any.whl",
+          "--app-sha256",
+          "bad",
+          "--source-root",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\src"
+        ],
+        "returncode": 2,
+        "stdout": "",
+        "stderr": "Build refused: Application SHA256 must be 64 hexadecimal characters\n"
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\logs\\t6c-reject-bad-hash-optimized-6e1b2d.json",
+      "sha256": "8491ccd0f696b6ac4f82e777c2e340d5a4eb3d2de4d79bfcbeec473d580a0383",
+      "record": {
+        "argv": [
+          "E:\\github-workspace\\fashion-scout-harness\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-B",
+          "-O",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\scripts\\release\\build_bundle.py",
+          "--output",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\.runtime\\t6c-reject-bad-hash-optimized",
+          "--app-wheel",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\.runtime\\t5c-r1-wheel\\fashion_scout-0.2.0a1-py3-none-any.whl",
+          "--app-sha256",
+          "0000000000000000000000000000000000000000000000000000000000000000",
+          "--source-root",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\src"
+        ],
+        "returncode": 2,
+        "stdout": "",
+        "stderr": "Build refused: Application wheel hash mismatch\n"
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\logs\\t6c-reject-both-empty-de2664.json",
+      "sha256": "10f4afd5e1174925e470665269115681f6965e915616e5346c3692d01d2f8381",
+      "record": {
+        "argv": [
+          "E:\\github-workspace\\fashion-scout-harness\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-B",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\scripts\\release\\build_bundle.py",
+          "--output",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\.runtime\\t6c-reject-both-empty",
+          "--app-wheel",
+          "",
+          "--app-sha256",
+          "",
+          "--source-root",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\src"
+        ],
+        "returncode": 2,
+        "stdout": "",
+        "stderr": "Build refused: Application SHA256 must be 64 hexadecimal characters\n"
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\logs\\t6c-reject-hash-empty-48cc3a.json",
+      "sha256": "5b011e9ee53d7daa974223cec686949cc145b2fe64fdace82e08320aa4245899",
+      "record": {
+        "argv": [
+          "E:\\github-workspace\\fashion-scout-harness\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-B",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\scripts\\release\\build_bundle.py",
+          "--output",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\.runtime\\t6c-reject-hash-empty",
+          "--app-wheel",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\.runtime\\t5c-r1-wheel\\fashion_scout-0.2.0a1-py3-none-any.whl",
+          "--app-sha256",
+          "",
+          "--source-root",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\src"
+        ],
+        "returncode": 2,
+        "stdout": "",
+        "stderr": "Build refused: Application SHA256 must be 64 hexadecimal characters\n"
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\logs\\t6c-reject-hash-without-wheel-0f4432.json",
+      "sha256": "beb20fcbb21c2fec28b90b28a41a132650f670930134c712ccbb514451f946d9",
+      "record": {
+        "argv": [
+          "E:\\github-workspace\\fashion-scout-harness\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-B",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\scripts\\release\\build_bundle.py",
+          "--output",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\.runtime\\t6c-reject-hash-without-wheel",
+          "--app-sha256",
+          "9beaa9f5e49063fdb5b36d906b8bac5d1d5a46772f4c5b90a10782a77b772f15"
+        ],
+        "returncode": 2,
+        "stdout": "",
+        "stderr": "usage: build_bundle.py [-h] --output OUTPUT [--cache CACHE] [--download]\n                       [--app-wheel APP_WHEEL] [--app-sha256 APP_SHA256]\n                       [--source-root SOURCE_ROOT] [--label LABEL]\nbuild_bundle.py: error: --app-wheel and --app-sha256 must be supplied together\n"
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\logs\\t6c-reject-label-empty-b488b9.json",
+      "sha256": "5cc923be940b5b4a9b456e4dd2a3f1653bf65789a3c4e184546c6c4e65584bcc",
+      "record": {
+        "argv": [
+          "E:\\github-workspace\\fashion-scout-harness\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-B",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\scripts\\release\\build_bundle.py",
+          "--output",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\.runtime\\t6c-reject-label-empty",
+          "--app-wheel",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\.runtime\\t5c-r1-wheel\\fashion_scout-0.2.0a1-py3-none-any.whl",
+          "--app-sha256",
+          "9beaa9f5e49063fdb5b36d906b8bac5d1d5a46772f4c5b90a10782a77b772f15",
+          "--source-root",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\src",
+          "--label",
+          ""
+        ],
+        "returncode": 2,
+        "stdout": "",
+        "stderr": "usage: build_bundle.py [-h] --output OUTPUT [--cache CACHE] [--download]\n                       [--app-wheel APP_WHEEL] [--app-sha256 APP_SHA256]\n                       [--source-root SOURCE_ROOT] [--label LABEL]\nbuild_bundle.py: error: --label must be 1-32 lowercase letters/digits/hyphens\n"
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\logs\\t6c-reject-label-too-long-76c0f6.json",
+      "sha256": "02f88c1389789cf18d43f87df9f6cceb7cab5278f63f3cac96963d9aa318e93a",
+      "record": {
+        "argv": [
+          "E:\\github-workspace\\fashion-scout-harness\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-B",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\scripts\\release\\build_bundle.py",
+          "--output",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\.runtime\\t6c-reject-label-too-long",
+          "--app-wheel",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\.runtime\\t5c-r1-wheel\\fashion_scout-0.2.0a1-py3-none-any.whl",
+          "--app-sha256",
+          "9beaa9f5e49063fdb5b36d906b8bac5d1d5a46772f4c5b90a10782a77b772f15",
+          "--source-root",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\src",
+          "--label",
+          "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        ],
+        "returncode": 2,
+        "stdout": "",
+        "stderr": "usage: build_bundle.py [-h] --output OUTPUT [--cache CACHE] [--download]\n                       [--app-wheel APP_WHEEL] [--app-sha256 APP_SHA256]\n                       [--source-root SOURCE_ROOT] [--label LABEL]\nbuild_bundle.py: error: --label must be 1-32 lowercase letters/digits/hyphens\n"
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\logs\\t6c-reject-label-traversal-09dcda.json",
+      "sha256": "e7cde98607c2e7fe0d9a30811e9cb536740387ce5f72024eba476698fc6166bf",
+      "record": {
+        "argv": [
+          "E:\\github-workspace\\fashion-scout-harness\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-B",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\scripts\\release\\build_bundle.py",
+          "--output",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\.runtime\\t6c-reject-label-traversal",
+          "--app-wheel",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\.runtime\\t5c-r1-wheel\\fashion_scout-0.2.0a1-py3-none-any.whl",
+          "--app-sha256",
+          "9beaa9f5e49063fdb5b36d906b8bac5d1d5a46772f4c5b90a10782a77b772f15",
+          "--source-root",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\src",
+          "--label",
+          "../escape"
+        ],
+        "returncode": 2,
+        "stdout": "",
+        "stderr": "usage: build_bundle.py [-h] --output OUTPUT [--cache CACHE] [--download]\n                       [--app-wheel APP_WHEEL] [--app-sha256 APP_SHA256]\n                       [--source-root SOURCE_ROOT] [--label LABEL]\nbuild_bundle.py: error: --label must be 1-32 lowercase letters/digits/hyphens\n"
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\logs\\t6c-reject-missing-migration-d196fa.json",
+      "sha256": "5c39fcf86e357d785f89f79d4312058083327d6091b6928eef9b98dae993efdb",
+      "record": {
+        "argv": [
+          "E:\\github-workspace\\fashion-scout-harness\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-B",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\scripts\\release\\build_bundle.py",
+          "--output",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\.runtime\\t6c-reject-missing-migration",
+          "--app-wheel",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\reject-wheel-missing-migration\\fashion_scout-0.2.0a1-py3-none-any.whl",
+          "--app-sha256",
+          "ca31b219b059a4288e780b5f630585c516d5150f498eb1d64ea8f53c71012fa6",
+          "--source-root",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\reject-source-missing-migration"
+        ],
+        "returncode": 2,
+        "stdout": "",
+        "stderr": "Build refused: Required sequential migrations missing\n"
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\logs\\t6c-reject-missing-resource-bef42d.json",
+      "sha256": "6af23dab73e434eba55b93fb582530fadea3ae460abe4d1646fb07362110ee9f",
+      "record": {
+        "argv": [
+          "E:\\github-workspace\\fashion-scout-harness\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-B",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\scripts\\release\\build_bundle.py",
+          "--output",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\.runtime\\t6c-reject-missing-resource",
+          "--app-wheel",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\reject-wheel-missing-resource\\fashion_scout-0.2.0a1-py3-none-any.whl",
+          "--app-sha256",
+          "148f2a1dbfa63e5d9ecf34074be953d406a03e7b109e3136b9b3f20465575828",
+          "--source-root",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\reject-source-missing-resource"
+        ],
+        "returncode": 2,
+        "stdout": "",
+        "stderr": "Build refused: Required application resource missing: fashion_scout/static/app.css\n"
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\logs\\t6c-reject-record-corrupt-b32b60.json",
+      "sha256": "93330dc09bff1ea19d1275fe429434770780fcdba33e609bf125fc97f227bcb1",
+      "record": {
+        "argv": [
+          "E:\\github-workspace\\fashion-scout-harness\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-B",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\scripts\\release\\build_bundle.py",
+          "--output",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\.runtime\\t6c-reject-record-corrupt",
+          "--app-wheel",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\reject-wheel-record-corrupt\\fashion_scout-0.2.0a1-py3-none-any.whl",
+          "--app-sha256",
+          "25bf441bcbab8cdfd4087e2ded1ddc7fe8c609cafe0c4f33da66207979960899",
+          "--source-root",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\reject-source-record-corrupt"
+        ],
+        "returncode": 2,
+        "stdout": "",
+        "stderr": "Build refused: Wheel RECORD hash mismatch: fashion_scout/__init__.py\n"
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\logs\\t6c-reject-source-byte-change-69208f.json",
+      "sha256": "db93bb70fe5e778ed22c415b49e5526fbf7870ce2bbfc7f0ac58fe35e37acfdb",
+      "record": {
+        "argv": [
+          "E:\\github-workspace\\fashion-scout-harness\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-B",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\scripts\\release\\build_bundle.py",
+          "--output",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\.runtime\\t6c-reject-source-byte-change",
+          "--app-wheel",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\.runtime\\t5c-r1-wheel\\fashion_scout-0.2.0a1-py3-none-any.whl",
+          "--app-sha256",
+          "9beaa9f5e49063fdb5b36d906b8bac5d1d5a46772f4c5b90a10782a77b772f15",
+          "--source-root",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\reject-source-byte-change"
+        ],
+        "returncode": 2,
+        "stdout": "",
+        "stderr": "Build refused: Core differs from selected wheel: fashion_scout/__init__.py\n"
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\logs\\t6c-reject-source-extra-resource-956333.json",
+      "sha256": "e438ad309074f09d6d4d67a6c3231bf11997a651b7dd6c69b121dccd6dfc652c",
+      "record": {
+        "argv": [
+          "E:\\github-workspace\\fashion-scout-harness\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-B",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\scripts\\release\\build_bundle.py",
+          "--output",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\.runtime\\t6c-reject-source-extra-resource",
+          "--app-wheel",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\.runtime\\t5c-r1-wheel\\fashion_scout-0.2.0a1-py3-none-any.whl",
+          "--app-sha256",
+          "9beaa9f5e49063fdb5b36d906b8bac5d1d5a46772f4c5b90a10782a77b772f15",
+          "--source-root",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\reject-source-extra-resource"
+        ],
+        "returncode": 2,
+        "stdout": "",
+        "stderr": "Build refused: Core package resource set changed; use matching frozen source\n"
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\logs\\t6c-reject-source-missing-9213e0.json",
+      "sha256": "6608e839f760ac5871624579e6790c891545ad5da670e2022a4e798c046af79f",
+      "record": {
+        "argv": [
+          "E:\\github-workspace\\fashion-scout-harness\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-B",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\scripts\\release\\build_bundle.py",
+          "--output",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\.runtime\\t6c-reject-source-missing",
+          "--app-wheel",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\.runtime\\t5c-r1-wheel\\fashion_scout-0.2.0a1-py3-none-any.whl",
+          "--app-sha256",
+          "9beaa9f5e49063fdb5b36d906b8bac5d1d5a46772f4c5b90a10782a77b772f15",
+          "--source-root",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\no-such-frozen-root"
+        ],
+        "returncode": 2,
+        "stdout": "",
+        "stderr": "Build refused: Frozen source root is missing\n"
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\logs\\t6c-reject-unsupported-name-785160.json",
+      "sha256": "d533ecbbb44a094cfa692d5cd129e7531cdb062f0c0b55fb117887cac4d5dffa",
+      "record": {
+        "argv": [
+          "E:\\github-workspace\\fashion-scout-harness\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-B",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\scripts\\release\\build_bundle.py",
+          "--output",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\.runtime\\t6c-reject-unsupported-name",
+          "--app-wheel",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\unrelated-0.2.0a1-py3-none-any.whl",
+          "--app-sha256",
+          "9beaa9f5e49063fdb5b36d906b8bac5d1d5a46772f4c5b90a10782a77b772f15",
+          "--source-root",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\src"
+        ],
+        "returncode": 2,
+        "stdout": "",
+        "stderr": "Build refused: Unsupported application wheel name/tag; expected fashion_scout-<version>-py3-none-any.whl\n"
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\logs\\t6c-reject-wheel-empty-862ac9.json",
+      "sha256": "8bb0bf7cb11630e306b7baa8d8a39ef721e9e0b6c245ce720ef7d97ee58457d4",
+      "record": {
+        "argv": [
+          "E:\\github-workspace\\fashion-scout-harness\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-B",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\scripts\\release\\build_bundle.py",
+          "--output",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\.runtime\\t6c-reject-wheel-empty",
+          "--app-wheel",
+          "",
+          "--app-sha256",
+          "9beaa9f5e49063fdb5b36d906b8bac5d1d5a46772f4c5b90a10782a77b772f15",
+          "--source-root",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\src"
+        ],
+        "returncode": 2,
+        "stdout": "",
+        "stderr": "Build refused: Application wheel is missing\n"
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\logs\\t6c-reject-wheel-traversal-c8ed85.json",
+      "sha256": "e8aec69aaa89445c93bca4a79d152d2f3452fce51e0d05f1fb253cb9dd5a2318",
+      "record": {
+        "argv": [
+          "E:\\github-workspace\\fashion-scout-harness\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-B",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\scripts\\release\\build_bundle.py",
+          "--output",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\.runtime\\t6c-reject-wheel-traversal",
+          "--app-wheel",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\reject-wheel-wheel-traversal\\fashion_scout-0.2.0a1-py3-none-any.whl",
+          "--app-sha256",
+          "d060f944fda27736e15c1d6f2b243c949dbcdc44a254ce9d8e4ba62ad81f2850",
+          "--source-root",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\reject-source-wheel-traversal"
+        ],
+        "returncode": 2,
+        "stdout": "",
+        "stderr": "Build refused: Unsafe wheel member: ../outside.txt\n"
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\logs\\t6c-reject-wheel-without-hash-9916bb.json",
+      "sha256": "657546e8aeb4526d885c6697424db1eec86f9e381ed5623f9b8283ae18eab288",
+      "record": {
+        "argv": [
+          "E:\\github-workspace\\fashion-scout-harness\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-B",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\scripts\\release\\build_bundle.py",
+          "--output",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\.runtime\\t6c-reject-wheel-without-hash",
+          "--app-wheel",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\.runtime\\t5c-r1-wheel\\fashion_scout-0.2.0a1-py3-none-any.whl"
+        ],
+        "returncode": 2,
+        "stdout": "",
+        "stderr": "usage: build_bundle.py [-h] --output OUTPUT [--cache CACHE] [--download]\n                       [--app-wheel APP_WHEEL] [--app-sha256 APP_SHA256]\n                       [--source-root SOURCE_ROOT] [--label LABEL]\nbuild_bundle.py: error: --app-wheel and --app-sha256 must be supplied together\n"
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\logs\\t6c-reject-wrong-distribution-de7782.json",
+      "sha256": "2c1063ecf2b7858a028b94713884500aec112cdf00e30aa934c75af43fe06a8e",
+      "record": {
+        "argv": [
+          "E:\\github-workspace\\fashion-scout-harness\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-B",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\scripts\\release\\build_bundle.py",
+          "--output",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\.runtime\\t6c-reject-wrong-distribution",
+          "--app-wheel",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\reject-wheel-wrong-distribution\\fashion_scout-0.2.0a1-py3-none-any.whl",
+          "--app-sha256",
+          "da48ef2c511e54a77dd88ed3f1131fe528256ccce5fd5e7bc7fdff06ccd6e1be",
+          "--source-root",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\reject-source-wrong-distribution"
+        ],
+        "returncode": 2,
+        "stdout": "",
+        "stderr": "Build refused: Wheel distribution/version mismatch\n"
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\logs\\t6c-two-42e79c.json",
+      "sha256": "c35c12f8f26934a3ca848a62365b8041d0d7761f22dda27cf52f991b138c0fd5",
+      "record": {
+        "argv": [
+          "E:\\github-workspace\\fashion-scout-harness\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-B",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\scripts\\release\\build_bundle.py",
+          "--output",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\.runtime\\t6c-two",
+          "--app-wheel",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\wheel-two\\fashion_scout-0.2.0a1-py3-none-any.whl",
+          "--app-sha256",
+          "c1de810e593046616466958943d5e6d59a10307d019be7160414db12012c5e34",
+          "--source-root",
+          "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-inputs-1bc09368\\source-two",
+          "--label",
+          "reviewed-input"
+        ],
+        "returncode": 0,
+        "stdout": "{\"zip\": \"E:\\\\github-workspace\\\\fashion-scout-harness\\\\.runtime\\\\t6c-inputs-1bc09368\\\\.runtime\\\\t6c-two\\\\FashionScout-0.2.0a1-reviewed-input-app-c1de810e593046616466958943d5e6d59a10307d019be7160414db12012c5e34.zip\", \"zip_sha256\": \"ef3564287690eb1deb133cc32ca367890899333c3e871b91ce70f05dd6465f3d\", \"bytes\": 35675968, \"manifest\": \"E:\\\\github-workspace\\\\fashion-scout-harness\\\\.runtime\\\\t6c-inputs-1bc09368\\\\.runtime\\\\t6c-two\\\\FashionScout\\\\manifest.json\", \"manifest_sha256\": \"2eff4e0f6b555644343446468b149414e3d011cc380ead6ed2bfe3de807da32b\", \"candidate\": \"FashionScout-0.2.0a1-reviewed-input-app-c1de810e593046616466958943d5e6d59a10307d019be7160414db12012c5e34\", \"files\": 118, \"dependency_wheels\": 26, \"core_files_match_wheel\": 66, \"app_wheel\": \"E:\\\\github-workspace\\\\fashion-scout-harness\\\\.runtime\\\\t6c-inputs-1bc09368\\\\wheel-two\\\\fashion_scout-0.2.0a1-py3-none-any.whl\", \"app_version\": \"0.2.0a1\", \"app_sha256\": \"c1de810e593046616466958943d5e6d59a10307d019be7160414db12012c5e34\", \"source_root\": \"E:\\\\github-workspace\\\\fashion-scout-harness\\\\.runtime\\\\t6c-inputs-1bc09368\\\\source-two\", \"source_sha256\": \"6f331b7f1cd1f80b47eefb53e0eb13627d660741e8836c8a165430c1537df3dc\", \"runtime_sha256\": \"ec43f1a85c29f147d7ae2d13218c52c70b24a983a82ab22d6c607c0593060e10\", \"skill_files\": {\"skills/fashion-scout/SKILL.md\": \"af239c9a4aa66fdcca2792663a4ea679f90306feec1c098cc397514bd5274799\", \"skills/fashion-scout/references/setup.md\": \"340831af96c46b7c7722e8bf7ae745e4dd15919c4ad27d12654279a2936f9070\", \"skills/fashion-scout/references/commands.md\": \"81d6fe652dd80ab0dd93488df3a7577fa79087c0a92c1debf1cfdec4bf0a115b\", \"skills/fashion-scout/references/browser-acquisition.md\": \"d5397ede612a2285c80d2d590557cd25cf81c2641c9e1d9c4da21f8c8af3e37d\"}, \"source_network\": \"No source-site request by builder; fixed dependency download is opt-in\", \"data_in_zip\": false, \"services_started\": false, \"legacy_defaults\": false}\n",
+        "stderr": ""
+      }
+    }
+  ],
+  "tests": "27 passed in26.51s; -W error; T6d-R1-tests.txt",
+  "artifact_sha256": {
+    "docs\\verification\\T6d-R1-baseline.json": "f899bbf26da11511ee29d2c24554b8e878b6c876393edb0760441c51db04e929",
+    "docs\\verification\\T6d-R1-build-v2.txt": "ca7ac43c6ade8ad826e63d9386d8430de68bb3ece174fb543c02cf3d0aaa2f51",
+    "docs\\verification\\T6d-R1-manifest-v2.json": "f79f619e62c732736ea4a647e486510cb36ca3eb887c3f9bf5b8da646dd7dc2f",
+    "docs\\verification\\T6d-R1-tests.txt": "ed1e0ad51d68f202bae65b7a28806f67d9468d29554845d9cccfee36314cb72d",
+    "docs\\verification\\T6d-R1-verify.py": "e58e21a3d7f39d156e09f7ef5a380688f950bc8590afe04d33d31da3e0d8d092",
+    "docs\\verification\\T6d-R1.md": "5d6f3b8995fb137b31bbf8ec8845e715173e0042bca79390220d1d1ba9508efc",
+    "tests\\release\\test_input_refresh.py": "de09df7eaed169f540804618a86e245f49ab95f9df571061f7e204700abd03b7",
+    "scripts\\release\\templates\\README.zh-CN.md": "53356c821f281f7401abef4acd7cd2db8ac88d58a0f297bf792efd9570ca2d3c",
+    "scripts\\release\\templates\\PACKAGE-CONTEXT.zh-CN.md": "94b00815a198c3528456672dfb65cdfcc426ce81dc9d42b4edc12665f5afe927",
+    "README.md": "adb1df8320bf1eff81ec8e2aafe93df27d9a369152895693f7c80b175497bc9b",
+    "docs\\delivery.zh-CN.md": "9f26d217f72f8b6c5d0fe4550e255b7735769ed4776f76f566d05615a6911f55"
+  },
+  "application_install_repeated": false,
+  "source_requests": 0
+}

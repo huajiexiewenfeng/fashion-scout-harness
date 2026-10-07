@@ -1,0 +1,33 @@
+{
+  "kind": "offline-proposed-fix-only",
+  "network_requests": 0,
+  "production_imported": false,
+  "production_files_changed": false,
+  "synthetic_examples_only": true,
+  "old_generic_text_loss_reproduced": true,
+  "generic_excerpt_preserved": {
+    "body_prefix_bytes": 18,
+    "body_prefix_sha256": "ad718123430d2b7e7eee71a7e96c2357373d1d2d44c66479deb3db26b9fb3944",
+    "truncated": false,
+    "text_excerpt": "Too Many Requests",
+    "public_error_code": null
+  },
+  "known_code_retained": {
+    "body_prefix_bytes": 18,
+    "body_prefix_sha256": "c99027606c91276dd05cbbb11b55a058218d55698259d3736038537a429382e0",
+    "truncated": false,
+    "text_excerpt": "error code: 1015",
+    "public_error_code": 1015
+  },
+  "credentials_and_email_redacted": {
+    "body_prefix_bytes": 79,
+    "body_prefix_sha256": "2e0760792f1518bb11739a79903debb3b5bd557730c7031d4afb5558e4fffe9e",
+    "truncated": false,
+    "text_excerpt": "token=[redacted] contact=[email redacted] Bearer [redacted]",
+    "public_error_code": null
+  },
+  "cap_respected": true,
+  "all_checks_passed": true,
+  "actual_source_body_restored": false,
+  "limitation": "Proposal is not a complete production privacy parser; IPv6 and structured JSON need explicit cases before adoption."
+}

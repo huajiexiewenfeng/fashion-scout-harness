@@ -1,0 +1,156 @@
+[
+  {
+    "label": "gallery-rendered-once",
+    "runs": [
+      {
+        "id": "synthetic-fixture-run",
+        "state": "succeeded",
+        "created_at": "2026-10-01T12:00:00Z"
+      }
+    ],
+    "favorites": [
+      "fixture-000",
+      "fixture-003"
+    ],
+    "view_events": [
+      {
+        "product_id": "fixture-000",
+        "version_id": "fixture-version-0",
+        "version_revision": 1,
+        "viewed_at": "2026-10-06T12:11:28.139Z"
+      }
+    ],
+    "source_http_count": 0,
+    "run_request_count": 0
+  },
+  {
+    "label": "corrupt-before-opening",
+    "runs": [
+      {
+        "id": "synthetic-fixture-run",
+        "state": "succeeded",
+        "created_at": "2026-10-01T12:00:00Z"
+      }
+    ],
+    "favorites": [
+      "fixture-000",
+      "fixture-003"
+    ],
+    "view_events": [
+      {
+        "product_id": "fixture-000",
+        "version_id": "fixture-version-0",
+        "version_revision": 1,
+        "viewed_at": "2026-10-06T12:11:28.139Z"
+      }
+    ],
+    "source_http_count": 0,
+    "run_request_count": 0
+  },
+  {
+    "label": "corrupt-gallery-no-view-event",
+    "runs": [
+      {
+        "id": "synthetic-fixture-run",
+        "state": "succeeded",
+        "created_at": "2026-10-01T12:00:00Z"
+      }
+    ],
+    "favorites": [
+      "fixture-000",
+      "fixture-003"
+    ],
+    "view_events": [
+      {
+        "product_id": "fixture-000",
+        "version_id": "fixture-version-0",
+        "version_revision": 1,
+        "viewed_at": "2026-10-06T12:11:28.139Z"
+      }
+    ],
+    "source_http_count": 0,
+    "run_request_count": 0
+  },
+  {
+    "label": "verified-qa-worker-offline",
+    "runs": [
+      {
+        "id": "synthetic-fixture-run",
+        "state": "succeeded",
+        "created_at": "2026-10-01T12:00:00Z"
+      }
+    ],
+    "favorites": [
+      "fixture-000",
+      "fixture-003"
+    ],
+    "view_events": [
+      {
+        "product_id": "fixture-000",
+        "version_id": "fixture-version-0",
+        "version_revision": 1,
+        "viewed_at": "2026-10-06T12:11:28.139Z"
+      }
+    ],
+    "source_http_count": 0,
+    "run_request_count": 0
+  },
+  {
+    "label": "explicit-start-and-reloads-single-request",
+    "runs": [
+      {
+        "id": "synthetic-fixture-run",
+        "state": "succeeded",
+        "created_at": "2026-10-01T12:00:00Z"
+      },
+      {
+        "id": "ec0484ffba5b41208c2240600a2c783a",
+        "state": "queued",
+        "created_at": "2026-10-06T12:15:51.377Z"
+      }
+    ],
+    "favorites": [
+      "fixture-000",
+      "fixture-003"
+    ],
+    "view_events": [
+      {
+        "product_id": "fixture-000",
+        "version_id": "fixture-version-0",
+        "version_revision": 1,
+        "viewed_at": "2026-10-06T12:11:28.139Z"
+      }
+    ],
+    "source_http_count": 0,
+    "run_request_count": 1
+  },
+  {
+    "label": "qa-cancelled-no-source-traffic",
+    "runs": [
+      {
+        "id": "synthetic-fixture-run",
+        "state": "succeeded",
+        "created_at": "2026-10-01T12:00:00Z"
+      },
+      {
+        "id": "ec0484ffba5b41208c2240600a2c783a",
+        "state": "cancelled",
+        "created_at": "2026-10-06T12:15:51.377Z"
+      }
+    ],
+    "favorites": [
+      "fixture-000",
+      "fixture-003"
+    ],
+    "view_events": [
+      {
+        "product_id": "fixture-000",
+        "version_id": "fixture-version-0",
+        "version_revision": 1,
+        "viewed_at": "2026-10-06T12:11:28.139Z"
+      }
+    ],
+    "source_http_count": 0,
+    "run_request_count": 1
+  }
+]

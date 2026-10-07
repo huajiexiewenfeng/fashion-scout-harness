@@ -1,0 +1,43 @@
+{
+  "version": "T5a-local-v1",
+  "generated_at": "2026-10-06T13:24:31.096933+00:00",
+  "synthetic": true,
+  "source_network_requests": 0,
+  "work_root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5a-samples-20261006T132431Z-14e5a9c5",
+  "samples": [
+    {
+      "label": "complete",
+      "result": {
+        "state": "succeeded",
+        "snapshot_sha256": "03bad093c8aa9ae3f87170bbb57304dbd0955420cdf08c121a3740a73feecc30",
+        "path": "E:\\github-workspace\\fashion-scout-harness\\docs\\verification\\T5a-samples\\20261006T132431Z-14e5a9c5\\complete\\export-795cb5c6824609cfc574b105e01aacdcc4d1380f3423183a0f4c649b7e67fcfb.zip",
+        "sha256": "150951efc9dd66b9db3942d024f449f627ae3953067e805dd4a20473740b0813",
+        "bytes": 12710,
+        "reused": false,
+        "missing_count": 0,
+        "unknown_count": 0,
+        "error_code": null
+      },
+      "snapshot_path": "E:\\github-workspace\\fashion-scout-harness\\docs\\verification\\T5a-samples\\20261006T132431Z-14e5a9c5\\complete-snapshot.json",
+      "member_count": 7,
+      "image_file_count": 3
+    },
+    {
+      "label": "partial",
+      "result": {
+        "state": "partial",
+        "snapshot_sha256": "f692d05f35c8870f0b309c3e1387b26123413a398853aac325247514c8c08977",
+        "path": "E:\\github-workspace\\fashion-scout-harness\\docs\\verification\\T5a-samples\\20261006T132431Z-14e5a9c5\\partial\\export-41d2069f0cffd300ac7cada9edd952548dfcf9ac5cd84e5cea4297b6ab60e901.zip",
+        "sha256": "62c9e471002092bcaf81cee73bcf347f8557962179a33ab50af90f259d7a83bf",
+        "bytes": 14174,
+        "reused": false,
+        "missing_count": 2,
+        "unknown_count": 1,
+        "error_code": null
+      },
+      "snapshot_path": "E:\\github-workspace\\fashion-scout-harness\\docs\\verification\\T5a-samples\\20261006T132431Z-14e5a9c5\\partial-snapshot.json",
+      "member_count": 8,
+      "image_file_count": 2
+    }
+  ]
+}

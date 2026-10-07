@@ -1,0 +1,190 @@
+{
+  "utc": "2026-10-06T14:34:17.259856+00:00",
+  "target_db": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t2-live-smoke\\scout.sqlite3",
+  "old_row": {
+    "site_id": "futario",
+    "not_before": null,
+    "mode": "legacy_response_not_saved",
+    "request_seq": null,
+    "recorded_at": 1791286123.4316926
+  },
+  "proposed_row": {
+    "site_id": "futario",
+    "not_before": 1791297004.4749758,
+    "mode": "server_foreground_reconciled",
+    "request_seq": null,
+    "recorded_at": 1791296944.4746
+  },
+  "fresh_evidence": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t2-diagnostic-20261006-foreground\\result.json",
+  "fresh_evidence_sha256": "be7f1ca1557e78a8b88fa206fa7139fa33c97b7a3c7971b16884d986302d9438",
+  "authorization": "E:\\github-workspace\\.team\\fashion-scout\\manager-t2-fresh-cooldown-review.md",
+  "authorization_sha256": "3cb946bac72d7f59c00cbe832bee4d7da348051c0194ae428fbbc602dca3c69c",
+  "original_db_sha256": "fdc74c99ae6be6e5b689392224c7d5140ab42f2372919f371594933bde53f45e",
+  "logical_before": {
+    "schema_sha256": "a8c8492a517cf8b1f92c4d3e1100e69d78982b7036ce2fc3fa4f4f1a5c9b3f74",
+    "tables": {
+      "archive_journal": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "archive_journal_events": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "assets": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "collection_http": {
+        "rows": 1,
+        "sha256": "ed20b530dfcb3160c4e3ed49c1c46fe6aa04b3088feacd6fe747a6793d1e3520"
+      },
+      "collection_http_results": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "collection_images": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "collection_page_attempts": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "collection_products": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "collection_runs": {
+        "rows": 1,
+        "sha256": "e654b066d5ec3672083f49b9f8179c53614efc5d3b1ce07db3785290f7a3d1c1"
+      },
+      "discovery_pages": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "export_assets": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "export_jobs": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "export_members": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "issues": {
+        "rows": 1,
+        "sha256": "f995c0763ea40caf8e5a2c749068b6e04f188e453431bad9899c443a0a71db98"
+      },
+      "maintenance_jobs": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "network_throttle": {
+        "rows": 1,
+        "sha256": "ec5933bbc422fda34a4e2d1ff41641f45b741378c5f67b71f3032c2a28597209"
+      },
+      "observations": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "operation_requests": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "product_user_state": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "product_versions": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "products": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "run_attempts": {
+        "rows": 1,
+        "sha256": "9d78cdd2c7dae7b1661650b86fbc12927fd48804225c158e59334a48f5f786fa"
+      },
+      "run_events": {
+        "rows": 3,
+        "sha256": "00198a82dd866eac72bd5e5fbbf85ceee2a6b561bc3c0d969629b0addcba5282"
+      },
+      "run_requests": {
+        "rows": 1,
+        "sha256": "449ff4c0d6a06f73883e40b752e69718a85ab363af712266557ef10ee95fd7e8"
+      },
+      "run_seen_products": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "runs": {
+        "rows": 1,
+        "sha256": "cc1ce893633f182d300bdf56dde350605cc16114db12761a3ae8c6672a04fe9e"
+      },
+      "schema_migrations": {
+        "rows": 6,
+        "sha256": "699215d24e58dfb9de9379c46486a2e728af0fa0ceee822709fe7ee8e205141f"
+      },
+      "settings": {
+        "rows": 1,
+        "sha256": "6f295c34744846e5aec09957623057aa2788cba95a3ad3183bee9341b76b54e4"
+      },
+      "site_runs": {
+        "rows": 1,
+        "sha256": "25bbc92d32e987daca183170490811cefc95d893648ee0b51b50465785dd73b4"
+      },
+      "sites": {
+        "rows": 1,
+        "sha256": "a463efd70789d1d6baba5a06073169b0837c755e22e3270dec688dd89fe3e86c"
+      },
+      "storage_roots": {
+        "rows": 1,
+        "sha256": "a08f5eaac06dc4655e6b1b7e6ae34b6c0b33a71bf6842adeb53380e0aabbb944"
+      },
+      "version_images": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "view_events": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "work_attempts": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "work_items": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "workers": {
+        "rows": 1,
+        "sha256": "83bdc1c975838d1c077ba1070a04b96a14d727d3188c911d4002b6a195177905"
+      }
+    }
+  },
+  "other_holds": [],
+  "runs": [
+    {
+      "id": "f097800bb3344468b174059282955973",
+      "state": "failed",
+      "owner": "126b9955d74e47fa98f74bda5923001f",
+      "lease_until": null
+    }
+  ],
+  "workers": [
+    {
+      "id": "126b9955d74e47fa98f74bda5923001f",
+      "pid": 20180,
+      "state": "stopped"
+    }
+  ],
+  "active_QA_processes": [],
+  "network_requests": 0
+}

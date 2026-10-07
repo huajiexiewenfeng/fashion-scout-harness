@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools==84.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fashion-scout"
+version = "0.2.0a1"
+description = "Local durable Fashion Scout runtime and bounded Futario collection"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+  "fastapi==0.142.2",
+  "uvicorn==0.54.0",
+  "pydantic==2.13.5",
+  "psutil==7.2.2",
+  "httpx==0.28.1",
+  "httpcore==1.0.9",
+  "Pillow==12.3.0",
+]
+
+[project.optional-dependencies]
+test = ["pytest==9.1.1", "httpx==0.28.1"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"fashion_scout.db" = ["migrations/*.sql"]
+"fashion_scout" = ["templates/*.html", "static/*.js", "static/*.css"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+markers = ["process: isolated real subprocess integration tests"]

@@ -1,0 +1,25 @@
+T6c isolated kit: E:\github-workspace\fashion-scout-harness\.runtime\t6c-inputs-10649d31
+.........................
+============================== warnings summary ===============================
+tests/release/test_input_refresh.py::test_concurrent_builders_cannot_overwrite_same_output
+  E:\github-workspace\fashion-scout-harness\.venv\Lib\site-packages\_pytest\threadexception.py:58: PytestUnhandledThreadExceptionWarning: Exception in thread Thread-60 (_readerthread)
+  
+  Traceback (most recent call last):
+    File "E:\github-workspace\fashion-scout-harness\.runtime\python\Lib\threading.py", line 1044, in _bootstrap_inner
+      self.run()
+      ~~~~~~~~^^
+    File "E:\github-workspace\fashion-scout-harness\.runtime\python\Lib\threading.py", line 995, in run
+      self._target(*self._args, **self._kwargs)
+      ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "E:\github-workspace\fashion-scout-harness\.runtime\python\Lib\subprocess.py", line 1616, in _readerthread
+      buffer.append(fh.read())
+                    ~~~~~~~^^
+    File "<frozen codecs>", line 325, in decode
+  UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 30: invalid start byte
+  
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+    warnings.warn(pytest.PytestUnhandledThreadExceptionWarning(msg))
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+25 passed, 1 warning in 19.16s

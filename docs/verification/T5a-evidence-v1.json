@@ -1,0 +1,48 @@
+{
+  "version": "T5a-local-v1",
+  "generated_at": "2026-10-06T13:27:55.006081+00:00",
+  "protected_files": 117,
+  "protected_changes": [],
+  "tests": {
+    "passed": 56,
+    "skipped": 0,
+    "seconds": 3.08
+  },
+  "source_network_requests": 0,
+  "samples": [
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\docs\\verification\\T5a-samples\\20261006T132431Z-14e5a9c5\\complete\\export-795cb5c6824609cfc574b105e01aacdcc4d1380f3423183a0f4c649b7e67fcfb.zip",
+      "sha256": "150951efc9dd66b9db3942d024f449f627ae3953067e805dd4a20473740b0813",
+      "state": "succeeded",
+      "snapshot_sha256": "03bad093c8aa9ae3f87170bbb57304dbd0955420cdf08c121a3740a73feecc30",
+      "members": 7
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\docs\\verification\\T5a-samples\\20261006T132431Z-14e5a9c5\\partial\\export-41d2069f0cffd300ac7cada9edd952548dfcf9ac5cd84e5cea4297b6ab60e901.zip",
+      "sha256": "62c9e471002092bcaf81cee73bcf347f8557962179a33ab50af90f259d7a83bf",
+      "state": "partial",
+      "snapshot_sha256": "f692d05f35c8870f0b309c3e1387b26123413a398853aac325247514c8c08977",
+      "members": 8
+    }
+  ],
+  "sha256": {
+    "docs\\verification\\T5a-baseline.json": "e6eb773a055b879c2064f2a773ee3f420bbefdf4d7baf170fa6f6c8a869aee06",
+    "docs\\verification\\T5a-samples\\20261006T132431Z-14e5a9c5\\complete\\export-795cb5c6824609cfc574b105e01aacdcc4d1380f3423183a0f4c649b7e67fcfb.zip": "150951efc9dd66b9db3942d024f449f627ae3953067e805dd4a20473740b0813",
+    "docs\\verification\\T5a-samples\\20261006T132431Z-14e5a9c5\\complete-snapshot.json": "8c449781ed7a540a6461a88f4d22a7f0c2cb9412648c1027bd0ce64df8d07777",
+    "docs\\verification\\T5a-samples\\20261006T132431Z-14e5a9c5\\partial\\export-41d2069f0cffd300ac7cada9edd952548dfcf9ac5cd84e5cea4297b6ab60e901.zip": "62c9e471002092bcaf81cee73bcf347f8557962179a33ab50af90f259d7a83bf",
+    "docs\\verification\\T5a-samples\\20261006T132431Z-14e5a9c5\\partial-snapshot.json": "60d979676ef9142389a80ca4a712139ea1b360ad6f5498d9ca3bccac800103f7",
+    "docs\\verification\\T5a-samples-20261006T132431Z-14e5a9c5.json": "483059f6fe43e70471a62f078a1f6396a9738c0813477dc2421f53c1f54321f0",
+    "docs\\verification\\T5a-snapshot-contract.md": "36f6a0517f5ea7d311664fc81f9a891d5adaef896cf591d8593e5bc5477cb1f9",
+    "docs\\verification\\T5a-tests-v1.txt": "b6738311fba201bef4d6b081109db774dadf5b98dae1fe6e2645a6843ae1b1a8",
+    "docs\\verification\\T5a.md": "00b24bdf84ca3177e8366e72d9be31b21c55ee21991fe46ca079674ef672545a",
+    "src\\fashion_scout\\exports\\__init__.py": "c7c51f50619dd11a31e53ae69a3e92984a1d0dbb752abe8600abb74a03eee292",
+    "src\\fashion_scout\\exports\\engine.py": "420d352a8021acb21e96d8c228a48f1137dbd0f12d11debf0b2fe6dcb1be27be",
+    "src\\fashion_scout\\exports\\manifest.py": "199085e1808f9e751f1d451567db66dbc7ff8e80263d65e3580ec5ba698b9056",
+    "src\\fashion_scout\\exports\\models.py": "935e9cb9fe60180591e9c8ae98f605d60c558fa286b5a0b2a389625a3e9bf55e",
+    "tests\\exports\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tests\\exports\\fixtures.py": "86702ccdb57ddba6627625a4b71cffdc95447b8df8899f012162971d9c495509",
+    "tests\\exports\\make_samples.py": "573dd6833bfb5025f0868b2a12e801fdc3746e90abf2f3fba18c563d3ae97001",
+    "tests\\exports\\test_engine.py": "fd3147ac7c011e809cbfa9d2e07aa2136f0e9fc5bd9feddca3aa34bc4633fe89",
+    "tests\\exports\\verify_delivery.py": "0edb8dbd6fc88e250e0e14a646509a7cedf991d8fbaed60afc2d9543fcf9b83e"
+  }
+}

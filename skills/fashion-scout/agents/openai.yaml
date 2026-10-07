@@ -1,0 +1,4 @@
+interface:
+  display_name: "款集"
+  short_description: "用对话打开款集、开始与继续浏览器巡检、查看新款并导出收藏"
+  default_prompt: "使用 $fashion-scout 打开款集并看看已有新款。"

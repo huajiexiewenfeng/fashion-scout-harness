@@ -1,0 +1,1190 @@
+{
+  "schema": 1,
+  "candidate": "FashionScout-0.2.0a1-browser-v2-app-5938b20f707c73ebc0042d115abdd7e04d3bf62dd9799362be595afa52393753",
+  "app_wheel": "payload/fashion_scout-0.2.0a1-py3-none-any.whl",
+  "app_version": "0.2.0a1",
+  "app_sha256": "5938b20f707c73ebc0042d115abdd7e04d3bf62dd9799362be595afa52393753",
+  "source_files": {
+    "fashion_scout/__init__.py": {
+      "bytes": 98,
+      "sha256": "38d10a501787f0dfa2da3150cc1472e2167c3a38175b11abe1b46b72335fce9e"
+    },
+    "fashion_scout/adapters/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "fashion_scout/adapters/futario.py": {
+      "bytes": 7615,
+      "sha256": "fca7e3a4af2cfce1bd0010ccf1f090984a7bed1307c854968bebe0066d583045"
+    },
+    "fashion_scout/adapters/futario_browser.py": {
+      "bytes": 16375,
+      "sha256": "f4d7e6cdf12a985d644ee3c4274f1188f13d96a4aee81772d84357ade0405ffa"
+    },
+    "fashion_scout/api/__init__.py": {
+      "bytes": 54,
+      "sha256": "1234035fbdf7ed7b36ccc7e34c1c9ac757e2b65274d51052ba1f856667473b3a"
+    },
+    "fashion_scout/api/browser_acquisition.py": {
+      "bytes": 2695,
+      "sha256": "5bb4e8011822ef90c152f414e40b0adbe33c6b02481470d8b260fee1cf9014a9"
+    },
+    "fashion_scout/api/exports.py": {
+      "bytes": 1374,
+      "sha256": "a8b241a763baa3c830c2a31ddd5b9e1b0cdc034444be9dfd5163b81c44d29fd4"
+    },
+    "fashion_scout/api/maintenance.py": {
+      "bytes": 2505,
+      "sha256": "854e3ca51b0b7129dee59aef6dfaee45969bbe3d1c45950f71f5bd1be969f4fc"
+    },
+    "fashion_scout/api/models.py": {
+      "bytes": 3100,
+      "sha256": "07c5cef4bbacf7dc428c4d1533fd2cfacab5967bd7f40f396385e9655ac21726"
+    },
+    "fashion_scout/api/routes.py": {
+      "bytes": 11308,
+      "sha256": "9d3eee4457a1791fd625a78b4732b448a6920a73156fe34da6d2e41cd6ae68ca"
+    },
+    "fashion_scout/api/security.py": {
+      "bytes": 4189,
+      "sha256": "f28c676bcb7143ce843ea2fa24a10f52166e0e12bc014976669d844af71239ce"
+    },
+    "fashion_scout/client.py": {
+      "bytes": 25222,
+      "sha256": "2eac5caa5d4cae11927d6f6c20815e49288ff78195b1fb7cfeed309b2168301e"
+    },
+    "fashion_scout/client_models.py": {
+      "bytes": 4483,
+      "sha256": "5da67b581c803bfebfbbb0b1918aeea65b60e43f0c16882cfb48c51deab6719f"
+    },
+    "fashion_scout/config.py": {
+      "bytes": 2748,
+      "sha256": "95f0bf4ed874b9f2b91f4d2ce4647d0aed626342389ed3e4f0d0b7045f685bc7"
+    },
+    "fashion_scout/db/__init__.py": {
+      "bytes": 91,
+      "sha256": "4851e8b3cab271933625646f581c2e2f6818bcfc5b06478e7acc486d4d9c88c6"
+    },
+    "fashion_scout/db/archive.py": {
+      "bytes": 17804,
+      "sha256": "c123feb209c699508149b0c7e0bb7493b56f77dbdacd3e74828f7f6c165f13bc"
+    },
+    "fashion_scout/db/migrations/001_core.sql": {
+      "bytes": 2816,
+      "sha256": "3caf8d285c8ca65a67a3d1eecc88ae69842f7e5d14c1a0af190e1a01ffba924c"
+    },
+    "fashion_scout/db/migrations/002_catalog_contract.sql": {
+      "bytes": 3527,
+      "sha256": "b511ceace1280fd341d76fc7f103e73ea6778701992bc0e43f1ff91205e62d84"
+    },
+    "fashion_scout/db/migrations/003_archive_repair.sql": {
+      "bytes": 483,
+      "sha256": "1892d294544f789080dba0048e997f8637751c633b355a89dea55f733e1ff556"
+    },
+    "fashion_scout/db/migrations/004_collection.sql": {
+      "bytes": 2098,
+      "sha256": "d794e352fb402c1d8ce4716dc4abc8004ffe8523682c452f58acb7db97c8dd3f"
+    },
+    "fashion_scout/db/migrations/005_http_evidence.sql": {
+      "bytes": 158,
+      "sha256": "0e2134a7641d37579732b4ce2692cfd6121f0f43bc61803f2aef82bbaccd5868"
+    },
+    "fashion_scout/db/migrations/006_network_throttle.sql": {
+      "bytes": 261,
+      "sha256": "fd94bc90d5a3f2c1b47e0b37b8498177458dbea2f287af435141931ba562cae4"
+    },
+    "fashion_scout/db/migrations/007_owned_temps.sql": {
+      "bytes": 493,
+      "sha256": "6477c5790780ed18a4cdbe03e471162e41e5023cd4f17a13d402ab5b4057f7d0"
+    },
+    "fashion_scout/db/migrations/008_exports.sql": {
+      "bytes": 1304,
+      "sha256": "27a8e404921138edc64680664e4f01b87e47183a98b3553bfb6bddbcf6cfe2e3"
+    },
+    "fashion_scout/db/migrations/009_maintenance.sql": {
+      "bytes": 1536,
+      "sha256": "5338ba48b135d1473a8adf79127638b0bf7ac577cbc5691d9d7f3f3bf0e9ffca"
+    },
+    "fashion_scout/db/migrations/010_browser_acquisition.sql": {
+      "bytes": 1843,
+      "sha256": "903ca6fc1ad5cdccdc8ce0539773e585486bde6bfefa65a72f1ee75839257ce6"
+    },
+    "fashion_scout/db/store.py": {
+      "bytes": 4197,
+      "sha256": "f657c65c4a023fbdce6f9889109b948ee50c25d5ed4ec1c332c875030c1a30a7"
+    },
+    "fashion_scout/domain/__init__.py": {
+      "bytes": 206,
+      "sha256": "3d16175285c199a178ed9743669c9aa29bacf5375a9dd035754999b276e4744b"
+    },
+    "fashion_scout/domain/browser_source.py": {
+      "bytes": 3642,
+      "sha256": "a45a8a880899680fee771b53110c6a5d0fb8b78079a42bf9a162a68a83f24306"
+    },
+    "fashion_scout/domain/errors.py": {
+      "bytes": 276,
+      "sha256": "66fcc71d3163e6a18d8e8123c473aa6156e08bf71eaada641bdb753f15813552"
+    },
+    "fashion_scout/domain/models.py": {
+      "bytes": 6609,
+      "sha256": "90bcad377370729891b8d2d23cd1e064f1aefab37bc674f8ee9f67abe271af72"
+    },
+    "fashion_scout/exports/__init__.py": {
+      "bytes": 369,
+      "sha256": "c7c51f50619dd11a31e53ae69a3e92984a1d0dbb752abe8600abb74a03eee292"
+    },
+    "fashion_scout/exports/capture.py": {
+      "bytes": 5336,
+      "sha256": "7ba55a1e5d776ea9b36c0d395355164fba7ed99b75096a56cfed58a8cba97992"
+    },
+    "fashion_scout/exports/engine.py": {
+      "bytes": 17526,
+      "sha256": "49028ed10e4e2ac74ca6b61f54b9742d62b3338225883f29690e4da9f7f3126c"
+    },
+    "fashion_scout/exports/jobs.py": {
+      "bytes": 11027,
+      "sha256": "714686a0cbc03a28752e5bcf8a7523a3cc6ef24046db654bc7b228c2f5d5a022"
+    },
+    "fashion_scout/exports/manifest.py": {
+      "bytes": 8157,
+      "sha256": "8e427687526caf0afdc8374e6eba241e991894666b6b2cfc39fceb09a81c2154"
+    },
+    "fashion_scout/exports/models.py": {
+      "bytes": 7751,
+      "sha256": "03ef2e797aed3302ee8a7d363e97ca7e7beb1be97498104747bc741637013b83"
+    },
+    "fashion_scout/exports/runner.py": {
+      "bytes": 2494,
+      "sha256": "85567063fded9ee218cc2cca3e1ec79fe00c7811d22dccc3c024833ee34fbd46"
+    },
+    "fashion_scout/health.py": {
+      "bytes": 2978,
+      "sha256": "a4d008fd4e9271db0db45e11037410eccf13f5160f83bd7fae680b4b1d36edf2"
+    },
+    "fashion_scout/launcher.py": {
+      "bytes": 16355,
+      "sha256": "79065c066ef564cf4d1b3d77503600e3f8ee6a8954e49f6e6d1cd9a78d02ff3d"
+    },
+    "fashion_scout/maintenance/__init__.py": {
+      "bytes": 64,
+      "sha256": "0cd5d8251c2e18fb057e34ca1104a4c9eaaf78db49c3d831511d0a431533d29b"
+    },
+    "fashion_scout/maintenance/backup.py": {
+      "bytes": 8285,
+      "sha256": "82e7ffe662d33edcffe5c2d4831ae52bf70683f2fcfeb47c2f1f359e3544cb3d"
+    },
+    "fashion_scout/maintenance/files.py": {
+      "bytes": 4889,
+      "sha256": "45b2ffd144b4f8d1befc0b1f64c634d7d56df99d08206ea55be9a87fc0ffae4a"
+    },
+    "fashion_scout/maintenance/inventory.py": {
+      "bytes": 2797,
+      "sha256": "2f84b107264aac42dff215e760b45a1d1afed123e8ebce9d33d2492a9efdd945"
+    },
+    "fashion_scout/maintenance/jobs.py": {
+      "bytes": 6919,
+      "sha256": "e63fbb13506d38aa19d8bfdc708c1cd604030e8d7fab74ac2a673a493b469dcc"
+    },
+    "fashion_scout/maintenance/presentation.py": {
+      "bytes": 1487,
+      "sha256": "b730bc80bd04771a2fd9b94f9606cc64f3bac757bc5d02e716c30c18619e3db4"
+    },
+    "fashion_scout/maintenance/restore.py": {
+      "bytes": 11212,
+      "sha256": "adba5a26ebffdc3ad14e1638f0ef29a598a7eb8d8c995b7af9d920ee88ece385"
+    },
+    "fashion_scout/maintenance/runner.py": {
+      "bytes": 2312,
+      "sha256": "3f22c4c9929a85ead31cd376c00fbc6c7d683f057d2b3e5ea8b6aaafea3f4ee3"
+    },
+    "fashion_scout/maintenance/storage.py": {
+      "bytes": 4231,
+      "sha256": "6e55ecce933fbe11d28dc57fcd5e55be2521fc350ca88f9cd100c84c366a8b86"
+    },
+    "fashion_scout/media/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "fashion_scout/media/browser_intake.py": {
+      "bytes": 13437,
+      "sha256": "45ac6b2abaced05ea2658d51e49a6e668d7ace30717c1b27e186ed531d28beb3"
+    },
+    "fashion_scout/media/http.py": {
+      "bytes": 16202,
+      "sha256": "606d3de4697407ca377aa945f80fa54f864ab93be8f629bc28a20f424d91213b"
+    },
+    "fashion_scout/media/images.py": {
+      "bytes": 1825,
+      "sha256": "cd289fe34f3eb56dbaedb76e93c022fedc7da2cecc8adfcd3961e2d1e49e79e9"
+    },
+    "fashion_scout/processes.py": {
+      "bytes": 1656,
+      "sha256": "dfb9b9a57939614bc7b1df2f5f4373a585676620aa91936d7aa1d18d5da349c1"
+    },
+    "fashion_scout/services/__init__.py": {
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "fashion_scout/services/browser_acquisition.py": {
+      "bytes": 11123,
+      "sha256": "a82db0485758d904bb54a09787d7d9f9750bbcabc3862a84d90206d120945bfc"
+    },
+    "fashion_scout/services/catalog.py": {
+      "bytes": 17817,
+      "sha256": "4d909633609496ad45394e9daf04d8c56c0dae16458b38e20f2cf29f1412c6ac"
+    },
+    "fashion_scout/services/collect.py": {
+      "bytes": 10114,
+      "sha256": "7cb15bd1537c530d8bd6a4910bb845bbce9be01c9eb50696e055bc224f5e838b"
+    },
+    "fashion_scout/services/presentation.py": {
+      "bytes": 13591,
+      "sha256": "0262f3a9f62fde45e59773c932ebb1e41e4d80a2a240551fba485e7b1aaedc5c"
+    },
+    "fashion_scout/services/runs.py": {
+      "bytes": 22295,
+      "sha256": "d62117c0fd1cccc8db70c59f54aac8edc8629e7ca9ed2827d64e3b17f2e525ac"
+    },
+    "fashion_scout/static/app.css": {
+      "bytes": 10198,
+      "sha256": "f503fa3b626eda1addf2ef050dd905e54ad980220bd6582cc1d07690abf4c63d"
+    },
+    "fashion_scout/static/app.js": {
+      "bytes": 18387,
+      "sha256": "3f7bdac84a759f70d196e67716c1cf4f50b92fe5299b3102e31884ce42787c75"
+    },
+    "fashion_scout/static/bootstrap.js": {
+      "bytes": 524,
+      "sha256": "ab7688ef2289b5a7795f53d5443c97eae064a01ef355b226a3e44b84b60e53f6"
+    },
+    "fashion_scout/static/export-intent.js": {
+      "bytes": 1124,
+      "sha256": "5a6623d1cf00a4edad6efc90ea2dab7eaa8209e1c84bdb04288134862a987770"
+    },
+    "fashion_scout/static/exports.js": {
+      "bytes": 4483,
+      "sha256": "e76603950f27d072ecdc9cf05002ec835c3fde1d01c7698448161a83ff69e625"
+    },
+    "fashion_scout/static/intent.js": {
+      "bytes": 2091,
+      "sha256": "2ec34fbfc9f683d82a87ff8d7c96e9f6a1ffa2bc88705982f9e47a95f24b1dad"
+    },
+    "fashion_scout/static/maintenance-findings.js": {
+      "bytes": 1381,
+      "sha256": "778faedd3e3d61a6c37a5c15389c39580faf6e293c2ca074582479f5184f68a9"
+    },
+    "fashion_scout/static/maintenance-intent.js": {
+      "bytes": 2020,
+      "sha256": "c127e51c10ae77f6f1dbc30e136d1dc666d02faab207724168d2370d41d61d35"
+    },
+    "fashion_scout/static/maintenance.js": {
+      "bytes": 5152,
+      "sha256": "02f892135233abbaa5e90f3afc78155920d09e5527b78587a4c48527d7b2a11a"
+    },
+    "fashion_scout/templates/bootstrap.html": {
+      "bytes": 446,
+      "sha256": "9362e71b57fcd0c9821187e23dcd96eb81d17174b8c3eb9f7e791de94e4eee97"
+    },
+    "fashion_scout/templates/index.html": {
+      "bytes": 6720,
+      "sha256": "5363b327646aa73cccb37f5b9ee0bc20ba55f27ed7d661efbd7617c741b2942c"
+    },
+    "fashion_scout/worker.py": {
+      "bytes": 6549,
+      "sha256": "fec8abeb2d28e8541718b05167e057bf91a7cafb1c79696abcf7196a267c74b5"
+    }
+  },
+  "source_sha256": "648aa86c96f8b11f61099333de2f0be618b623775010ec16c2b0ced69d15f949",
+  "runtime_sha256": "ec43f1a85c29f147d7ae2d13218c52c70b24a983a82ab22d6c607c0593060e10",
+  "skill_files": {
+    "skills/fashion-scout/SKILL.md": "af239c9a4aa66fdcca2792663a4ea679f90306feec1c098cc397514bd5274799",
+    "skills/fashion-scout/references/setup.md": "340831af96c46b7c7722e8bf7ae745e4dd15919c4ad27d12654279a2936f9070",
+    "skills/fashion-scout/references/commands.md": "81d6fe652dd80ab0dd93488df3a7577fa79087c0a92c1debf1cfdec4bf0a115b",
+    "skills/fashion-scout/references/browser-acquisition.md": "d5397ede612a2285c80d2d590557cd25cf81c2641c9e1d9c4da21f8c8af3e37d"
+  },
+  "data_directory": "data",
+  "default_port": 8765,
+  "dependencies": [
+    {
+      "name": "pillow",
+      "version": "12.3.0",
+      "wheel": "pillow-12.3.0-cp313-cp313-win_amd64.whl",
+      "sha256": "1cca606cd25738df4ed873d5ad46bbdb3d83b5cbca291f6b4ff13a4df6b0bbe8",
+      "license_expression": "MIT-CMU",
+      "license": null,
+      "license_files": [
+        "Pillow-12.3.0/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "annotated-doc",
+      "version": "0.0.5",
+      "wheel": "annotated_doc-0.0.5-py3-none-any.whl",
+      "sha256": "117bac03a25ede5df5440e855b32d556049ca169ead221505badf432fed4b101",
+      "license_expression": "MIT",
+      "license": null,
+      "license_files": [
+        "annotated-doc-0.0.5/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "annotated-types",
+      "version": "0.8.0",
+      "wheel": "annotated_types-0.8.0-py3-none-any.whl",
+      "sha256": "f072f4d804ea359e4eaf198b1af7a8b0943881a87f31bb764f8bf219bb9419e0",
+      "license_expression": "MIT",
+      "license": null,
+      "license_files": [
+        "annotated-types-0.8.0/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "anyio",
+      "version": "4.15.1",
+      "wheel": "anyio-4.15.1-py3-none-any.whl",
+      "sha256": "6152fdbbf9a77fdec97731721bebf7c4c44f7c29b424b0065826173efc7ed101",
+      "license_expression": "MIT",
+      "license": null,
+      "license_files": [
+        "anyio-4.15.1/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "certifi",
+      "version": "2026.7.22",
+      "wheel": "certifi-2026.7.22-py3-none-any.whl",
+      "sha256": "62f22742b58a1a33014a2b6b706588a8d7e2a88ae7bd1a6ebe8c992928483775",
+      "license_expression": null,
+      "license": "MPL-2.0",
+      "license_files": [
+        "certifi-2026.7.22/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "click",
+      "version": "8.5.0",
+      "wheel": "click-8.5.0-py3-none-any.whl",
+      "sha256": "255bc9599cf7748b4b1a446ccc735421bd08a2ae529a8b88597d3de5664ee360",
+      "license_expression": "BSD-3-Clause",
+      "license": null,
+      "license_files": [
+        "click-8.5.0/licenses/LICENSE.txt"
+      ]
+    },
+    {
+      "name": "colorama",
+      "version": "0.4.6",
+      "wheel": "colorama-0.4.6-py2.py3-none-any.whl",
+      "sha256": "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6",
+      "license_expression": null,
+      "license": null,
+      "license_files": [
+        "colorama-0.4.6/licenses/LICENSE.txt"
+      ]
+    },
+    {
+      "name": "fastapi",
+      "version": "0.142.2",
+      "wheel": "fastapi-0.142.2-py3-none-any.whl",
+      "sha256": "bd5f4d81f1e93a88bcd77caf4dfe3c2dbffc3805407a0007e9a114c18b3a670b",
+      "license_expression": "MIT",
+      "license": null,
+      "license_files": [
+        "fastapi-0.142.2/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "h11",
+      "version": "0.16.0",
+      "wheel": "h11-0.16.0-py3-none-any.whl",
+      "sha256": "63cf8bbe7522de3bf65932fda1d9c2772064ffb3dae62d55932da54b31cb6c86",
+      "license_expression": null,
+      "license": "MIT",
+      "license_files": [
+        "h11-0.16.0/licenses/LICENSE.txt"
+      ]
+    },
+    {
+      "name": "httpcore",
+      "version": "1.0.9",
+      "wheel": "httpcore-1.0.9-py3-none-any.whl",
+      "sha256": "2d400746a40668fc9dec9810239072b40b4484b640a8c38fd654a024c7a1bf55",
+      "license_expression": "BSD-3-Clause",
+      "license": null,
+      "license_files": [
+        "httpcore-1.0.9/licenses/LICENSE.md"
+      ]
+    },
+    {
+      "name": "httpx",
+      "version": "0.28.1",
+      "wheel": "httpx-0.28.1-py3-none-any.whl",
+      "sha256": "d909fcccc110f8c7faf814ca82a9a4d816bc5a6dbfea25d6591d6985b8ba59ad",
+      "license_expression": null,
+      "license": "BSD-3-Clause",
+      "license_files": [
+        "httpx-0.28.1/licenses/LICENSE.md"
+      ]
+    },
+    {
+      "name": "idna",
+      "version": "3.20",
+      "wheel": "idna-3.20-py3-none-any.whl",
+      "sha256": "ab7ae7122974553370f0bdb919e1a960b2cd1bc1ef0276416d896db81c14582c",
+      "license_expression": "BSD-3-Clause",
+      "license": null,
+      "license_files": [
+        "idna-3.20/licenses/LICENSE.md"
+      ]
+    },
+    {
+      "name": "iniconfig",
+      "version": "2.3.0",
+      "wheel": "iniconfig-2.3.0-py3-none-any.whl",
+      "sha256": "f631c04d2c48c52b84d0d0549c99ff3859c98df65b3101406327ecc7d53fbf12",
+      "license_expression": "MIT",
+      "license": null,
+      "license_files": [
+        "iniconfig-2.3.0/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "opentelemetry-api",
+      "version": "1.45.0",
+      "wheel": "opentelemetry_api-1.45.0-py3-none-any.whl",
+      "sha256": "80e068aba7cd56c8b58512d6a36f8d25cb1dfaa0c0a4cc1c938ccf9f362d9cb3",
+      "license_expression": "Apache-2.0",
+      "license": null,
+      "license_files": [
+        "opentelemetry-api-1.45.0/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "packaging",
+      "version": "26.3",
+      "wheel": "packaging-26.3-py3-none-any.whl",
+      "sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c",
+      "license_expression": "Apache-2.0 OR BSD-2-Clause",
+      "license": null,
+      "license_files": [
+        "packaging-26.3/licenses/LICENSE",
+        "packaging-26.3/licenses/LICENSE.APACHE",
+        "packaging-26.3/licenses/LICENSE.BSD"
+      ]
+    },
+    {
+      "name": "pluggy",
+      "version": "1.6.0",
+      "wheel": "pluggy-1.6.0-py3-none-any.whl",
+      "sha256": "e920276dd6813095e9377c0bc5566d94c932c33b27a3e3945d8389c374dd4746",
+      "license_expression": null,
+      "license": "MIT",
+      "license_files": [
+        "pluggy-1.6.0/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "psutil",
+      "version": "7.2.2",
+      "wheel": "psutil-7.2.2-cp37-abi3-win_amd64.whl",
+      "sha256": "eb7e81434c8d223ec4a219b5fc1c47d0417b12be7ea866e24fb5ad6e84b3d988",
+      "license_expression": null,
+      "license": "BSD-3-Clause",
+      "license_files": [
+        "psutil-7.2.2/LICENSE"
+      ]
+    },
+    {
+      "name": "pydantic",
+      "version": "2.13.5",
+      "wheel": "pydantic-2.13.5-py3-none-any.whl",
+      "sha256": "346a034f080da3755d8e9cb5e00e8b07de1d39e4f6e2c87d8ab7cafa0b269a73",
+      "license_expression": "MIT",
+      "license": null,
+      "license_files": [
+        "pydantic-2.13.5/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "pydantic_core",
+      "version": "2.46.5",
+      "wheel": "pydantic_core-2.46.5-cp313-cp313-win_amd64.whl",
+      "sha256": "15f4a94963c95accac15b7b657bb177d3ad82bb90b0d0526d9a9b85079925db5",
+      "license_expression": "MIT",
+      "license": null,
+      "license_files": [
+        "pydantic_core-2.46.5/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "Pygments",
+      "version": "2.21.0",
+      "wheel": "pygments-2.21.0-py3-none-any.whl",
+      "sha256": "2363c69b61c4a97c838da3b130dcd6468f4848992b21a82f2a63ec34377137d9",
+      "license_expression": "BSD-2-Clause",
+      "license": null,
+      "license_files": [
+        "Pygments-2.21.0/licenses/AUTHORS",
+        "Pygments-2.21.0/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "pytest",
+      "version": "9.1.1",
+      "wheel": "pytest-9.1.1-py3-none-any.whl",
+      "sha256": "37a86b45efb9a47a61a36449063e8e18d0cab3161329fc099eb21783169c4f0c",
+      "license_expression": "MIT",
+      "license": null,
+      "license_files": [
+        "pytest-9.1.1/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "setuptools",
+      "version": "84.0.0",
+      "wheel": "setuptools-84.0.0-py3-none-any.whl",
+      "sha256": "51a52592b3b99e102b609654876bd65f19f999935166d1352678931132b0c670",
+      "license_expression": "MIT",
+      "license": null,
+      "license_files": [
+        "setuptools-84.0.0/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "starlette",
+      "version": "1.7.0",
+      "wheel": "starlette-1.7.0-py3-none-any.whl",
+      "sha256": "67f8e99895493dd2911a03f11314af6ceebeae4e704bb9f43dfc6a9db151c93e",
+      "license_expression": "BSD-3-Clause",
+      "license": null,
+      "license_files": [
+        "starlette-1.7.0/licenses/LICENSE.md"
+      ]
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0",
+      "wheel": "typing_extensions-4.16.0-py3-none-any.whl",
+      "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8",
+      "license_expression": "PSF-2.0",
+      "license": null,
+      "license_files": [
+        "typing_extensions-4.16.0/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "typing-inspection",
+      "version": "0.4.4",
+      "wheel": "typing_inspection-0.4.4-py3-none-any.whl",
+      "sha256": "65b8397ba37ccbce054456aaccddfc91e6e3083c92824df348d96ca832f3f147",
+      "license_expression": "MIT",
+      "license": null,
+      "license_files": [
+        "typing-inspection-0.4.4/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "uvicorn",
+      "version": "0.54.0",
+      "wheel": "uvicorn-0.54.0-py3-none-any.whl",
+      "sha256": "505bdb0f318731d45f1f712071fc781a8981f6847a31c902c9f5e652d4f67faf",
+      "license_expression": "BSD-3-Clause",
+      "license": null,
+      "license_files": [
+        "uvicorn-0.54.0/licenses/LICENSE.md"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "01 Prepare.cmd",
+      "bytes": 205,
+      "sha256": "448440c7436a71087f79de9c8be1c95957032c7247e4b2997d311d0c3cbef5ea"
+    },
+    {
+      "path": "02 Open.cmd",
+      "bytes": 202,
+      "sha256": "86a04fef36afa09dfe99d872f5df8008966b91e43e4a58dd228b411efccb6c69"
+    },
+    {
+      "path": "03 Stop.cmd",
+      "bytes": 202,
+      "sha256": "8978652f75766b81cacc6ae4d74343733be8a0fcdfdac54897bbbecdd2bdd691"
+    },
+    {
+      "path": "licenses/annotated-doc-0.0.5/licenses/LICENSE",
+      "bytes": 1086,
+      "sha256": "fff170779a6acbf65abdb405c087f1cee1786691e4a96a4034517e4a504a0cdf"
+    },
+    {
+      "path": "licenses/annotated-types-0.8.0/licenses/LICENSE",
+      "bytes": 1083,
+      "sha256": "fe1049884b1a0d9342901e88e07f32925d24b3121d9972b6a6805fb9824b095d"
+    },
+    {
+      "path": "licenses/anyio-4.15.1/licenses/LICENSE",
+      "bytes": 1081,
+      "sha256": "5361ac9dc58f2ef5fd2e9b09c68297c17f04950909bbc8023bdb82eacf22c2b0"
+    },
+    {
+      "path": "licenses/certifi-2026.7.22/licenses/LICENSE",
+      "bytes": 989,
+      "sha256": "e93716da6b9c0d5a4a1df60fe695b370f0695603d21f6f83f053e42cfc10caf7"
+    },
+    {
+      "path": "licenses/click-8.5.0/licenses/LICENSE.txt",
+      "bytes": 1475,
+      "sha256": "9a8ad106a394e853bfe21f42f4e72d592819a22805d991b5f3275029292b658d"
+    },
+    {
+      "path": "licenses/colorama-0.4.6/licenses/LICENSE.txt",
+      "bytes": 1491,
+      "sha256": "cac35c02686e5d04a5a7140bfb3b36e73aed496656e891102e428886d7930318"
+    },
+    {
+      "path": "licenses/dependencies.json",
+      "bytes": 8752,
+      "sha256": "36b62c47c80ab438be29b15cf0f2e804c191e711dde5726a10f62e85e4e90ed6"
+    },
+    {
+      "path": "licenses/fashion-scout-MIT.txt",
+      "bytes": 1094,
+      "sha256": "0a835bfe2d04f5323dcd54d03d96343a7223de7cc66fea2bcfec76e6b8ff10a5"
+    },
+    {
+      "path": "licenses/fastapi-0.142.2/licenses/LICENSE",
+      "bytes": 1086,
+      "sha256": "4ec89ffc81485b97fec584b2d4a961032eeffe834453894fd9c1274906cc744e"
+    },
+    {
+      "path": "licenses/h11-0.16.0/licenses/LICENSE.txt",
+      "bytes": 1124,
+      "sha256": "37db5bb85926db28a427a25867f10b1232003aea1be69ccb851138adb8e6f361"
+    },
+    {
+      "path": "licenses/httpcore-1.0.9/licenses/LICENSE.md",
+      "bytes": 1518,
+      "sha256": "fdcb59154c74cbaba16a11242f7740bea9f23d6feb5547917d8c5f94a80392a5"
+    },
+    {
+      "path": "licenses/httpx-0.28.1/licenses/LICENSE.md",
+      "bytes": 1508,
+      "sha256": "4ec59d544f12b5f539a3a716fd321ac58ccd8030b465221f2c880200cdf28d8d"
+    },
+    {
+      "path": "licenses/idna-3.20/licenses/LICENSE.md",
+      "bytes": 1541,
+      "sha256": "1a9a4f0e3d479a27240ddd59a9137a66ab4a0f9dfdc8ca6188cc0bfd85187f04"
+    },
+    {
+      "path": "licenses/iniconfig-2.3.0/licenses/LICENSE",
+      "bytes": 1098,
+      "sha256": "3409fa91f7ace557894632676656e32264fe5ef7581535725dc9a23774551bd4"
+    },
+    {
+      "path": "licenses/opentelemetry-api-1.45.0/licenses/LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "licenses/packaging-26.3/licenses/LICENSE",
+      "bytes": 197,
+      "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48"
+    },
+    {
+      "path": "licenses/packaging-26.3/licenses/LICENSE.APACHE",
+      "bytes": 10174,
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+    },
+    {
+      "path": "licenses/packaging-26.3/licenses/LICENSE.BSD",
+      "bytes": 1344,
+      "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5"
+    },
+    {
+      "path": "licenses/Pillow-12.3.0/licenses/LICENSE",
+      "bytes": 78016,
+      "sha256": "4f7866a74802c6326f81faff59a56546b6aec2b10b91973e0e9308de95e79857"
+    },
+    {
+      "path": "licenses/pluggy-1.6.0/licenses/LICENSE",
+      "bytes": 1110,
+      "sha256": "d6b65e6c213a5d0b577911d34d6e5949b9f59d76c238c5071a2f3fc16cfb2606"
+    },
+    {
+      "path": "licenses/psutil-7.2.2/LICENSE",
+      "bytes": 1577,
+      "sha256": "c7adc4d5d1337a548b967421f1fbe258b93033a0417708fd6f4e38f8ecbceb80"
+    },
+    {
+      "path": "licenses/pydantic-2.13.5/licenses/LICENSE",
+      "bytes": 1129,
+      "sha256": "a9e186f3ca16b5eef84318e7a701721351a00cb7b8ae3a4394b67b49e3529ef3"
+    },
+    {
+      "path": "licenses/pydantic_core-2.46.5/licenses/LICENSE",
+      "bytes": 1101,
+      "sha256": "fbe7f615f18d135c07000e5a86325db27f42c7729699ef166ac1f7a3f4586bf4"
+    },
+    {
+      "path": "licenses/Pygments-2.21.0/licenses/AUTHORS",
+      "bytes": 11048,
+      "sha256": "71a83872ad82f57be692cf827e048e2cd51d45169cfa1ea3f28706d97a872c0f"
+    },
+    {
+      "path": "licenses/Pygments-2.21.0/licenses/LICENSE",
+      "bytes": 1331,
+      "sha256": "a9d66f1d526df02e29dce73436d34e56e8632f46c275bbdffc70569e882f9f17"
+    },
+    {
+      "path": "licenses/pytest-9.1.1/licenses/LICENSE",
+      "bytes": 1091,
+      "sha256": "ca836a5f9ecca3b2f350230faa20a48fb8b145653b5568d784862df864706b9b"
+    },
+    {
+      "path": "licenses/runtime/Lib/site-packages/pip/_vendor/cachecontrol/LICENSE.txt",
+      "bytes": 558,
+      "sha256": "86eeee87be2a43f3ff1f56496f451f69243926f025fedbb033666c304c4c161b"
+    },
+    {
+      "path": "licenses/runtime/Lib/site-packages/pip/_vendor/certifi/LICENSE",
+      "bytes": 989,
+      "sha256": "e93716da6b9c0d5a4a1df60fe695b370f0695603d21f6f83f053e42cfc10caf7"
+    },
+    {
+      "path": "licenses/runtime/Lib/site-packages/pip/_vendor/distlib/LICENSE.txt",
+      "bytes": 14531,
+      "sha256": "808e10c8a6ab8deb149ff9b3fb19f447a808094606d712a9ca57fead3552599d"
+    },
+    {
+      "path": "licenses/runtime/Lib/site-packages/pip/_vendor/distro/LICENSE",
+      "bytes": 11325,
+      "sha256": "cb5e8e7e5f4a3988e1063c142c60dc2df75605f4c46515e776e3aca6df976e14"
+    },
+    {
+      "path": "licenses/runtime/Lib/site-packages/pip/_vendor/idna/LICENSE.md",
+      "bytes": 1541,
+      "sha256": "1a9a4f0e3d479a27240ddd59a9137a66ab4a0f9dfdc8ca6188cc0bfd85187f04"
+    },
+    {
+      "path": "licenses/runtime/Lib/site-packages/pip/_vendor/msgpack/COPYING",
+      "bytes": 614,
+      "sha256": "492dedba85da5872f78e6091bcd1fea474d660d35acb4dee964b8aab3f007427"
+    },
+    {
+      "path": "licenses/runtime/Lib/site-packages/pip/_vendor/packaging/LICENSE",
+      "bytes": 197,
+      "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48"
+    },
+    {
+      "path": "licenses/runtime/Lib/site-packages/pip/_vendor/packaging/LICENSE.APACHE",
+      "bytes": 10174,
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+    },
+    {
+      "path": "licenses/runtime/Lib/site-packages/pip/_vendor/packaging/LICENSE.BSD",
+      "bytes": 1344,
+      "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5"
+    },
+    {
+      "path": "licenses/runtime/Lib/site-packages/pip/_vendor/pkg_resources/LICENSE",
+      "bytes": 1023,
+      "sha256": "86da0f01aeae46348a3c3d465195dc1ceccde79f79e87769a64b8da04b2a4741"
+    },
+    {
+      "path": "licenses/runtime/Lib/site-packages/pip/_vendor/platformdirs/LICENSE",
+      "bytes": 1089,
+      "sha256": "29e0fd62e929850e86eb28c3fdccf0cefdf4fa94879011cffb3d0d4bed6d4db6"
+    },
+    {
+      "path": "licenses/runtime/Lib/site-packages/pip/_vendor/pygments/LICENSE",
+      "bytes": 1331,
+      "sha256": "a9d66f1d526df02e29dce73436d34e56e8632f46c275bbdffc70569e882f9f17"
+    },
+    {
+      "path": "licenses/runtime/Lib/site-packages/pip/_vendor/pyproject_hooks/LICENSE",
+      "bytes": 1081,
+      "sha256": "1b22b049b5267d6dfc23a67bf4a84d8ec04b9fdfb1a51d360e42b4342c8b4154"
+    },
+    {
+      "path": "licenses/runtime/Lib/site-packages/pip/_vendor/requests/LICENSE",
+      "bytes": 10142,
+      "sha256": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b"
+    },
+    {
+      "path": "licenses/runtime/Lib/site-packages/pip/_vendor/resolvelib/LICENSE",
+      "bytes": 751,
+      "sha256": "f388fd38cad13112c1dc0f669bbe80e7f84541edbafb72f3030d2ca7642c3c9d"
+    },
+    {
+      "path": "licenses/runtime/Lib/site-packages/pip/_vendor/rich/LICENSE",
+      "bytes": 1056,
+      "sha256": "deed7c17a4318158190a3ea239cc879a5a50271cebb98ae7025f48fbe58dca15"
+    },
+    {
+      "path": "licenses/runtime/Lib/site-packages/pip/_vendor/tomli/LICENSE",
+      "bytes": 1072,
+      "sha256": "b80816b0d530b8accb4c2211783790984a6e3b61922c2b5ee92f3372ab2742fe"
+    },
+    {
+      "path": "licenses/runtime/Lib/site-packages/pip/_vendor/tomli_w/LICENSE",
+      "bytes": 1072,
+      "sha256": "b80816b0d530b8accb4c2211783790984a6e3b61922c2b5ee92f3372ab2742fe"
+    },
+    {
+      "path": "licenses/runtime/Lib/site-packages/pip/_vendor/truststore/LICENSE",
+      "bytes": 1086,
+      "sha256": "33be7b7e8fa4fd19b1760e1a8ed8a668bdab852c91b692dd41424bcb725a9fca"
+    },
+    {
+      "path": "licenses/runtime/Lib/site-packages/pip/_vendor/urllib3/LICENSE.txt",
+      "bytes": 1093,
+      "sha256": "130e3a64d5fdd5d096a752694634a7d9df284469de86e5732100268041e3d686"
+    },
+    {
+      "path": "licenses/runtime/Lib/site-packages/pip-26.2.1.dist-info/licenses/LICENSE.txt",
+      "bytes": 1093,
+      "sha256": "634300a669d49aeae65b12c6c48c924c51a4cdf3d1ff086dc3456dc8bcaa2104"
+    },
+    {
+      "path": "licenses/runtime/Lib/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/cachecontrol/LICENSE.txt",
+      "bytes": 558,
+      "sha256": "86eeee87be2a43f3ff1f56496f451f69243926f025fedbb033666c304c4c161b"
+    },
+    {
+      "path": "licenses/runtime/Lib/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/certifi/LICENSE",
+      "bytes": 989,
+      "sha256": "e93716da6b9c0d5a4a1df60fe695b370f0695603d21f6f83f053e42cfc10caf7"
+    },
+    {
+      "path": "licenses/runtime/Lib/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/distlib/LICENSE.txt",
+      "bytes": 14531,
+      "sha256": "808e10c8a6ab8deb149ff9b3fb19f447a808094606d712a9ca57fead3552599d"
+    },
+    {
+      "path": "licenses/runtime/Lib/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/distro/LICENSE",
+      "bytes": 11325,
+      "sha256": "cb5e8e7e5f4a3988e1063c142c60dc2df75605f4c46515e776e3aca6df976e14"
+    },
+    {
+      "path": "licenses/runtime/Lib/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/idna/LICENSE.md",
+      "bytes": 1541,
+      "sha256": "1a9a4f0e3d479a27240ddd59a9137a66ab4a0f9dfdc8ca6188cc0bfd85187f04"
+    },
+    {
+      "path": "licenses/runtime/Lib/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/msgpack/COPYING",
+      "bytes": 614,
+      "sha256": "492dedba85da5872f78e6091bcd1fea474d660d35acb4dee964b8aab3f007427"
+    },
+    {
+      "path": "licenses/runtime/Lib/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/packaging/LICENSE",
+      "bytes": 197,
+      "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48"
+    },
+    {
+      "path": "licenses/runtime/Lib/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/packaging/LICENSE.APACHE",
+      "bytes": 10174,
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+    },
+    {
+      "path": "licenses/runtime/Lib/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/packaging/LICENSE.BSD",
+      "bytes": 1344,
+      "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5"
+    },
+    {
+      "path": "licenses/runtime/Lib/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/pkg_resources/LICENSE",
+      "bytes": 1023,
+      "sha256": "86da0f01aeae46348a3c3d465195dc1ceccde79f79e87769a64b8da04b2a4741"
+    },
+    {
+      "path": "licenses/runtime/Lib/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/platformdirs/LICENSE",
+      "bytes": 1089,
+      "sha256": "29e0fd62e929850e86eb28c3fdccf0cefdf4fa94879011cffb3d0d4bed6d4db6"
+    },
+    {
+      "path": "licenses/runtime/Lib/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/pygments/LICENSE",
+      "bytes": 1331,
+      "sha256": "a9d66f1d526df02e29dce73436d34e56e8632f46c275bbdffc70569e882f9f17"
+    },
+    {
+      "path": "licenses/runtime/Lib/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/pyproject_hooks/LICENSE",
+      "bytes": 1081,
+      "sha256": "1b22b049b5267d6dfc23a67bf4a84d8ec04b9fdfb1a51d360e42b4342c8b4154"
+    },
+    {
+      "path": "licenses/runtime/Lib/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/requests/LICENSE",
+      "bytes": 10142,
+      "sha256": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b"
+    },
+    {
+      "path": "licenses/runtime/Lib/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/resolvelib/LICENSE",
+      "bytes": 751,
+      "sha256": "f388fd38cad13112c1dc0f669bbe80e7f84541edbafb72f3030d2ca7642c3c9d"
+    },
+    {
+      "path": "licenses/runtime/Lib/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/rich/LICENSE",
+      "bytes": 1056,
+      "sha256": "deed7c17a4318158190a3ea239cc879a5a50271cebb98ae7025f48fbe58dca15"
+    },
+    {
+      "path": "licenses/runtime/Lib/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/tomli/LICENSE",
+      "bytes": 1072,
+      "sha256": "b80816b0d530b8accb4c2211783790984a6e3b61922c2b5ee92f3372ab2742fe"
+    },
+    {
+      "path": "licenses/runtime/Lib/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/tomli_w/LICENSE",
+      "bytes": 1072,
+      "sha256": "b80816b0d530b8accb4c2211783790984a6e3b61922c2b5ee92f3372ab2742fe"
+    },
+    {
+      "path": "licenses/runtime/Lib/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/truststore/LICENSE",
+      "bytes": 1086,
+      "sha256": "33be7b7e8fa4fd19b1760e1a8ed8a668bdab852c91b692dd41424bcb725a9fca"
+    },
+    {
+      "path": "licenses/runtime/Lib/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/urllib3/LICENSE.txt",
+      "bytes": 1093,
+      "sha256": "130e3a64d5fdd5d096a752694634a7d9df284469de86e5732100268041e3d686"
+    },
+    {
+      "path": "licenses/runtime/LICENSE.txt",
+      "bytes": 22055,
+      "sha256": "76900732e5f075b725f754000ad5cab1b2cf89e355c1570138476956b6413cd3"
+    },
+    {
+      "path": "licenses/runtime/tcl/tk8.6/demos/license.terms",
+      "bytes": 2307,
+      "sha256": "0d1e4405f6273f091732764ed89b57066be63ce64869be6c71ea337dc4f2f9b5"
+    },
+    {
+      "path": "licenses/runtime/tcl/tk8.6/license.terms",
+      "bytes": 2307,
+      "sha256": "0d1e4405f6273f091732764ed89b57066be63ce64869be6c71ea337dc4f2f9b5"
+    },
+    {
+      "path": "licenses/setuptools-84.0.0/licenses/LICENSE",
+      "bytes": 1023,
+      "sha256": "86da0f01aeae46348a3c3d465195dc1ceccde79f79e87769a64b8da04b2a4741"
+    },
+    {
+      "path": "licenses/starlette-1.7.0/licenses/LICENSE.md",
+      "bytes": 1518,
+      "sha256": "dcb95677a02240243187e964f941847d19b17821cf99e5afae684fab328c19bf"
+    },
+    {
+      "path": "licenses/typing-inspection-0.4.4/licenses/LICENSE",
+      "bytes": 1090,
+      "sha256": "804b59b25f2c31bd278f9202a19ae49a3945aa2664387e2d0a128c7cacc61ec3"
+    },
+    {
+      "path": "licenses/typing_extensions-4.16.0/licenses/LICENSE",
+      "bytes": 13936,
+      "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf"
+    },
+    {
+      "path": "licenses/uvicorn-0.54.0/licenses/LICENSE.md",
+      "bytes": 1526,
+      "sha256": "efe1acf3e62fb99c288b0ec73e5a773b7268ef4320fe757ea994214e4b63c371"
+    },
+    {
+      "path": "PACKAGE-CONTEXT.zh-CN.md",
+      "bytes": 2992,
+      "sha256": "121bd289a59a83900d3e7e2f5cb28ea7d50c286683f0c733f6b6dd3c476823b4"
+    },
+    {
+      "path": "package.ps1",
+      "bytes": 9307,
+      "sha256": "0890829b6e82e5ed958c7222860fc93288f4b8ea2c74efb17687ccecfaebb1f9"
+    },
+    {
+      "path": "payload/empty.json",
+      "bytes": 4,
+      "sha256": "e3566b3a06430868d71e9287dfd6c6c520a3da027aabea01951d407ee131dc2f"
+    },
+    {
+      "path": "payload/fashion_scout-0.2.0a1-py3-none-any.whl",
+      "bytes": 146279,
+      "sha256": "5938b20f707c73ebc0042d115abdd7e04d3bf62dd9799362be595afa52393753"
+    },
+    {
+      "path": "payload/python.tar.gz",
+      "bytes": 21970131,
+      "sha256": "ec43f1a85c29f147d7ae2d13218c52c70b24a983a82ab22d6c607c0593060e10"
+    },
+    {
+      "path": "payload/requirements-win.lock",
+      "bytes": 2588,
+      "sha256": "4eea0036f44c508a23c276bc463c0f84ece14384473a47c48d9a2a8ee3522fa7"
+    },
+    {
+      "path": "payload/runtime-win.json",
+      "bytes": 404,
+      "sha256": "3866ab5d989810163caa2db6ac2f2d530af4ad19082d19bb6a95233d494db7ab"
+    },
+    {
+      "path": "payload/setup.json",
+      "bytes": 15,
+      "sha256": "da09d5895adb761f2150fe7beaaf23d37ab425466dc16a3cdd89cf731d9ee6c5"
+    },
+    {
+      "path": "payload/verify_install.py",
+      "bytes": 2654,
+      "sha256": "0954430e31971f2d5d3f4c3d4271444b908dda18d4d1e3b62315beca15932b36"
+    },
+    {
+      "path": "payload/wheels/annotated_doc-0.0.5-py3-none-any.whl",
+      "bytes": 5302,
+      "sha256": "117bac03a25ede5df5440e855b32d556049ca169ead221505badf432fed4b101"
+    },
+    {
+      "path": "payload/wheels/annotated_types-0.8.0-py3-none-any.whl",
+      "bytes": 13427,
+      "sha256": "f072f4d804ea359e4eaf198b1af7a8b0943881a87f31bb764f8bf219bb9419e0"
+    },
+    {
+      "path": "payload/wheels/anyio-4.15.1-py3-none-any.whl",
+      "bytes": 132079,
+      "sha256": "6152fdbbf9a77fdec97731721bebf7c4c44f7c29b424b0065826173efc7ed101"
+    },
+    {
+      "path": "payload/wheels/certifi-2026.7.22-py3-none-any.whl",
+      "bytes": 136983,
+      "sha256": "62f22742b58a1a33014a2b6b706588a8d7e2a88ae7bd1a6ebe8c992928483775"
+    },
+    {
+      "path": "payload/wheels/click-8.5.0-py3-none-any.whl",
+      "bytes": 125251,
+      "sha256": "255bc9599cf7748b4b1a446ccc735421bd08a2ae529a8b88597d3de5664ee360"
+    },
+    {
+      "path": "payload/wheels/colorama-0.4.6-py2.py3-none-any.whl",
+      "bytes": 25335,
+      "sha256": "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6"
+    },
+    {
+      "path": "payload/wheels/fastapi-0.142.2-py3-none-any.whl",
+      "bytes": 144409,
+      "sha256": "bd5f4d81f1e93a88bcd77caf4dfe3c2dbffc3805407a0007e9a114c18b3a670b"
+    },
+    {
+      "path": "payload/wheels/h11-0.16.0-py3-none-any.whl",
+      "bytes": 37515,
+      "sha256": "63cf8bbe7522de3bf65932fda1d9c2772064ffb3dae62d55932da54b31cb6c86"
+    },
+    {
+      "path": "payload/wheels/httpcore-1.0.9-py3-none-any.whl",
+      "bytes": 78784,
+      "sha256": "2d400746a40668fc9dec9810239072b40b4484b640a8c38fd654a024c7a1bf55"
+    },
+    {
+      "path": "payload/wheels/httpx-0.28.1-py3-none-any.whl",
+      "bytes": 73517,
+      "sha256": "d909fcccc110f8c7faf814ca82a9a4d816bc5a6dbfea25d6591d6985b8ba59ad"
+    },
+    {
+      "path": "payload/wheels/idna-3.20-py3-none-any.whl",
+      "bytes": 69583,
+      "sha256": "ab7ae7122974553370f0bdb919e1a960b2cd1bc1ef0276416d896db81c14582c"
+    },
+    {
+      "path": "payload/wheels/iniconfig-2.3.0-py3-none-any.whl",
+      "bytes": 7484,
+      "sha256": "f631c04d2c48c52b84d0d0549c99ff3859c98df65b3101406327ecc7d53fbf12"
+    },
+    {
+      "path": "payload/wheels/opentelemetry_api-1.45.0-py3-none-any.whl",
+      "bytes": 60020,
+      "sha256": "80e068aba7cd56c8b58512d6a36f8d25cb1dfaa0c0a4cc1c938ccf9f362d9cb3"
+    },
+    {
+      "path": "payload/wheels/packaging-26.3-py3-none-any.whl",
+      "bytes": 129956,
+      "sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c"
+    },
+    {
+      "path": "payload/wheels/pillow-12.3.0-cp313-cp313-win_amd64.whl",
+      "bytes": 7239691,
+      "sha256": "1cca606cd25738df4ed873d5ad46bbdb3d83b5cbca291f6b4ff13a4df6b0bbe8"
+    },
+    {
+      "path": "payload/wheels/pluggy-1.6.0-py3-none-any.whl",
+      "bytes": 20538,
+      "sha256": "e920276dd6813095e9377c0bc5566d94c932c33b27a3e3945d8389c374dd4746"
+    },
+    {
+      "path": "payload/wheels/psutil-7.2.2-cp37-abi3-win_amd64.whl",
+      "bytes": 137737,
+      "sha256": "eb7e81434c8d223ec4a219b5fc1c47d0417b12be7ea866e24fb5ad6e84b3d988"
+    },
+    {
+      "path": "payload/wheels/pydantic-2.13.5-py3-none-any.whl",
+      "bytes": 472589,
+      "sha256": "346a034f080da3755d8e9cb5e00e8b07de1d39e4f6e2c87d8ab7cafa0b269a73"
+    },
+    {
+      "path": "payload/wheels/pydantic_core-2.46.5-cp313-cp313-win_amd64.whl",
+      "bytes": 2041980,
+      "sha256": "15f4a94963c95accac15b7b657bb177d3ad82bb90b0d0526d9a9b85079925db5"
+    },
+    {
+      "path": "payload/wheels/pygments-2.21.0-py3-none-any.whl",
+      "bytes": 1250147,
+      "sha256": "2363c69b61c4a97c838da3b130dcd6468f4848992b21a82f2a63ec34377137d9"
+    },
+    {
+      "path": "payload/wheels/pytest-9.1.1-py3-none-any.whl",
+      "bytes": 386536,
+      "sha256": "37a86b45efb9a47a61a36449063e8e18d0cab3161329fc099eb21783169c4f0c"
+    },
+    {
+      "path": "payload/wheels/setuptools-84.0.0-py3-none-any.whl",
+      "bytes": 818216,
+      "sha256": "51a52592b3b99e102b609654876bd65f19f999935166d1352678931132b0c670"
+    },
+    {
+      "path": "payload/wheels/starlette-1.7.0-py3-none-any.whl",
+      "bytes": 78980,
+      "sha256": "67f8e99895493dd2911a03f11314af6ceebeae4e704bb9f43dfc6a9db151c93e"
+    },
+    {
+      "path": "payload/wheels/typing_extensions-4.16.0-py3-none-any.whl",
+      "bytes": 45571,
+      "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8"
+    },
+    {
+      "path": "payload/wheels/typing_inspection-0.4.4-py3-none-any.whl",
+      "bytes": 14750,
+      "sha256": "65b8397ba37ccbce054456aaccddfc91e6e3083c92824df348d96ca832f3f147"
+    },
+    {
+      "path": "payload/wheels/uvicorn-0.54.0-py3-none-any.whl",
+      "bytes": 87427,
+      "sha256": "505bdb0f318731d45f1f712071fc781a8981f6847a31c902c9f5e652d4f67faf"
+    },
+    {
+      "path": "README.zh-CN.md",
+      "bytes": 3235,
+      "sha256": "70fc47dcf92b7f837537588a539bb02dcb40e273f73c4d3b7b96c0f88b0ceffd"
+    },
+    {
+      "path": "skills/fashion-scout/references/browser-acquisition.md",
+      "bytes": 5408,
+      "sha256": "d5397ede612a2285c80d2d590557cd25cf81c2641c9e1d9c4da21f8c8af3e37d"
+    },
+    {
+      "path": "skills/fashion-scout/references/commands.md",
+      "bytes": 5304,
+      "sha256": "81d6fe652dd80ab0dd93488df3a7577fa79087c0a92c1debf1cfdec4bf0a115b"
+    },
+    {
+      "path": "skills/fashion-scout/references/setup.md",
+      "bytes": 2725,
+      "sha256": "340831af96c46b7c7722e8bf7ae745e4dd15919c4ad27d12654279a2936f9070"
+    },
+    {
+      "path": "skills/fashion-scout/SKILL.md",
+      "bytes": 8630,
+      "sha256": "af239c9a4aa66fdcca2792663a4ea679f90306feec1c098cc397514bd5274799"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+T6c isolated kit: E:\github-workspace\fashion-scout-harness\.runtime\t6c-inputs-f242cf08
+.F..................F
+================================== FAILURES ===================================
+_________ test_explicit_byte_identity_versions_and_package_preflight __________
+
+kit = WindowsPath('E:/github-workspace/fashion-scout-harness/.runtime/t6c-inputs-f242cf08')
+
+    def test_explicit_byte_identity_versions_and_package_preflight(kit):
+        receipts=[]
+        for label,marker,version in [('one','one','0.2.0a1'),('two','two','0.2.0a1'),('next','three','0.2.0a2')]:
+            app=fixture_wheel(kit/('wheel-'+label),marker=marker,version=version)
+            source=source_from(app,kit/('source-'+label))
+            output,_=build(kit,'t6c-'+label,'--app-wheel',app,'--app-sha256',sha(app),
+                           '--source-root',source,'--label','reviewed-input')
+            receipt,manifest=inspect(output,app)
+            assert sha(app) in receipt['candidate'] and version in receipt['candidate']
+            assert receipt['app_version']==manifest['app_version']==version and not receipt['legacy_defaults']
+            # Public Status validates dynamic wheel selection, then refuses before preparation.
+            package=output/'FashionScout'
+            command=[str(PS),'-NoLogo','-NoProfile','-ExecutionPolicy','Bypass','-File',str(package/'package.ps1'),'-Action','Status']
+            result=subprocess.run(command,cwd=package,capture_output=True,text=True,encoding='utf-8',errors='replace',timeout=15)
+            (kit/'logs'/('preflight-'+label+'.json')).write_text(json.dumps({'argv':command,'returncode':result.returncode,'stdout':result.stdout,'stderr':result.stderr}),encoding='utf-8')
+>           assert result.returncode==2 and 'Prepare.cmd first' in result.stdout,result.stdout+result.stderr
+E           AssertionError: Fashion Scout: Package path is too long (maximum 100 characters). Extract into a short writable folder such as D:\FashionScout; keep existing data.
+E             
+E           assert (2 == 2 and 'Prepare.cmd first' in 'Fashion Scout: Package path is too long (maximum 100 characters). Extract into a short writable folder such as D:\\FashionScout; keep existing data.\n')
+E            +  where 2 = CompletedProcess(args=['C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe', '-NoLogo', '-NoProfile', '-Ex...imum 100 characters). Extract into a short writable folder such as D:\\FashionScout; keep existing data.\n', stderr='').returncode
+E            +  and   'Fashion Scout: Package path is too long (maximum 100 characters). Extract into a short writable folder such as D:\\FashionScout; keep existing data.\n' = CompletedProcess(args=['C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe', '-NoLogo', '-NoProfile', '-Ex...imum 100 characters). Extract into a short writable folder such as D:\\FashionScout; keep existing data.\n', stderr='').stdout
+
+tests\release\test_input_refresh.py:138: AssertionError
+_____ test_package_manifest_cannot_redirect_wheel_or_change_selected_hash _____
+
+kit = WindowsPath('E:/github-workspace/fashion-scout-harness/.runtime/t6c-inputs-f242cf08')
+
+    def test_package_manifest_cannot_redirect_wheel_or_change_selected_hash(kit):
+        package=kit/'.runtime/t6c-next/FashionScout'
+        manifest_path=package/'manifest.json';original=manifest_path.read_bytes()
+        for value in ('../outside.whl','payload/other-0.2.0a1-py3-none-any.whl','hash-conflict'):
+            manifest=json.loads(original)
+            if value=='hash-conflict':manifest['app_sha256']='0'*64
+            else:manifest['app_wheel']=value
+            manifest_path.write_text(json.dumps(manifest),encoding='utf-8')
+            try:
+                command=[str(PS),'-NoLogo','-NoProfile','-ExecutionPolicy','Bypass','-File',str(package/'package.ps1'),'-Action','Status']
+                result=subprocess.run(command,cwd=package,capture_output=True,text=True,encoding='utf-8',timeout=15)
+                (kit/'logs'/('manifest-reject-'+uuid.uuid4().hex[:6]+'.json')).write_text(json.dumps({'returncode':result.returncode,'stdout':result.stdout,'stderr':result.stderr}),encoding='utf-8')
+>               assert result.returncode==2 and ('Unsupported application wheel' in result.stdout or 'hash conflicts' in result.stdout)
+E               AssertionError: assert (2 == 2 and ('Unsupported application wheel' in 'Fashion Scout: Package path is too long (maximum 100 characters). Extract into a short writable folder such as D:\\FashionScout; keep existing data.\n' or 'hash conflicts' in 'Fashion Scout: Package path is too long (maximum 100 characters). Extract into a short writable folder such as D:\\FashionScout; keep existing data.\n'))
+E                +  where 2 = CompletedProcess(args=['C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe', '-NoLogo', '-NoProfile', '-Ex...imum 100 characters). Extract into a short writable folder such as D:\\FashionScout; keep existing data.\n', stderr='').returncode
+E                +  and   'Fashion Scout: Package path is too long (maximum 100 characters). Extract into a short writable folder such as D:\\FashionScout; keep existing data.\n' = CompletedProcess(args=['C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe', '-NoLogo', '-NoProfile', '-Ex...imum 100 characters). Extract into a short writable folder such as D:\\FashionScout; keep existing data.\n', stderr='').stdout
+E                +  and   'Fashion Scout: Package path is too long (maximum 100 characters). Extract into a short writable folder such as D:\\FashionScout; keep existing data.\n' = CompletedProcess(args=['C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe', '-NoLogo', '-NoProfile', '-Ex...imum 100 characters). Extract into a short writable folder such as D:\\FashionScout; keep existing data.\n', stderr='').stdout
+
+tests\release\test_input_refresh.py:190: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/release/test_input_refresh.py::test_explicit_byte_identity_versions_and_package_preflight
+FAILED tests/release/test_input_refresh.py::test_package_manifest_cannot_redirect_wheel_or_change_selected_hash
+2 failed, 19 passed in 12.47s

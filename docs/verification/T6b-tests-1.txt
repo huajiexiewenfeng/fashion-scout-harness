@@ -1,0 +1,130 @@
+T6b candidate: E:\github-workspace\fashion-scout-harness\.runtime\t6b-candidate-84f607db
+T6b checks: E:\github-workspace\fashion-scout-harness\.runtime\t6b-checks-47eccf9b
+.FFFFFF
+================================== FAILURES ===================================
+__________ test_prepare_rejects_before_touching_data[damaged-wheel] ___________
+
+release = ({'zip': 'E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-candidate-84f607db\\FashionScout-0.2.0a1-local-ca...didate-v1\\manifest.json', ...}, WindowsPath('E:/github-workspace/fashion-scout-harness/.runtime/t6b-checks-47eccf9b'))
+case = 'damaged-wheel'
+
+    @pytest.mark.parametrize('case',['damaged-wheel','missing-resource','existing-data','config-conflict'])
+    def test_prepare_rejects_before_touching_data(release,case):
+        package=extract(release,case)
+        if case=='damaged-wheel':
+            p=package/'payload/fashion_scout-0.2.0a1-py3-none-any.whl';p.write_bytes(p.read_bytes()+b'changed')
+        elif case=='missing-resource':
+            (package/'payload/verify_install.py').unlink()
+        else:
+            data=package/'data';data.mkdir();(data/'keep.bin').write_bytes(b'USER DATA MUST REMAIN')
+            if case=='config-conflict':
+                (data/'control').mkdir();(data/'control/client.json').write_text(json.dumps({'schema':1,'data_root':'C:\\UnrelatedRoot','port':8765}),encoding='utf-8')
+        original={p.relative_to(package).as_posix():sha(p) for p in (package/'data').rglob('*') if p.is_file()}
+        result=invoke(package,'Prepare',2)
+>       assert ('hash mismatch' if case=='damaged-wheel' else 'missing' if case=='missing-resource' else 'Existing data') in result['stdout']
+E       assert 'hash mismatch' in "Fashion Scout: The term 'Get-FileHash' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.\n"
+
+tests\release\test_bundle.py:83: AssertionError
+_________ test_prepare_rejects_before_touching_data[missing-resource] _________
+
+release = ({'zip': 'E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-candidate-84f607db\\FashionScout-0.2.0a1-local-ca...didate-v1\\manifest.json', ...}, WindowsPath('E:/github-workspace/fashion-scout-harness/.runtime/t6b-checks-47eccf9b'))
+case = 'missing-resource'
+
+    @pytest.mark.parametrize('case',['damaged-wheel','missing-resource','existing-data','config-conflict'])
+    def test_prepare_rejects_before_touching_data(release,case):
+        package=extract(release,case)
+        if case=='damaged-wheel':
+            p=package/'payload/fashion_scout-0.2.0a1-py3-none-any.whl';p.write_bytes(p.read_bytes()+b'changed')
+        elif case=='missing-resource':
+            (package/'payload/verify_install.py').unlink()
+        else:
+            data=package/'data';data.mkdir();(data/'keep.bin').write_bytes(b'USER DATA MUST REMAIN')
+            if case=='config-conflict':
+                (data/'control').mkdir();(data/'control/client.json').write_text(json.dumps({'schema':1,'data_root':'C:\\UnrelatedRoot','port':8765}),encoding='utf-8')
+        original={p.relative_to(package).as_posix():sha(p) for p in (package/'data').rglob('*') if p.is_file()}
+        result=invoke(package,'Prepare',2)
+>       assert ('hash mismatch' if case=='damaged-wheel' else 'missing' if case=='missing-resource' else 'Existing data') in result['stdout']
+E       assert 'missing' in "Fashion Scout: The term 'Get-FileHash' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.\n"
+
+tests\release\test_bundle.py:83: AssertionError
+__________ test_prepare_rejects_before_touching_data[existing-data] ___________
+
+release = ({'zip': 'E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-candidate-84f607db\\FashionScout-0.2.0a1-local-ca...didate-v1\\manifest.json', ...}, WindowsPath('E:/github-workspace/fashion-scout-harness/.runtime/t6b-checks-47eccf9b'))
+case = 'existing-data'
+
+    @pytest.mark.parametrize('case',['damaged-wheel','missing-resource','existing-data','config-conflict'])
+    def test_prepare_rejects_before_touching_data(release,case):
+        package=extract(release,case)
+        if case=='damaged-wheel':
+            p=package/'payload/fashion_scout-0.2.0a1-py3-none-any.whl';p.write_bytes(p.read_bytes()+b'changed')
+        elif case=='missing-resource':
+            (package/'payload/verify_install.py').unlink()
+        else:
+            data=package/'data';data.mkdir();(data/'keep.bin').write_bytes(b'USER DATA MUST REMAIN')
+            if case=='config-conflict':
+                (data/'control').mkdir();(data/'control/client.json').write_text(json.dumps({'schema':1,'data_root':'C:\\UnrelatedRoot','port':8765}),encoding='utf-8')
+        original={p.relative_to(package).as_posix():sha(p) for p in (package/'data').rglob('*') if p.is_file()}
+        result=invoke(package,'Prepare',2)
+>       assert ('hash mismatch' if case=='damaged-wheel' else 'missing' if case=='missing-resource' else 'Existing data') in result['stdout']
+E       assert 'Existing data' in "Fashion Scout: The term 'Get-FileHash' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.\n"
+
+tests\release\test_bundle.py:83: AssertionError
+_________ test_prepare_rejects_before_touching_data[config-conflict] __________
+
+release = ({'zip': 'E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-candidate-84f607db\\FashionScout-0.2.0a1-local-ca...didate-v1\\manifest.json', ...}, WindowsPath('E:/github-workspace/fashion-scout-harness/.runtime/t6b-checks-47eccf9b'))
+case = 'config-conflict'
+
+    @pytest.mark.parametrize('case',['damaged-wheel','missing-resource','existing-data','config-conflict'])
+    def test_prepare_rejects_before_touching_data(release,case):
+        package=extract(release,case)
+        if case=='damaged-wheel':
+            p=package/'payload/fashion_scout-0.2.0a1-py3-none-any.whl';p.write_bytes(p.read_bytes()+b'changed')
+        elif case=='missing-resource':
+            (package/'payload/verify_install.py').unlink()
+        else:
+            data=package/'data';data.mkdir();(data/'keep.bin').write_bytes(b'USER DATA MUST REMAIN')
+            if case=='config-conflict':
+                (data/'control').mkdir();(data/'control/client.json').write_text(json.dumps({'schema':1,'data_root':'C:\\UnrelatedRoot','port':8765}),encoding='utf-8')
+        original={p.relative_to(package).as_posix():sha(p) for p in (package/'data').rglob('*') if p.is_file()}
+        result=invoke(package,'Prepare',2)
+>       assert ('hash mismatch' if case=='damaged-wheel' else 'missing' if case=='missing-resource' else 'Existing data') in result['stdout']
+E       assert 'Existing data' in "Fashion Scout: The term 'Get-FileHash' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.\n"
+
+tests\release\test_bundle.py:83: AssertionError
+_________ test_real_prepare_failure_preserves_existing_configuration __________
+
+release = ({'zip': 'E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-candidate-84f607db\\FashionScout-0.2.0a1-local-ca...didate-v1\\manifest.json', ...}, WindowsPath('E:/github-workspace/fashion-scout-harness/.runtime/t6b-checks-47eccf9b'))
+
+    def test_real_prepare_failure_preserves_existing_configuration(release):
+        package=extract(release,'prepare failure')
+        data=package/'data';(data/'control').mkdir(parents=True)
+        config=data/'control/client.json';config.write_text(json.dumps({'schema':1,'data_root':str(data),'port':8765}),encoding='utf-8')
+        keep=data/'keep.bin';keep.write_bytes(b'EXISTING OWN DATA')
+        original=(sha(config),sha(keep))
+        env=dict(os.environ);env['PATH']=''  # Only this test child; tar.exe cannot start.
+        result=invoke(package,'Prepare',2,env=env,label='real-install-failure.json')
+>       assert 'tar.exe' in result['stdout'] and (package/'.local/preparing.json').exists()
+E       assert ('tar.exe' in "Fashion Scout: The term 'Get-FileHash' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.\n")
+
+tests\release\test_bundle.py:96: AssertionError
+__________ test_independent_zip_install_entries_and_synthetic_export __________
+
+release = ({'zip': 'E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-candidate-84f607db\\FashionScout-0.2.0a1-local-ca...didate-v1\\manifest.json', ...}, WindowsPath('E:/github-workspace/fashion-scout-harness/.runtime/t6b-checks-47eccf9b'))
+
+    def test_independent_zip_install_entries_and_synthetic_export(release):
+        receipt,work=release
+        package=extract(release,"真实解压 空格 & 单引号's")
+        env={k:v for k,v in os.environ.items() if k.upper() not in {'PYTHONPATH','PYTHONHOME','VIRTUAL_ENV'}}
+        env.update(PYTHONDONTWRITEBYTECODE='1',PYTHONUTF8='1')
+        missing=invoke(package,'Open',2,env=env,label='open-before-prepare.json')
+>       assert 'Prepare.cmd first' in missing['stdout']
+E       assert 'Prepare.cmd first' in "Fashion Scout: The term 'Get-FileHash' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.\n"
+
+tests\release\test_bundle.py:109: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/release/test_bundle.py::test_prepare_rejects_before_touching_data[damaged-wheel]
+FAILED tests/release/test_bundle.py::test_prepare_rejects_before_touching_data[missing-resource]
+FAILED tests/release/test_bundle.py::test_prepare_rejects_before_touching_data[existing-data]
+FAILED tests/release/test_bundle.py::test_prepare_rejects_before_touching_data[config-conflict]
+FAILED tests/release/test_bundle.py::test_real_prepare_failure_preserves_existing_configuration
+FAILED tests/release/test_bundle.py::test_independent_zip_install_entries_and_synthetic_export
+6 failed, 1 passed in 4.50s

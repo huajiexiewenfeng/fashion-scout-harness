@@ -1,0 +1,394 @@
+{
+  "at": 1791366792.6068194,
+  "worker": "local/01a11078-dc20-7383-b1dc-54c9e37d5ce5",
+  "manager": "local/01a11029-0e09-7101-b5b3-1cf2bc8c87d9",
+  "stage": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t2-browser-live-20261007-01",
+  "live_grant": "E:/github-workspace/.team/fashion-scout/manager-t2-browser-live-grant-20261007.md",
+  "artifact_sha256": {
+    "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t2-browser-live-20261007-01\\build-provenance.json": "2e869d032ffb72dae0df0afcd05f4285f6a31d0fc27c51a8925aa4f89351cf06",
+    "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t2-browser-live-20261007-01\\installed-provenance.json": "92895803df0e4f2da00688addbdf7d06aa25126db0449aff2d32694344c2d609",
+    "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t2-browser-live-20261007-01\\schema-preflight.json": "87a3c93a402a42becd129805f1aee054081f1324a4dddbfcad598aeeddc6203c",
+    "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t2-browser-live-20261007-01\\accepted-run.json": "d70476830dcc2f3bc50be684a584f5dc1849c98dbf270d669b0cee177d1b6bf9",
+    "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t2-browser-live-20261007-01\\source-operations.json": "99af8ed48cfe6797128e810fcbd7363b3da4a858d0457209e2583fd5e6ec386f",
+    "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t2-browser-live-20261007-01\\native-manifest.json": "1918850e427f0fe2bb9ea4864500901fcc197013af172fc995438d06bbb1ebd5",
+    "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t2-browser-live-20261007-01\\native-assets.json": "90b32b1e171fc659c39701eb5b9bb53e438b1cd4d13c8c687cc5df2b086d0ee0",
+    "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t2-browser-live-20261007-01\\client-operations.json": "761bf719e967b2374ebc4d6b86bb27b3d8144567fa0fd8066511bb139edf3cc4",
+    "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t2-browser-live-20261007-01\\real-verification.json": "bb7d21f60357df05cd2ab1349924cace625557ad10005fe8e779a8ce3d27262d",
+    "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t2-browser-live-20261007-01\\export-manifest.json": "c7f08524c862115bc16128c907affee43bcd422e588982b6d42113c131728843",
+    "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t2-browser-live-20261007-01\\rendered-gallery.json": "e4da45d24a24abfb84ff3234a36dc538f67610b0b51c499c07e16a3dd41ce713",
+    "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t2-browser-live-20261007-01\\protected-after.json": "28d6b02c164535e551ad3452d3b8bf888568af8e03eb351c017efe1e13127d93"
+  },
+  "checkpoint_sha256": "5dd922a1cc0e5b14a7cf81d95438b8c718eaf639ff766e4e680eb65d07b641ea",
+  "source": {
+    "run_id": "0853d85899524524a824e7993b58803e",
+    "first_source_action_started_at": 1791365807.6657908,
+    "first_source_action_utc": "2026-10-07T09:36:47.665791+00:00",
+    "deadline_at": 1791366707.6657908,
+    "prior_diagnostic_top_level_or_selected_attempts": 12,
+    "prior_selected_assets_used": 1,
+    "navigation_limit": {
+      "listing": 1,
+      "detail": 1
+    },
+    "remaining_selected_asset_exports_limit": 11,
+    "network_background_requests_bytes_peer": "unknown",
+    "events": [
+      {
+        "kind": "listing_navigation",
+        "at_recorded": 1791365928.2276192,
+        "tab_id": "1628536030",
+        "url": "https://futario.com/collections/new-in",
+        "products": 20,
+        "load_more_enabled": true,
+        "terminal": false,
+        "identity_evidence": "data-product-id and data-product-handle on DOM cards",
+        "canonical_url_rule": "observed collection product link /collections/new-in/products/{handle} normalized to same host /products/{same handle}; numeric card identity retained",
+        "warning_or_challenge": false
+      },
+      {
+        "kind": "same_run_source_continue",
+        "at": 1791365964.7736506,
+        "reason": "Initial supported browser documentation/DOM inspection exceeded frozen 120s idle; original source session fenced, no new Run or additional source navigation",
+        "stage_deadline_not_reset": true
+      },
+      {
+        "kind": "detail_navigation",
+        "at_recorded": 1791366111.2340572,
+        "url": "https://futario.com/products/refined-chocolate-brown-ribbed-asymmetric-button-knit-cardigan",
+        "numeric_identity_corroboration": "Quantity-template--27833796723052__main15394260681068",
+        "gallery_count": 6,
+        "ordinals": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "scope": "browser.gallery",
+        "image_identity": "observed thumbnail data-id, not API completeness proof",
+        "selected_url_rule": "exact currentSrc of six main img[data-photoswipe-src] entries, width1080, matching fresh pageAssets inventory; href1800 variants not present in inventory; no guessed fetch or thumbnail-only acquisition",
+        "original_resolution": "unknown",
+        "inventory_id": "fa72c6c4-3632-46a2-869d-b4dabac15145",
+        "inventory_assets_observed": 476,
+        "inventory_is_not_network_request_count": true,
+        "warning_or_challenge": false
+      },
+      {
+        "kind": "same_run_source_continue",
+        "at": 1791366172.1290722,
+        "reason": "120s idle during supported DOM/inventory inspection; retain the same captured listing/detail facts, no new navigation or source probe",
+        "stage_deadline_not_reset": true
+      },
+      {
+        "kind": "selected_asset_bundle",
+        "at_recorded": 1791366237.021105,
+        "inventory_id": "fa72c6c4-3632-46a2-869d-b4dabac15145",
+        "directory": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\browser-use\\assets\\9837a734-3127-4cba-b645-288cd72e3be8",
+        "manifest_path": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\browser-use\\assets\\9837a734-3127-4cba-b645-288cd72e3be8\\manifest.json",
+        "asset_ids": [
+          "5c41648cb904e537",
+          "9864dd44453b5fd6",
+          "cdb828d1b12feb0d",
+          "5459a470be844790",
+          "d1634423d43189a8",
+          "4e5b7c5b6462eb4e"
+        ],
+        "requested": 6,
+        "received": 6,
+        "failures": 0,
+        "bytes": 1089500,
+        "tickets_qualified_before_bundle": true,
+        "tool_elapsed_ms": 169.2860000000219
+      }
+    ],
+    "source_actions_finished_at": 1791366286.257066,
+    "slice_elapsed_seconds": 478.5912752151489,
+    "listing_navigations": 1,
+    "detail_navigations": 1,
+    "selected_assets_exported": 6,
+    "selected_remaining": 5,
+    "received_file_bytes": 1089500,
+    "source_capture_finished": true
+  },
+  "verification": {
+    "run": {
+      "id": "0853d85899524524a824e7993b58803e",
+      "state": "partial",
+      "epoch": 7,
+      "attempt": 3,
+      "valid_results": 1,
+      "snapshot_json": "{\"source_mode\":\"browser\",\"browser\":{\"max_observations\":40,\"max_selected_assets\":11,\"max_received_bytes\":67108864,\"host_seconds\":900,\"idle_seconds\":120},\"site_ids\":[\"futario\"],\"window_days\":14,\"unknown_date_policy\":\"include\",\"discovery\":{\"page_size\":20,\"max_pages_per_pass\":1,\"passes\":2,\"max_requests\":60,\"max_products\":600},\"max_details\":1,\"network\":{\"resolver_mode\":\"system\",\"detail_concurrency\":1,\"image_concurrency\":2,\"min_interval_ms\":1000,\"max_attempts\":3,\"max_http_requests\":3000,\"max_image_requests\":2400,\"run_total_seconds\":3600,\"timeouts\":{\"connect\":10,\"pool\":10,\"read\":30,\"write\":30,\"total\":120}},\"storage\":{\"max_image_bytes\":26214400,\"max_pixels\":50000000,\"run_download_bytes\":67108864,\"min_free_bytes\":5368709120,\"preview_cache_bytes\":536870912},\"plan_revision\":2,\"window_start\":\"2026-09-23T09:36:25.474Z\",\"window_end\":\"2026-10-07T09:36:25.474Z\",\"adapter_versions\":{\"futario\":\"futario-browser-host-v1\"},\"site_entries\":{\"futario\":\"https://futario.com/collections/new-in\"},\"new_run_trigger\":\"manual\",\"discovery_baseline_complete\":{\"futario\":false}}"
+    },
+    "counts": {
+      "runs": 1,
+      "products": 20,
+      "assets": 6,
+      "committed_journals": 6,
+      "source_raw_http_records": 0,
+      "completed_items": 6
+    },
+    "assets": [
+      {
+        "id": "ea5232feceff47279f637cf63fdde8b8",
+        "root_id": "f56f18486085e6f14966a44e1e2c926deb760b6dae1b89d9f06c51511620d95c",
+        "relative_path": "originals/3b/3b4ad68437ad1748142914f1975a7b94a998d1b28eac113a9ace2cdccf96a432.webp",
+        "sha256": "3b4ad68437ad1748142914f1975a7b94a998d1b28eac113a9ace2cdccf96a432",
+        "bytes": 181460,
+        "state": "verified",
+        "verified_at": "2026-10-07T09:43:58.023Z",
+        "journal_id": "0a0451022b9240e7b85ab7c6f82d4dde",
+        "format": "WEBP",
+        "width": 900,
+        "height": 1200,
+        "storage_root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t2-browser-live-20261007-01\\data\\media",
+        "verified_recheck": {
+          "sha256": "3b4ad68437ad1748142914f1975a7b94a998d1b28eac113a9ace2cdccf96a432",
+          "bytes": 181460,
+          "format": "WEBP",
+          "width": 900,
+          "height": 1200
+        }
+      },
+      {
+        "id": "1fb655f1f1d5475e88c6497c881109df",
+        "root_id": "f56f18486085e6f14966a44e1e2c926deb760b6dae1b89d9f06c51511620d95c",
+        "relative_path": "originals/b0/b0d14fccddf36ec27ff87bc5a5c98cfa96f6d9028aff90d85048488000b879e8.webp",
+        "sha256": "b0d14fccddf36ec27ff87bc5a5c98cfa96f6d9028aff90d85048488000b879e8",
+        "bytes": 213544,
+        "state": "verified",
+        "verified_at": "2026-10-07T09:43:58.915Z",
+        "journal_id": "6a1799d297b54de196cc1c391044dc8d",
+        "format": "WEBP",
+        "width": 1080,
+        "height": 1440,
+        "storage_root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t2-browser-live-20261007-01\\data\\media",
+        "verified_recheck": {
+          "sha256": "b0d14fccddf36ec27ff87bc5a5c98cfa96f6d9028aff90d85048488000b879e8",
+          "bytes": 213544,
+          "format": "WEBP",
+          "width": 1080,
+          "height": 1440
+        }
+      },
+      {
+        "id": "1f0e062ae2d94645882a8cce227e109f",
+        "root_id": "f56f18486085e6f14966a44e1e2c926deb760b6dae1b89d9f06c51511620d95c",
+        "relative_path": "originals/94/94e22e0d730cfeff1e158dc846d42b16dc10b64ffc830af4ed908b33d7997167.webp",
+        "sha256": "94e22e0d730cfeff1e158dc846d42b16dc10b64ffc830af4ed908b33d7997167",
+        "bytes": 150852,
+        "state": "verified",
+        "verified_at": "2026-10-07T09:43:59.896Z",
+        "journal_id": "f9d0f60df9be451b8f86d32b4ffe4a78",
+        "format": "WEBP",
+        "width": 1080,
+        "height": 1440,
+        "storage_root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t2-browser-live-20261007-01\\data\\media",
+        "verified_recheck": {
+          "sha256": "94e22e0d730cfeff1e158dc846d42b16dc10b64ffc830af4ed908b33d7997167",
+          "bytes": 150852,
+          "format": "WEBP",
+          "width": 1080,
+          "height": 1440
+        }
+      },
+      {
+        "id": "65aff227f05d48539450f9c896875231",
+        "root_id": "f56f18486085e6f14966a44e1e2c926deb760b6dae1b89d9f06c51511620d95c",
+        "relative_path": "originals/7a/7a8b9af341d19cda26e7a2fdc56b1a2ead364ccd94791fb4904be3c136146a74.webp",
+        "sha256": "7a8b9af341d19cda26e7a2fdc56b1a2ead364ccd94791fb4904be3c136146a74",
+        "bytes": 165858,
+        "state": "verified",
+        "verified_at": "2026-10-07T09:44:00.776Z",
+        "journal_id": "cdd35e15ae924a258135f107ca29bd48",
+        "format": "WEBP",
+        "width": 1080,
+        "height": 1440,
+        "storage_root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t2-browser-live-20261007-01\\data\\media",
+        "verified_recheck": {
+          "sha256": "7a8b9af341d19cda26e7a2fdc56b1a2ead364ccd94791fb4904be3c136146a74",
+          "bytes": 165858,
+          "format": "WEBP",
+          "width": 1080,
+          "height": 1440
+        }
+      },
+      {
+        "id": "f80a9c88af9048949fa89639fe95a6cc",
+        "root_id": "f56f18486085e6f14966a44e1e2c926deb760b6dae1b89d9f06c51511620d95c",
+        "relative_path": "originals/01/0166f3be110808b954b3d321767ce073a7f02104fe9e417f740de5c18ef7fe96.webp",
+        "sha256": "0166f3be110808b954b3d321767ce073a7f02104fe9e417f740de5c18ef7fe96",
+        "bytes": 177510,
+        "state": "verified",
+        "verified_at": "2026-10-07T09:44:01.748Z",
+        "journal_id": "c543ecf9305e4600bbebd7eddb36542c",
+        "format": "WEBP",
+        "width": 900,
+        "height": 1200,
+        "storage_root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t2-browser-live-20261007-01\\data\\media",
+        "verified_recheck": {
+          "sha256": "0166f3be110808b954b3d321767ce073a7f02104fe9e417f740de5c18ef7fe96",
+          "bytes": 177510,
+          "format": "WEBP",
+          "width": 900,
+          "height": 1200
+        }
+      },
+      {
+        "id": "ccb6322ce72a4d17b033ae62d3b4c850",
+        "root_id": "f56f18486085e6f14966a44e1e2c926deb760b6dae1b89d9f06c51511620d95c",
+        "relative_path": "originals/c2/c27028bfdabe75efa8f0ce83f59fe26ee8036ea84f9c857805567aff1a00bf06.webp",
+        "sha256": "c27028bfdabe75efa8f0ce83f59fe26ee8036ea84f9c857805567aff1a00bf06",
+        "bytes": 200276,
+        "state": "verified",
+        "verified_at": "2026-10-07T09:44:02.637Z",
+        "journal_id": "7d15ea28fc934bd1882c1481d1580f60",
+        "format": "WEBP",
+        "width": 900,
+        "height": 1200,
+        "storage_root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t2-browser-live-20261007-01\\data\\media",
+        "verified_recheck": {
+          "sha256": "c27028bfdabe75efa8f0ce83f59fe26ee8036ea84f9c857805567aff1a00bf06",
+          "bytes": 200276,
+          "format": "WEBP",
+          "width": 900,
+          "height": 1200
+        }
+      }
+    ],
+    "journals": [
+      {
+        "id": "0a0451022b9240e7b85ab7c6f82d4dde",
+        "item_id": "f4d452132db14d35b17849d500c75e42",
+        "epoch": 7,
+        "state": "committed",
+        "sha256": "3b4ad68437ad1748142914f1975a7b94a998d1b28eac113a9ace2cdccf96a432",
+        "bytes": 181460
+      },
+      {
+        "id": "6a1799d297b54de196cc1c391044dc8d",
+        "item_id": "498b005474e24d70b683ce1c761df2aa",
+        "epoch": 7,
+        "state": "committed",
+        "sha256": "b0d14fccddf36ec27ff87bc5a5c98cfa96f6d9028aff90d85048488000b879e8",
+        "bytes": 213544
+      },
+      {
+        "id": "f9d0f60df9be451b8f86d32b4ffe4a78",
+        "item_id": "449d21b2847047aca626691c23ee6ac6",
+        "epoch": 7,
+        "state": "committed",
+        "sha256": "94e22e0d730cfeff1e158dc846d42b16dc10b64ffc830af4ed908b33d7997167",
+        "bytes": 150852
+      },
+      {
+        "id": "cdd35e15ae924a258135f107ca29bd48",
+        "item_id": "2047e2c8610e458c84824ac0152e32fe",
+        "epoch": 7,
+        "state": "committed",
+        "sha256": "7a8b9af341d19cda26e7a2fdc56b1a2ead364ccd94791fb4904be3c136146a74",
+        "bytes": 165858
+      },
+      {
+        "id": "c543ecf9305e4600bbebd7eddb36542c",
+        "item_id": "94db9a9a0da4415f939832795181b3b7",
+        "epoch": 7,
+        "state": "committed",
+        "sha256": "0166f3be110808b954b3d321767ce073a7f02104fe9e417f740de5c18ef7fe96",
+        "bytes": 177510
+      },
+      {
+        "id": "7d15ea28fc934bd1882c1481d1580f60",
+        "item_id": "9d8e4c4dbe5c43cbb40f59c511a5f9f6",
+        "epoch": 7,
+        "state": "committed",
+        "sha256": "c27028bfdabe75efa8f0ce83f59fe26ee8036ea84f9c857805567aff1a00bf06",
+        "bytes": 200276
+      }
+    ],
+    "export": {
+      "id": "643813781b604c02a55d119e6210e027",
+      "state": "partial",
+      "snapshot_hash": "d24cde241fc3812014e0220b84e96fea3adb9c218b275b28ecae017a9f516900",
+      "output_hash": "c4d8ca8dcbedd9f744b90ac21465b84e2c226b898e279ae6d25c882ee1abb30b",
+      "result_json": "{\"state\":\"partial\",\"snapshot_sha256\":\"d24cde241fc3812014e0220b84e96fea3adb9c218b275b28ecae017a9f516900\",\"path\":\"E:\\\\github-workspace\\\\fashion-scout-harness\\\\.runtime\\\\t2-browser-live-20261007-01\\\\data\\\\exports\\\\643813781b604c02a55d119e6210e027\\\\attempt-000001\\\\export-eb0f0d8c93f83b3c3be63fb825cb9528891529a5c542e18a48d4ac0ba05068e4.zip\",\"sha256\":\"c4d8ca8dcbedd9f744b90ac21465b84e2c226b898e279ae6d25c882ee1abb30b\",\"bytes\":1152083,\"reused\":false,\"missing_count\":0,\"unknown_count\":1,\"error_code\":null}"
+    },
+    "zip_path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t2-browser-live-20261007-01\\data\\exports\\643813781b604c02a55d119e6210e027\\attempt-000001\\export-eb0f0d8c93f83b3c3be63fb825cb9528891529a5c542e18a48d4ac0ba05068e4.zip",
+    "zip_sha256": "c4d8ca8dcbedd9f744b90ac21465b84e2c226b898e279ae6d25c882ee1abb30b",
+    "zip_bytes": 1152083,
+    "zip_image_members": [
+      "product-0001-cda9938a369c5903/images/0001-3b4ad68437ad1748142914f1975a7b94a998d1b28eac113a9ace2cdccf96a432.webp",
+      "product-0001-cda9938a369c5903/images/0002-b0d14fccddf36ec27ff87bc5a5c98cfa96f6d9028aff90d85048488000b879e8.webp",
+      "product-0001-cda9938a369c5903/images/0003-94e22e0d730cfeff1e158dc846d42b16dc10b64ffc830af4ed908b33d7997167.webp",
+      "product-0001-cda9938a369c5903/images/0004-7a8b9af341d19cda26e7a2fdc56b1a2ead364ccd94791fb4904be3c136146a74.webp",
+      "product-0001-cda9938a369c5903/images/0005-0166f3be110808b954b3d321767ce073a7f02104fe9e417f740de5c18ef7fe96.webp",
+      "product-0001-cda9938a369c5903/images/0006-c27028bfdabe75efa8f0ce83f59fe26ee8036ea84f9c857805567aff1a00bf06.webp"
+    ],
+    "image_digests": [
+      "0166f3be110808b954b3d321767ce073a7f02104fe9e417f740de5c18ef7fe96",
+      "3b4ad68437ad1748142914f1975a7b94a998d1b28eac113a9ace2cdccf96a432",
+      "7a8b9af341d19cda26e7a2fdc56b1a2ead364ccd94791fb4904be3c136146a74",
+      "94e22e0d730cfeff1e158dc846d42b16dc10b64ffc830af4ed908b33d7997167",
+      "b0d14fccddf36ec27ff87bc5a5c98cfa96f6d9028aff90d85048488000b879e8",
+      "c27028bfdabe75efa8f0ce83f59fe26ee8036ea84f9c857805567aff1a00bf06"
+    ],
+    "source_operation_ledger": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t2-browser-live-20261007-01\\source-operations.json",
+    "source_capture": "real accepted Run pageAssets -> fixed installed client -> independent Worker Archive -> frozen favorites ZIP",
+    "source_scope": "browser.gallery",
+    "full_product_images": "unknown",
+    "preview_url": "http://127.0.0.1:55016/"
+  },
+  "installed": {
+    "candidate_executable": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t2-browser-live-20261007-01\\candidate\\Scripts\\python.exe",
+    "python": "3.13.16 (main, Oct  3 2026, 01:04:41) [MSC v.1944 64 bit (AMD64)]",
+    "installed_root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t2-browser-live-20261007-01\\candidate\\Lib\\site-packages",
+    "distribution_version": "0.2.0a1",
+    "wheel_sha256": "5938b20f707c73ebc0042d115abdd7e04d3bf62dd9799362be595afa52393753",
+    "verified_members": 72,
+    "modules": {
+      "fashion_scout": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t2-browser-live-20261007-01\\candidate\\Lib\\site-packages\\fashion_scout\\__init__.py",
+      "fashion_scout.client": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t2-browser-live-20261007-01\\candidate\\Lib\\site-packages\\fashion_scout\\client.py",
+      "fashion_scout.adapters.futario_browser": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t2-browser-live-20261007-01\\candidate\\Lib\\site-packages\\fashion_scout\\adapters\\futario_browser.py"
+    },
+    "port": 55016,
+    "data_root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t2-browser-live-20261007-01\\data",
+    "source_requests": 0
+  },
+  "rendered": {
+    "method": "supported current-session CUA AX/DOM/screenshot",
+    "url": "http://127.0.0.1:55016/",
+    "tab_id": "1628536036",
+    "product_id": "futario-15394260681068",
+    "gallery_open": true,
+    "image_count": "1 / 6",
+    "favorite": "♥ 已收藏 · 点击取消",
+    "image": {
+      "src": "http://127.0.0.1:55016/v1/assets/ea5232feceff47279f637cf63fdde8b8?rendition=original",
+      "complete": true,
+      "natural_width": 900,
+      "natural_height": 1200
+    },
+    "coverage_text": "当前观察图集：应有 6 张，已存 6 张。范围为页面可观察图集；完整商品图集、变体与原始分辨率仍未知。",
+    "screenshot": "native CUA tool image displayed in this turn; not a saved screenshot artifact",
+    "preview_kept_open": true,
+    "old_preview56117_untouched": true
+  },
+  "protected": {
+    "reviewed95_unchanged": true,
+    "old_t2_four_files_unchanged": true,
+    "source_package72_unchanged": true,
+    "preview56117": [
+      {
+        "pid": 31376,
+        "state": "LISTEN"
+      }
+    ],
+    "isolated_preview_url": "http://127.0.0.1:55016/",
+    "default_root_used": false,
+    "release_builder_changed_by_core": false,
+    "source_operations_finished": true
+  },
+  "formal_submit": false,
+  "manager_independent_live_acceptance_pending": true,
+  "source_actions_finished": true
+}

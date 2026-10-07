@@ -1,0 +1,4 @@
+T6b candidate: E:\github-workspace\fashion-scout-harness\.runtime\t6b-candidate-faa57b90
+T6b checks: E:\github-workspace\fashion-scout-harness\.runtime\t6b-checks-57799f5f
+........
+8 passed in 41.85s

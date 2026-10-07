@@ -1,0 +1,50 @@
+{
+  "kind": "offline-synthetic-only",
+  "source_requests": 0,
+  "production_files_modified": false,
+  "numeric_pinning": {
+    "pass": true,
+    "resolver_calls": [
+      [
+        "futario.com",
+        443
+      ]
+    ],
+    "numeric_socket_targets": [
+      [
+        "93.184.216.34",
+        443
+      ]
+    ]
+  },
+  "http_host_sni_composition": {
+    "pass": true,
+    "wire_request": "GET /collections/new-in HTTP/1.1\r\nHost: futario.com\r\nAccept: */*\r\nConnection: keep-alive\r\nUser-Agent: FashionScout/0.2 (bounded local research)\r\nAccept-Encoding: identity\r\n\r\n",
+    "tls_settings": [
+      {
+        "sni": "futario.com",
+        "check_hostname": true,
+        "verify_mode": 2
+      }
+    ],
+    "synthetic_tls_only": true,
+    "environment_proxy_mounts": 0
+  },
+  "non_200_diagnostic_gap": {
+    "reproduced": true,
+    "synthetic_status": 429,
+    "body_iterator_used": false,
+    "public_error_code_lost": 1015,
+    "returned_issue_code": "HTTP_RETRIES_EXHAUSTED",
+    "response_callback_records": [
+      [
+        null,
+        429,
+        "60",
+        null
+      ]
+    ],
+    "note": "Proves missing error-body classification, not that the client caused a real server limit."
+  },
+  "all_checks_passed": true
+}

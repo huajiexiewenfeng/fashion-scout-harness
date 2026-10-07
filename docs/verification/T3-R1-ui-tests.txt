@@ -1,0 +1,23 @@
+✔ Accepted but lost response recovers by the same key, never POSTs again (1.2729ms)
+✔ Verified absent request replays the exact key; unknown/conflict does not POST (0.296ms)
+✔ Storage failure prevents acceptance without a durable intent key (0.6358ms)
+✔ Category override and reset update card and gallery immediately, without moving IDs (3.2907ms)
+✔ Rendered latest image refreshes authoritative material badge without sorting (2.0167ms)
+✔ Rendered historical image refreshes authoritative material badge without sorting (1.2435ms)
+✔ Explicit history is not described as current missing-image fallback (13.7201ms)
+✔ retry: getItem failure shows notice, sends nothing and restores controls (1.048ms)
+✔ retry: setItem failure shows notice, sends nothing and restores controls (0.9896ms)
+✔ retry: cleanup failure reports accepted and retry only clears retained intent (1.5829ms)
+✔ retry: lost response retains exact key for same-operation replay (1.1927ms)
+✔ cancel: getItem failure shows notice, sends nothing and restores controls (0.9052ms)
+✔ cancel: setItem failure shows notice, sends nothing and restores controls (0.8161ms)
+✔ cancel: cleanup failure reports accepted and retry only clears retained intent (0.7957ms)
+✔ cancel: lost response retains exact key for same-operation replay (0.7179ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 95.9897

@@ -1,0 +1,4100 @@
+{
+  "version": "T5c-local-v1",
+  "at": "2026-10-06T16:04:26.544702+00:00",
+  "baseline_count": 176,
+  "protected_count": 157,
+  "protected_sha256": {
+    "src\\fashion_scout\\health.py": "a4d008fd4e9271db0db45e11037410eccf13f5160f83bd7fae680b4b1d36edf2",
+    "src\\fashion_scout\\launcher.py": "79065c066ef564cf4d1b3d77503600e3f8ee6a8954e49f6e6d1cd9a78d02ff3d",
+    "src\\fashion_scout\\processes.py": "dfb9b9a57939614bc7b1df2f5f4373a585676620aa91936d7aa1d18d5da349c1",
+    "src\\fashion_scout\\__init__.py": "38d10a501787f0dfa2da3150cc1472e2167c3a38175b11abe1b46b72335fce9e",
+    "src\\fashion_scout.egg-info\\dependency_links.txt": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "src\\fashion_scout.egg-info\\requires.txt": "51156ae7efc3c79d753bf77a48d387171aabc322b961355f2efc1e8997ab52b4",
+    "src\\fashion_scout.egg-info\\top_level.txt": "5ece830f4c65cff9161caf490ab3398012ebb9ad1b7ac1e984498015d7289207",
+    "src\\fashion_scout\\adapters\\futario.py": "fca7e3a4af2cfce1bd0010ccf1f090984a7bed1307c854968bebe0066d583045",
+    "src\\fashion_scout\\adapters\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src\\fashion_scout\\api\\exports.py": "a8b241a763baa3c830c2a31ddd5b9e1b0cdc034444be9dfd5163b81c44d29fd4",
+    "src\\fashion_scout\\api\\models.py": "d664019aa3e0effff22d9af5f70e1a51f5f72dbe3885204bccfef53371b855af",
+    "src\\fashion_scout\\api\\security.py": "f28c676bcb7143ce843ea2fa24a10f52166e0e12bc014976669d844af71239ce",
+    "src\\fashion_scout\\api\\__init__.py": "1234035fbdf7ed7b36ccc7e34c1c9ac757e2b65274d51052ba1f856667473b3a",
+    "src\\fashion_scout\\db\\store.py": "f657c65c4a023fbdce6f9889109b948ee50c25d5ed4ec1c332c875030c1a30a7",
+    "src\\fashion_scout\\db\\__init__.py": "4851e8b3cab271933625646f581c2e2f6818bcfc5b06478e7acc486d4d9c88c6",
+    "src\\fashion_scout\\domain\\errors.py": "66fcc71d3163e6a18d8e8123c473aa6156e08bf71eaada641bdb753f15813552",
+    "src\\fashion_scout\\domain\\models.py": "8c2655ade414799b9df39235363c2c230700bb686e057ab19b7b2a073f4d2cff",
+    "src\\fashion_scout\\domain\\__init__.py": "3d16175285c199a178ed9743669c9aa29bacf5375a9dd035754999b276e4744b",
+    "src\\fashion_scout\\exports\\capture.py": "d5e1774c7875435ac030460fe748571219198c7a43b88f7ecc655c17b91869fc",
+    "src\\fashion_scout\\exports\\engine.py": "991c56c547c4dd9dd8ab68470e92510c29253a25a02f506d43fa508c6577f637",
+    "src\\fashion_scout\\exports\\jobs.py": "d06d6a86a4c0b6320f3c27ae9dbefc00f42ff0f4a42e5a44eef804750f2a634b",
+    "src\\fashion_scout\\exports\\manifest.py": "199085e1808f9e751f1d451567db66dbc7ff8e80263d65e3580ec5ba698b9056",
+    "src\\fashion_scout\\exports\\models.py": "03254960091113fdab5a3ff74cdb56cbb7bda4501a81613901a16e64495c6f8f",
+    "src\\fashion_scout\\exports\\runner.py": "85567063fded9ee218cc2cca3e1ec79fe00c7811d22dccc3c024833ee34fbd46",
+    "src\\fashion_scout\\exports\\__init__.py": "c7c51f50619dd11a31e53ae69a3e92984a1d0dbb752abe8600abb74a03eee292",
+    "src\\fashion_scout\\media\\http.py": "606d3de4697407ca377aa945f80fa54f864ab93be8f629bc28a20f424d91213b",
+    "src\\fashion_scout\\media\\images.py": "cd289fe34f3eb56dbaedb76e93c022fedc7da2cecc8adfcd3961e2d1e49e79e9",
+    "src\\fashion_scout\\media\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src\\fashion_scout\\services\\catalog.py": "7b7c6297a5be03628213cac1fc8b0866c6ee461e7fe7e1251b8239ca9da8f096",
+    "src\\fashion_scout\\services\\collect.py": "d3d6d8f640b7b176016107558c13efefac4995481708a900850c751a511a6b19",
+    "src\\fashion_scout\\services\\presentation.py": "0262f3a9f62fde45e59773c932ebb1e41e4d80a2a240551fba485e7b1aaedc5c",
+    "src\\fashion_scout\\services\\runs.py": "d81d1e59ce6dea3bb7889457389f82c66bba992db740cd72bead448c0535847e",
+    "src\\fashion_scout\\services\\__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "src\\fashion_scout\\static\\app.js": "47364606e4de54688acc1b8ca00d6b6973b138a90bef8444e254a6157f17c7ac",
+    "src\\fashion_scout\\static\\bootstrap.js": "ab7688ef2289b5a7795f53d5443c97eae064a01ef355b226a3e44b84b60e53f6",
+    "src\\fashion_scout\\static\\export-intent.js": "5a6623d1cf00a4edad6efc90ea2dab7eaa8209e1c84bdb04288134862a987770",
+    "src\\fashion_scout\\static\\exports.js": "e76603950f27d072ecdc9cf05002ec835c3fde1d01c7698448161a83ff69e625",
+    "src\\fashion_scout\\static\\intent.js": "2ec34fbfc9f683d82a87ff8d7c96e9f6a1ffa2bc88705982f9e47a95f24b1dad",
+    "src\\fashion_scout\\templates\\bootstrap.html": "9362e71b57fcd0c9821187e23dcd96eb81d17174b8c3eb9f7e791de94e4eee97",
+    "src\\fashion_scout\\db\\migrations\\001_core.sql": "3caf8d285c8ca65a67a3d1eecc88ae69842f7e5d14c1a0af190e1a01ffba924c",
+    "src\\fashion_scout\\db\\migrations\\002_catalog_contract.sql": "b511ceace1280fd341d76fc7f103e73ea6778701992bc0e43f1ff91205e62d84",
+    "src\\fashion_scout\\db\\migrations\\003_archive_repair.sql": "1892d294544f789080dba0048e997f8637751c633b355a89dea55f733e1ff556",
+    "src\\fashion_scout\\db\\migrations\\004_collection.sql": "d794e352fb402c1d8ce4716dc4abc8004ffe8523682c452f58acb7db97c8dd3f",
+    "src\\fashion_scout\\db\\migrations\\005_http_evidence.sql": "0e2134a7641d37579732b4ce2692cfd6121f0f43bc61803f2aef82bbaccd5868",
+    "src\\fashion_scout\\db\\migrations\\006_network_throttle.sql": "fd94bc90d5a3f2c1b47e0b37b8498177458dbea2f287af435141931ba562cae4",
+    "src\\fashion_scout\\db\\migrations\\007_owned_temps.sql": "6477c5790780ed18a4cdbe03e471162e41e5023cd4f17a13d402ab5b4057f7d0",
+    "src\\fashion_scout\\db\\migrations\\008_exports.sql": "27a8e404921138edc64680664e4f01b87e47183a98b3553bfb6bddbcf6cfe2e3",
+    "tests\\t2_helpers.py": "e906345edc1ffc8093b4ab091d5ce73f55694c81c324ce57ece1d93904a40cbd",
+    "tests\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tests\\adapters\\test_futario.py": "00ea9e60614efe943043778c1ddbe87c9c207d19727a376177992df26540f4a0",
+    "tests\\api\\conftest.py": "d9bc38d67d1f5cf56256762a9156cdca55eb4e13d5468b61f0a24c41073f9da8",
+    "tests\\api\\helpers.py": "0eba4bbe32808cef08738bee3500baf381d502bcf3df9e39dbe20d72177bc7cf",
+    "tests\\api\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tests\\client\\invoke.py": "a8867b90c46a735b009525a35dab54ba60132822b4202da6824e724125c69d75",
+    "tests\\client\\test_health_boundary.py": "b11c2b17e469cdc37e7f41da566f002ba958bc33f8c27efdf0392ef413bb801a",
+    "tests\\client\\verify_delivery.py": "8128f396e940701604abb2847b181c9c272d7ebde04cd3d926983a79cbcfe7f6",
+    "tests\\client\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tests\\core\\conftest.py": "60f030fb1ca4d391e837bd7cbd5e55f196ca81c682879b2f1ff8440eb1dedc75",
+    "tests\\core\\process_helper.py": "99e2cdd7fc5a2cf730e9da95fcfac7812f777a099520629ad01112330b28757e",
+    "tests\\core\\test_archive.py": "08422f977d64e51cf84f13ca1c0afbfe6e701ddd1be62a8dbc67068b5e5441f0",
+    "tests\\core\\test_processes.py": "00bedfb3aae420c1601cdba224e1def29b4f5fa86f2e11a817ffd0e14a492736",
+    "tests\\exports\\browser_preview.py": "2ce6c48df1de4d7cd0622ea05d62eaec18748ef5ad3a8c46338b186d1cc7bfdf",
+    "tests\\exports\\export-intent.test.mjs": "13b518afc9b5c3789fa3b7212a48f36eb09fda1a6e44dded4eaf0f13bbb3f4f2",
+    "tests\\exports\\fixtures.py": "86702ccdb57ddba6627625a4b71cffdc95447b8df8899f012162971d9c495509",
+    "tests\\exports\\make_samples.py": "573dd6833bfb5025f0868b2a12e801fdc3746e90abf2f3fba18c563d3ae97001",
+    "tests\\exports\\test_engine.py": "07b48cc458988361031c6a6e52467323740cae345ceb24bb6b61fa25218cc645",
+    "tests\\exports\\verify_delivery.py": "0edb8dbd6fc88e250e0e14a646509a7cedf991d8fbaed60afc2d9543fcf9b83e",
+    "tests\\exports\\verify_t5b_delivery.py": "b9e5964f37d9ca5f86ef780da74147e17ccb04d036d4bb0f32e4b1bfcb2e4e52",
+    "tests\\exports\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tests\\integration\\export_process_helper.py": "8cf6d7cc019a083f931c93588bfed1d4eda6cf2304b8ef601de0fc6733d1723a",
+    "tests\\media\\test_collection.py": "9f4b1bdd992f210b1ed5f3e30657f72bb837d5c98650a479b554fd309e811c7b",
+    "tests\\media\\test_http.py": "726805a2d089308107d5e096ec130b1acca02bd215910c54833b225dd2e06bd2",
+    "tests\\media\\test_image_validation.py": "b6b6c3945da5a188a8c856b93a3782432d8f5c54d625dfa8258798eea8eda803",
+    "tests\\media\\test_local_review.py": "11399939383f1ab041b5f58f773b9d2f9bb886af31117e7f9de5688fd7a1caa1",
+    "tests\\media\\test_recovery.py": "c8fa181f3920e00c5d50f45f07a2b7d9dc903c857bd1d2671941f7434edb3896",
+    "tests\\media\\test_throttle.py": "7becbdf42963deecf3aa7e57747f53c1419a6af2b510ee80eeac8fe9cd8939a1",
+    "tests\\ui\\intent.test.mjs": "b5152b7dfa5fc0e5d9ec634c061c3cd9bd50248e0b1dd6efcbf5a70bdca80065",
+    "tests\\ui\\preview.py": "b10d0bf894746d17503e126bf72f25d88506cea028b3146e266e5633ec0aa0bf",
+    "tests\\ui\\scenarios.py": "1ce9aa15f21eaf8eeeee096065eb25e4d5b2b71a34d6b94f1c5ad9148e53ccd0",
+    "tests\\ui\\state-transitions.test.mjs": "4a92b1d55d3642d897ef4ff5aa662d3be8d29320924a2f2dbe2401247e218366",
+    "tests\\ui\\verify_delivery.py": "92394f737488f82fdde5ffbba0ef183923ed337f4217cdfbe9d76cfd0a777d91",
+    "tests\\ui\\verify_rework.py": "c47e7654b64617bbc2439067c254fad7b9312672d380f8aa9997f5c63b70f2bb",
+    "docs\\architecture.zh-CN.md": "c146d799b7c008623d6275395c17cd81bb28ab410a8c965c0374391afef31f0a",
+    "docs\\implementation-plan.zh-CN.md": "c2d4f91fffed26ff30b4e7787d6c3db6592e66cb61b06a8937e16f488ceb8919",
+    "docs\\roadmap.zh-CN.md": "7f7eeecd8a3949325ad81295f412580c3d827af1f7a7db5173f82b8134e8c44e",
+    "docs\\verification\\T1-evidence.json": "6aadbba87920a9a1b641100eff0e167eb320d80c974e46270ff2d7ff083113b5",
+    "docs\\verification\\T1-R1-evidence.json": "5693b6fdf72748f08ded8c950f15b136fe659ae66c170201fae1e853d16efbaa",
+    "docs\\verification\\T1-R1-targeted.txt": "86396f5d3f31b2e5402a54c43775057bc9a4884be60e7ae453a0d21af703f274",
+    "docs\\verification\\T1-R1-tests.txt": "c788dc4a5d714aaf005e06366fed5762f05ef52a3616e20ad04d7e5ec88fd931",
+    "docs\\verification\\T1-tests.txt": "f023d8e5deb200e427e3e9af033dc30afdbdf59bdcdd1c1d2940337116b1f397",
+    "docs\\verification\\T1.md": "7c645c15262c5d3547cd91b7be083c387fe26ead190315d7d6b9972e29913001",
+    "docs\\verification\\T2-diagnostic-20261006-foreground.json": "be7f1ca1557e78a8b88fa206fa7139fa33c97b7a3c7971b16884d986302d9438",
+    "docs\\verification\\T2-diagnostic-20261006-foreground.md": "1b5e8022c0e85ed6ab509c1558867d1875636efe65ad1dda678cd3c9c56d54ca",
+    "docs\\verification\\T2-diagnostic-20261006-reconcile-before.json": "eb0b38c77e4ff8bd67fa6a53b27449e166d0ffce13f247642b7d1e05f9328fd6",
+    "docs\\verification\\T2-diagnostic-20261006-reconcile-receipt.json": "d4310ef74ef094e23d7cd6c6cb0ac4d016fcb2b1df402cb285d05894a7929977",
+    "docs\\verification\\T2-diagnostic-20261006-reconcile.md": "07f6a94ece2f71190de605a5098e4d25120d1088beda15a55a70dd879dbe748e",
+    "docs\\verification\\T2-evidence.json": "aff0981997dc7aebdf1e69f1441547f77ea870225ff58898f3ffde60c7b36bf7",
+    "docs\\verification\\T2-final-tests.txt": "b63ee36185b7b3a6c61d55bf1816c6a476cbd28c736dedf7c5ed94d45aa0da50",
+    "docs\\verification\\T2-live-summary.json": "f3259ad6dde63c18111251d8046039d7d20952f468fdedd63184e03a290849cd",
+    "docs\\verification\\T2-local-v2-evidence.json": "661822bdd892ac50c116b1caf298d1997a63b50ce6a625e76bc5f3baec53eb16",
+    "docs\\verification\\T2-local-v2-tests.txt": "f5caa1e14be9f00830335ac37db79fe7c3211677796a8b6785476a18809dcb55",
+    "docs\\verification\\T2-local-v2.md": "ccf3b35630f0ded1adab7a89691959121688cde9d013b4caf33933a6c4ba1268",
+    "docs\\verification\\T2-media-final.txt": "565b137f13b65631c4fb4435e405d6f7dc7a7b8c88dd58f736fb12805d3f92a6",
+    "docs\\verification\\T2-tests.txt": "72e994d30f7a9751ace16de63761c9f6eb9e76462348ad8a453dcaa552de19a5",
+    "docs\\verification\\T2.md": "16281c998d884ea98270386f217f0aa6c267841ded686b0cf266d22c7a16d740",
+    "docs\\verification\\T3-api-contract.md": "7982b3e13ffe0912b6fb573189129258fdedf88b02324b94e9662920a63165a3",
+    "docs\\verification\\T3-browser-evidence.json": "076703b6d784744abd8463818b685862cba3938daeb7f5c874bce561ee1a585c",
+    "docs\\verification\\T3-evidence.json": "73a3b19f8165ce7a42ac88e36f6d6432fb98161be84e45e15c0db5dcb89eb2fc",
+    "docs\\verification\\T3-intent-tests.txt": "c1ae6f31f7faa381addd4a7a3ec269b907b2dd0766c1615d2eaf79da3e0278ce",
+    "docs\\verification\\T3-pytest.txt": "0c928ab247588d4c7d9f8acba500ce36b2338d70deb2d1f8cdfbf5bbdf6a5cf4",
+    "docs\\verification\\T3-R1-api-tests.txt": "dabd44593555d11b329fdee1e54403ce918fc57944f229db3db0ca0ce16dfec1",
+    "docs\\verification\\T3-R1-browser-evidence.json": "ebe3a16cb0bdf29b1055d3ac391e55b59f4e6ee0543229952195aab7ba654eb1",
+    "docs\\verification\\T3-R1-evidence.json": "27f28a262288867d40eae8be3a62f73a4ee00693eb0db6fbeeb02a5473cc5de1",
+    "docs\\verification\\T3-R1-ui-tests.txt": "d0ef6365a5ca4cb4ccff1b46015387966443217ddc4a851716fe88c2efaf6617",
+    "docs\\verification\\T3-R1-wheel.txt": "fabd0dea5cb0a6b082f11c2628e7a2b451402814ed451cbf7e754957dc0ea80e",
+    "docs\\verification\\T3-R1.md": "5371af2b0d844ec8cc0574d26a221d9f6c69aded005deab0f865ae29c6232166",
+    "docs\\verification\\T3-wheel.txt": "38375df5285fc3134217d309084ad87798ee222b4a0c2a61f529a4c6b0726497",
+    "docs\\verification\\T3.md": "646dd4e03e9e81b021e3c99e1858e61fb30d1cbdfd5b9634ecb068c0d8ecf625",
+    "docs\\verification\\T4-baseline.json": "4a66092e4986d07fe43dc3d611ea482d53b8426d426e84c686d8233c43f8afce",
+    "docs\\verification\\T4-evidence.json": "d07f4ad1d4060b50c63c28dac82ac9aa59c66b3d155f06258b910fb79f18f96f",
+    "docs\\verification\\T4-local-integration.json": "d1fb6988c0b62947f94e69932d5101b1c8c444e4f8d68e7e957ca7aae5aa2133",
+    "docs\\verification\\T4-skill-validation.txt": "6cf9e7f0d34ccd36dbd28f270cd28dd04277b2e1516bd4333ce7bb501d7b18d4",
+    "docs\\verification\\T4-tests.txt": "e7209ba4467dd5b97b9b99b02f61b68b55f5c73d563ce88a8b7b2f6a327777e7",
+    "docs\\verification\\T4-wheel.txt": "34a419c861e9ebb068a05b4275b0e9ace62b2e65acb44736d576a5aec8c787b4",
+    "docs\\verification\\T4.md": "e0f8a99b23e6fdde000e3aa96b1e2ed94c9717f79c160cd04525a8a6335e4676",
+    "docs\\verification\\T5a-baseline.json": "e6eb773a055b879c2064f2a773ee3f420bbefdf4d7baf170fa6f6c8a869aee06",
+    "docs\\verification\\T5a-evidence-v1.json": "a6604b4b385d7a51a1a3f1a89ea776eea5a5bfc864a48e04c47b7eb25f6fcf7b",
+    "docs\\verification\\T5a-samples-20261006T132431Z-14e5a9c5.json": "483059f6fe43e70471a62f078a1f6396a9738c0813477dc2421f53c1f54321f0",
+    "docs\\verification\\T5a-snapshot-contract.md": "36f6a0517f5ea7d311664fc81f9a891d5adaef896cf591d8593e5bc5477cb1f9",
+    "docs\\verification\\T5a-tests-v1.txt": "b6738311fba201bef4d6b081109db774dadf5b98dae1fe6e2645a6843ae1b1a8",
+    "docs\\verification\\T5a.md": "00b24bdf84ca3177e8366e72d9be31b21c55ee21991fe46ca079674ef672545a",
+    "docs\\verification\\T5b-api-contract.md": "00a3fa96bc98a832a18ad1e5590dc6787b77b464309630c9b2d91f8b84665ad8",
+    "docs\\verification\\T5b-baseline.json": "1f8af743c0589c7a3d6e45c5c9bc988a6385d36cc9ebb57995032aa036789c38",
+    "docs\\verification\\T5b-browser-download.zip": "2847cac526d884f4698166911175a4f972606e679fe93447c8b1e58a4bccb62f",
+    "docs\\verification\\T5b-browser-empty.png": "e77b56da1752db7a68b5b2673fdd702a08fa20013940185b50049b1ef6823674",
+    "docs\\verification\\T5b-browser-evidence-v1.json": "256b31f6f8f133a182b0af74c68024f02f729dbfafb90f2559143a8cf094bacc",
+    "docs\\verification\\T5b-browser-partial-desktop.png": "f783781136150e5335c5c35d06ea4d2753aa56801425e717b36451ed256fca70",
+    "docs\\verification\\T5b-browser-partial-mobile.png": "2dc197a3db8ebaec7e6fb9ffe86b8c37dc9d2bd084361ea52db079044dcfdc5d",
+    "docs\\verification\\T5b-browser-queued.png": "ebebd0796e103cf7114c53adc3d7060ec9fd766fee807021c0ff4bd4134e0528",
+    "docs\\verification\\T5b-evidence-v1.json": "b950a0786db95f12619265f636c57cf299aeb9579cbbb046d4eeecfb5ec470c6",
+    "docs\\verification\\T5b-jobs-tests-v1.txt": "7b82ba31f16efff07e8e70830a34bd1b7ed1dd53123c1530a81c94a28e1db2c3",
+    "docs\\verification\\T5b-migration-fix-v1.txt": "50fd44ebe75ec119efac6f75d4b6ec7b506a6bb9bbac861a3d99e155556548da",
+    "docs\\verification\\T5b-process-evidence-v1.json": "48e4f3a69f33e044941bb2e783ab306e026e84844d9b4d883f722322e442f6ab",
+    "docs\\verification\\T5b-process-tests-v1.txt": "8b501cd6984673ce2d5275b28b2a8b0013038420adb2878dc7057de57d0a8868",
+    "docs\\verification\\T5b-skill-validation-v1.txt": "6cf9e7f0d34ccd36dbd28f270cd28dd04277b2e1516bd4333ce7bb501d7b18d4",
+    "docs\\verification\\T5b-tests-final.txt": "752c50e26d411e4c5fd4e5d7f289854c9757b75c2de9fa0dc25237e3c3d5371b",
+    "docs\\verification\\T5b-tests-v1.txt": "6fee3db38c1738772318e79aa4bad380dd5c071c90c67d4d4359dd00e89026ab",
+    "docs\\verification\\T5b-ui-tests-v1.txt": "eb42591edaa741e09e38921a35d87cb3b3498f1e442d40d777ed4b448c8e99c9",
+    "docs\\verification\\T5b-wheel-v1.txt": "d718ac995faf10cc5ed89c5ec7d90a2150e50698ee01da3fed04590699395021",
+    "docs\\verification\\T5b.md": "d9309331e652c8bbd5e754f0404f7a7a96c6864315c4764b88150fd7e981004e",
+    "docs\\verification\\T5a-samples\\20261006T132431Z-14e5a9c5\\complete-snapshot.json": "8c449781ed7a540a6461a88f4d22a7f0c2cb9412648c1027bd0ce64df8d07777",
+    "docs\\verification\\T5a-samples\\20261006T132431Z-14e5a9c5\\partial-snapshot.json": "60d979676ef9142389a80ca4a712139ea1b360ad6f5498d9ca3bccac800103f7",
+    "docs\\verification\\T5a-samples\\20261006T132431Z-14e5a9c5\\complete\\export-795cb5c6824609cfc574b105e01aacdcc4d1380f3423183a0f4c649b7e67fcfb.zip": "150951efc9dd66b9db3942d024f449f627ae3953067e805dd4a20473740b0813",
+    "docs\\verification\\T5a-samples\\20261006T132431Z-14e5a9c5\\partial\\export-41d2069f0cffd300ac7cada9edd952548dfcf9ac5cd84e5cea4297b6ab60e901.zip": "62c9e471002092bcaf81cee73bcf347f8557962179a33ab50af90f259d7a83bf",
+    "pyproject.toml": "6d41fb8d9bedb4ad6ec6d35631ce411f9dc7d71675dd1efac6f6af58f87b76af",
+    "requirements-win.lock": "4eea0036f44c508a23c276bc463c0f84ece14384473a47c48d9a2a8ee3522fa7",
+    "README.md": "9654f99767a22790c80016a94ff88806a569e892ac173124c1c3f5a9a3770e0c"
+  },
+  "allowed_changed": [
+    "src\\fashion_scout\\client.py",
+    "src\\fashion_scout\\client_models.py",
+    "src\\fashion_scout\\config.py",
+    "src\\fashion_scout\\worker.py",
+    "src\\fashion_scout.egg-info\\SOURCES.txt",
+    "src\\fashion_scout\\api\\routes.py",
+    "src\\fashion_scout\\db\\archive.py",
+    "src\\fashion_scout\\static\\app.css",
+    "src\\fashion_scout\\templates\\index.html",
+    "tests\\api\\test_interface.py",
+    "tests\\client\\test_client.py",
+    "tests\\client\\test_local_integration.py",
+    "tests\\core\\test_runs.py",
+    "tests\\core\\test_worker_repairs.py",
+    "tests\\exports\\test_jobs.py",
+    "tests\\integration\\test_export_flow.py",
+    "skills\\fashion-scout\\SKILL.md",
+    "skills\\fashion-scout\\references\\commands.md",
+    "skills\\fashion-scout\\references\\setup.md"
+  ],
+  "unexpected_changes": [],
+  "tests": {
+    "combined_python": 187,
+    "media_adapter_python": 65,
+    "javascript": 28,
+    "skipped": 0,
+    "skill_validation": "passed with -X utf8"
+  },
+  "wheel": {
+    "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-wheel\\fashion_scout-0.2.0a1-py3-none-any.whl",
+    "sha256": "a6be268a04c94778f6b3d71849bc0daec1330893a3aaa19252585955771e6d72",
+    "matching_production_files": 64,
+    "migrations": 9
+  },
+  "browser": {
+    "evidence": {
+      "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-browser-01",
+      "job_count": 2,
+      "storage": {
+        "revision": 1,
+        "media_root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-browser-01\\future-media",
+        "authority": "database",
+        "affects": "future_archives",
+        "local_backup_root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-browser-01\\backups"
+      },
+      "run_count": 1,
+      "source_requests": 0,
+      "favorites": 0,
+      "maintenance": [
+        {
+          "id": "27010c890ceb4b36952d0d2a3656d312",
+          "kind": "verify",
+          "state": "partial",
+          "created_at": "2026-10-06T15:56:55.973Z",
+          "finished_at": "2026-10-06T15:57:30.308Z",
+          "resumed_at": null,
+          "worker_state": "online",
+          "result": {
+            "checked_at": "2026-10-06T15:57:30.308Z",
+            "counts": {
+              "assets": 12,
+              "damaged": 0,
+              "missing": 4,
+              "products": 8,
+              "unknown": 0,
+              "verified": 12
+            },
+            "issues": [
+              {
+                "category": "missing",
+                "code": "IMAGE_NOT_ARCHIVED",
+                "object_id": "version:fixture-version-3:1:3-0"
+              },
+              {
+                "category": "missing",
+                "code": "IMAGE_NOT_ARCHIVED",
+                "object_id": "version:fixture-version-3:1:3-1"
+              },
+              {
+                "category": "missing",
+                "code": "IMAGE_NOT_ARCHIVED",
+                "object_id": "version:fixture-version-7:1:7-0"
+              },
+              {
+                "category": "missing",
+                "code": "IMAGE_NOT_ARCHIVED",
+                "object_id": "version:fixture-version-7:1:7-1"
+              }
+            ],
+            "state": "partial"
+          },
+          "issue_code": null,
+          "backup_available": null
+        },
+        {
+          "id": "8ac44c03ef944425beb316d7b979e8df",
+          "kind": "backup",
+          "state": "partial",
+          "created_at": "2026-10-06T15:58:29.466Z",
+          "finished_at": "2026-10-06T15:58:29.716Z",
+          "resumed_at": null,
+          "worker_state": "online",
+          "result": {
+            "backup_id": "8ac44c03ef944425beb316d7b979e8df",
+            "checked_at": "2026-10-06T15:58:29.716Z",
+            "counts": {
+              "assets": 12,
+              "damaged": 0,
+              "missing": 4,
+              "products": 8,
+              "unknown": 0,
+              "verified": 12
+            },
+            "issues": [
+              {
+                "category": "missing",
+                "code": "IMAGE_NOT_ARCHIVED",
+                "object_id": "version:fixture-version-3:1:3-0"
+              },
+              {
+                "category": "missing",
+                "code": "IMAGE_NOT_ARCHIVED",
+                "object_id": "version:fixture-version-3:1:3-1"
+              },
+              {
+                "category": "missing",
+                "code": "IMAGE_NOT_ARCHIVED",
+                "object_id": "version:fixture-version-7:1:7-0"
+              },
+              {
+                "category": "missing",
+                "code": "IMAGE_NOT_ARCHIVED",
+                "object_id": "version:fixture-version-7:1:7-1"
+              }
+            ],
+            "manifest_sha256": "3611f217bd4d5355bd08396151d43155ab1b812d15f496bb9968a23044f2dadd",
+            "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-browser-01\\backups\\8ac44c03ef944425beb316d7b979e8df",
+            "reused": false,
+            "state": "partial"
+          },
+          "issue_code": null,
+          "backup_available": true
+        }
+      ]
+    },
+    "desktop": [
+      1440,
+      1000
+    ],
+    "mobile": [
+      390,
+      844
+    ],
+    "horizontal_overflow": false,
+    "console_errors": [],
+    "refresh_queued_job_count": 1,
+    "initial_job_count": 0,
+    "historical_images_after_switch": 6
+  },
+  "backup_sample": {
+    "path": "E:\\github-workspace\\fashion-scout-harness\\docs\\verification\\T5c-backup-sample\\8ac44c03ef944425beb316d7b979e8df",
+    "manifest_sha256": "3611f217bd4d5355bd08396151d43155ab1b812d15f496bb9968a23044f2dadd",
+    "state": "partial",
+    "files": 15,
+    "counts": {
+      "assets": 12,
+      "damaged": 0,
+      "missing": 4,
+      "products": 8,
+      "unknown": 0,
+      "verified": 12
+    }
+  },
+  "service_audits": [
+    {
+      "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-browser-01",
+      "alive": [],
+      "port": 55013
+    },
+    {
+      "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-aa735f8f",
+      "alive": [],
+      "port": 58752
+    },
+    {
+      "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-af3a3ce7",
+      "alive": [],
+      "port": 54728
+    },
+    {
+      "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-export-http-cli-8e704f7a8e",
+      "alive": [],
+      "port": 63636
+    },
+    {
+      "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-export-http-cli-9fc9a3dcb9",
+      "alive": [],
+      "port": 54881
+    },
+    {
+      "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-export-recovery-3b1b0958c4",
+      "alive": [],
+      "port": 53224
+    },
+    {
+      "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-export-recovery-45392c786e",
+      "alive": [],
+      "port": 58031
+    },
+    {
+      "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-export-recovery-57af17ec6e",
+      "alive": [],
+      "port": 53229
+    },
+    {
+      "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-export-recovery-61ada92fed",
+      "alive": [],
+      "port": 54861
+    },
+    {
+      "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-export-recovery-ab9261a994",
+      "alive": [],
+      "port": 54844
+    },
+    {
+      "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-export-recovery-e3b92fc8bb",
+      "alive": [],
+      "port": 54868
+    },
+    {
+      "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-export-web-exit-5e8055a43b",
+      "alive": [],
+      "port": 54908
+    },
+    {
+      "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-export-web-exit-a051b3e608",
+      "alive": [],
+      "port": 54888
+    },
+    {
+      "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-final-unit-2\\test_exited_parent_idempotent_0",
+      "alive": [],
+      "port": 56023
+    },
+    {
+      "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-final-unit-2\\test_interrupted_launcher_adop0",
+      "alive": [],
+      "port": 58042
+    },
+    {
+      "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-final-unit-2\\test_interrupted_launcher_with0",
+      "alive": [],
+      "port": 58050
+    },
+    {
+      "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-final-unit-2\\test_kill_worker_restart_recov0",
+      "alive": [],
+      "port": 58034
+    },
+    {
+      "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-final-unit-2\\test_live_descriptor_identity_0",
+      "alive": [],
+      "port": 56038
+    },
+    {
+      "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-recover-4615d9dc",
+      "alive": [],
+      "port": 58711
+    },
+    {
+      "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-recover-4b650119",
+      "alive": [],
+      "port": 58740
+    },
+    {
+      "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-recover-61f0f1ad",
+      "alive": [],
+      "port": 65018
+    },
+    {
+      "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-recover-6595c6f9",
+      "alive": [],
+      "port": 51554
+    },
+    {
+      "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-recover-7e848f07",
+      "alive": [],
+      "port": 57373
+    },
+    {
+      "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-recover-a3b2570c",
+      "alive": [],
+      "port": 50177
+    },
+    {
+      "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-regression-1\\test_exited_parent_idempotent_0",
+      "alive": [],
+      "port": 62703
+    },
+    {
+      "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-regression-1\\test_interrupted_launcher_adop0",
+      "alive": [],
+      "port": 63948
+    },
+    {
+      "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-regression-1\\test_interrupted_launcher_with0",
+      "alive": [],
+      "port": 63955
+    },
+    {
+      "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-regression-1\\test_kill_worker_restart_recov0",
+      "alive": [],
+      "port": 56236
+    },
+    {
+      "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-regression-1\\test_live_descriptor_identity_0",
+      "alive": [],
+      "port": 56228
+    },
+    {
+      "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-regression-final\\test_exited_parent_idempotent_0",
+      "alive": [],
+      "port": 58927
+    },
+    {
+      "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-regression-final\\test_interrupted_launcher_adop0",
+      "alive": [],
+      "port": 55459
+    },
+    {
+      "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-regression-final\\test_interrupted_launcher_with0",
+      "alive": [],
+      "port": 55466
+    },
+    {
+      "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-regression-final\\test_kill_worker_restart_recov0",
+      "alive": [],
+      "port": 59254
+    },
+    {
+      "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-regression-final\\test_live_descriptor_identity_0",
+      "alive": [],
+      "port": 58982
+    },
+    {
+      "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-restored-02749c76",
+      "alive": [],
+      "port": 61667
+    },
+    {
+      "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-restored-d32be869",
+      "alive": [],
+      "port": 58784
+    },
+    {
+      "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-t4-regression-59b2eebd5941",
+      "alive": [],
+      "port": 61892
+    },
+    {
+      "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-t4-regression-87b8ccf14eeb",
+      "alive": [],
+      "port": 57013
+    }
+  ],
+  "process_evidence": [
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-browser-01\\browser-evidence.json",
+      "sha256": "9de8e7fa10477071151c8ef9e2bfc945553d1326634cada3c54b703b72bc5857",
+      "evidence": {
+        "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-browser-01",
+        "job_count": 2,
+        "storage": {
+          "revision": 1,
+          "media_root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-browser-01\\future-media",
+          "authority": "database",
+          "affects": "future_archives",
+          "local_backup_root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-browser-01\\backups"
+        },
+        "run_count": 1,
+        "source_requests": 0,
+        "favorites": 0,
+        "maintenance": [
+          {
+            "id": "27010c890ceb4b36952d0d2a3656d312",
+            "kind": "verify",
+            "state": "partial",
+            "created_at": "2026-10-06T15:56:55.973Z",
+            "finished_at": "2026-10-06T15:57:30.308Z",
+            "resumed_at": null,
+            "worker_state": "online",
+            "result": {
+              "checked_at": "2026-10-06T15:57:30.308Z",
+              "counts": {
+                "assets": 12,
+                "damaged": 0,
+                "missing": 4,
+                "products": 8,
+                "unknown": 0,
+                "verified": 12
+              },
+              "issues": [
+                {
+                  "category": "missing",
+                  "code": "IMAGE_NOT_ARCHIVED",
+                  "object_id": "version:fixture-version-3:1:3-0"
+                },
+                {
+                  "category": "missing",
+                  "code": "IMAGE_NOT_ARCHIVED",
+                  "object_id": "version:fixture-version-3:1:3-1"
+                },
+                {
+                  "category": "missing",
+                  "code": "IMAGE_NOT_ARCHIVED",
+                  "object_id": "version:fixture-version-7:1:7-0"
+                },
+                {
+                  "category": "missing",
+                  "code": "IMAGE_NOT_ARCHIVED",
+                  "object_id": "version:fixture-version-7:1:7-1"
+                }
+              ],
+              "state": "partial"
+            },
+            "issue_code": null,
+            "backup_available": null
+          },
+          {
+            "id": "8ac44c03ef944425beb316d7b979e8df",
+            "kind": "backup",
+            "state": "partial",
+            "created_at": "2026-10-06T15:58:29.466Z",
+            "finished_at": "2026-10-06T15:58:29.716Z",
+            "resumed_at": null,
+            "worker_state": "online",
+            "result": {
+              "backup_id": "8ac44c03ef944425beb316d7b979e8df",
+              "checked_at": "2026-10-06T15:58:29.716Z",
+              "counts": {
+                "assets": 12,
+                "damaged": 0,
+                "missing": 4,
+                "products": 8,
+                "unknown": 0,
+                "verified": 12
+              },
+              "issues": [
+                {
+                  "category": "missing",
+                  "code": "IMAGE_NOT_ARCHIVED",
+                  "object_id": "version:fixture-version-3:1:3-0"
+                },
+                {
+                  "category": "missing",
+                  "code": "IMAGE_NOT_ARCHIVED",
+                  "object_id": "version:fixture-version-3:1:3-1"
+                },
+                {
+                  "category": "missing",
+                  "code": "IMAGE_NOT_ARCHIVED",
+                  "object_id": "version:fixture-version-7:1:7-0"
+                },
+                {
+                  "category": "missing",
+                  "code": "IMAGE_NOT_ARCHIVED",
+                  "object_id": "version:fixture-version-7:1:7-1"
+                }
+              ],
+              "manifest_sha256": "3611f217bd4d5355bd08396151d43155ab1b812d15f496bb9968a23044f2dadd",
+              "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-browser-01\\backups\\8ac44c03ef944425beb316d7b979e8df",
+              "reused": false,
+              "state": "partial"
+            },
+            "issue_code": null,
+            "backup_available": true
+          }
+        ]
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-aa735f8f\\evidence.json",
+      "sha256": "a8f7b9de7a5acbbe15c77060b52cc045506fb74130a329a88e948e90c02fe603",
+      "evidence": {
+        "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-aa735f8f",
+        "commands": [
+          {
+            "command": "configure",
+            "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-aa735f8f",
+            "exit": 0,
+            "result": {
+              "ok": true,
+              "data": {
+                "configured": true,
+                "data_root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-aa735f8f",
+                "port": 58752,
+                "service_started": false
+              },
+              "service": {
+                "checked": false,
+                "web_ready": null,
+                "worker_state": "unknown"
+              },
+              "intent_id": null,
+              "exit_code": 0
+            }
+          },
+          {
+            "command": "verify",
+            "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-aa735f8f",
+            "exit": 73,
+            "result": null
+          },
+          {
+            "command": "intents",
+            "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-aa735f8f",
+            "exit": 0,
+            "result": {
+              "ok": true,
+              "data": {
+                "items": [
+                  {
+                    "intent_id": "3dc93bcbc8564d72a35e437cd578a57a",
+                    "command": "verify",
+                    "state": "sending",
+                    "created_at": 1791301637.468975,
+                    "payload": {
+                      "scope": "all",
+                      "request_key": "573c10aee35b4ae4b45667cff2584155"
+                    }
+                  }
+                ],
+                "intent_directory": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-aa735f8f\\control\\client-intents"
+              },
+              "service": {
+                "checked": false,
+                "web_ready": null,
+                "worker_state": "unknown"
+              },
+              "intent_id": null,
+              "exit_code": 0
+            }
+          },
+          {
+            "command": "resume",
+            "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-aa735f8f",
+            "exit": 0,
+            "result": {
+              "ok": true,
+              "data": {
+                "intent_id": "3dc93bcbc8564d72a35e437cd578a57a",
+                "intent_state": "accepted",
+                "result": {
+                  "maintenance": {
+                    "id": "4e1afddd8fad41b9817c48d4cd87cbe0",
+                    "kind": "verify",
+                    "state": "partial",
+                    "created_at": "2026-10-06T15:47:17.538Z",
+                    "finished_at": "2026-10-06T15:47:17.774Z",
+                    "resumed_at": null,
+                    "worker_state": "online",
+                    "result": {
+                      "checked_at": "2026-10-06T15:47:17.774Z",
+                      "counts": {
+                        "assets": 6,
+                        "damaged": 0,
+                        "missing": 2,
+                        "products": 4,
+                        "unknown": 0,
+                        "verified": 6
+                      },
+                      "issues": [
+                        {
+                          "category": "missing",
+                          "code": "IMAGE_NOT_ARCHIVED",
+                          "object_id": "version:fixture-version-3:1:3-0"
+                        },
+                        {
+                          "category": "missing",
+                          "code": "IMAGE_NOT_ARCHIVED",
+                          "object_id": "version:fixture-version-3:1:3-1"
+                        }
+                      ],
+                      "state": "partial"
+                    },
+                    "issue_code": null,
+                    "backup_available": null
+                  },
+                  "reused": true,
+                  "request_id": "98ad6d2957994890b28b553ca3bd5c2f"
+                }
+              },
+              "service": {
+                "request_id": "239eac64390c41048a663908b478f67f",
+                "app_instance_id": "bd5191aa-6b0b-4658-85af-79c92016b3db",
+                "schema_version": 9,
+                "web_ready": true,
+                "worker_state": "online",
+                "heartbeat_at": 1791301638.2608802,
+                "worker_pid": 47112,
+                "worker_born": 1791301636.2700028,
+                "pid": 81056,
+                "born": 1791301635.68294,
+                "source_adapter": "futario-json-v1",
+                "checked": true
+              },
+              "intent_id": "3dc93bcbc8564d72a35e437cd578a57a",
+              "exit_code": 0
+            }
+          },
+          {
+            "command": "maintenance-status",
+            "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-aa735f8f",
+            "exit": 0,
+            "result": {
+              "ok": true,
+              "data": {
+                "maintenance": {
+                  "id": "4e1afddd8fad41b9817c48d4cd87cbe0",
+                  "kind": "verify",
+                  "state": "partial",
+                  "created_at": "2026-10-06T15:47:17.538Z",
+                  "finished_at": "2026-10-06T15:47:17.774Z",
+                  "resumed_at": null,
+                  "worker_state": "online",
+                  "result": {
+                    "checked_at": "2026-10-06T15:47:17.774Z",
+                    "counts": {
+                      "assets": 6,
+                      "damaged": 0,
+                      "missing": 2,
+                      "products": 4,
+                      "unknown": 0,
+                      "verified": 6
+                    },
+                    "issues": [
+                      {
+                        "category": "missing",
+                        "code": "IMAGE_NOT_ARCHIVED",
+                        "object_id": "version:fixture-version-3:1:3-0"
+                      },
+                      {
+                        "category": "missing",
+                        "code": "IMAGE_NOT_ARCHIVED",
+                        "object_id": "version:fixture-version-3:1:3-1"
+                      }
+                    ],
+                    "state": "partial"
+                  },
+                  "issue_code": null,
+                  "backup_available": null
+                },
+                "request_id": "3231437765bd446f99c4db5b5024abb0"
+              },
+              "service": {
+                "request_id": "b3db008ec2414aeb9c635dc6c7cd554d",
+                "app_instance_id": "bd5191aa-6b0b-4658-85af-79c92016b3db",
+                "schema_version": 9,
+                "web_ready": true,
+                "worker_state": "online",
+                "heartbeat_at": 1791301638.52341,
+                "worker_pid": 47112,
+                "worker_born": 1791301636.2700028,
+                "pid": 81056,
+                "born": 1791301635.68294,
+                "source_adapter": "futario-json-v1",
+                "checked": true
+              },
+              "intent_id": null,
+              "exit_code": 0
+            }
+          },
+          {
+            "command": "backup",
+            "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-aa735f8f",
+            "exit": 73,
+            "result": null
+          },
+          {
+            "command": "intents",
+            "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-aa735f8f",
+            "exit": 0,
+            "result": {
+              "ok": true,
+              "data": {
+                "items": [
+                  {
+                    "intent_id": "e00a7cc8796a4764a40cb2dfd1768585",
+                    "command": "backup",
+                    "state": "sending",
+                    "created_at": 1791301639.1923625,
+                    "payload": {
+                      "destination_id": "local",
+                      "request_key": "7aaee79295d54a9dbcb7e082ff14f2aa"
+                    }
+                  },
+                  {
+                    "intent_id": "3dc93bcbc8564d72a35e437cd578a57a",
+                    "command": "verify",
+                    "state": "accepted",
+                    "created_at": 1791301637.468975,
+                    "payload": {
+                      "scope": "all",
+                      "request_key": "573c10aee35b4ae4b45667cff2584155"
+                    }
+                  }
+                ],
+                "intent_directory": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-aa735f8f\\control\\client-intents"
+              },
+              "service": {
+                "checked": false,
+                "web_ready": null,
+                "worker_state": "unknown"
+              },
+              "intent_id": null,
+              "exit_code": 0
+            }
+          },
+          {
+            "command": "resume",
+            "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-aa735f8f",
+            "exit": 0,
+            "result": {
+              "ok": true,
+              "data": {
+                "intent_id": "e00a7cc8796a4764a40cb2dfd1768585",
+                "intent_state": "accepted",
+                "result": {
+                  "maintenance": {
+                    "id": "679dc72dddfa4b7ca62c7183ecf7f9c7",
+                    "kind": "backup",
+                    "state": "partial",
+                    "created_at": "2026-10-06T15:47:19.276Z",
+                    "finished_at": "2026-10-06T15:47:19.465Z",
+                    "resumed_at": null,
+                    "worker_state": "online",
+                    "result": {
+                      "backup_id": "679dc72dddfa4b7ca62c7183ecf7f9c7",
+                      "checked_at": "2026-10-06T15:47:19.465Z",
+                      "counts": {
+                        "assets": 6,
+                        "damaged": 0,
+                        "missing": 2,
+                        "products": 4,
+                        "unknown": 0,
+                        "verified": 6
+                      },
+                      "issues": [
+                        {
+                          "category": "missing",
+                          "code": "IMAGE_NOT_ARCHIVED",
+                          "object_id": "version:fixture-version-3:1:3-0"
+                        },
+                        {
+                          "category": "missing",
+                          "code": "IMAGE_NOT_ARCHIVED",
+                          "object_id": "version:fixture-version-3:1:3-1"
+                        }
+                      ],
+                      "manifest_sha256": "5eb78cf74b7df6119e3d6923f7bcef5798d79e5af759b4813d0dad5a1e5d9056",
+                      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-aa735f8f\\backups\\679dc72dddfa4b7ca62c7183ecf7f9c7",
+                      "reused": false,
+                      "state": "partial"
+                    },
+                    "issue_code": null,
+                    "backup_available": true
+                  },
+                  "reused": true,
+                  "request_id": "4a2bd809ac554634aa63501b1a73a849"
+                }
+              },
+              "service": {
+                "request_id": "f5a4e7474ae74f358ef02d9c575c4df3",
+                "app_instance_id": "bd5191aa-6b0b-4658-85af-79c92016b3db",
+                "schema_version": 9,
+                "web_ready": true,
+                "worker_state": "online",
+                "heartbeat_at": 1791301639.8591335,
+                "worker_pid": 47112,
+                "worker_born": 1791301636.2700028,
+                "pid": 81056,
+                "born": 1791301635.68294,
+                "source_adapter": "futario-json-v1",
+                "checked": true
+              },
+              "intent_id": "e00a7cc8796a4764a40cb2dfd1768585",
+              "exit_code": 0
+            }
+          },
+          {
+            "command": "maintenance-status",
+            "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-aa735f8f",
+            "exit": 0,
+            "result": {
+              "ok": true,
+              "data": {
+                "maintenance": {
+                  "id": "679dc72dddfa4b7ca62c7183ecf7f9c7",
+                  "kind": "backup",
+                  "state": "partial",
+                  "created_at": "2026-10-06T15:47:19.276Z",
+                  "finished_at": "2026-10-06T15:47:19.465Z",
+                  "resumed_at": null,
+                  "worker_state": "online",
+                  "result": {
+                    "backup_id": "679dc72dddfa4b7ca62c7183ecf7f9c7",
+                    "checked_at": "2026-10-06T15:47:19.465Z",
+                    "counts": {
+                      "assets": 6,
+                      "damaged": 0,
+                      "missing": 2,
+                      "products": 4,
+                      "unknown": 0,
+                      "verified": 6
+                    },
+                    "issues": [
+                      {
+                        "category": "missing",
+                        "code": "IMAGE_NOT_ARCHIVED",
+                        "object_id": "version:fixture-version-3:1:3-0"
+                      },
+                      {
+                        "category": "missing",
+                        "code": "IMAGE_NOT_ARCHIVED",
+                        "object_id": "version:fixture-version-3:1:3-1"
+                      }
+                    ],
+                    "manifest_sha256": "5eb78cf74b7df6119e3d6923f7bcef5798d79e5af759b4813d0dad5a1e5d9056",
+                    "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-aa735f8f\\backups\\679dc72dddfa4b7ca62c7183ecf7f9c7",
+                    "reused": false,
+                    "state": "partial"
+                  },
+                  "issue_code": null,
+                  "backup_available": true
+                },
+                "request_id": "4c039f72622f4f57a45b3236550075dd"
+              },
+              "service": {
+                "request_id": "584c8a0b4fac4f0585924b1c5a7f0d85",
+                "app_instance_id": "bd5191aa-6b0b-4658-85af-79c92016b3db",
+                "schema_version": 9,
+                "web_ready": true,
+                "worker_state": "online",
+                "heartbeat_at": 1791301640.398281,
+                "worker_pid": 47112,
+                "worker_born": 1791301636.2700028,
+                "pid": 81056,
+                "born": 1791301635.68294,
+                "source_adapter": "futario-json-v1",
+                "checked": true
+              },
+              "intent_id": null,
+              "exit_code": 0
+            }
+          },
+          {
+            "command": "storage",
+            "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-aa735f8f",
+            "exit": 0,
+            "result": {
+              "ok": true,
+              "data": {
+                "storage": {
+                  "revision": 0,
+                  "media_root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-aa735f8f\\media",
+                  "authority": "legacy_default",
+                  "affects": "future_archives",
+                  "local_backup_root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-aa735f8f\\backups"
+                },
+                "request_id": "f21c4ea1f8844b72aab0bb5dfe7f2b20"
+              },
+              "service": {
+                "request_id": "ba47d3912f28466382d4ed3176da40a7",
+                "app_instance_id": "bd5191aa-6b0b-4658-85af-79c92016b3db",
+                "schema_version": 9,
+                "web_ready": true,
+                "worker_state": "online",
+                "heartbeat_at": 1791301640.878147,
+                "worker_pid": 47112,
+                "worker_born": 1791301636.2700028,
+                "pid": 81056,
+                "born": 1791301635.68294,
+                "source_adapter": "futario-json-v1",
+                "checked": true
+              },
+              "intent_id": null,
+              "exit_code": 0
+            }
+          },
+          {
+            "command": "set-storage",
+            "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-aa735f8f",
+            "exit": 73,
+            "result": null
+          },
+          {
+            "command": "intents",
+            "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-aa735f8f",
+            "exit": 0,
+            "result": {
+              "ok": true,
+              "data": {
+                "items": [
+                  {
+                    "intent_id": "3c862fb0dc474b6b853c469208bbe6df",
+                    "command": "set-storage",
+                    "state": "sending",
+                    "created_at": 1791301641.3742375,
+                    "payload": {
+                      "expected_revision": 0,
+                      "media_root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-aa735f8f\\next-media"
+                    }
+                  },
+                  {
+                    "intent_id": "e00a7cc8796a4764a40cb2dfd1768585",
+                    "command": "backup",
+                    "state": "accepted",
+                    "created_at": 1791301639.1923625,
+                    "payload": {
+                      "destination_id": "local",
+                      "request_key": "7aaee79295d54a9dbcb7e082ff14f2aa"
+                    }
+                  },
+                  {
+                    "intent_id": "3dc93bcbc8564d72a35e437cd578a57a",
+                    "command": "verify",
+                    "state": "accepted",
+                    "created_at": 1791301637.468975,
+                    "payload": {
+                      "scope": "all",
+                      "request_key": "573c10aee35b4ae4b45667cff2584155"
+                    }
+                  }
+                ],
+                "intent_directory": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-aa735f8f\\control\\client-intents"
+              },
+              "service": {
+                "checked": false,
+                "web_ready": null,
+                "worker_state": "unknown"
+              },
+              "intent_id": null,
+              "exit_code": 0
+            }
+          },
+          {
+            "command": "resume",
+            "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-aa735f8f",
+            "exit": 4,
+            "result": {
+              "ok": false,
+              "error": {
+                "code": "CAS_REVIEW_REQUIRED",
+                "message": "上次写入结果不确定；已读取当前状态，须核对意图后再决定，不自动重放",
+                "details": {
+                  "intent_id": "3c862fb0dc474b6b853c469208bbe6df",
+                  "current": {
+                    "storage": {
+                      "revision": 1,
+                      "media_root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-aa735f8f\\next-media",
+                      "authority": "database",
+                      "affects": "future_archives",
+                      "local_backup_root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-aa735f8f\\backups"
+                    },
+                    "request_id": "cd08400d912845c09571557f91f77136"
+                  }
+                }
+              },
+              "service": {
+                "request_id": "f46fd82ce2ba495e857f2914608ebbe1",
+                "app_instance_id": "bd5191aa-6b0b-4658-85af-79c92016b3db",
+                "schema_version": 9,
+                "web_ready": true,
+                "worker_state": "online",
+                "heartbeat_at": 1791301642.1894643,
+                "worker_pid": 47112,
+                "worker_born": 1791301636.2700028,
+                "pid": 81056,
+                "born": 1791301635.68294,
+                "source_adapter": "futario-json-v1",
+                "checked": true
+              },
+              "intent_id": "3c862fb0dc474b6b853c469208bbe6df",
+              "exit_code": 4
+            }
+          },
+          {
+            "command": "storage",
+            "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-aa735f8f",
+            "exit": 0,
+            "result": {
+              "ok": true,
+              "data": {
+                "storage": {
+                  "revision": 1,
+                  "media_root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-aa735f8f\\next-media",
+                  "authority": "database",
+                  "affects": "future_archives",
+                  "local_backup_root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-aa735f8f\\backups"
+                },
+                "request_id": "d1790fdac4484f038a9bdef2cd82ece5"
+              },
+              "service": {
+                "request_id": "e901500fd6534543822d9fee6dbefe4f",
+                "app_instance_id": "bd5191aa-6b0b-4658-85af-79c92016b3db",
+                "schema_version": 9,
+                "web_ready": true,
+                "worker_state": "online",
+                "heartbeat_at": 1791301642.530633,
+                "worker_pid": 47112,
+                "worker_born": 1791301636.2700028,
+                "pid": 81056,
+                "born": 1791301635.68294,
+                "source_adapter": "futario-json-v1",
+                "checked": true
+              },
+              "intent_id": null,
+              "exit_code": 0
+            }
+          },
+          {
+            "command": "configure",
+            "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-restored-d32be869",
+            "exit": 0,
+            "result": {
+              "ok": true,
+              "data": {
+                "configured": true,
+                "data_root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-restored-d32be869",
+                "port": 58784,
+                "service_started": false
+              },
+              "service": {
+                "checked": false,
+                "web_ready": null,
+                "worker_state": "unknown"
+              },
+              "intent_id": null,
+              "exit_code": 0
+            }
+          },
+          {
+            "command": "favorites",
+            "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-restored-d32be869",
+            "exit": 0,
+            "result": {
+              "ok": true,
+              "data": {
+                "snapshot_id": "bc221b6f247ab7c02004a63914f2fec7",
+                "snapshot_expires_at": "2026-10-06T16:02:24.750Z",
+                "next_cursor": null,
+                "total": 4,
+                "items": [
+                  {
+                    "id": "fixture-000",
+                    "title": "秋日松弛感 · 羊毛针织衫",
+                    "source": {
+                      "date_reason": "synthetic_fixture",
+                      "source_id": "0",
+                      "source_published_at": null,
+                      "title": "秋日松弛感 · 羊毛针织衫",
+                      "url": "https://example.invalid/products/0"
+                    },
+                    "first_seen_at": "2026-10-01T12:00:00Z",
+                    "first_eligible_at": "2026-10-01T12:00:00Z",
+                    "effective_category": "knitwear",
+                    "user_state": {
+                      "product_id": "fixture-000",
+                      "favorite": true,
+                      "excluded": false,
+                      "category_override": null,
+                      "revision": 1,
+                      "viewed_at": null,
+                      "seen_version_id": null,
+                      "seen_version_revision": null,
+                      "seen_content_digest": null
+                    },
+                    "media_state": "ready",
+                    "latest_detail_error": null,
+                    "has_material_update": false,
+                    "latest_available_version_id": "fixture-version-0",
+                    "latest_available_revision": 1,
+                    "latest_complete_version_id": "fixture-version-0",
+                    "latest_complete_revision": 1,
+                    "latest_observed_version_id": "fixture-version-0",
+                    "latest_observed_revision": 1,
+                    "version_id": "fixture-version-0",
+                    "version_revision": 1,
+                    "images": [
+                      {
+                        "asset_id": "fixture-asset-0-0",
+                        "sha256": "0d582e182a323b091b2372d6225d00e4b49dece3e2f5994fd446add256e0a3eb",
+                        "verified_at": "2026-10-01T12:00:00Z",
+                        "preview_url": "/v1/assets/fixture-asset-0-0?rendition=preview",
+                        "original_url": "/v1/assets/fixture-asset-0-0?rendition=original"
+                      },
+                      {
+                        "asset_id": "fixture-asset-0-1",
+                        "sha256": "5a18cbda52772733fc25f651db1b5c3117f95b66d1be7befb34735809f298f0a",
+                        "verified_at": "2026-10-01T12:00:00Z",
+                        "preview_url": "/v1/assets/fixture-asset-0-1?rendition=preview",
+                        "original_url": "/v1/assets/fixture-asset-0-1?rendition=original"
+                      }
+                    ],
+                    "album": {
+                      "expected_count": 2,
+                      "stored_count": 2,
+                      "missing": [],
+                      "coverage_scope": [
+                        "product.images"
+                      ],
+                      "coverage_complete": true,
+                      "verified_at": "2026-10-01T12:00:00Z",
+                      "capability_notes": []
+                    },
+                    "latest_observed_album": {
+                      "expected_count": 2,
+                      "stored_count": 2,
+                      "missing": [],
+                      "coverage_scope": [
+                        "product.images"
+                      ],
+                      "coverage_complete": true,
+                      "verified_at": "2026-10-01T12:00:00Z",
+                      "capability_notes": []
+                    },
+                    "using_previous_images": false,
+                    "versions": [
+                      {
+                        "id": "fixture-version-0",
+                        "revision": 1,
+                        "content_digest": "fe9a3d4ca464658eee6700d0f51926bd534daf56ccb478a5136bca3e17c267e9"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "fixture-001",
+                    "title": "暖砂色 · 简约长款风衣",
+                    "source": {
+                      "date_reason": "synthetic_fixture",
+                      "source_id": "1",
+                      "source_published_at": null,
+                      "title": "暖砂色 · 简约长款风衣",
+                      "url": "https://example.invalid/products/1"
+                    },
+                    "first_seen_at": "2026-10-01T12:00:00Z",
+                    "first_eligible_at": "2026-10-01T12:00:00Z",
+                    "effective_category": "outerwear",
+                    "user_state": {
+                      "product_id": "fixture-001",
+                      "favorite": true,
+                      "excluded": false,
+                      "category_override": null,
+                      "revision": 1,
+                      "viewed_at": null,
+                      "seen_version_id": null,
+                      "seen_version_revision": null,
+                      "seen_content_digest": null
+                    },
+                    "media_state": "ready",
+                    "latest_detail_error": null,
+                    "has_material_update": false,
+                    "latest_available_version_id": "fixture-version-1",
+                    "latest_available_revision": 1,
+                    "latest_complete_version_id": "fixture-version-1",
+                    "latest_complete_revision": 1,
+                    "latest_observed_version_id": "fixture-version-1",
+                    "latest_observed_revision": 1,
+                    "version_id": "fixture-version-1",
+                    "version_revision": 1,
+                    "images": [
+                      {
+                        "asset_id": "fixture-asset-1-0",
+                        "sha256": "5a18cbda52772733fc25f651db1b5c3117f95b66d1be7befb34735809f298f0a",
+                        "verified_at": "2026-10-01T12:00:00Z",
+                        "preview_url": "/v1/assets/fixture-asset-1-0?rendition=preview",
+                        "original_url": "/v1/assets/fixture-asset-1-0?rendition=original"
+                      },
+                      {
+                        "asset_id": "fixture-asset-1-1",
+                        "sha256": "15631173a30fb10e3d2fde1e8b3febb29c3b346738689e41563a120320cb3fd3",
+                        "verified_at": "2026-10-01T12:00:00Z",
+                        "preview_url": "/v1/assets/fixture-asset-1-1?rendition=preview",
+                        "original_url": "/v1/assets/fixture-asset-1-1?rendition=original"
+                      }
+                    ],
+                    "album": {
+                      "expected_count": 2,
+                      "stored_count": 2,
+                      "missing": [],
+                      "coverage_scope": [
+                        "product.images"
+                      ],
+                      "coverage_complete": true,
+                      "verified_at": "2026-10-01T12:00:00Z",
+                      "capability_notes": []
+                    },
+                    "latest_observed_album": {
+                      "expected_count": 2,
+                      "stored_count": 2,
+                      "missing": [],
+                      "coverage_scope": [
+                        "product.images"
+                      ],
+                      "coverage_complete": true,
+                      "verified_at": "2026-10-01T12:00:00Z",
+                      "capability_notes": []
+                    },
+                    "using_previous_images": false,
+                    "versions": [
+                      {
+                        "id": "fixture-version-1",
+                        "revision": 1,
+                        "content_digest": "a5a96edd3c1452a3fbdd3d6411ae8f128bbcd3a522f058d1465f17c59393bf71"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "fixture-002",
+                    "title": "雾蓝色 · 轻盈衬衫",
+                    "source": {
+                      "date_reason": "synthetic_fixture",
+                      "source_id": "2",
+                      "source_published_at": null,
+                      "title": "雾蓝色 · 轻盈衬衫",
+                      "url": "https://example.invalid/products/2"
+                    },
+                    "first_seen_at": "2026-10-01T12:00:00Z",
+                    "first_eligible_at": "2026-10-01T12:00:00Z",
+                    "effective_category": "tops",
+                    "user_state": {
+                      "product_id": "fixture-002",
+                      "favorite": true,
+                      "excluded": false,
+                      "category_override": null,
+                      "revision": 1,
+                      "viewed_at": null,
+                      "seen_version_id": null,
+                      "seen_version_revision": null,
+                      "seen_content_digest": null
+                    },
+                    "media_state": "ready",
+                    "latest_detail_error": null,
+                    "has_material_update": false,
+                    "latest_available_version_id": "fixture-version-2",
+                    "latest_available_revision": 1,
+                    "latest_complete_version_id": "fixture-version-2",
+                    "latest_complete_revision": 1,
+                    "latest_observed_version_id": "fixture-version-2",
+                    "latest_observed_revision": 1,
+                    "version_id": "fixture-version-2",
+                    "version_revision": 1,
+                    "images": [
+                      {
+                        "asset_id": "fixture-asset-2-0",
+                        "sha256": "15631173a30fb10e3d2fde1e8b3febb29c3b346738689e41563a120320cb3fd3",
+                        "verified_at": "2026-10-01T12:00:00Z",
+                        "preview_url": "/v1/assets/fixture-asset-2-0?rendition=preview",
+                        "original_url": "/v1/assets/fixture-asset-2-0?rendition=original"
+                      },
+                      {
+                        "asset_id": "fixture-asset-2-1",
+                        "sha256": "f4742a8a0ff69b0a6a33078d5d354c41d223e8a96d49e1e46ffa793713ba1ba6",
+                        "verified_at": "2026-10-01T12:00:00Z",
+                        "preview_url": "/v1/assets/fixture-asset-2-1?rendition=preview",
+                        "original_url": "/v1/assets/fixture-asset-2-1?rendition=original"
+                      }
+                    ],
+                    "album": {
+                      "expected_count": 2,
+                      "stored_count": 2,
+                      "missing": [],
+                      "coverage_scope": [
+                        "product.images"
+                      ],
+                      "coverage_complete": true,
+                      "verified_at": "2026-10-01T12:00:00Z",
+                      "capability_notes": []
+                    },
+                    "latest_observed_album": {
+                      "expected_count": 2,
+                      "stored_count": 2,
+                      "missing": [],
+                      "coverage_scope": [
+                        "product.images"
+                      ],
+                      "coverage_complete": true,
+                      "verified_at": "2026-10-01T12:00:00Z",
+                      "capability_notes": []
+                    },
+                    "using_previous_images": false,
+                    "versions": [
+                      {
+                        "id": "fixture-version-2",
+                        "revision": 1,
+                        "content_digest": "df89b47681c067391cc4ed705ab518f2f6054cb01ce1fae6bc1099eb0501fdef"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "fixture-003",
+                    "title": "米杏色 · 垂感连衣裙",
+                    "source": {
+                      "date_reason": "synthetic_fixture",
+                      "source_id": "3",
+                      "source_published_at": null,
+                      "title": "米杏色 · 垂感连衣裙",
+                      "url": "https://example.invalid/products/3"
+                    },
+                    "first_seen_at": "2026-10-01T12:00:00Z",
+                    "first_eligible_at": "2026-10-01T12:00:00Z",
+                    "effective_category": "dress",
+                    "user_state": {
+                      "product_id": "fixture-003",
+                      "favorite": true,
+                      "excluded": false,
+                      "category_override": null,
+                      "revision": 1,
+                      "viewed_at": null,
+                      "seen_version_id": null,
+                      "seen_version_revision": null,
+                      "seen_content_digest": null
+                    },
+                    "media_state": "failed",
+                    "latest_detail_error": null,
+                    "has_material_update": false,
+                    "latest_available_version_id": null,
+                    "latest_available_revision": null,
+                    "latest_complete_version_id": null,
+                    "latest_complete_revision": null,
+                    "latest_observed_version_id": "fixture-version-3",
+                    "latest_observed_revision": 1,
+                    "version_id": "fixture-version-3",
+                    "version_revision": 1,
+                    "images": [],
+                    "album": {
+                      "expected_count": 2,
+                      "stored_count": 0,
+                      "missing": [
+                        {
+                          "source_image_id": "3-0",
+                          "source_url": "https://example.invalid/3-0.png",
+                          "reason": "HTTP_404",
+                          "retryable": true
+                        },
+                        {
+                          "source_image_id": "3-1",
+                          "source_url": "https://example.invalid/3-1.png",
+                          "reason": "HTTP_404",
+                          "retryable": true
+                        }
+                      ],
+                      "coverage_scope": [
+                        "product.images"
+                      ],
+                      "coverage_complete": false,
+                      "verified_at": null,
+                      "capability_notes": []
+                    },
+                    "latest_observed_album": {
+                      "expected_count": 2,
+                      "stored_count": 0,
+                      "missing": [
+                        {
+                          "source_image_id": "3-0",
+                          "source_url": "https://example.invalid/3-0.png",
+                          "reason": "HTTP_404",
+                          "retryable": true
+                        },
+                        {
+                          "source_image_id": "3-1",
+                          "source_url": "https://example.invalid/3-1.png",
+                          "reason": "HTTP_404",
+                          "retryable": true
+                        }
+                      ],
+                      "coverage_scope": [
+                        "product.images"
+                      ],
+                      "coverage_complete": false,
+                      "verified_at": null,
+                      "capability_notes": []
+                    },
+                    "using_previous_images": false,
+                    "versions": [
+                      {
+                        "id": "fixture-version-3",
+                        "revision": 1,
+                        "content_digest": "508b6bc35f55fa8cb458a1dbdd57b891deab16a3974acb5ea3f70da8a1bf2de9"
+                      }
+                    ]
+                  }
+                ],
+                "latest_run_summary": {
+                  "latest_run": {
+                    "id": "synthetic-fixture-run",
+                    "state": "succeeded",
+                    "snapshot": {
+                      "site_ids": [
+                        "futario"
+                      ],
+                      "window_days": 14,
+                      "unknown_date_policy": "include",
+                      "discovery": {
+                        "page_size": 20,
+                        "max_pages_per_pass": 30,
+                        "passes": 2,
+                        "max_requests": 60,
+                        "max_products": 600
+                      },
+                      "max_details": 300,
+                      "network": {
+                        "resolver_mode": "system",
+                        "detail_concurrency": 1,
+                        "image_concurrency": 2,
+                        "min_interval_ms": 1000,
+                        "max_attempts": 3,
+                        "max_http_requests": 3000,
+                        "max_image_requests": 2400,
+                        "run_total_seconds": 3600,
+                        "timeouts": {
+                          "connect": 10,
+                          "pool": 10,
+                          "read": 30,
+                          "write": 30,
+                          "total": 120
+                        }
+                      },
+                      "storage": {
+                        "max_image_bytes": 26214400,
+                        "max_pixels": 50000000,
+                        "run_download_bytes": 2147483648,
+                        "min_free_bytes": 5368709120,
+                        "preview_cache_bytes": 536870912
+                      },
+                      "plan_revision": 1,
+                      "window_start": "2026-09-17T12:00:00Z",
+                      "window_end": "2026-10-01T12:00:00Z",
+                      "adapter_versions": {
+                        "futario": "futario-json-v1"
+                      },
+                      "site_entries": {
+                        "futario": "https://example.invalid"
+                      },
+                      "new_run_trigger": "manual",
+                      "discovery_baseline_complete": {
+                        "futario": false
+                      }
+                    },
+                    "created_at": "2026-10-01T12:00:00Z",
+                    "started_at": null,
+                    "finished_at": "2026-10-01T12:00:00Z",
+                    "epoch": 0,
+                    "attempt": 1,
+                    "issue_code": null,
+                    "resumed_at": null,
+                    "stage": "accepted",
+                    "counts": {},
+                    "plan_revision": 1,
+                    "worker_state": "online",
+                    "coverage": [],
+                    "issues": []
+                  },
+                  "latest_completed_at": "2026-10-01T12:00:00Z",
+                  "latest_successful_at": "2026-10-01T12:00:00Z"
+                },
+                "request_id": "4093ff8bd0a44312824c61cdba1a6646"
+              },
+              "service": {
+                "request_id": "e97c4ba77d5b4218ad837095efa27deb",
+                "app_instance_id": "55863f38-796b-4288-9ad0-ebf9f1309176",
+                "schema_version": 9,
+                "web_ready": true,
+                "worker_state": "online",
+                "heartbeat_at": 1791301644.6961465,
+                "worker_pid": 79616,
+                "worker_born": 1791301643.5504472,
+                "pid": 81648,
+                "born": 1791301642.9962597,
+                "source_adapter": "futario-json-v1",
+                "checked": true
+              },
+              "intent_id": null,
+              "exit_code": 0
+            }
+          },
+          {
+            "command": "export",
+            "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-restored-d32be869",
+            "exit": 0,
+            "result": {
+              "ok": true,
+              "data": {
+                "intent_id": "343aed705faf4eaf9bca0138186287b4",
+                "intent_state": "accepted",
+                "result": {
+                  "export": {
+                    "id": "0c3c951f3d164cabb9c1402b4ffca84b",
+                    "state": "queued",
+                    "created_at": "2026-10-06T15:47:25.424Z",
+                    "finished_at": null,
+                    "attempt": 1,
+                    "resumed_at": null,
+                    "worker_state": "online",
+                    "counts": {
+                      "products": 4,
+                      "assets": 6
+                    },
+                    "missing_count": 0,
+                    "unknown_count": 0,
+                    "issues": [],
+                    "download_url": null,
+                    "sha256": null
+                  },
+                  "reused": false,
+                  "request_id": "d55df4641f154908925a566cc08637b0"
+                }
+              },
+              "service": {
+                "request_id": "9e4fd40953d449d48ded4cb87a47a90e",
+                "app_instance_id": "55863f38-796b-4288-9ad0-ebf9f1309176",
+                "schema_version": 9,
+                "web_ready": true,
+                "worker_state": "online",
+                "heartbeat_at": 1791301645.238249,
+                "worker_pid": 79616,
+                "worker_born": 1791301643.5504472,
+                "pid": 81648,
+                "born": 1791301642.9962597,
+                "source_adapter": "futario-json-v1",
+                "checked": true
+              },
+              "intent_id": "343aed705faf4eaf9bca0138186287b4",
+              "exit_code": 0
+            }
+          }
+        ],
+        "restore": {
+          "state": "partial",
+          "backup_id": "679dc72dddfa4b7ca62c7183ecf7f9c7",
+          "manifest_sha256": "5eb78cf74b7df6119e3d6923f7bcef5798d79e5af759b4813d0dad5a1e5d9056",
+          "target": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-restored-d32be869",
+          "counts": {
+            "assets": 6,
+            "damaged": 0,
+            "missing": 2,
+            "products": 4,
+            "unknown": 0,
+            "verified": 6
+          },
+          "issues": [
+            {
+              "category": "missing",
+              "code": "IMAGE_NOT_ARCHIVED",
+              "object_id": "version:fixture-version-3:1:3-0"
+            },
+            {
+              "category": "missing",
+              "code": "IMAGE_NOT_ARCHIVED",
+              "object_id": "version:fixture-version-3:1:3-1"
+            }
+          ],
+          "services_started": false,
+          "new_runs": 0,
+          "old_runtime_held": true,
+          "root_mapping": {
+            "fixture-root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-restored-d32be869\\media\\roots\\a918064c8f7e3cfdecbce330fcd565253b5b533f902e20e0ec6d8c869341ea6f"
+          }
+        },
+        "source_requests": 0,
+        "job_count": 2,
+        "restored_export": {
+          "id": "0c3c951f3d164cabb9c1402b4ffca84b",
+          "state": "partial",
+          "created_at": "2026-10-06T15:47:25.424Z",
+          "finished_at": "2026-10-06T15:47:25.646Z",
+          "attempt": 1,
+          "resumed_at": null,
+          "worker_state": "online",
+          "counts": {
+            "products": 4,
+            "assets": 6
+          },
+          "missing_count": 2,
+          "unknown_count": 0,
+          "issues": [],
+          "download_url": "/v1/exports/0c3c951f3d164cabb9c1402b4ffca84b/download",
+          "sha256": "53f16bd1df5cde37a45c35fadf47e188b80113abafb0d5ec5e3bc5f522f63741"
+        },
+        "asset_hash": "0d582e182a323b091b2372d6225d00e4b49dece3e2f5994fd446add256e0a3eb",
+        "restored_stop": {
+          "stopped": true,
+          "forced_roles": []
+        },
+        "stop": {
+          "stopped": true,
+          "forced_roles": []
+        }
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-af3a3ce7\\evidence.json",
+      "sha256": "43442419425a171d348c6ce973b36ae4c1793d608e168eb853af951873707a5e",
+      "evidence": {
+        "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-af3a3ce7",
+        "commands": [
+          {
+            "command": "configure",
+            "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-af3a3ce7",
+            "exit": 0,
+            "result": {
+              "ok": true,
+              "data": {
+                "configured": true,
+                "data_root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-af3a3ce7",
+                "port": 54728,
+                "service_started": false
+              },
+              "service": {
+                "checked": false,
+                "web_ready": null,
+                "worker_state": "unknown"
+              },
+              "intent_id": null,
+              "exit_code": 0
+            }
+          },
+          {
+            "command": "verify",
+            "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-af3a3ce7",
+            "exit": 73,
+            "result": null
+          },
+          {
+            "command": "intents",
+            "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-af3a3ce7",
+            "exit": 0,
+            "result": {
+              "ok": true,
+              "data": {
+                "items": [
+                  {
+                    "intent_id": "c5085de599224dcf9d8222af3acc142e",
+                    "command": "verify",
+                    "state": "sending",
+                    "created_at": 1791302356.4788086,
+                    "payload": {
+                      "scope": "all",
+                      "request_key": "8e81aa3490f046d49739133a282694d5"
+                    }
+                  }
+                ],
+                "intent_directory": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-af3a3ce7\\control\\client-intents"
+              },
+              "service": {
+                "checked": false,
+                "web_ready": null,
+                "worker_state": "unknown"
+              },
+              "intent_id": null,
+              "exit_code": 0
+            }
+          },
+          {
+            "command": "resume",
+            "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-af3a3ce7",
+            "exit": 0,
+            "result": {
+              "ok": true,
+              "data": {
+                "intent_id": "c5085de599224dcf9d8222af3acc142e",
+                "intent_state": "accepted",
+                "result": {
+                  "maintenance": {
+                    "id": "30d6de94504e436d8ad40de9880dca3c",
+                    "kind": "verify",
+                    "state": "partial",
+                    "created_at": "2026-10-06T15:59:16.544Z",
+                    "finished_at": "2026-10-06T15:59:16.910Z",
+                    "resumed_at": null,
+                    "worker_state": "online",
+                    "result": {
+                      "checked_at": "2026-10-06T15:59:16.910Z",
+                      "counts": {
+                        "assets": 6,
+                        "damaged": 0,
+                        "missing": 2,
+                        "products": 4,
+                        "unknown": 0,
+                        "verified": 6
+                      },
+                      "issues": [
+                        {
+                          "category": "missing",
+                          "code": "IMAGE_NOT_ARCHIVED",
+                          "object_id": "version:fixture-version-3:1:3-0"
+                        },
+                        {
+                          "category": "missing",
+                          "code": "IMAGE_NOT_ARCHIVED",
+                          "object_id": "version:fixture-version-3:1:3-1"
+                        }
+                      ],
+                      "state": "partial"
+                    },
+                    "issue_code": null,
+                    "backup_available": null
+                  },
+                  "reused": true,
+                  "request_id": "59db20b14cc84cc6a226f9207ed98465"
+                }
+              },
+              "service": {
+                "request_id": "e0622b3ec3c5444bb1af331cd682e6f3",
+                "app_instance_id": "58fc7b52-ff95-4773-9515-175314b7e0da",
+                "schema_version": 9,
+                "web_ready": true,
+                "worker_state": "online",
+                "heartbeat_at": 1791302357.1721776,
+                "worker_pid": 68836,
+                "worker_born": 1791302355.1542287,
+                "pid": 81620,
+                "born": 1791302354.5196648,
+                "source_adapter": "futario-json-v1",
+                "checked": true
+              },
+              "intent_id": "c5085de599224dcf9d8222af3acc142e",
+              "exit_code": 0
+            }
+          },
+          {
+            "command": "maintenance-status",
+            "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-af3a3ce7",
+            "exit": 0,
+            "result": {
+              "ok": true,
+              "data": {
+                "maintenance": {
+                  "id": "30d6de94504e436d8ad40de9880dca3c",
+                  "kind": "verify",
+                  "state": "partial",
+                  "created_at": "2026-10-06T15:59:16.544Z",
+                  "finished_at": "2026-10-06T15:59:16.910Z",
+                  "resumed_at": null,
+                  "worker_state": "online",
+                  "result": {
+                    "checked_at": "2026-10-06T15:59:16.910Z",
+                    "counts": {
+                      "assets": 6,
+                      "damaged": 0,
+                      "missing": 2,
+                      "products": 4,
+                      "unknown": 0,
+                      "verified": 6
+                    },
+                    "issues": [
+                      {
+                        "category": "missing",
+                        "code": "IMAGE_NOT_ARCHIVED",
+                        "object_id": "version:fixture-version-3:1:3-0"
+                      },
+                      {
+                        "category": "missing",
+                        "code": "IMAGE_NOT_ARCHIVED",
+                        "object_id": "version:fixture-version-3:1:3-1"
+                      }
+                    ],
+                    "state": "partial"
+                  },
+                  "issue_code": null,
+                  "backup_available": null
+                },
+                "request_id": "632317364cd64286aa5644402510b78b"
+              },
+              "service": {
+                "request_id": "f026f292919d423ebe6d44fe2256fa3d",
+                "app_instance_id": "58fc7b52-ff95-4773-9515-175314b7e0da",
+                "schema_version": 9,
+                "web_ready": true,
+                "worker_state": "online",
+                "heartbeat_at": 1791302357.7020097,
+                "worker_pid": 68836,
+                "worker_born": 1791302355.1542287,
+                "pid": 81620,
+                "born": 1791302354.5196648,
+                "source_adapter": "futario-json-v1",
+                "checked": true
+              },
+              "intent_id": null,
+              "exit_code": 0
+            }
+          },
+          {
+            "command": "backup",
+            "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-af3a3ce7",
+            "exit": 73,
+            "result": null
+          },
+          {
+            "command": "intents",
+            "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-af3a3ce7",
+            "exit": 0,
+            "result": {
+              "ok": true,
+              "data": {
+                "items": [
+                  {
+                    "intent_id": "910aeafe37ba4545bb5607942ca44db9",
+                    "command": "backup",
+                    "state": "sending",
+                    "created_at": 1791302358.2061903,
+                    "payload": {
+                      "destination_id": "local",
+                      "request_key": "d7674f686e9c497399351de072a4bc93"
+                    }
+                  },
+                  {
+                    "intent_id": "c5085de599224dcf9d8222af3acc142e",
+                    "command": "verify",
+                    "state": "accepted",
+                    "created_at": 1791302356.4788086,
+                    "payload": {
+                      "scope": "all",
+                      "request_key": "8e81aa3490f046d49739133a282694d5"
+                    }
+                  }
+                ],
+                "intent_directory": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-af3a3ce7\\control\\client-intents"
+              },
+              "service": {
+                "checked": false,
+                "web_ready": null,
+                "worker_state": "unknown"
+              },
+              "intent_id": null,
+              "exit_code": 0
+            }
+          },
+          {
+            "command": "resume",
+            "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-af3a3ce7",
+            "exit": 0,
+            "result": {
+              "ok": true,
+              "data": {
+                "intent_id": "910aeafe37ba4545bb5607942ca44db9",
+                "intent_state": "accepted",
+                "result": {
+                  "maintenance": {
+                    "id": "f73f06d6bce44fb1bd1af59ffade328a",
+                    "kind": "backup",
+                    "state": "partial",
+                    "created_at": "2026-10-06T15:59:18.512Z",
+                    "finished_at": "2026-10-06T15:59:18.960Z",
+                    "resumed_at": null,
+                    "worker_state": "online",
+                    "result": {
+                      "backup_id": "f73f06d6bce44fb1bd1af59ffade328a",
+                      "checked_at": "2026-10-06T15:59:18.960Z",
+                      "counts": {
+                        "assets": 6,
+                        "damaged": 0,
+                        "missing": 2,
+                        "products": 4,
+                        "unknown": 0,
+                        "verified": 6
+                      },
+                      "issues": [
+                        {
+                          "category": "missing",
+                          "code": "IMAGE_NOT_ARCHIVED",
+                          "object_id": "version:fixture-version-3:1:3-0"
+                        },
+                        {
+                          "category": "missing",
+                          "code": "IMAGE_NOT_ARCHIVED",
+                          "object_id": "version:fixture-version-3:1:3-1"
+                        }
+                      ],
+                      "manifest_sha256": "bed439263f996307e12329390cc3a4c127ae68a7c403638bc495353b9ee7db9e",
+                      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-af3a3ce7\\backups\\f73f06d6bce44fb1bd1af59ffade328a",
+                      "reused": false,
+                      "state": "partial"
+                    },
+                    "issue_code": null,
+                    "backup_available": true
+                  },
+                  "reused": true,
+                  "request_id": "4531baf4ac284218b132f9b14e338250"
+                }
+              },
+              "service": {
+                "request_id": "a3879747f7e24f1eb0cfd40848716e9a",
+                "app_instance_id": "58fc7b52-ff95-4773-9515-175314b7e0da",
+                "schema_version": 9,
+                "web_ready": true,
+                "worker_state": "online",
+                "heartbeat_at": 1791302359.445773,
+                "worker_pid": 68836,
+                "worker_born": 1791302355.1542287,
+                "pid": 81620,
+                "born": 1791302354.5196648,
+                "source_adapter": "futario-json-v1",
+                "checked": true
+              },
+              "intent_id": "910aeafe37ba4545bb5607942ca44db9",
+              "exit_code": 0
+            }
+          },
+          {
+            "command": "maintenance-status",
+            "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-af3a3ce7",
+            "exit": 0,
+            "result": {
+              "ok": true,
+              "data": {
+                "maintenance": {
+                  "id": "f73f06d6bce44fb1bd1af59ffade328a",
+                  "kind": "backup",
+                  "state": "partial",
+                  "created_at": "2026-10-06T15:59:18.512Z",
+                  "finished_at": "2026-10-06T15:59:18.960Z",
+                  "resumed_at": null,
+                  "worker_state": "online",
+                  "result": {
+                    "backup_id": "f73f06d6bce44fb1bd1af59ffade328a",
+                    "checked_at": "2026-10-06T15:59:18.960Z",
+                    "counts": {
+                      "assets": 6,
+                      "damaged": 0,
+                      "missing": 2,
+                      "products": 4,
+                      "unknown": 0,
+                      "verified": 6
+                    },
+                    "issues": [
+                      {
+                        "category": "missing",
+                        "code": "IMAGE_NOT_ARCHIVED",
+                        "object_id": "version:fixture-version-3:1:3-0"
+                      },
+                      {
+                        "category": "missing",
+                        "code": "IMAGE_NOT_ARCHIVED",
+                        "object_id": "version:fixture-version-3:1:3-1"
+                      }
+                    ],
+                    "manifest_sha256": "bed439263f996307e12329390cc3a4c127ae68a7c403638bc495353b9ee7db9e",
+                    "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-af3a3ce7\\backups\\f73f06d6bce44fb1bd1af59ffade328a",
+                    "reused": false,
+                    "state": "partial"
+                  },
+                  "issue_code": null,
+                  "backup_available": true
+                },
+                "request_id": "8ca2d705b35148f88ea9ecdc0a475161"
+              },
+              "service": {
+                "request_id": "f69b6955802f4987b67a2cd2d183bcaf",
+                "app_instance_id": "58fc7b52-ff95-4773-9515-175314b7e0da",
+                "schema_version": 9,
+                "web_ready": true,
+                "worker_state": "online",
+                "heartbeat_at": 1791302359.6880014,
+                "worker_pid": 68836,
+                "worker_born": 1791302355.1542287,
+                "pid": 81620,
+                "born": 1791302354.5196648,
+                "source_adapter": "futario-json-v1",
+                "checked": true
+              },
+              "intent_id": null,
+              "exit_code": 0
+            }
+          },
+          {
+            "command": "storage",
+            "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-af3a3ce7",
+            "exit": 0,
+            "result": {
+              "ok": true,
+              "data": {
+                "storage": {
+                  "revision": 0,
+                  "media_root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-af3a3ce7\\media",
+                  "authority": "legacy_default",
+                  "affects": "future_archives",
+                  "local_backup_root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-af3a3ce7\\backups"
+                },
+                "request_id": "4eb5d92aa8c7473a85b1d1502896a344"
+              },
+              "service": {
+                "request_id": "d21de5134ab44147b3caeb9e5249364f",
+                "app_instance_id": "58fc7b52-ff95-4773-9515-175314b7e0da",
+                "schema_version": 9,
+                "web_ready": true,
+                "worker_state": "online",
+                "heartbeat_at": 1791302360.3490577,
+                "worker_pid": 68836,
+                "worker_born": 1791302355.1542287,
+                "pid": 81620,
+                "born": 1791302354.5196648,
+                "source_adapter": "futario-json-v1",
+                "checked": true
+              },
+              "intent_id": null,
+              "exit_code": 0
+            }
+          },
+          {
+            "command": "set-storage",
+            "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-af3a3ce7",
+            "exit": 73,
+            "result": null
+          },
+          {
+            "command": "intents",
+            "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-af3a3ce7",
+            "exit": 0,
+            "result": {
+              "ok": true,
+              "data": {
+                "items": [
+                  {
+                    "intent_id": "738d31f51ee64b219a25bd7bab9367cc",
+                    "command": "set-storage",
+                    "state": "sending",
+                    "created_at": 1791302361.0360315,
+                    "payload": {
+                      "expected_revision": 0,
+                      "media_root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-af3a3ce7\\next-media"
+                    }
+                  },
+                  {
+                    "intent_id": "910aeafe37ba4545bb5607942ca44db9",
+                    "command": "backup",
+                    "state": "accepted",
+                    "created_at": 1791302358.2061903,
+                    "payload": {
+                      "destination_id": "local",
+                      "request_key": "d7674f686e9c497399351de072a4bc93"
+                    }
+                  },
+                  {
+                    "intent_id": "c5085de599224dcf9d8222af3acc142e",
+                    "command": "verify",
+                    "state": "accepted",
+                    "created_at": 1791302356.4788086,
+                    "payload": {
+                      "scope": "all",
+                      "request_key": "8e81aa3490f046d49739133a282694d5"
+                    }
+                  }
+                ],
+                "intent_directory": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-af3a3ce7\\control\\client-intents"
+              },
+              "service": {
+                "checked": false,
+                "web_ready": null,
+                "worker_state": "unknown"
+              },
+              "intent_id": null,
+              "exit_code": 0
+            }
+          },
+          {
+            "command": "resume",
+            "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-af3a3ce7",
+            "exit": 4,
+            "result": {
+              "ok": false,
+              "error": {
+                "code": "CAS_REVIEW_REQUIRED",
+                "message": "上次写入结果不确定；已读取当前状态，须核对意图后再决定，不自动重放",
+                "details": {
+                  "intent_id": "738d31f51ee64b219a25bd7bab9367cc",
+                  "current": {
+                    "storage": {
+                      "revision": 1,
+                      "media_root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-af3a3ce7\\next-media",
+                      "authority": "database",
+                      "affects": "future_archives",
+                      "local_backup_root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-af3a3ce7\\backups"
+                    },
+                    "request_id": "a06538ce26ae4854809f539477ad80ff"
+                  }
+                }
+              },
+              "service": {
+                "request_id": "be236876f5d3409b9e19f8d38ddbf4a7",
+                "app_instance_id": "58fc7b52-ff95-4773-9515-175314b7e0da",
+                "schema_version": 9,
+                "web_ready": true,
+                "worker_state": "online",
+                "heartbeat_at": 1791302361.7495947,
+                "worker_pid": 68836,
+                "worker_born": 1791302355.1542287,
+                "pid": 81620,
+                "born": 1791302354.5196648,
+                "source_adapter": "futario-json-v1",
+                "checked": true
+              },
+              "intent_id": "738d31f51ee64b219a25bd7bab9367cc",
+              "exit_code": 4
+            }
+          },
+          {
+            "command": "storage",
+            "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-af3a3ce7",
+            "exit": 0,
+            "result": {
+              "ok": true,
+              "data": {
+                "storage": {
+                  "revision": 1,
+                  "media_root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-af3a3ce7\\next-media",
+                  "authority": "database",
+                  "affects": "future_archives",
+                  "local_backup_root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-cli-af3a3ce7\\backups"
+                },
+                "request_id": "b6433a6969f1478988db1a7d9b9b3f4f"
+              },
+              "service": {
+                "request_id": "44bd454a56f34ed69a70f073367d4d2b",
+                "app_instance_id": "58fc7b52-ff95-4773-9515-175314b7e0da",
+                "schema_version": 9,
+                "web_ready": true,
+                "worker_state": "online",
+                "heartbeat_at": 1791302362.005214,
+                "worker_pid": 68836,
+                "worker_born": 1791302355.1542287,
+                "pid": 81620,
+                "born": 1791302354.5196648,
+                "source_adapter": "futario-json-v1",
+                "checked": true
+              },
+              "intent_id": null,
+              "exit_code": 0
+            }
+          },
+          {
+            "command": "configure",
+            "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-restored-02749c76",
+            "exit": 0,
+            "result": {
+              "ok": true,
+              "data": {
+                "configured": true,
+                "data_root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-restored-02749c76",
+                "port": 61667,
+                "service_started": false
+              },
+              "service": {
+                "checked": false,
+                "web_ready": null,
+                "worker_state": "unknown"
+              },
+              "intent_id": null,
+              "exit_code": 0
+            }
+          },
+          {
+            "command": "favorites",
+            "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-restored-02749c76",
+            "exit": 0,
+            "result": {
+              "ok": true,
+              "data": {
+                "snapshot_id": "d7f755701cb4e5aa18c04805f210bbf1",
+                "snapshot_expires_at": "2026-10-06T16:14:24.740Z",
+                "next_cursor": null,
+                "total": 4,
+                "items": [
+                  {
+                    "id": "fixture-000",
+                    "title": "秋日松弛感 · 羊毛针织衫",
+                    "source": {
+                      "date_reason": "synthetic_fixture",
+                      "source_id": "0",
+                      "source_published_at": null,
+                      "title": "秋日松弛感 · 羊毛针织衫",
+                      "url": "https://example.invalid/products/0"
+                    },
+                    "first_seen_at": "2026-10-01T12:00:00Z",
+                    "first_eligible_at": "2026-10-01T12:00:00Z",
+                    "effective_category": "knitwear",
+                    "user_state": {
+                      "product_id": "fixture-000",
+                      "favorite": true,
+                      "excluded": false,
+                      "category_override": null,
+                      "revision": 1,
+                      "viewed_at": null,
+                      "seen_version_id": null,
+                      "seen_version_revision": null,
+                      "seen_content_digest": null
+                    },
+                    "media_state": "ready",
+                    "latest_detail_error": null,
+                    "has_material_update": false,
+                    "latest_available_version_id": "fixture-version-0",
+                    "latest_available_revision": 1,
+                    "latest_complete_version_id": "fixture-version-0",
+                    "latest_complete_revision": 1,
+                    "latest_observed_version_id": "fixture-version-0",
+                    "latest_observed_revision": 1,
+                    "version_id": "fixture-version-0",
+                    "version_revision": 1,
+                    "images": [
+                      {
+                        "asset_id": "fixture-asset-0-0",
+                        "sha256": "0d582e182a323b091b2372d6225d00e4b49dece3e2f5994fd446add256e0a3eb",
+                        "verified_at": "2026-10-01T12:00:00Z",
+                        "preview_url": "/v1/assets/fixture-asset-0-0?rendition=preview",
+                        "original_url": "/v1/assets/fixture-asset-0-0?rendition=original"
+                      },
+                      {
+                        "asset_id": "fixture-asset-0-1",
+                        "sha256": "5a18cbda52772733fc25f651db1b5c3117f95b66d1be7befb34735809f298f0a",
+                        "verified_at": "2026-10-01T12:00:00Z",
+                        "preview_url": "/v1/assets/fixture-asset-0-1?rendition=preview",
+                        "original_url": "/v1/assets/fixture-asset-0-1?rendition=original"
+                      }
+                    ],
+                    "album": {
+                      "expected_count": 2,
+                      "stored_count": 2,
+                      "missing": [],
+                      "coverage_scope": [
+                        "product.images"
+                      ],
+                      "coverage_complete": true,
+                      "verified_at": "2026-10-01T12:00:00Z",
+                      "capability_notes": []
+                    },
+                    "latest_observed_album": {
+                      "expected_count": 2,
+                      "stored_count": 2,
+                      "missing": [],
+                      "coverage_scope": [
+                        "product.images"
+                      ],
+                      "coverage_complete": true,
+                      "verified_at": "2026-10-01T12:00:00Z",
+                      "capability_notes": []
+                    },
+                    "using_previous_images": false,
+                    "versions": [
+                      {
+                        "id": "fixture-version-0",
+                        "revision": 1,
+                        "content_digest": "fe9a3d4ca464658eee6700d0f51926bd534daf56ccb478a5136bca3e17c267e9"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "fixture-001",
+                    "title": "暖砂色 · 简约长款风衣",
+                    "source": {
+                      "date_reason": "synthetic_fixture",
+                      "source_id": "1",
+                      "source_published_at": null,
+                      "title": "暖砂色 · 简约长款风衣",
+                      "url": "https://example.invalid/products/1"
+                    },
+                    "first_seen_at": "2026-10-01T12:00:00Z",
+                    "first_eligible_at": "2026-10-01T12:00:00Z",
+                    "effective_category": "outerwear",
+                    "user_state": {
+                      "product_id": "fixture-001",
+                      "favorite": true,
+                      "excluded": false,
+                      "category_override": null,
+                      "revision": 1,
+                      "viewed_at": null,
+                      "seen_version_id": null,
+                      "seen_version_revision": null,
+                      "seen_content_digest": null
+                    },
+                    "media_state": "ready",
+                    "latest_detail_error": null,
+                    "has_material_update": false,
+                    "latest_available_version_id": "fixture-version-1",
+                    "latest_available_revision": 1,
+                    "latest_complete_version_id": "fixture-version-1",
+                    "latest_complete_revision": 1,
+                    "latest_observed_version_id": "fixture-version-1",
+                    "latest_observed_revision": 1,
+                    "version_id": "fixture-version-1",
+                    "version_revision": 1,
+                    "images": [
+                      {
+                        "asset_id": "fixture-asset-1-0",
+                        "sha256": "5a18cbda52772733fc25f651db1b5c3117f95b66d1be7befb34735809f298f0a",
+                        "verified_at": "2026-10-01T12:00:00Z",
+                        "preview_url": "/v1/assets/fixture-asset-1-0?rendition=preview",
+                        "original_url": "/v1/assets/fixture-asset-1-0?rendition=original"
+                      },
+                      {
+                        "asset_id": "fixture-asset-1-1",
+                        "sha256": "15631173a30fb10e3d2fde1e8b3febb29c3b346738689e41563a120320cb3fd3",
+                        "verified_at": "2026-10-01T12:00:00Z",
+                        "preview_url": "/v1/assets/fixture-asset-1-1?rendition=preview",
+                        "original_url": "/v1/assets/fixture-asset-1-1?rendition=original"
+                      }
+                    ],
+                    "album": {
+                      "expected_count": 2,
+                      "stored_count": 2,
+                      "missing": [],
+                      "coverage_scope": [
+                        "product.images"
+                      ],
+                      "coverage_complete": true,
+                      "verified_at": "2026-10-01T12:00:00Z",
+                      "capability_notes": []
+                    },
+                    "latest_observed_album": {
+                      "expected_count": 2,
+                      "stored_count": 2,
+                      "missing": [],
+                      "coverage_scope": [
+                        "product.images"
+                      ],
+                      "coverage_complete": true,
+                      "verified_at": "2026-10-01T12:00:00Z",
+                      "capability_notes": []
+                    },
+                    "using_previous_images": false,
+                    "versions": [
+                      {
+                        "id": "fixture-version-1",
+                        "revision": 1,
+                        "content_digest": "a5a96edd3c1452a3fbdd3d6411ae8f128bbcd3a522f058d1465f17c59393bf71"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "fixture-002",
+                    "title": "雾蓝色 · 轻盈衬衫",
+                    "source": {
+                      "date_reason": "synthetic_fixture",
+                      "source_id": "2",
+                      "source_published_at": null,
+                      "title": "雾蓝色 · 轻盈衬衫",
+                      "url": "https://example.invalid/products/2"
+                    },
+                    "first_seen_at": "2026-10-01T12:00:00Z",
+                    "first_eligible_at": "2026-10-01T12:00:00Z",
+                    "effective_category": "tops",
+                    "user_state": {
+                      "product_id": "fixture-002",
+                      "favorite": true,
+                      "excluded": false,
+                      "category_override": null,
+                      "revision": 1,
+                      "viewed_at": null,
+                      "seen_version_id": null,
+                      "seen_version_revision": null,
+                      "seen_content_digest": null
+                    },
+                    "media_state": "ready",
+                    "latest_detail_error": null,
+                    "has_material_update": false,
+                    "latest_available_version_id": "fixture-version-2",
+                    "latest_available_revision": 1,
+                    "latest_complete_version_id": "fixture-version-2",
+                    "latest_complete_revision": 1,
+                    "latest_observed_version_id": "fixture-version-2",
+                    "latest_observed_revision": 1,
+                    "version_id": "fixture-version-2",
+                    "version_revision": 1,
+                    "images": [
+                      {
+                        "asset_id": "fixture-asset-2-0",
+                        "sha256": "15631173a30fb10e3d2fde1e8b3febb29c3b346738689e41563a120320cb3fd3",
+                        "verified_at": "2026-10-01T12:00:00Z",
+                        "preview_url": "/v1/assets/fixture-asset-2-0?rendition=preview",
+                        "original_url": "/v1/assets/fixture-asset-2-0?rendition=original"
+                      },
+                      {
+                        "asset_id": "fixture-asset-2-1",
+                        "sha256": "f4742a8a0ff69b0a6a33078d5d354c41d223e8a96d49e1e46ffa793713ba1ba6",
+                        "verified_at": "2026-10-01T12:00:00Z",
+                        "preview_url": "/v1/assets/fixture-asset-2-1?rendition=preview",
+                        "original_url": "/v1/assets/fixture-asset-2-1?rendition=original"
+                      }
+                    ],
+                    "album": {
+                      "expected_count": 2,
+                      "stored_count": 2,
+                      "missing": [],
+                      "coverage_scope": [
+                        "product.images"
+                      ],
+                      "coverage_complete": true,
+                      "verified_at": "2026-10-01T12:00:00Z",
+                      "capability_notes": []
+                    },
+                    "latest_observed_album": {
+                      "expected_count": 2,
+                      "stored_count": 2,
+                      "missing": [],
+                      "coverage_scope": [
+                        "product.images"
+                      ],
+                      "coverage_complete": true,
+                      "verified_at": "2026-10-01T12:00:00Z",
+                      "capability_notes": []
+                    },
+                    "using_previous_images": false,
+                    "versions": [
+                      {
+                        "id": "fixture-version-2",
+                        "revision": 1,
+                        "content_digest": "df89b47681c067391cc4ed705ab518f2f6054cb01ce1fae6bc1099eb0501fdef"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "fixture-003",
+                    "title": "米杏色 · 垂感连衣裙",
+                    "source": {
+                      "date_reason": "synthetic_fixture",
+                      "source_id": "3",
+                      "source_published_at": null,
+                      "title": "米杏色 · 垂感连衣裙",
+                      "url": "https://example.invalid/products/3"
+                    },
+                    "first_seen_at": "2026-10-01T12:00:00Z",
+                    "first_eligible_at": "2026-10-01T12:00:00Z",
+                    "effective_category": "dress",
+                    "user_state": {
+                      "product_id": "fixture-003",
+                      "favorite": true,
+                      "excluded": false,
+                      "category_override": null,
+                      "revision": 1,
+                      "viewed_at": null,
+                      "seen_version_id": null,
+                      "seen_version_revision": null,
+                      "seen_content_digest": null
+                    },
+                    "media_state": "failed",
+                    "latest_detail_error": null,
+                    "has_material_update": false,
+                    "latest_available_version_id": null,
+                    "latest_available_revision": null,
+                    "latest_complete_version_id": null,
+                    "latest_complete_revision": null,
+                    "latest_observed_version_id": "fixture-version-3",
+                    "latest_observed_revision": 1,
+                    "version_id": "fixture-version-3",
+                    "version_revision": 1,
+                    "images": [],
+                    "album": {
+                      "expected_count": 2,
+                      "stored_count": 0,
+                      "missing": [
+                        {
+                          "source_image_id": "3-0",
+                          "source_url": "https://example.invalid/3-0.png",
+                          "reason": "HTTP_404",
+                          "retryable": true
+                        },
+                        {
+                          "source_image_id": "3-1",
+                          "source_url": "https://example.invalid/3-1.png",
+                          "reason": "HTTP_404",
+                          "retryable": true
+                        }
+                      ],
+                      "coverage_scope": [
+                        "product.images"
+                      ],
+                      "coverage_complete": false,
+                      "verified_at": null,
+                      "capability_notes": []
+                    },
+                    "latest_observed_album": {
+                      "expected_count": 2,
+                      "stored_count": 0,
+                      "missing": [
+                        {
+                          "source_image_id": "3-0",
+                          "source_url": "https://example.invalid/3-0.png",
+                          "reason": "HTTP_404",
+                          "retryable": true
+                        },
+                        {
+                          "source_image_id": "3-1",
+                          "source_url": "https://example.invalid/3-1.png",
+                          "reason": "HTTP_404",
+                          "retryable": true
+                        }
+                      ],
+                      "coverage_scope": [
+                        "product.images"
+                      ],
+                      "coverage_complete": false,
+                      "verified_at": null,
+                      "capability_notes": []
+                    },
+                    "using_previous_images": false,
+                    "versions": [
+                      {
+                        "id": "fixture-version-3",
+                        "revision": 1,
+                        "content_digest": "508b6bc35f55fa8cb458a1dbdd57b891deab16a3974acb5ea3f70da8a1bf2de9"
+                      }
+                    ]
+                  }
+                ],
+                "latest_run_summary": {
+                  "latest_run": {
+                    "id": "synthetic-fixture-run",
+                    "state": "succeeded",
+                    "snapshot": {
+                      "site_ids": [
+                        "futario"
+                      ],
+                      "window_days": 14,
+                      "unknown_date_policy": "include",
+                      "discovery": {
+                        "page_size": 20,
+                        "max_pages_per_pass": 30,
+                        "passes": 2,
+                        "max_requests": 60,
+                        "max_products": 600
+                      },
+                      "max_details": 300,
+                      "network": {
+                        "resolver_mode": "system",
+                        "detail_concurrency": 1,
+                        "image_concurrency": 2,
+                        "min_interval_ms": 1000,
+                        "max_attempts": 3,
+                        "max_http_requests": 3000,
+                        "max_image_requests": 2400,
+                        "run_total_seconds": 3600,
+                        "timeouts": {
+                          "connect": 10,
+                          "pool": 10,
+                          "read": 30,
+                          "write": 30,
+                          "total": 120
+                        }
+                      },
+                      "storage": {
+                        "max_image_bytes": 26214400,
+                        "max_pixels": 50000000,
+                        "run_download_bytes": 2147483648,
+                        "min_free_bytes": 5368709120,
+                        "preview_cache_bytes": 536870912
+                      },
+                      "plan_revision": 1,
+                      "window_start": "2026-09-17T12:00:00Z",
+                      "window_end": "2026-10-01T12:00:00Z",
+                      "adapter_versions": {
+                        "futario": "futario-json-v1"
+                      },
+                      "site_entries": {
+                        "futario": "https://example.invalid"
+                      },
+                      "new_run_trigger": "manual",
+                      "discovery_baseline_complete": {
+                        "futario": false
+                      }
+                    },
+                    "created_at": "2026-10-01T12:00:00Z",
+                    "started_at": null,
+                    "finished_at": "2026-10-01T12:00:00Z",
+                    "epoch": 0,
+                    "attempt": 1,
+                    "issue_code": null,
+                    "resumed_at": null,
+                    "stage": "accepted",
+                    "counts": {},
+                    "plan_revision": 1,
+                    "worker_state": "online",
+                    "coverage": [],
+                    "issues": []
+                  },
+                  "latest_completed_at": "2026-10-01T12:00:00Z",
+                  "latest_successful_at": "2026-10-01T12:00:00Z"
+                },
+                "request_id": "501559b825394ae99c65ce3a8aca942d"
+              },
+              "service": {
+                "request_id": "40e356aeb28e470d89b899a21ca4e568",
+                "app_instance_id": "72c52afe-150e-432f-8290-a7a77b88a6ce",
+                "schema_version": 9,
+                "web_ready": true,
+                "worker_state": "online",
+                "heartbeat_at": 1791302364.443893,
+                "worker_pid": 60388,
+                "worker_born": 1791302363.5222795,
+                "pid": 86464,
+                "born": 1791302362.913288,
+                "source_adapter": "futario-json-v1",
+                "checked": true
+              },
+              "intent_id": null,
+              "exit_code": 0
+            }
+          },
+          {
+            "command": "export",
+            "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-restored-02749c76",
+            "exit": 0,
+            "result": {
+              "ok": true,
+              "data": {
+                "intent_id": "ddce3075523f44918f498ddbe923b6bd",
+                "intent_state": "accepted",
+                "result": {
+                  "export": {
+                    "id": "840a0b055b1b46c0aba8c7b4ce9316a0",
+                    "state": "queued",
+                    "created_at": "2026-10-06T15:59:25.302Z",
+                    "finished_at": null,
+                    "attempt": 1,
+                    "resumed_at": null,
+                    "worker_state": "online",
+                    "counts": {
+                      "products": 4,
+                      "assets": 6
+                    },
+                    "missing_count": 0,
+                    "unknown_count": 0,
+                    "issues": [],
+                    "download_url": null,
+                    "sha256": null
+                  },
+                  "reused": false,
+                  "request_id": "94fc66b082b24bbfa9fb38e8db863616"
+                }
+              },
+              "service": {
+                "request_id": "4232f48f00f94e9e9c4b6d3caced3505",
+                "app_instance_id": "72c52afe-150e-432f-8290-a7a77b88a6ce",
+                "schema_version": 9,
+                "web_ready": true,
+                "worker_state": "online",
+                "heartbeat_at": 1791302365.2399757,
+                "worker_pid": 60388,
+                "worker_born": 1791302363.5222795,
+                "pid": 86464,
+                "born": 1791302362.913288,
+                "source_adapter": "futario-json-v1",
+                "checked": true
+              },
+              "intent_id": "ddce3075523f44918f498ddbe923b6bd",
+              "exit_code": 0
+            }
+          }
+        ],
+        "restore": {
+          "state": "partial",
+          "backup_id": "f73f06d6bce44fb1bd1af59ffade328a",
+          "manifest_sha256": "bed439263f996307e12329390cc3a4c127ae68a7c403638bc495353b9ee7db9e",
+          "target": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-restored-02749c76",
+          "counts": {
+            "assets": 6,
+            "damaged": 0,
+            "missing": 2,
+            "products": 4,
+            "unknown": 0,
+            "verified": 6
+          },
+          "issues": [
+            {
+              "category": "missing",
+              "code": "IMAGE_NOT_ARCHIVED",
+              "object_id": "version:fixture-version-3:1:3-0"
+            },
+            {
+              "category": "missing",
+              "code": "IMAGE_NOT_ARCHIVED",
+              "object_id": "version:fixture-version-3:1:3-1"
+            }
+          ],
+          "services_started": false,
+          "new_runs": 0,
+          "old_runtime_held": true,
+          "root_mapping": {
+            "fixture-root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-restored-02749c76\\media\\roots\\a918064c8f7e3cfdecbce330fcd565253b5b533f902e20e0ec6d8c869341ea6f"
+          }
+        },
+        "source_requests": 0,
+        "job_count": 2,
+        "restored_export": {
+          "id": "840a0b055b1b46c0aba8c7b4ce9316a0",
+          "state": "partial",
+          "created_at": "2026-10-06T15:59:25.302Z",
+          "finished_at": "2026-10-06T15:59:25.719Z",
+          "attempt": 1,
+          "resumed_at": null,
+          "worker_state": "online",
+          "counts": {
+            "products": 4,
+            "assets": 6
+          },
+          "missing_count": 2,
+          "unknown_count": 0,
+          "issues": [],
+          "download_url": "/v1/exports/840a0b055b1b46c0aba8c7b4ce9316a0/download",
+          "sha256": "c0b2c1cba57fbfadf742a6ea4bd89f2753353a3d22a0545eb85d3ee1be1d804f"
+        },
+        "asset_hash": "0d582e182a323b091b2372d6225d00e4b49dece3e2f5994fd446add256e0a3eb",
+        "restored_stop": {
+          "stopped": true,
+          "forced_roles": []
+        },
+        "stop": {
+          "stopped": true,
+          "forced_roles": []
+        }
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-export-http-cli-8e704f7a8e\\evidence.json",
+      "sha256": "57374d7310981fea8906b39839290c73c65bdaade92df7464a44ed21f548702f",
+      "evidence": {
+        "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-export-http-cli-8e704f7a8e",
+        "commands": [
+          {
+            "command": "configure",
+            "exit": 0,
+            "result": {
+              "ok": true,
+              "data": {
+                "configured": true,
+                "data_root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-export-http-cli-8e704f7a8e",
+                "port": 63636,
+                "service_started": false
+              },
+              "service": {
+                "checked": false,
+                "web_ready": null,
+                "worker_state": "unknown"
+              },
+              "intent_id": null,
+              "exit_code": 0
+            }
+          },
+          {
+            "command": "export",
+            "exit": 73,
+            "result": null
+          },
+          {
+            "command": "intents",
+            "exit": 0,
+            "result": {
+              "ok": true,
+              "data": {
+                "items": [
+                  {
+                    "intent_id": "7fb4de1f35644eaf8a858a0ff5490ddf",
+                    "command": "export",
+                    "state": "sending",
+                    "created_at": 1791302330.8989098,
+                    "payload": {
+                      "request_key": "d973672c0d0d4fa79f300f9425b9eeaf",
+                      "selection": "favorites"
+                    }
+                  }
+                ],
+                "intent_directory": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-export-http-cli-8e704f7a8e\\control\\client-intents"
+              },
+              "service": {
+                "checked": false,
+                "web_ready": null,
+                "worker_state": "unknown"
+              },
+              "intent_id": null,
+              "exit_code": 0
+            }
+          },
+          {
+            "command": "resume",
+            "exit": 0,
+            "result": {
+              "ok": true,
+              "data": {
+                "intent_id": "7fb4de1f35644eaf8a858a0ff5490ddf",
+                "intent_state": "accepted",
+                "result": {
+                  "export": {
+                    "id": "3f1bf7b1db2e4ea288afdbc4b1baecb2",
+                    "state": "partial",
+                    "created_at": "2026-10-06T15:58:50.958Z",
+                    "finished_at": "2026-10-06T15:58:51.721Z",
+                    "attempt": 1,
+                    "resumed_at": null,
+                    "worker_state": "online",
+                    "counts": {
+                      "products": 20,
+                      "assets": 30
+                    },
+                    "missing_count": 10,
+                    "unknown_count": 0,
+                    "issues": [],
+                    "download_url": "/v1/exports/3f1bf7b1db2e4ea288afdbc4b1baecb2/download",
+                    "sha256": "60c442495f09a1c6a4d80079031751c83bd3a0ec262299e443b747d52efa262b"
+                  },
+                  "reused": true,
+                  "request_id": "9a35cdd5d04b4766803c853ae8316372"
+                }
+              },
+              "service": {
+                "request_id": "c42781ae67ee4dca97b7a40d74c88adf",
+                "app_instance_id": "a3e9fc0a-5330-4260-967d-4dfaf40f7234",
+                "schema_version": 9,
+                "web_ready": true,
+                "worker_state": "online",
+                "heartbeat_at": 1791302331.7301986,
+                "worker_pid": 82728,
+                "worker_born": 1791302329.6899152,
+                "pid": 86936,
+                "born": 1791302329.1007326,
+                "source_adapter": "futario-json-v1",
+                "checked": true
+              },
+              "intent_id": "7fb4de1f35644eaf8a858a0ff5490ddf",
+              "exit_code": 0
+            }
+          },
+          {
+            "command": "export-status",
+            "exit": 0,
+            "result": {
+              "ok": true,
+              "data": {
+                "export": {
+                  "id": "3f1bf7b1db2e4ea288afdbc4b1baecb2",
+                  "state": "partial",
+                  "created_at": "2026-10-06T15:58:50.958Z",
+                  "finished_at": "2026-10-06T15:58:51.721Z",
+                  "attempt": 1,
+                  "resumed_at": null,
+                  "worker_state": "online",
+                  "counts": {
+                    "products": 20,
+                    "assets": 30
+                  },
+                  "missing_count": 10,
+                  "unknown_count": 0,
+                  "issues": [],
+                  "download_url": "/v1/exports/3f1bf7b1db2e4ea288afdbc4b1baecb2/download",
+                  "sha256": "60c442495f09a1c6a4d80079031751c83bd3a0ec262299e443b747d52efa262b"
+                },
+                "request_id": "fc72f8c1293844a1b4a1443e56f91c49"
+              },
+              "service": {
+                "request_id": "b687e81d476b4e659ffbbe16965f166a",
+                "app_instance_id": "a3e9fc0a-5330-4260-967d-4dfaf40f7234",
+                "schema_version": 9,
+                "web_ready": true,
+                "worker_state": "online",
+                "heartbeat_at": 1791302332.193843,
+                "worker_pid": 82728,
+                "worker_born": 1791302329.6899152,
+                "pid": 86936,
+                "born": 1791302329.1007326,
+                "source_adapter": "futario-json-v1",
+                "checked": true
+              },
+              "intent_id": null,
+              "exit_code": 0
+            }
+          },
+          {
+            "command": "export-retry",
+            "exit": 73,
+            "result": null
+          },
+          {
+            "command": "intents",
+            "exit": 0,
+            "result": {
+              "ok": true,
+              "data": {
+                "items": [
+                  {
+                    "intent_id": "12f687209142421a9308faae13c03dff",
+                    "command": "export-retry",
+                    "state": "sending",
+                    "created_at": 1791302332.6850913,
+                    "payload": {
+                      "request_key": "1a94a1816b2d466a9fa36eee4010d775"
+                    }
+                  },
+                  {
+                    "intent_id": "7fb4de1f35644eaf8a858a0ff5490ddf",
+                    "command": "export",
+                    "state": "accepted",
+                    "created_at": 1791302330.8989098,
+                    "payload": {
+                      "request_key": "d973672c0d0d4fa79f300f9425b9eeaf",
+                      "selection": "favorites"
+                    }
+                  }
+                ],
+                "intent_directory": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-export-http-cli-8e704f7a8e\\control\\client-intents"
+              },
+              "service": {
+                "checked": false,
+                "web_ready": null,
+                "worker_state": "unknown"
+              },
+              "intent_id": null,
+              "exit_code": 0
+            }
+          },
+          {
+            "command": "resume",
+            "exit": 0,
+            "result": {
+              "ok": true,
+              "data": {
+                "intent_id": "12f687209142421a9308faae13c03dff",
+                "intent_state": "accepted",
+                "result": {
+                  "export": {
+                    "id": "3f1bf7b1db2e4ea288afdbc4b1baecb2",
+                    "state": "partial",
+                    "created_at": "2026-10-06T15:58:50.958Z",
+                    "finished_at": "2026-10-06T15:58:53.410Z",
+                    "attempt": 2,
+                    "resumed_at": null,
+                    "worker_state": "online",
+                    "counts": {
+                      "products": 20,
+                      "assets": 30
+                    },
+                    "missing_count": 10,
+                    "unknown_count": 0,
+                    "issues": [],
+                    "download_url": "/v1/exports/3f1bf7b1db2e4ea288afdbc4b1baecb2/download",
+                    "sha256": "60c442495f09a1c6a4d80079031751c83bd3a0ec262299e443b747d52efa262b"
+                  },
+                  "reused": true,
+                  "request_id": "8b5356c68c214368a115a4f4ee48c314"
+                }
+              },
+              "service": {
+                "request_id": "ddba2c8ec20643dd9adfb133314ea7d4",
+                "app_instance_id": "a3e9fc0a-5330-4260-967d-4dfaf40f7234",
+                "schema_version": 9,
+                "web_ready": true,
+                "worker_state": "online",
+                "heartbeat_at": 1791302333.505569,
+                "worker_pid": 82728,
+                "worker_born": 1791302329.6899152,
+                "pid": 86936,
+                "born": 1791302329.1007326,
+                "source_adapter": "futario-json-v1",
+                "checked": true
+              },
+              "intent_id": "12f687209142421a9308faae13c03dff",
+              "exit_code": 0
+            }
+          }
+        ],
+        "source_requests": 0,
+        "job_count": 1,
+        "attempt_count": 2,
+        "download_sha256": "60c442495f09a1c6a4d80079031751c83bd3a0ec262299e443b747d52efa262b",
+        "stop": {
+          "stopped": true,
+          "forced_roles": []
+        }
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-export-http-cli-9fc9a3dcb9\\evidence.json",
+      "sha256": "cef2dd1a290097873387a6f2deadf226318b06d5fb923a961867dcffc0c911b9",
+      "evidence": {
+        "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-export-http-cli-9fc9a3dcb9",
+        "commands": [
+          {
+            "command": "configure",
+            "exit": 0,
+            "result": {
+              "ok": true,
+              "data": {
+                "configured": true,
+                "data_root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-export-http-cli-9fc9a3dcb9",
+                "port": 54881,
+                "service_started": false
+              },
+              "service": {
+                "checked": false,
+                "web_ready": null,
+                "worker_state": "unknown"
+              },
+              "intent_id": null,
+              "exit_code": 0
+            }
+          },
+          {
+            "command": "export",
+            "exit": 73,
+            "result": null
+          },
+          {
+            "command": "intents",
+            "exit": 0,
+            "result": {
+              "ok": true,
+              "data": {
+                "items": [
+                  {
+                    "intent_id": "b33e46d38e28488ca49cfce38bb04526",
+                    "command": "export",
+                    "state": "sending",
+                    "created_at": 1791301210.5071375,
+                    "payload": {
+                      "request_key": "0a23341d99d74834bc8c996e42b613d9",
+                      "selection": "favorites"
+                    }
+                  }
+                ],
+                "intent_directory": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-export-http-cli-9fc9a3dcb9\\control\\client-intents"
+              },
+              "service": {
+                "checked": false,
+                "web_ready": null,
+                "worker_state": "unknown"
+              },
+              "intent_id": null,
+              "exit_code": 0
+            }
+          },
+          {
+            "command": "resume",
+            "exit": 0,
+            "result": {
+              "ok": true,
+              "data": {
+                "intent_id": "b33e46d38e28488ca49cfce38bb04526",
+                "intent_state": "accepted",
+                "result": {
+                  "export": {
+                    "id": "1443c9bd41b34d6aaa8f7621996891ed",
+                    "state": "partial",
+                    "created_at": "2026-10-06T15:40:10.568Z",
+                    "finished_at": "2026-10-06T15:40:11.348Z",
+                    "attempt": 1,
+                    "resumed_at": null,
+                    "worker_state": "online",
+                    "counts": {
+                      "products": 20,
+                      "assets": 30
+                    },
+                    "missing_count": 10,
+                    "unknown_count": 0,
+                    "issues": [],
+                    "download_url": "/v1/exports/1443c9bd41b34d6aaa8f7621996891ed/download",
+                    "sha256": "4d179a72cf4287e23f5098f1cbd505c275ba112ff6cd91d8a4a92e31d643c807"
+                  },
+                  "reused": true,
+                  "request_id": "af0bea17384f4e1ebe7b596a28d46e34"
+                }
+              },
+              "service": {
+                "request_id": "16f167b04e754a2c9d7b0e96d572b289",
+                "app_instance_id": "87c5610e-294b-40eb-a04d-ee869b8a4fc8",
+                "schema_version": 9,
+                "web_ready": true,
+                "worker_state": "online",
+                "heartbeat_at": 1791301211.2692974,
+                "worker_pid": 85080,
+                "worker_born": 1791301209.295352,
+                "pid": 86176,
+                "born": 1791301208.7016015,
+                "source_adapter": "futario-json-v1",
+                "checked": true
+              },
+              "intent_id": "b33e46d38e28488ca49cfce38bb04526",
+              "exit_code": 0
+            }
+          },
+          {
+            "command": "export-status",
+            "exit": 0,
+            "result": {
+              "ok": true,
+              "data": {
+                "export": {
+                  "id": "1443c9bd41b34d6aaa8f7621996891ed",
+                  "state": "partial",
+                  "created_at": "2026-10-06T15:40:10.568Z",
+                  "finished_at": "2026-10-06T15:40:11.348Z",
+                  "attempt": 1,
+                  "resumed_at": null,
+                  "worker_state": "online",
+                  "counts": {
+                    "products": 20,
+                    "assets": 30
+                  },
+                  "missing_count": 10,
+                  "unknown_count": 0,
+                  "issues": [],
+                  "download_url": "/v1/exports/1443c9bd41b34d6aaa8f7621996891ed/download",
+                  "sha256": "4d179a72cf4287e23f5098f1cbd505c275ba112ff6cd91d8a4a92e31d643c807"
+                },
+                "request_id": "4fca19d82d684ff0bedb493f3ece409f"
+              },
+              "service": {
+                "request_id": "83fd3d37251f43d2b1a5b821ae6de96d",
+                "app_instance_id": "87c5610e-294b-40eb-a04d-ee869b8a4fc8",
+                "schema_version": 9,
+                "web_ready": true,
+                "worker_state": "online",
+                "heartbeat_at": 1791301211.8035133,
+                "worker_pid": 85080,
+                "worker_born": 1791301209.295352,
+                "pid": 86176,
+                "born": 1791301208.7016015,
+                "source_adapter": "futario-json-v1",
+                "checked": true
+              },
+              "intent_id": null,
+              "exit_code": 0
+            }
+          },
+          {
+            "command": "export-retry",
+            "exit": 73,
+            "result": null
+          },
+          {
+            "command": "intents",
+            "exit": 0,
+            "result": {
+              "ok": true,
+              "data": {
+                "items": [
+                  {
+                    "intent_id": "be1fe1a2f4e94444956d95ff04a74568",
+                    "command": "export-retry",
+                    "state": "sending",
+                    "created_at": 1791301212.2682233,
+                    "payload": {
+                      "request_key": "d59b4ed97e0d48f58c8c532d10ece414"
+                    }
+                  },
+                  {
+                    "intent_id": "b33e46d38e28488ca49cfce38bb04526",
+                    "command": "export",
+                    "state": "accepted",
+                    "created_at": 1791301210.5071375,
+                    "payload": {
+                      "request_key": "0a23341d99d74834bc8c996e42b613d9",
+                      "selection": "favorites"
+                    }
+                  }
+                ],
+                "intent_directory": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-export-http-cli-9fc9a3dcb9\\control\\client-intents"
+              },
+              "service": {
+                "checked": false,
+                "web_ready": null,
+                "worker_state": "unknown"
+              },
+              "intent_id": null,
+              "exit_code": 0
+            }
+          },
+          {
+            "command": "resume",
+            "exit": 0,
+            "result": {
+              "ok": true,
+              "data": {
+                "intent_id": "be1fe1a2f4e94444956d95ff04a74568",
+                "intent_state": "accepted",
+                "result": {
+                  "export": {
+                    "id": "1443c9bd41b34d6aaa8f7621996891ed",
+                    "state": "partial",
+                    "created_at": "2026-10-06T15:40:10.568Z",
+                    "finished_at": "2026-10-06T15:40:12.998Z",
+                    "attempt": 2,
+                    "resumed_at": null,
+                    "worker_state": "online",
+                    "counts": {
+                      "products": 20,
+                      "assets": 30
+                    },
+                    "missing_count": 10,
+                    "unknown_count": 0,
+                    "issues": [],
+                    "download_url": "/v1/exports/1443c9bd41b34d6aaa8f7621996891ed/download",
+                    "sha256": "4d179a72cf4287e23f5098f1cbd505c275ba112ff6cd91d8a4a92e31d643c807"
+                  },
+                  "reused": true,
+                  "request_id": "2aaaabd02d7947d7b22012867742c7c9"
+                }
+              },
+              "service": {
+                "request_id": "4a2ba7ac89384fa3a755e7426c9bfd94",
+                "app_instance_id": "87c5610e-294b-40eb-a04d-ee869b8a4fc8",
+                "schema_version": 9,
+                "web_ready": true,
+                "worker_state": "online",
+                "heartbeat_at": 1791301213.008525,
+                "worker_pid": 85080,
+                "worker_born": 1791301209.295352,
+                "pid": 86176,
+                "born": 1791301208.7016015,
+                "source_adapter": "futario-json-v1",
+                "checked": true
+              },
+              "intent_id": "be1fe1a2f4e94444956d95ff04a74568",
+              "exit_code": 0
+            }
+          }
+        ],
+        "source_requests": 0,
+        "job_count": 1,
+        "attempt_count": 2,
+        "download_sha256": "4d179a72cf4287e23f5098f1cbd505c275ba112ff6cd91d8a4a92e31d643c807",
+        "stop": {
+          "stopped": true,
+          "forced_roles": []
+        }
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-export-recovery-3b1b0958c4\\evidence.json",
+      "sha256": "00081575bcba5207f513662d8d5876608ec1c8d8d7259093541f2ba248606ccf",
+      "evidence": {
+        "mode": "during_copy",
+        "stop_kind": "graceful",
+        "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-export-recovery-3b1b0958c4",
+        "export_id": "1c411e2c34a94e0e9ce031a6cfa90d53",
+        "final": {
+          "id": "1c411e2c34a94e0e9ce031a6cfa90d53",
+          "state": "partial",
+          "created_at": "2026-10-06T15:58:44.488Z",
+          "finished_at": "2026-10-06T15:58:46.166Z",
+          "attempt": 1,
+          "resumed_at": "2026-10-06T15:58:44.929Z",
+          "worker_state": "online",
+          "counts": {
+            "products": 4,
+            "assets": 6
+          },
+          "missing_count": 2,
+          "unknown_count": 0,
+          "issues": [],
+          "download_url": "/v1/exports/1c411e2c34a94e0e9ce031a6cfa90d53/download",
+          "sha256": "45e9538960b78a1a5e086225ce98f7fe18e4911609e1a8f3e7a58a854ef79514"
+        },
+        "reused_after_publish": false,
+        "source_requests": 0,
+        "stop": {
+          "stopped": true,
+          "forced_roles": []
+        }
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-export-recovery-45392c786e\\evidence.json",
+      "sha256": "32bddd0e9194ee5b0d6a5375ec4d60f66c938fc011c582c7c4b29f15b74a7fb2",
+      "evidence": {
+        "mode": "during_copy",
+        "stop_kind": "kill",
+        "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-export-recovery-45392c786e",
+        "export_id": "63af8a0545bb4ba0a2520c9098c9b61b",
+        "final": {
+          "id": "63af8a0545bb4ba0a2520c9098c9b61b",
+          "state": "partial",
+          "created_at": "2026-10-06T15:58:42.497Z",
+          "finished_at": "2026-10-06T15:58:44.031Z",
+          "attempt": 1,
+          "resumed_at": "2026-10-06T15:58:43.888Z",
+          "worker_state": "online",
+          "counts": {
+            "products": 4,
+            "assets": 6
+          },
+          "missing_count": 2,
+          "unknown_count": 0,
+          "issues": [],
+          "download_url": "/v1/exports/63af8a0545bb4ba0a2520c9098c9b61b/download",
+          "sha256": "904eb8c9b985e3144961cf049f16a9c9af39c681eb90eb110a0a36714c30322c"
+        },
+        "reused_after_publish": false,
+        "source_requests": 0,
+        "stop": {
+          "stopped": true,
+          "forced_roles": []
+        }
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-export-recovery-57af17ec6e\\evidence.json",
+      "sha256": "07f20444332ed84819269a1700f3c326990221fac828fc2e3d0c1a3772c45a15",
+      "evidence": {
+        "mode": "after_publish",
+        "stop_kind": "kill",
+        "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-export-recovery-57af17ec6e",
+        "export_id": "219e4976b77644da812e6dbffe77fc3d",
+        "final": {
+          "id": "219e4976b77644da812e6dbffe77fc3d",
+          "state": "partial",
+          "created_at": "2026-10-06T15:58:46.626Z",
+          "finished_at": "2026-10-06T15:58:48.241Z",
+          "attempt": 1,
+          "resumed_at": "2026-10-06T15:58:48.212Z",
+          "worker_state": "online",
+          "counts": {
+            "products": 4,
+            "assets": 6
+          },
+          "missing_count": 2,
+          "unknown_count": 0,
+          "issues": [],
+          "download_url": "/v1/exports/219e4976b77644da812e6dbffe77fc3d/download",
+          "sha256": "ab697f2e3ac0fb6191ad64f74cfa6802573b83b4f7725db7520a493bf7e80c18"
+        },
+        "reused_after_publish": true,
+        "source_requests": 0,
+        "stop": {
+          "stopped": true,
+          "forced_roles": []
+        }
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-export-recovery-61ada92fed\\evidence.json",
+      "sha256": "9f656adc7176568e7f9c7347ae8a6578831f483999b03634516c3181ddc0237a",
+      "evidence": {
+        "mode": "during_copy",
+        "stop_kind": "graceful",
+        "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-export-recovery-61ada92fed",
+        "export_id": "ce5b8a301c1e46fbbfe03de15229f6d0",
+        "final": {
+          "id": "ce5b8a301c1e46fbbfe03de15229f6d0",
+          "state": "partial",
+          "created_at": "2026-10-06T15:40:04.258Z",
+          "finished_at": "2026-10-06T15:40:05.957Z",
+          "attempt": 1,
+          "resumed_at": "2026-10-06T15:40:04.730Z",
+          "worker_state": "online",
+          "counts": {
+            "products": 4,
+            "assets": 6
+          },
+          "missing_count": 2,
+          "unknown_count": 0,
+          "issues": [],
+          "download_url": "/v1/exports/ce5b8a301c1e46fbbfe03de15229f6d0/download",
+          "sha256": "c455e26d8686b8e088c95274eab10a113049dd7b033b7ed999a94fef7378a48e"
+        },
+        "reused_after_publish": false,
+        "source_requests": 0,
+        "stop": {
+          "stopped": true,
+          "forced_roles": []
+        }
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-export-recovery-ab9261a994\\evidence.json",
+      "sha256": "9655367e04c811e20fcd2f3f677d4f49c4f154d97748088ecaa92d91aebf9d5a",
+      "evidence": {
+        "mode": "during_copy",
+        "stop_kind": "kill",
+        "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-export-recovery-ab9261a994",
+        "export_id": "500d8d1a73f64dfc8628dfe58eca1c6e",
+        "final": {
+          "id": "500d8d1a73f64dfc8628dfe58eca1c6e",
+          "state": "partial",
+          "created_at": "2026-10-06T15:40:02.186Z",
+          "finished_at": "2026-10-06T15:40:03.714Z",
+          "attempt": 1,
+          "resumed_at": "2026-10-06T15:40:03.579Z",
+          "worker_state": "online",
+          "counts": {
+            "products": 4,
+            "assets": 6
+          },
+          "missing_count": 2,
+          "unknown_count": 0,
+          "issues": [],
+          "download_url": "/v1/exports/500d8d1a73f64dfc8628dfe58eca1c6e/download",
+          "sha256": "3888e731e91d8f730950a9200a8edf210520e2bdc34dac2f6e5db1eea4a35780"
+        },
+        "reused_after_publish": false,
+        "source_requests": 0,
+        "stop": {
+          "stopped": true,
+          "forced_roles": []
+        }
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-export-recovery-e3b92fc8bb\\evidence.json",
+      "sha256": "804ec76b9cf48fed4719dbb87d3b40f2db573bcf8cc5a5b0eb2c93c3629a1b55",
+      "evidence": {
+        "mode": "after_publish",
+        "stop_kind": "kill",
+        "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-export-recovery-e3b92fc8bb",
+        "export_id": "4e97e8c3d88e4142af752ebd88bcedb8",
+        "final": {
+          "id": "4e97e8c3d88e4142af752ebd88bcedb8",
+          "state": "partial",
+          "created_at": "2026-10-06T15:40:06.421Z",
+          "finished_at": "2026-10-06T15:40:07.931Z",
+          "attempt": 1,
+          "resumed_at": "2026-10-06T15:40:07.906Z",
+          "worker_state": "online",
+          "counts": {
+            "products": 4,
+            "assets": 6
+          },
+          "missing_count": 2,
+          "unknown_count": 0,
+          "issues": [],
+          "download_url": "/v1/exports/4e97e8c3d88e4142af752ebd88bcedb8/download",
+          "sha256": "7eb6e4544e418ac334fe166b644d55aa2774c792f03b57e015294b4cbcfbac55"
+        },
+        "reused_after_publish": true,
+        "source_requests": 0,
+        "stop": {
+          "stopped": true,
+          "forced_roles": []
+        }
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-export-web-exit-5e8055a43b\\evidence.json",
+      "sha256": "2a73ba9f03549fa27a6ca460dd1694b2ad27b10bd0e39e73c6a6fb28b18a6558",
+      "evidence": {
+        "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-export-web-exit-5e8055a43b",
+        "scenario": "web-exits-during-asset-copy",
+        "export": {
+          "id": "f0b85ad52a0747ae817e67bef6447cb1",
+          "state": "partial",
+          "created_at": "2026-10-06T15:40:14.760Z",
+          "finished_at": "2026-10-06T15:40:18.244Z",
+          "attempt": 1,
+          "resumed_at": null,
+          "worker_state": "online",
+          "counts": {
+            "products": 4,
+            "assets": 6
+          },
+          "missing_count": 2,
+          "unknown_count": 0,
+          "issues": [],
+          "download_url": "/v1/exports/f0b85ad52a0747ae817e67bef6447cb1/download",
+          "sha256": "53c66231a5f7bcc672d9ee310e6aca81fdec9b8240bbcc15f71db0f02405fbbf"
+        },
+        "heartbeat_advanced_while_copy_paused": true,
+        "web_verified_dead": true,
+        "source_requests": 0,
+        "stop": {
+          "stopped": true,
+          "forced_roles": []
+        }
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-export-web-exit-a051b3e608\\evidence.json",
+      "sha256": "153523ffc5278e96aa35c122e31f268959599b1e8f3a0910f8f95fa9d91b0a3d",
+      "evidence": {
+        "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-export-web-exit-a051b3e608",
+        "scenario": "web-exits-during-asset-copy",
+        "export": {
+          "id": "ce5e92bdedf142dc916fa083f8dfae40",
+          "state": "partial",
+          "created_at": "2026-10-06T15:58:55.182Z",
+          "finished_at": "2026-10-06T15:58:58.623Z",
+          "attempt": 1,
+          "resumed_at": null,
+          "worker_state": "online",
+          "counts": {
+            "products": 4,
+            "assets": 6
+          },
+          "missing_count": 2,
+          "unknown_count": 0,
+          "issues": [],
+          "download_url": "/v1/exports/ce5e92bdedf142dc916fa083f8dfae40/download",
+          "sha256": "eff01cf5498488492641f4a5f0864f289a596f43e24c1047ac773ac14114ab6f"
+        },
+        "heartbeat_advanced_while_copy_paused": true,
+        "web_verified_dead": true,
+        "source_requests": 0,
+        "stop": {
+          "stopped": true,
+          "forced_roles": []
+        }
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-recover-4615d9dc\\evidence.json",
+      "sha256": "4aab344016a0f656d794ce33756e232b5fe63d7d0a2d40af9ca2aa55d0165bf5",
+      "evidence": {
+        "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-recover-4615d9dc",
+        "mode": "during_copy",
+        "stop_kind": "graceful",
+        "job_id": "e5f9b0e544a04aae83b496f1c6952ffa",
+        "result": {
+          "id": "e5f9b0e544a04aae83b496f1c6952ffa",
+          "kind": "backup",
+          "state": "partial",
+          "created_at": "2026-10-06T15:47:05.524Z",
+          "finished_at": "2026-10-06T15:47:10.154Z",
+          "resumed_at": "2026-10-06T15:47:08.855Z",
+          "worker_state": "online",
+          "result": {
+            "backup_id": "e5f9b0e544a04aae83b496f1c6952ffa",
+            "checked_at": "2026-10-06T15:47:10.154Z",
+            "counts": {
+              "assets": 6,
+              "damaged": 0,
+              "missing": 2,
+              "products": 4,
+              "unknown": 0,
+              "verified": 6
+            },
+            "issues": [
+              {
+                "category": "missing",
+                "code": "IMAGE_NOT_ARCHIVED",
+                "object_id": "version:fixture-version-3:1:3-0"
+              },
+              {
+                "category": "missing",
+                "code": "IMAGE_NOT_ARCHIVED",
+                "object_id": "version:fixture-version-3:1:3-1"
+              }
+            ],
+            "manifest_sha256": "e69e98099c4f1c73c6bb1f57754e6a7b5bf1d5c04e48cc7a21975209605be1c8",
+            "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-recover-4615d9dc\\backups\\e5f9b0e544a04aae83b496f1c6952ffa",
+            "reused": false,
+            "state": "partial"
+          },
+          "issue_code": null,
+          "backup_available": true
+        },
+        "heartbeat_advanced": true,
+        "source_requests": 0,
+        "stop": {
+          "stopped": true,
+          "forced_roles": []
+        }
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-recover-4b650119\\evidence.json",
+      "sha256": "eaf13a825e7800633af9a7f76e009314910511a5cb1e851dca8d2dc09327a5a0",
+      "evidence": {
+        "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-recover-4b650119",
+        "mode": "after_publish",
+        "stop_kind": "kill",
+        "job_id": "2c64164f9851456ebe3740e1ddf3a315",
+        "result": {
+          "id": "2c64164f9851456ebe3740e1ddf3a315",
+          "kind": "backup",
+          "state": "partial",
+          "created_at": "2026-10-06T15:47:10.598Z",
+          "finished_at": "2026-10-06T15:47:14.985Z",
+          "resumed_at": "2026-10-06T15:47:14.951Z",
+          "worker_state": "online",
+          "result": {
+            "backup_id": "2c64164f9851456ebe3740e1ddf3a315",
+            "checked_at": "2026-10-06T15:47:14.985Z",
+            "counts": {
+              "assets": 6,
+              "damaged": 0,
+              "missing": 2,
+              "products": 4,
+              "unknown": 0,
+              "verified": 6
+            },
+            "issues": [
+              {
+                "category": "missing",
+                "code": "IMAGE_NOT_ARCHIVED",
+                "object_id": "version:fixture-version-3:1:3-0"
+              },
+              {
+                "category": "missing",
+                "code": "IMAGE_NOT_ARCHIVED",
+                "object_id": "version:fixture-version-3:1:3-1"
+              }
+            ],
+            "manifest_sha256": "afe50341fce9a4ae5447a899cf6aa794fd53f22fe80ad043125801bc328f7e63",
+            "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-recover-4b650119\\backups\\2c64164f9851456ebe3740e1ddf3a315",
+            "reused": true,
+            "state": "partial"
+          },
+          "issue_code": null,
+          "backup_available": true
+        },
+        "heartbeat_advanced": true,
+        "source_requests": 0,
+        "stop": {
+          "stopped": true,
+          "forced_roles": []
+        }
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-recover-61f0f1ad\\evidence.json",
+      "sha256": "90a1a4ddfb87409ec144f82212556bf03efa22890bf899c70ec7c84aaf693e01",
+      "evidence": {
+        "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-recover-61f0f1ad",
+        "mode": "during_copy",
+        "stop_kind": "kill",
+        "job_id": "965e9645c5004f9db74bac0124037079",
+        "result": {
+          "id": "965e9645c5004f9db74bac0124037079",
+          "kind": "backup",
+          "state": "partial",
+          "created_at": "2026-10-06T15:58:59.101Z",
+          "finished_at": "2026-10-06T15:59:03.578Z",
+          "resumed_at": "2026-10-06T15:59:03.459Z",
+          "worker_state": "online",
+          "result": {
+            "backup_id": "965e9645c5004f9db74bac0124037079",
+            "checked_at": "2026-10-06T15:59:03.578Z",
+            "counts": {
+              "assets": 6,
+              "damaged": 0,
+              "missing": 2,
+              "products": 4,
+              "unknown": 0,
+              "verified": 6
+            },
+            "issues": [
+              {
+                "category": "missing",
+                "code": "IMAGE_NOT_ARCHIVED",
+                "object_id": "version:fixture-version-3:1:3-0"
+              },
+              {
+                "category": "missing",
+                "code": "IMAGE_NOT_ARCHIVED",
+                "object_id": "version:fixture-version-3:1:3-1"
+              }
+            ],
+            "manifest_sha256": "3cb7bd1faa6fddc5835db70bf2d44f913a3836ece496709da7c54f3b90a3e32f",
+            "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-recover-61f0f1ad\\backups\\965e9645c5004f9db74bac0124037079",
+            "reused": false,
+            "state": "partial"
+          },
+          "issue_code": null,
+          "backup_available": true
+        },
+        "heartbeat_advanced": true,
+        "source_requests": 0,
+        "stop": {
+          "stopped": true,
+          "forced_roles": []
+        }
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-recover-6595c6f9\\evidence.json",
+      "sha256": "e164b4f8ae4a26afea4782e5411cf3968567576901d6e43513427449c42434a7",
+      "evidence": {
+        "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-recover-6595c6f9",
+        "mode": "during_copy",
+        "stop_kind": "kill",
+        "job_id": "dd35dfd2bb0c406b96ed4228ed786eaa",
+        "result": {
+          "id": "dd35dfd2bb0c406b96ed4228ed786eaa",
+          "kind": "backup",
+          "state": "partial",
+          "created_at": "2026-10-06T15:47:00.514Z",
+          "finished_at": "2026-10-06T15:47:05.004Z",
+          "resumed_at": "2026-10-06T15:47:04.883Z",
+          "worker_state": "online",
+          "result": {
+            "backup_id": "dd35dfd2bb0c406b96ed4228ed786eaa",
+            "checked_at": "2026-10-06T15:47:05.004Z",
+            "counts": {
+              "assets": 6,
+              "damaged": 0,
+              "missing": 2,
+              "products": 4,
+              "unknown": 0,
+              "verified": 6
+            },
+            "issues": [
+              {
+                "category": "missing",
+                "code": "IMAGE_NOT_ARCHIVED",
+                "object_id": "version:fixture-version-3:1:3-0"
+              },
+              {
+                "category": "missing",
+                "code": "IMAGE_NOT_ARCHIVED",
+                "object_id": "version:fixture-version-3:1:3-1"
+              }
+            ],
+            "manifest_sha256": "afb8074b2e639148f7c405d15c137e6c397c97239c6383b2a0d2229600dd0cdf",
+            "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-recover-6595c6f9\\backups\\dd35dfd2bb0c406b96ed4228ed786eaa",
+            "reused": false,
+            "state": "partial"
+          },
+          "issue_code": null,
+          "backup_available": true
+        },
+        "heartbeat_advanced": true,
+        "source_requests": 0,
+        "stop": {
+          "stopped": true,
+          "forced_roles": []
+        }
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-recover-7e848f07\\evidence.json",
+      "sha256": "0f30e57f65e2da7a766a2b2af4c45d1e47655b46ccd217cc7deddcd2efc59f3d",
+      "evidence": {
+        "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-recover-7e848f07",
+        "mode": "during_copy",
+        "stop_kind": "graceful",
+        "job_id": "a794059ecfb14037814cd9d1caf105b8",
+        "result": {
+          "id": "a794059ecfb14037814cd9d1caf105b8",
+          "kind": "backup",
+          "state": "partial",
+          "created_at": "2026-10-06T15:59:04.026Z",
+          "finished_at": "2026-10-06T15:59:08.598Z",
+          "resumed_at": "2026-10-06T15:59:07.384Z",
+          "worker_state": "online",
+          "result": {
+            "backup_id": "a794059ecfb14037814cd9d1caf105b8",
+            "checked_at": "2026-10-06T15:59:08.598Z",
+            "counts": {
+              "assets": 6,
+              "damaged": 0,
+              "missing": 2,
+              "products": 4,
+              "unknown": 0,
+              "verified": 6
+            },
+            "issues": [
+              {
+                "category": "missing",
+                "code": "IMAGE_NOT_ARCHIVED",
+                "object_id": "version:fixture-version-3:1:3-0"
+              },
+              {
+                "category": "missing",
+                "code": "IMAGE_NOT_ARCHIVED",
+                "object_id": "version:fixture-version-3:1:3-1"
+              }
+            ],
+            "manifest_sha256": "d7d4bd9f4f262f8a7cd6897c4c4edce1388ae682727fe9a57394b7b932ba9fe2",
+            "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-recover-7e848f07\\backups\\a794059ecfb14037814cd9d1caf105b8",
+            "reused": false,
+            "state": "partial"
+          },
+          "issue_code": null,
+          "backup_available": true
+        },
+        "heartbeat_advanced": true,
+        "source_requests": 0,
+        "stop": {
+          "stopped": true,
+          "forced_roles": []
+        }
+      }
+    },
+    {
+      "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-recover-a3b2570c\\evidence.json",
+      "sha256": "099186eac4fb9101d43129c96d2ded0092c3d099c19cd700ec871288f10cae96",
+      "evidence": {
+        "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-recover-a3b2570c",
+        "mode": "after_publish",
+        "stop_kind": "kill",
+        "job_id": "7c90580a423348459a3a347d16b3d402",
+        "result": {
+          "id": "7c90580a423348459a3a347d16b3d402",
+          "kind": "backup",
+          "state": "partial",
+          "created_at": "2026-10-06T15:59:09.034Z",
+          "finished_at": "2026-10-06T15:59:13.868Z",
+          "resumed_at": "2026-10-06T15:59:13.829Z",
+          "worker_state": "online",
+          "result": {
+            "backup_id": "7c90580a423348459a3a347d16b3d402",
+            "checked_at": "2026-10-06T15:59:13.868Z",
+            "counts": {
+              "assets": 6,
+              "damaged": 0,
+              "missing": 2,
+              "products": 4,
+              "unknown": 0,
+              "verified": 6
+            },
+            "issues": [
+              {
+                "category": "missing",
+                "code": "IMAGE_NOT_ARCHIVED",
+                "object_id": "version:fixture-version-3:1:3-0"
+              },
+              {
+                "category": "missing",
+                "code": "IMAGE_NOT_ARCHIVED",
+                "object_id": "version:fixture-version-3:1:3-1"
+              }
+            ],
+            "manifest_sha256": "c9a656a04e900f3808a1e8fdc9421c289fc6942d24a05eab2ea63ad5eea36e64",
+            "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t5c-recover-a3b2570c\\backups\\7c90580a423348459a3a347d16b3d402",
+            "reused": true,
+            "state": "partial"
+          },
+          "issue_code": null,
+          "backup_available": true
+        },
+        "heartbeat_advanced": true,
+        "source_requests": 0,
+        "stop": {
+          "stopped": true,
+          "forced_roles": []
+        }
+      }
+    }
+  ],
+  "sha256": {
+    "docs\\verification\\T5c-backup-sample\\8ac44c03ef944425beb316d7b979e8df\\assets\\0354196b665523afcc12c41f897200aa09d4abf76468bd74843346e56b2dcc00.bin": "0d582e182a323b091b2372d6225d00e4b49dece3e2f5994fd446add256e0a3eb",
+    "docs\\verification\\T5c-backup-sample\\8ac44c03ef944425beb316d7b979e8df\\assets\\066f065b97882653c95b594735271bb9d9a097bc6d0e4bcd6fbddeea5355b3ae.bin": "15631173a30fb10e3d2fde1e8b3febb29c3b346738689e41563a120320cb3fd3",
+    "docs\\verification\\T5c-backup-sample\\8ac44c03ef944425beb316d7b979e8df\\assets\\121352c7e581b08cf2951314060c4aa8fed0ba275768554dcd2c1f807788a5ac.bin": "5a18cbda52772733fc25f651db1b5c3117f95b66d1be7befb34735809f298f0a",
+    "docs\\verification\\T5c-backup-sample\\8ac44c03ef944425beb316d7b979e8df\\assets\\4f1236bd70b760ea55214ab900fb8624a074e10e3b83afd7127194607326e7f9.bin": "0d582e182a323b091b2372d6225d00e4b49dece3e2f5994fd446add256e0a3eb",
+    "docs\\verification\\T5c-backup-sample\\8ac44c03ef944425beb316d7b979e8df\\assets\\8cb3bd686b7e0045991c83c3978e29d191cc472aa54462346b0d72949f51864a.bin": "803dd90f162f7d67ec15ccddf6afb4d64809bc3afb109c4cb3c8cd11727dd6e8",
+    "docs\\verification\\T5c-backup-sample\\8ac44c03ef944425beb316d7b979e8df\\assets\\949415f3432fbefe7bccaacee0329d1695ecca16b6299e4e7efec72078ec722e.bin": "15631173a30fb10e3d2fde1e8b3febb29c3b346738689e41563a120320cb3fd3",
+    "docs\\verification\\T5c-backup-sample\\8ac44c03ef944425beb316d7b979e8df\\assets\\959b758825cc8502deb722b3e138b2bdcc970e4d7f6e2a5f7410f6f10fded998.bin": "5a18cbda52772733fc25f651db1b5c3117f95b66d1be7befb34735809f298f0a",
+    "docs\\verification\\T5c-backup-sample\\8ac44c03ef944425beb316d7b979e8df\\assets\\976d0e3c1c979a77fc5412e885aa975dd18dfc05df98e4097e82f830e8478743.bin": "803dd90f162f7d67ec15ccddf6afb4d64809bc3afb109c4cb3c8cd11727dd6e8",
+    "docs\\verification\\T5c-backup-sample\\8ac44c03ef944425beb316d7b979e8df\\assets\\ad77aa7ee3e32393c42d7637b9b651339968e75f4c438972dff4da0f8c5ad32a.bin": "0d582e182a323b091b2372d6225d00e4b49dece3e2f5994fd446add256e0a3eb",
+    "docs\\verification\\T5c-backup-sample\\8ac44c03ef944425beb316d7b979e8df\\assets\\c89a62fee18aae30420308974fe55c402489991e781fcdd88ba5d3c2f36bf4be.bin": "f4742a8a0ff69b0a6a33078d5d354c41d223e8a96d49e1e46ffa793713ba1ba6",
+    "docs\\verification\\T5c-backup-sample\\8ac44c03ef944425beb316d7b979e8df\\assets\\cd856607c78638b608470ea0285e75e34b3184deaca77ae57874664a52f15aec.bin": "5a18cbda52772733fc25f651db1b5c3117f95b66d1be7befb34735809f298f0a",
+    "docs\\verification\\T5c-backup-sample\\8ac44c03ef944425beb316d7b979e8df\\assets\\e2fc9519638e7a88ec9f8ce56a50c55d7bcf8d9f97a1cc9159777752e94908b8.bin": "2949986e015ba8300e006d0cfb6a4a710c42cd93ebd8a14f0d95af464de37fec",
+    "docs\\verification\\T5c-backup-sample\\8ac44c03ef944425beb316d7b979e8df\\COMMIT.json": "1b4e96a72bb475277dcfa601ea39fc019b167cf56ddf2b83648f375dae77b952",
+    "docs\\verification\\T5c-backup-sample\\8ac44c03ef944425beb316d7b979e8df\\database.sqlite3": "6e96bf9804d5524220dda2470984244d98d39e531ee5c7910c8c7e894a6bd6fa",
+    "docs\\verification\\T5c-backup-sample\\8ac44c03ef944425beb316d7b979e8df\\manifest.json": "3611f217bd4d5355bd08396151d43155ab1b812d15f496bb9968a23044f2dadd",
+    "docs\\verification\\T5c-baseline.json": "545d431c11e8661f5c6e61a533cb7fba8b53eb29be149c49e20112d037ae3e5f",
+    "docs\\verification\\T5c-browser-default.png": "bc83745239128f61d7b0469f414b8fcc39c1f312d1b2ab2730730e368188539e",
+    "docs\\verification\\T5c-browser-maintenance.png": "71f9db4ac117de06667550b21ed6c599e50d7b056ed2ada385cc36b88ee8f0cc",
+    "docs\\verification\\T5c-browser-mobile.png": "9b1e71e27fdd3f5cc1ed89136fe482ff94946b1a671a957ab55aeb1b4ba3b33a",
+    "docs\\verification\\T5c-browser-queued.png": "e1a7e715099504a592f380085e1eab76f66d5c00806ea1f77ad73e38127348f2",
+    "docs\\verification\\T5c-contract.md": "c640336fa8f6a3e12cecf8ecfb566688d1d06496643b485bfb73cbdc328416f1",
+    "docs\\verification\\T5c-media-tests.txt": "eb97e712698257ade0811f7ba64eb3c5199a6f215e4ccf46382c1770a02d92f1",
+    "docs\\verification\\T5c-process-initial.txt": "1e743a98042cf7e097e7a2031506b78261c9075771e29e2e52573e9af40e33c5",
+    "docs\\verification\\T5c-regression-initial.txt": "7d6b8553e7d7a6f7274d52f3dab86c887f63861c8e15c9e9924268d28690f923",
+    "docs\\verification\\T5c-tests-final.txt": "929766b8957040f489eba1cb337e9d84962a7b0ee174ac058f8db233ec544c39",
+    "docs\\verification\\T5c-ui-tests-v1.txt": "bd825f58250cd193b949fc8a6b5b58e739e0990ae48a65b43598ea1c8309978f",
+    "docs\\verification\\T5c-wheel.txt": "fe6fc2547a92f3463515d31f3cca4390539b68de243f2841f0f9d9cbb23ef11e",
+    "docs\\verification\\T5c.md": "dca70ea047839630a11ca8ab30b9f019dfe58953265fa316f674be9c9e521f4b",
+    "src\\fashion_scout\\__init__.py": "38d10a501787f0dfa2da3150cc1472e2167c3a38175b11abe1b46b72335fce9e",
+    "src\\fashion_scout\\adapters\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src\\fashion_scout\\adapters\\futario.py": "fca7e3a4af2cfce1bd0010ccf1f090984a7bed1307c854968bebe0066d583045",
+    "src\\fashion_scout\\api\\__init__.py": "1234035fbdf7ed7b36ccc7e34c1c9ac757e2b65274d51052ba1f856667473b3a",
+    "src\\fashion_scout\\api\\exports.py": "a8b241a763baa3c830c2a31ddd5b9e1b0cdc034444be9dfd5163b81c44d29fd4",
+    "src\\fashion_scout\\api\\maintenance.py": "854e3ca51b0b7129dee59aef6dfaee45969bbe3d1c45950f71f5bd1be969f4fc",
+    "src\\fashion_scout\\api\\models.py": "d664019aa3e0effff22d9af5f70e1a51f5f72dbe3885204bccfef53371b855af",
+    "src\\fashion_scout\\api\\routes.py": "72bb3074605e47896f2be11471da05200855b73ef973597a96eafbb9d164700b",
+    "src\\fashion_scout\\api\\security.py": "f28c676bcb7143ce843ea2fa24a10f52166e0e12bc014976669d844af71239ce",
+    "src\\fashion_scout\\client.py": "ea91a5f12383ee8d6070ca44761e7dc870453c938c5cc7f411ca5f93bbda0ef4",
+    "src\\fashion_scout\\client_models.py": "1adf756ad9021a7c33889d559925a6140dd6cf9e363dd59c3edc87673bbabb75",
+    "src\\fashion_scout\\config.py": "95f0bf4ed874b9f2b91f4d2ce4647d0aed626342389ed3e4f0d0b7045f685bc7",
+    "src\\fashion_scout\\db\\__init__.py": "4851e8b3cab271933625646f581c2e2f6818bcfc5b06478e7acc486d4d9c88c6",
+    "src\\fashion_scout\\db\\archive.py": "c123feb209c699508149b0c7e0bb7493b56f77dbdacd3e74828f7f6c165f13bc",
+    "src\\fashion_scout\\db\\migrations\\001_core.sql": "3caf8d285c8ca65a67a3d1eecc88ae69842f7e5d14c1a0af190e1a01ffba924c",
+    "src\\fashion_scout\\db\\migrations\\002_catalog_contract.sql": "b511ceace1280fd341d76fc7f103e73ea6778701992bc0e43f1ff91205e62d84",
+    "src\\fashion_scout\\db\\migrations\\003_archive_repair.sql": "1892d294544f789080dba0048e997f8637751c633b355a89dea55f733e1ff556",
+    "src\\fashion_scout\\db\\migrations\\004_collection.sql": "d794e352fb402c1d8ce4716dc4abc8004ffe8523682c452f58acb7db97c8dd3f",
+    "src\\fashion_scout\\db\\migrations\\005_http_evidence.sql": "0e2134a7641d37579732b4ce2692cfd6121f0f43bc61803f2aef82bbaccd5868",
+    "src\\fashion_scout\\db\\migrations\\006_network_throttle.sql": "fd94bc90d5a3f2c1b47e0b37b8498177458dbea2f287af435141931ba562cae4",
+    "src\\fashion_scout\\db\\migrations\\007_owned_temps.sql": "6477c5790780ed18a4cdbe03e471162e41e5023cd4f17a13d402ab5b4057f7d0",
+    "src\\fashion_scout\\db\\migrations\\008_exports.sql": "27a8e404921138edc64680664e4f01b87e47183a98b3553bfb6bddbcf6cfe2e3",
+    "src\\fashion_scout\\db\\migrations\\009_maintenance.sql": "5338ba48b135d1473a8adf79127638b0bf7ac577cbc5691d9d7f3f3bf0e9ffca",
+    "src\\fashion_scout\\db\\store.py": "f657c65c4a023fbdce6f9889109b948ee50c25d5ed4ec1c332c875030c1a30a7",
+    "src\\fashion_scout\\domain\\__init__.py": "3d16175285c199a178ed9743669c9aa29bacf5375a9dd035754999b276e4744b",
+    "src\\fashion_scout\\domain\\errors.py": "66fcc71d3163e6a18d8e8123c473aa6156e08bf71eaada641bdb753f15813552",
+    "src\\fashion_scout\\domain\\models.py": "8c2655ade414799b9df39235363c2c230700bb686e057ab19b7b2a073f4d2cff",
+    "src\\fashion_scout\\exports\\__init__.py": "c7c51f50619dd11a31e53ae69a3e92984a1d0dbb752abe8600abb74a03eee292",
+    "src\\fashion_scout\\exports\\capture.py": "d5e1774c7875435ac030460fe748571219198c7a43b88f7ecc655c17b91869fc",
+    "src\\fashion_scout\\exports\\engine.py": "991c56c547c4dd9dd8ab68470e92510c29253a25a02f506d43fa508c6577f637",
+    "src\\fashion_scout\\exports\\jobs.py": "d06d6a86a4c0b6320f3c27ae9dbefc00f42ff0f4a42e5a44eef804750f2a634b",
+    "src\\fashion_scout\\exports\\manifest.py": "199085e1808f9e751f1d451567db66dbc7ff8e80263d65e3580ec5ba698b9056",
+    "src\\fashion_scout\\exports\\models.py": "03254960091113fdab5a3ff74cdb56cbb7bda4501a81613901a16e64495c6f8f",
+    "src\\fashion_scout\\exports\\runner.py": "85567063fded9ee218cc2cca3e1ec79fe00c7811d22dccc3c024833ee34fbd46",
+    "src\\fashion_scout\\health.py": "a4d008fd4e9271db0db45e11037410eccf13f5160f83bd7fae680b4b1d36edf2",
+    "src\\fashion_scout\\launcher.py": "79065c066ef564cf4d1b3d77503600e3f8ee6a8954e49f6e6d1cd9a78d02ff3d",
+    "src\\fashion_scout\\maintenance\\__init__.py": "0cd5d8251c2e18fb057e34ca1104a4c9eaaf78db49c3d831511d0a431533d29b",
+    "src\\fashion_scout\\maintenance\\backup.py": "82e7ffe662d33edcffe5c2d4831ae52bf70683f2fcfeb47c2f1f359e3544cb3d",
+    "src\\fashion_scout\\maintenance\\files.py": "45b2ffd144b4f8d1befc0b1f64c634d7d56df99d08206ea55be9a87fc0ffae4a",
+    "src\\fashion_scout\\maintenance\\inventory.py": "2f84b107264aac42dff215e760b45a1d1afed123e8ebce9d33d2492a9efdd945",
+    "src\\fashion_scout\\maintenance\\jobs.py": "b65accd1a2cbcb023f2c32660a9a136f34b24b6a3b17ff86b4bef4944fcd8e61",
+    "src\\fashion_scout\\maintenance\\restore.py": "df548b977b35bdef7116a2ae062ca5daa0b9d44cce945581a4bce900d9f56af8",
+    "src\\fashion_scout\\maintenance\\runner.py": "3f22c4c9929a85ead31cd376c00fbc6c7d683f057d2b3e5ea8b6aaafea3f4ee3",
+    "src\\fashion_scout\\maintenance\\storage.py": "6e55ecce933fbe11d28dc57fcd5e55be2521fc350ca88f9cd100c84c366a8b86",
+    "src\\fashion_scout\\media\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src\\fashion_scout\\media\\http.py": "606d3de4697407ca377aa945f80fa54f864ab93be8f629bc28a20f424d91213b",
+    "src\\fashion_scout\\media\\images.py": "cd289fe34f3eb56dbaedb76e93c022fedc7da2cecc8adfcd3961e2d1e49e79e9",
+    "src\\fashion_scout\\processes.py": "dfb9b9a57939614bc7b1df2f5f4373a585676620aa91936d7aa1d18d5da349c1",
+    "src\\fashion_scout\\services\\__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "src\\fashion_scout\\services\\catalog.py": "7b7c6297a5be03628213cac1fc8b0866c6ee461e7fe7e1251b8239ca9da8f096",
+    "src\\fashion_scout\\services\\collect.py": "d3d6d8f640b7b176016107558c13efefac4995481708a900850c751a511a6b19",
+    "src\\fashion_scout\\services\\presentation.py": "0262f3a9f62fde45e59773c932ebb1e41e4d80a2a240551fba485e7b1aaedc5c",
+    "src\\fashion_scout\\services\\runs.py": "d81d1e59ce6dea3bb7889457389f82c66bba992db740cd72bead448c0535847e",
+    "src\\fashion_scout\\static\\app.css": "f503fa3b626eda1addf2ef050dd905e54ad980220bd6582cc1d07690abf4c63d",
+    "src\\fashion_scout\\static\\app.js": "47364606e4de54688acc1b8ca00d6b6973b138a90bef8444e254a6157f17c7ac",
+    "src\\fashion_scout\\static\\bootstrap.js": "ab7688ef2289b5a7795f53d5443c97eae064a01ef355b226a3e44b84b60e53f6",
+    "src\\fashion_scout\\static\\export-intent.js": "5a6623d1cf00a4edad6efc90ea2dab7eaa8209e1c84bdb04288134862a987770",
+    "src\\fashion_scout\\static\\exports.js": "e76603950f27d072ecdc9cf05002ec835c3fde1d01c7698448161a83ff69e625",
+    "src\\fashion_scout\\static\\intent.js": "2ec34fbfc9f683d82a87ff8d7c96e9f6a1ffa2bc88705982f9e47a95f24b1dad",
+    "src\\fashion_scout\\static\\maintenance-intent.js": "c127e51c10ae77f6f1dbc30e136d1dc666d02faab207724168d2370d41d61d35",
+    "src\\fashion_scout\\static\\maintenance.js": "468f953133180c2e08f3a7f9c02a8848afda9acaee63f3b163e06eff5c387a66",
+    "src\\fashion_scout\\templates\\bootstrap.html": "9362e71b57fcd0c9821187e23dcd96eb81d17174b8c3eb9f7e791de94e4eee97",
+    "src\\fashion_scout\\templates\\index.html": "5363b327646aa73cccb37f5b9ee0bc20ba55f27ed7d661efbd7617c741b2942c",
+    "src\\fashion_scout\\worker.py": "966a1716e6063a994b301f4b618eaa1af5ca679a8b2c048959e63ba62b1b1b07",
+    "tests\\integration\\maintenance_process_helper.py": "6d873e4870d0e260f48823fbdddef0cb475fe0882d1a739ad06b3e5c1e43dcc3",
+    "tests\\integration\\test_maintenance_flow.py": "edbec640adfbc0b6b9a04e28b49efca2b815b9c93c7fffe99308e39fb95be001",
+    "tests\\maintenance\\browser_preview.py": "eb117a9407e9c61a932d3ac96405302fbc6f64f73061cbb8ce7a698b58df5243",
+    "tests\\maintenance\\intent.test.mjs": "0651b7f48e4ab3dd5a0b1245e8a05967e41a5a174f3fc4a2641c56284d67fca4",
+    "tests\\maintenance\\test_local.py": "5bd95806633685773ad096f740ca79540f412235814abe469e3c486105589cc4",
+    "tests\\maintenance\\test_resilience.py": "1247a3a29f9f0a92016f3d028af572703cfe669714a61ccb59ae11703dbf890f",
+    "tests\\maintenance\\verify_delivery.py": "57eea313c6638151edd634630835cb7b311dc9c86157a37a1b89feebc5e26145"
+  }
+}

@@ -1,0 +1,9 @@
+Processing .\.
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: fashion-scout
+  Building wheel for fashion-scout (pyproject.toml): started
+  Building wheel for fashion-scout (pyproject.toml): finished with status 'done'
+  Created wheel for fashion-scout: filename=fashion_scout-0.2.0a1-py3-none-any.whl size=104150 sha256=75ec0e0845bea729845db4270e2ba4492b83b3d92f459499459d67d9a48848f5
+  Stored in directory: C:\Users\Administrator\AppData\Local\Temp\pip-ephem-wheel-cache-8564xx0i\wheels\45\b2\ee\2c94f9425f79b4595b6a6da14ed7a6da94cc8bcd176cc9d422
+Successfully built fashion-scout

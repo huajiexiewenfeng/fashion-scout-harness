@@ -1,0 +1,45 @@
+T6b candidate: E:\github-workspace\fashion-scout-harness\.runtime\t6b-candidate-1f522ad7
+T6b checks: E:\github-workspace\fashion-scout-harness\.runtime\t6b-checks-6bb117a4
+......F
+================================== FAILURES ===================================
+__________ test_independent_zip_install_entries_and_synthetic_export __________
+
+release = ({'zip': 'E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-candidate-1f522ad7\\FashionScout-0.2.0a1-local-ca...didate-v1\\manifest.json', ...}, WindowsPath('E:/github-workspace/fashion-scout-harness/.runtime/t6b-checks-6bb117a4'))
+
+    def test_independent_zip_install_entries_and_synthetic_export(release):
+        receipt,work=release
+        package=extract(release,"真实解压 空格 & 单引号's")
+        env={k:v for k,v in os.environ.items() if k.upper() not in {'PYTHONPATH','PYTHONHOME','VIRTUAL_ENV'}}
+        env.update(PYTHONDONTWRITEBYTECODE='1',PYTHONUTF8='1')
+        missing=invoke(package,'Open',2,env=env,label='open-before-prepare.json')
+        assert 'Prepare.cmd first' in missing['stdout']
+>       invoke(package,'Prepare',env=env,cmd=True,label='install-original.json')
+
+tests\release\test_bundle.py:110: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+package = WindowsPath("E:/github-workspace/fashion-scout-harness/.runtime/t6b-checks-6bb117a4/真实解压 空格 & 单引号's/FashionScout-0.2.0a1-local-candidate-v1")
+action = 'Prepare', expected = 0
+env = {'ACSETUPSVCPORT': '23210', 'ACSVCPORT': '17532', 'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\Administrator\\AppData\\Roaming', ...}
+cmd = True, label = 'install-original.json'
+
+    def invoke(package, action, expected=0, *, env=None, cmd=False, label=None):
+        command=([str(CMD),'/d','/c',str(package/({'Prepare':'01 Prepare.cmd','Open':'02 Open.cmd','Stop':'03 Stop.cmd'}[action]))]
+                 if cmd else [str(PS),'-NoLogo','-NoProfile','-ExecutionPolicy','Bypass','-File',str(package/'package.ps1'),'-Action',action])
+        result=subprocess.run(command,cwd=package,env=env,capture_output=True,text=True,encoding='utf-8',errors='replace',timeout=130,
+                              stdin=subprocess.DEVNULL)
+        record={'argv':command,'returncode':result.returncode,'stdout':result.stdout,'stderr':result.stderr}
+        log=package.parent/(label or (action+'-'+uuid.uuid4().hex[:6]+'.json'))
+        log.write_text(json.dumps(record,ensure_ascii=False,indent=2),encoding='utf-8')
+>       assert result.returncode==expected,record
+E       AssertionError: {'argv': ['C:\\WINDOWS\\System32\\cmd.exe', '/d', '/c', "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6b-ch...ed as an internal or external command,
+E         operable program or batch file.
+E         The system cannot find the path specified.
+E         "}
+E       assert 1 == 0
+E        +  where 1 = CompletedProcess(args=['C:\\WINDOWS\\System32\\cmd.exe', '/d', '/c', "E:\\github-workspace\\fashion-scout-harness\\.ru...ed as an internal or external command,\noperable program or batch file.\nThe system cannot find the path specified.\n").returncode
+
+tests\release\test_bundle.py:50: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/release/test_bundle.py::test_independent_zip_install_entries_and_synthetic_export
+1 failed, 6 passed in 10.07s

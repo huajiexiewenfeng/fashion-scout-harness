@@ -1,0 +1,50 @@
+{
+  "version": "T4-local-v1",
+  "generated_at": "2026-10-06T13:00:10.926630+00:00",
+  "protected_baseline_count": 41,
+  "protected_changes": [],
+  "tests": {
+    "client": 40,
+    "api": 14,
+    "total_passed": 54,
+    "skipped": 0
+  },
+  "wheel": {
+    "path": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t4-wheel\\fashion_scout-0.2.0a1-py3-none-any.whl",
+    "sha256": "99a37c8656e9e27df5b5242532ebcfafb1ffb3358519ad64d58ad9dba1a92e53",
+    "client_modules_match": true
+  },
+  "integration": {
+    "root": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t4-integration-abcb54408e59",
+    "source_requests": 0,
+    "run_count": 2,
+    "run_request_count": 2,
+    "view_events": 0,
+    "after_stop": {
+      "app_instance_id": "eb8af223-e1d0-45d5-b6c0-a20c531ad2ce",
+      "web_ready": false,
+      "worker_state": "offline",
+      "resuming_run_ids": []
+    }
+  },
+  "source_sha256": {
+    "src\\fashion_scout\\client.py": "837d1d4231493b11546c8da939f527e6af073bed0481defdd0ca54f3f9bccb32",
+    "src\\fashion_scout\\client_models.py": "b0893ba926f82f0c9c1495bc590cbfee1387cd72c175106a295a90c534d02b5b",
+    "README.md": "9654f99767a22790c80016a94ff88806a569e892ac173124c1c3f5a9a3770e0c",
+    "skills\\fashion-scout\\SKILL.md": "c18c9562db8953dfd9150006b372c49e97fa74c981b069544a34082767c35c28",
+    "skills\\fashion-scout\\references\\commands.md": "65880dbb81367b45ecabf391abc032858b09bd09354ddda1b735d63ed3650389",
+    "skills\\fashion-scout\\references\\setup.md": "67046dd07648fea543028f8f4197d9d20ea9c147c7d70ca59c457ae5853f2258",
+    "tests\\client\\invoke.py": "a8867b90c46a735b009525a35dab54ba60132822b4202da6824e724125c69d75",
+    "tests\\client\\test_client.py": "b013d17ebd2b89502571a8ea6d78a9d6962bb6cc23eecff7fce4fbe9ac1b0e65",
+    "tests\\client\\test_health_boundary.py": "b11c2b17e469cdc37e7f41da566f002ba958bc33f8c27efdf0392ef413bb801a",
+    "tests\\client\\test_local_integration.py": "3136005bd65f98ff230d6f64fab272b19ae6effc7688207da4ed5178de657352",
+    "tests\\client\\verify_delivery.py": "8128f396e940701604abb2847b181c9c272d7ebde04cd3d926983a79cbcfe7f6",
+    "tests\\client\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs\\verification\\T4-baseline.json": "4a66092e4986d07fe43dc3d611ea482d53b8426d426e84c686d8233c43f8afce",
+    "docs\\verification\\T4-local-integration.json": "6835dc3f61d33ad6f776f59d0f663e5ce990e18e6cb4feda16987cf4f280394f",
+    "docs\\verification\\T4-skill-validation.txt": "6cf9e7f0d34ccd36dbd28f270cd28dd04277b2e1516bd4333ce7bb501d7b18d4",
+    "docs\\verification\\T4-tests.txt": "e7209ba4467dd5b97b9b99b02f61b68b55f5c73d563ce88a8b7b2f6a327777e7",
+    "docs\\verification\\T4-wheel.txt": "34a419c861e9ebb068a05b4275b0e9ace62b2e65acb44736d576a5aec8c787b4",
+    "docs\\verification\\T4.md": "e0f8a99b23e6fdde000e3aa96b1e2ed94c9717f79c160cd04525a8a6335e4676"
+  }
+}

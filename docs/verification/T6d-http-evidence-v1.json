@@ -1,0 +1,92 @@
+{
+  "records": [
+    {
+      "label": "open",
+      "argv": [
+        "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "-NoLogo",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-d-smoke-18206465\\FashionScout\\package.ps1",
+        "-Action",
+        "Open"
+      ],
+      "returncode": 0,
+      "stdout": "{\"verified\": true, \"python\": \"3.13.16\", \"sqlite\": \"3.53.1\", \"module\": \"E:\\\\github-workspace\\\\fashion-scout-harness\\\\.runtime\\\\t6c-d-smoke-18206465\\\\FashionScout\\\\.local\\\\env\\\\Lib\\\\site-packages\\\\fashion_scout\\\\__init__.py\", \"installed_files\": 4898}\n{\"ok\": true, \"data\": {\"request_id\": \"c26bbe00e4864d99b203c719f3d8a61e\", \"app_instance_id\": \"08370152-ae05-4278-beb9-59a6c44ba5ad\", \"schema_version\": 10, \"web_ready\": true, \"worker_state\": \"online\", \"heartbeat_at\": 1791368598.0078135, \"worker_pid\": 97000, \"worker_born\": 1791368597.2986104, \"pid\": 96488, \"born\": 1791368596.234558, \"source_adapter\": \"futario-json-v1\", \"api_base_url\": \"http://127.0.0.1:8765\", \"resuming_run_ids\": [], \"started_roles\": [\"web\", \"worker\"], \"browser_opened\": true, \"may_resume_accepted_runs\": true, \"notice\": \"\\u670d\\u52a1\\u542f\\u52a8\\u6216\\u6253\\u5f00\\u9875\\u9762\\u53ef\\u6062\\u590d\\u6b64\\u524d\\u5df2\\u63a5\\u53d7\\u4efb\\u52a1\\uff1b\\u4e0d\\u4f1a\\u521b\\u5efa\\u65b0\\u5de1\\u68c0\\u3002\"}, \"service\": {\"request_id\": \"c26bbe00e4864d99b203c719f3d8a61e\", \"app_instance_id\": \"08370152-ae05-4278-beb9-59a6c44ba5ad\", \"schema_version\": 10, \"web_ready\": true, \"worker_state\": \"online\", \"heartbeat_at\": 1791368598.0078135, \"worker_pid\": 97000, \"worker_born\": 1791368597.2986104, \"pid\": 96488, \"born\": 1791368596.234558, \"source_adapter\": \"futario-json-v1\", \"api_base_url\": \"http://127.0.0.1:8765\", \"resuming_run_ids\": [], \"started_roles\": [\"web\", \"worker\"], \"browser_opened\": true, \"checked\": true}, \"intent_id\": null, \"exit_code\": 0}\n",
+      "stderr": ""
+    },
+    {
+      "label": "page-assets",
+      "argv": [
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-d-smoke-18206465\\FashionScout\\.local\\env\\Scripts\\python.exe",
+        "-I",
+        "-B",
+        "-c",
+        "import json,sys,hashlib\nfrom pathlib import Path\nimport httpx\nfrom fashion_scout.client import Connection\nfrom fashion_scout.config import Paths\np=Paths.at(sys.argv[1]);cfg=json.loads((p.root/'control/client.json').read_text('utf-8'));c=Connection(p,cfg['port']);c.verify()\nbase='http://127.0.0.1:'+str(cfg['port'])\nwith httpx.Client(base_url=base,trust_env=False) as h:\n assert h.get('/v1/products').status_code==401\n g=h.post('/v1/session/bootstrap',json={},headers={'Authorization':'Bearer '+c.token}).json()\n assert h.post('/v1/session/exchange',json={'code':g['bootstrap_url'].split('#')[1]},headers={'Origin':base}).status_code==200\n assert h.get('/').status_code==200\n resources={}\n for f in ('app.js','app.css','bootstrap.js','export-intent.js','exports.js','intent.js','maintenance.js','maintenance-findings.js','maintenance-intent.js'):\n  r=h.get('/static/'+f);assert r.status_code==200\n  assert r.content==(Path(sys.prefix)/'Lib/site-packages/fashion_scout/static'/f).read_bytes()\n  resources[f]=hashlib.sha256(r.content).hexdigest()\nprint(json.dumps({'authenticated_page':200,'unauthorized':401,'resources':resources}))\n",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-d-smoke-18206465\\FashionScout\\data"
+      ],
+      "returncode": 0,
+      "stdout": "{\"authenticated_page\": 200, \"unauthorized\": 401, \"resources\": {\"app.js\": \"3f7bdac84a759f70d196e67716c1cf4f50b92fe5299b3102e31884ce42787c75\", \"app.css\": \"f503fa3b626eda1addf2ef050dd905e54ad980220bd6582cc1d07690abf4c63d\", \"bootstrap.js\": \"ab7688ef2289b5a7795f53d5443c97eae064a01ef355b226a3e44b84b60e53f6\", \"export-intent.js\": \"5a6623d1cf00a4edad6efc90ea2dab7eaa8209e1c84bdb04288134862a987770\", \"exports.js\": \"e76603950f27d072ecdc9cf05002ec835c3fde1d01c7698448161a83ff69e625\", \"intent.js\": \"2ec34fbfc9f683d82a87ff8d7c96e9f6a1ffa2bc88705982f9e47a95f24b1dad\", \"maintenance.js\": \"02f892135233abbaa5e90f3afc78155920d09e5527b78587a4c48527d7b2a11a\", \"maintenance-findings.js\": \"778faedd3e3d61a6c37a5c15389c39580faf6e293c2ca074582479f5184f68a9\", \"maintenance-intent.js\": \"c127e51c10ae77f6f1dbc30e136d1dc666d02faab207724168d2370d41d61d35\"}}\n",
+      "stderr": ""
+    },
+    {
+      "label": "stop",
+      "argv": [
+        "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "-NoLogo",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-d-smoke-18206465\\FashionScout\\package.ps1",
+        "-Action",
+        "Stop"
+      ],
+      "returncode": 0,
+      "stdout": "{\"verified\": true, \"python\": \"3.13.16\", \"sqlite\": \"3.53.1\", \"module\": \"E:\\\\github-workspace\\\\fashion-scout-harness\\\\.runtime\\\\t6c-d-smoke-18206465\\\\FashionScout\\\\.local\\\\env\\\\Lib\\\\site-packages\\\\fashion_scout\\\\__init__.py\", \"installed_files\": 4898}\n{\"stopped\": true, \"forced_roles\": []}\nThis package instance was stopped.\n",
+      "stderr": ""
+    },
+    {
+      "label": "verified-exit",
+      "argv": [
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-d-smoke-18206465\\FashionScout\\.local\\env\\Scripts\\python.exe",
+        "-I",
+        "-B",
+        "-c",
+        "import json,sys,sqlite3\nfrom fashion_scout.config import Paths\nfrom fashion_scout import launcher\np=Paths.at(sys.argv[1]);d=launcher.read_descriptor(p);live={r:bool(launcher.verified_process(p,d,r)) for r in ('web','worker')};assert not any(live.values())\nc=sqlite3.connect(p.db.as_uri()+'?mode=ro',uri=True)\ncounts={t:c.execute('SELECT COUNT(*) FROM '+t).fetchone()[0] for t in ('runs','run_requests','collection_http')};assert not any(counts.values());c.close()\nprint(json.dumps({'live':live,'counts':counts}))\n",
+        "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t6c-d-smoke-18206465\\FashionScout\\data"
+      ],
+      "returncode": 0,
+      "stdout": "{\"live\": {\"web\": false, \"worker\": false}, \"counts\": {\"runs\": 0, \"run_requests\": 0, \"collection_http\": 0}}\n",
+      "stderr": ""
+    }
+  ],
+  "outcome": {
+    "authenticated_page": 200,
+    "unauthorized": 401,
+    "resources": {
+      "app.js": "3f7bdac84a759f70d196e67716c1cf4f50b92fe5299b3102e31884ce42787c75",
+      "app.css": "f503fa3b626eda1addf2ef050dd905e54ad980220bd6582cc1d07690abf4c63d",
+      "bootstrap.js": "ab7688ef2289b5a7795f53d5443c97eae064a01ef355b226a3e44b84b60e53f6",
+      "export-intent.js": "5a6623d1cf00a4edad6efc90ea2dab7eaa8209e1c84bdb04288134862a987770",
+      "exports.js": "e76603950f27d072ecdc9cf05002ec835c3fde1d01c7698448161a83ff69e625",
+      "intent.js": "2ec34fbfc9f683d82a87ff8d7c96e9f6a1ffa2bc88705982f9e47a95f24b1dad",
+      "maintenance.js": "02f892135233abbaa5e90f3afc78155920d09e5527b78587a4c48527d7b2a11a",
+      "maintenance-findings.js": "778faedd3e3d61a6c37a5c15389c39580faf6e293c2ca074582479f5184f68a9",
+      "maintenance-intent.js": "c127e51c10ae77f6f1dbc30e136d1dc666d02faab207724168d2370d41d61d35"
+    }
+  },
+  "final": {
+    "live": {
+      "web": false,
+      "worker": false
+    },
+    "counts": {
+      "runs": 0,
+      "run_requests": 0,
+      "collection_http": 0
+    }
+  }
+}

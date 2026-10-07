@@ -1,0 +1,38 @@
+✔ create lost response retains exact payload and key (1.6539ms)
+✔ retry lost response retains exact payload and key (0.1729ms)
+✔ getItem failure makes zero requests (0.6909ms)
+✔ setItem failure makes zero requests (0.138ms)
+✔ acknowledged but cleanup failure retains same intent across refresh (0.1921ms)
+✔ invalid saved payload never creates another key or request (0.1405ms)
+✔ ordinary findings group counts and known product titles without diagnostic IDs (1.1688ms)
+✔ unknown product and diagnostic code stay generic without invented names (0.2346ms)
+✔ verify lost response reuses exact intent (2.1361ms)
+✔ backup lost response reuses exact intent (0.9305ms)
+✔ getItem storage failure prevents maintenance write (0.2381ms)
+✔ setItem storage failure prevents maintenance write (0.2121ms)
+✔ different pending operation is not replaced (0.2645ms)
+✔ CAS lost response only reads current settings (0.4041ms)
+✔ maintenance cleanup failure retains same key (0.35ms)
+✔ Accepted but lost response recovers by the same key, never POSTs again (1.4353ms)
+✔ Verified absent request replays the exact key; unknown/conflict does not POST (0.3432ms)
+✔ Storage failure prevents acceptance without a durable intent key (0.8564ms)
+✔ Category override and reset update card and gallery immediately, without moving IDs (4.5825ms)
+✔ Rendered latest image refreshes authoritative material badge without sorting (2.3884ms)
+✔ Rendered historical image refreshes authoritative material badge without sorting (1.772ms)
+✔ Explicit history is not described as current missing-image fallback (20.2801ms)
+✔ retry: getItem failure shows notice, sends nothing and restores controls (1.1244ms)
+✔ retry: setItem failure shows notice, sends nothing and restores controls (0.7438ms)
+✔ retry: cleanup failure reports accepted and retry only clears retained intent (1.0719ms)
+✔ retry: lost response retains exact key for same-operation replay (0.9783ms)
+✔ cancel: getItem failure shows notice, sends nothing and restores controls (0.775ms)
+✔ cancel: setItem failure shows notice, sends nothing and restores controls (0.7926ms)
+✔ cancel: cleanup failure reports accepted and retry only clears retained intent (0.7865ms)
+✔ cancel: lost response retains exact key for same-operation replay (0.7379ms)
+ℹ tests 30
+ℹ suites 0
+ℹ pass 30
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 123.2101

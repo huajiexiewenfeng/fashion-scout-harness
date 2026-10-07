@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "export_id": "synthetic-partial-20261006T132431Z-14e5a9c5",
+  "captured_at": "2026-10-06T13:00:00Z",
+  "promised_scope": "product.images",
+  "products": [
+    {
+      "product_id": "../CON:测试",
+      "source_json": "{\"description\":\"原文\\n第二行\",\"options\":{\"尺码\":[\"S\",\"M\"]},\"title\":\"=危险公式 女装\",\"url\":\"https://example.invalid/product/1\"}",
+      "date_basis_json": "{\"first_seen_at\":\"2026-10-06T12:00:00Z\",\"reason\":\"synthetic/unknown\",\"source_published_at\":null}",
+      "latest_available": {
+        "version_id": "latest",
+        "revision": 2
+      },
+      "latest_observed": {
+        "version_id": "latest",
+        "revision": 2
+      },
+      "versions": [
+        {
+          "version_id": "old",
+          "revision": 1,
+          "images": [
+            {
+              "source_image_id": "source-b-0",
+              "source_url": "https://example.invalid/b.png",
+              "ordinal": 0,
+              "asset_id": "b",
+              "missing_reason": null,
+              "variant_ids": [
+                "红色",
+                "=FORMULA()"
+              ]
+            },
+            {
+              "source_image_id": "source-a-1",
+              "source_url": "https://example.invalid/a.png",
+              "ordinal": 1,
+              "asset_id": "a",
+              "missing_reason": null,
+              "variant_ids": [
+                "红色",
+                "=FORMULA()"
+              ]
+            }
+          ],
+          "enumeration_complete": true,
+          "expected_count": 2,
+          "enumeration_reason": null
+        },
+        {
+          "version_id": "latest",
+          "revision": 2,
+          "images": [
+            {
+              "source_image_id": "source-a-0",
+              "source_url": "https://example.invalid/a.png",
+              "ordinal": 0,
+              "asset_id": "a",
+              "missing_reason": null,
+              "variant_ids": [
+                "红色",
+                "=FORMULA()"
+              ]
+            },
+            {
+              "source_image_id": "source-alias-1",
+              "source_url": "=HYPERLINK(\"https://example.invalid\")",
+              "ordinal": 1,
+              "asset_id": "alias",
+              "missing_reason": null,
+              "variant_ids": [
+                "红色",
+                "=FORMULA()"
+              ]
+            },
+            {
+              "source_image_id": "source-c-2",
+              "source_url": "https://example.invalid/c.png",
+              "ordinal": 2,
+              "asset_id": "c",
+              "missing_reason": null,
+              "variant_ids": [
+                "红色",
+                "=FORMULA()"
+              ]
+            },
+            {
+              "source_image_id": "new-missing",
+              "source_url": "https://example.invalid/missing.png",
+              "ordinal": 3,
+              "asset_id": null,
+              "missing_reason": "HTTP_404",
+              "variant_ids": []
+            }
+          ],
+          "enumeration_complete": true,
+          "expected_count": 4,
+          "enumeration_reason": null
+        }
+      ],
+      "capability_notes": [
+        {
+          "scope": "product.video",
+          "status": "unsupported",
+          "reason": "范围外"
+        }
+      ]
+    },
+    {
+      "product_id": "no-images-收藏款",
+      "source_json": "{\"title\":\"合成无图收藏款\"}",
+      "date_basis_json": "{\"reason\":\"source_date_unknown\"}",
+      "latest_available": null,
+      "latest_observed": null,
+      "versions": [],
+      "capability_notes": []
+    }
+  ],
+  "assets": [
+    {
+      "asset_id": "a",
+      "root_id": "media",
+      "relative_path": "a.png",
+      "sha256": "ee7bde3c74142c6e88fb573c783a5852c2fd6352955821f348b027f9e9cf7ebb",
+      "bytes": 105,
+      "format": "PNG"
+    },
+    {
+      "asset_id": "b",
+      "root_id": "media",
+      "relative_path": "b.png",
+      "sha256": "6bf082e230b41f01e763a278b2ed71b215577e85642bfa30df09e97ba45df0fa",
+      "bytes": 108,
+      "format": "PNG"
+    },
+    {
+      "asset_id": "c",
+      "root_id": "media",
+      "relative_path": "c.png",
+      "sha256": "d1275ed76a493c16ef4a0d3a955646346b79591e31e2737cd40915064d374bb1",
+      "bytes": 107,
+      "format": "PNG"
+    },
+    {
+      "asset_id": "alias",
+      "root_id": "media",
+      "relative_path": "alias.png",
+      "sha256": "ee7bde3c74142c6e88fb573c783a5852c2fd6352955821f348b027f9e9cf7ebb",
+      "bytes": 105,
+      "format": "PNG"
+    }
+  ]
+}
