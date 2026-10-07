@@ -1,0 +1,8 @@
+{
+  "zip_bytes_equal": true,
+  "manifest_bytes_equal": true,
+  "zip_sha256": "d8823ca70c1975189fc95d00c75926cd2245629e6c3890b4ba0d470367b9c511",
+  "manifest_sha256": "d46ebf6bf59a3704073b5bb1f3681f30d541af2260dbfaa866f7b85e78b14000",
+  "first_receipt": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t8b-final-inputs\\.runtime\\t8b-final\\build-receipt.json",
+  "repeated_receipt": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t8b-final-inputs\\.runtime\\t8b-repro-final\\build-receipt.json"
+}
