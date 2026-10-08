@@ -1,0 +1,99 @@
+{
+  "implementation": "source",
+  "module": "E:\\github-workspace\\fashion-scout-harness\\src\\fashion_scout\\services\\presentation.py",
+  "samples": [
+    {
+      "name": "cold_first",
+      "seconds": 0.061385,
+      "total": 60,
+      "items": 40,
+      "cover_images": 40,
+      "response_bytes": 58729,
+      "full_decode": 0,
+      "cover_checks": 60
+    },
+    {
+      "name": "next",
+      "seconds": 0.018729,
+      "total": 60,
+      "items": 20,
+      "cover_images": 20,
+      "response_bytes": 31332,
+      "full_decode": 0,
+      "cover_checks": 20
+    },
+    {
+      "name": "refresh_1",
+      "seconds": 0.040903,
+      "total": 60,
+      "items": 40,
+      "cover_images": 40,
+      "response_bytes": 58729,
+      "full_decode": 0,
+      "cover_checks": 60
+    },
+    {
+      "name": "refresh_2",
+      "seconds": 0.038223,
+      "total": 60,
+      "items": 40,
+      "cover_images": 40,
+      "response_bytes": 58730,
+      "full_decode": 0,
+      "cover_checks": 60
+    },
+    {
+      "name": "refresh_3",
+      "seconds": 0.042517,
+      "total": 60,
+      "items": 40,
+      "cover_images": 40,
+      "response_bytes": 58730,
+      "full_decode": 0,
+      "cover_checks": 60
+    },
+    {
+      "name": "new_instance_first",
+      "seconds": 0.04516,
+      "total": 60,
+      "items": 40,
+      "cover_images": 40,
+      "response_bytes": 58730,
+      "full_decode": 0,
+      "cover_checks": 60
+    }
+  ],
+  "same_library": {
+    "products": 80,
+    "assets": 432,
+    "user_state_sha256": "266309af172b3da5e350d5a42e9e66466cd43285be67945b341472524e5166f4"
+  },
+  "business_read_only": true,
+  "before_equals_after": true,
+  "old_manager_benchmark": {
+    "implementation": "installed pre-T9",
+    "samples": [
+      {
+        "name": "first",
+        "seconds": 6.278,
+        "total": 60,
+        "items": 40
+      },
+      {
+        "name": "next",
+        "seconds": 2.4446,
+        "total": 60,
+        "items": 20
+      },
+      {
+        "name": "refresh",
+        "seconds": 6.6897,
+        "total": 60,
+        "items": 40
+      }
+    ],
+    "business_read_only": true
+  },
+  "cold_definition": "Fresh Presentation object, no cross-request result cache; OS disk cache is not flushed and may be warm.",
+  "comparison": "Old and new use same real library through read-only connections; existing Manager timing was measured separately."
+}

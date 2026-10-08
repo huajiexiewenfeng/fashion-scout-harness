@@ -1,0 +1,84 @@
+{
+  "at_live_package": "E:\\github-workspace\\FashionScout",
+  "app_sha256": "231a9e5380fbc961865d1bc84f3351ae804319ee26c8298531e257e8e6b3c731",
+  "manifest_sha256": "960a275997339dbb8241569fcc1ee70ef9d611e6589910976ccc0cec797970af",
+  "installed_integrity_check_returncode": 0,
+  "installed_integrity_result": "{\"verified\": true, \"python\": \"3.13.16\", \"sqlite\": \"3.53.1\", \"module\": \"E:\\\\github-workspace\\\\FashionScout\\\\.local\\\\env\\\\Lib\\\\site-packages\\\\fashion_scout\\\\__init__.py\", \"installed_files\": 4901}\n",
+  "fixed_skill_request_samples": [
+    {
+      "name": "first",
+      "command": "new",
+      "seconds": 1.018597,
+      "returncode": 0,
+      "ok": true,
+      "total": 60,
+      "items": 40
+    },
+    {
+      "name": "next",
+      "command": "new",
+      "seconds": 0.988281,
+      "returncode": 0,
+      "ok": true,
+      "total": 60,
+      "items": 20
+    },
+    {
+      "name": "refresh",
+      "command": "new",
+      "seconds": 1.018403,
+      "returncode": 0,
+      "ok": true,
+      "total": 60,
+      "items": 40
+    },
+    {
+      "name": "favorites",
+      "command": "favorites",
+      "seconds": 0.994775,
+      "returncode": 0,
+      "ok": true,
+      "total": 4,
+      "items": 4
+    },
+    {
+      "name": "detail",
+      "command": "product",
+      "seconds": 1.255363,
+      "returncode": 0,
+      "ok": true,
+      "total": null,
+      "items": 0
+    },
+    {
+      "name": "status",
+      "command": "status",
+      "seconds": 0.959637,
+      "returncode": 0,
+      "ok": true,
+      "total": null,
+      "items": 0
+    }
+  ],
+  "total": 60,
+  "pagination": [
+    40,
+    20
+  ],
+  "unique_ids": 60,
+  "empty_new_cards": 0,
+  "favorites": 4,
+  "detail_images": 13,
+  "detail_versions": 14,
+  "projection": "cover",
+  "full_detail_separate": true,
+  "no_source_requests": true,
+  "skill_open_receipt": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t9-upgrade-v1\\personal-open.json",
+  "business_api_commands": [
+    "new",
+    "favorites",
+    "product",
+    "status"
+  ],
+  "business_writes": 0
+}

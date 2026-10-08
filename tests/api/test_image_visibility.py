@@ -24,7 +24,8 @@ def test_missing_corrupt_or_metadata_only_products_are_hidden_from_new(api_env):
     assert result['total'] == 0 and result['items'] == []
     favorite = client.get('/v1/products?view=favorites').json()
     assert favorite['total'] == 1 and favorite['items'][0]['id'] == ids[0]
-    assert favorite['items'][0]['images'] == [] and favorite['items'][0]['album']['stored_count'] == 0
+    assert favorite['items'][0]['images'] == [] and favorite['items'][0]['projection'] == 'cover'
+    assert client.get('/v1/products/' + ids[0]).json()['product']['album']['stored_count'] == 0
     assert {pid: client.get('/v1/products/' + pid).json()['product']['user_state'] for pid in ids} == before
     with runs.db.read() as conn:
         assert conn.execute('SELECT COUNT(*) FROM products').fetchone()[0] == 4

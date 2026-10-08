@@ -20,17 +20,17 @@ class Element {
 }
 const text=node=>[node.textContent,...node.children.map(text)].join(' ');
 function page(request,storage={getItem:()=>null,setItem(){},removeItem(){}}){
-  const nodes=new Map(),frames=[];
+  const nodes=new Map(),frames=[],scroll=[];
   const get=selector=>{if(!nodes.has(selector))nodes.set(selector,new Element());return nodes.get(selector);};
   const context=vm.createContext({document:{querySelector:get,querySelectorAll:()=>[],createElement:tag=>new Element(tag),visibilityState:'visible'},
     requestAnimationFrame:fn=>frames.push(fn),resolveRunIntent,resolveOperationIntent,sessionStorage:storage,
-    crypto:{randomUUID:()=> 'test-intent'},URLSearchParams,encodeURIComponent,console,__request:request});
+    window:{scrollY:760,scrollTo:value=>scroll.push(value)},crypto:{randomUUID:()=> 'test-intent'},URLSearchParams,encodeURIComponent,console,__request:request});
   let source=readFileSync(new URL('../../src/fashion_scout/static/app.js',import.meta.url),'utf8').replace(/^import .*;\r?\n/m,'');
   source=source.slice(0,source.lastIndexOf('\n(async()=>'));
-  vm.runInContext(source+'\napi=__request; globalThis.exposed={state,patchProduct,card,openGallery,renderImage};',context);
+  vm.runInContext(source+'\napi=__request; globalThis.exposed={state,patchProduct,card,openGallery,renderImage,listing};',context);
   const app=context.exposed;
   const mount=(products,gallery)=>{for(const p of products){app.state.items.set(p.id,p);get('#grid').append(app.card(p));}app.state.gallery=gallery;get('#gallery').open=true;};
-  return {app,get,mount,async paint(){const image=get('#image-stage').children.find(n=>n.tagName==='IMG');assert.ok(image);await image.onload();while(frames.length)await frames.shift()();}};
+  return {app,get,mount,scroll,async paint(){const image=get('#image-stage').children.find(n=>n.tagName==='IMG');assert.ok(image);await image.onload();while(frames.length)await frames.shift()();}};
 }
 function product(id='a'){
   return {id,title:'Test '+id,effective_category:'dress',has_material_update:true,source:{},first_seen_at:'2026-10-01T00:00:00Z',
@@ -39,6 +39,52 @@ function product(id='a'){
     images:[{asset_id:'current',preview_url:'/preview',original_url:'/original'}],
     album:{},latest_observed_album:{expected_count:1,stored_count:1,missing:[]},versions:[{id:'latest',revision:2}]};
 }
+function deferred(){let resolve,reject;const promise=new Promise((yes,no)=>{resolve=yes;reject=no;});return {promise,resolve,reject};}
+function listResult(items,cursor=null,total=items.length){return {items,next_cursor:cursor,total,latest_run_summary:{latest_run:null}};}
+test('Refresh shares one read, keeps cards while loading, reuses unchanged nodes and scroll',async()=>{
+  const pending=deferred();let calls=0;
+  const ui=page(()=>{calls++;return pending.promise;});const p=product();ui.mount([p],null);
+  ui.app.state.renderedSelection=JSON.stringify(['new','']);
+  const old=ui.get('#grid').children[0];
+  const first=ui.app.listing(),second=ui.app.listing();
+  assert.equal(first,second);assert.equal(calls,1);assert.equal(ui.get('#grid').children[0],old);
+  assert.equal(ui.get('#grid').attrs['aria-busy'],'true');assert.equal(ui.get('#refresh').disabled,true);
+  pending.resolve(listResult([p]));await first;
+  assert.equal(ui.get('#grid').children[0],old);assert.equal(ui.scroll[0].top,760);
+  assert.equal(ui.get('#refresh').disabled,false);assert.equal(ui.get('#grid').attrs['aria-busy'],'false');
+});
+test('Refresh failure preserves prior cards, cursor, selection and retry controls',async()=>{
+  const pending=deferred();const ui=page(()=>pending.promise);ui.mount([product()],null);
+  ui.app.state.cursor='old-cursor';ui.app.state.renderedSelection=JSON.stringify(['new','']);
+  const old=ui.get('#grid').children[0],items=ui.app.state.items;
+  const request=ui.app.listing();pending.reject(new Error('Connection failed'));await request;
+  assert.equal(ui.get('#grid').children[0],old);assert.equal(ui.app.state.items,items);assert.equal(ui.app.state.cursor,'old-cursor');
+  assert.match(ui.get('#notice').textContent,/Connection failed/);assert.equal(ui.get('#refresh').disabled,false);
+});
+test('A changed filter wins over an older late response',async()=>{
+  const first=deferred(),second=deferred();let calls=0;
+  const ui=page(()=>++calls===1?first.promise:second.promise);ui.mount([product()],null);
+  const old=ui.app.listing();ui.app.state.category='tops';const current=ui.app.listing();
+  second.resolve(listResult([product('b')]));await current;
+  first.resolve(listResult([product('a')]));await old;
+  assert.equal(calls,2);assert.deepEqual(ui.get('#grid').children.map(n=>n.dataset.productId),['b']);
+  assert.equal(ui.get('#refresh').disabled,false);
+});
+test('Refresh of loaded 40+20 retains the span through one fresh cursor chain',async()=>{
+  const products=Array.from({length:60},(_,i)=>product(String(i)));const requests=[];
+  const ui=page(async path=>{requests.push(path);return path.includes('cursor=')?listResult(products.slice(40),null,60):listResult(products.slice(0,40),'new-chain',60);});
+  ui.mount(products,null);ui.app.state.renderedSelection=JSON.stringify(['new','']);
+  const nodes=[...ui.get('#grid').children];await ui.app.listing();
+  assert.equal(requests.length,2);assert.match(requests[1],/cursor=new-chain/);
+  assert.equal(ui.app.state.items.size,60);assert.equal(ui.app.state.cursor,null);
+  assert.equal(ui.scroll[0].top,760);assert.deepEqual(ui.get('#grid').children,nodes);
+});
+test('Load more is coalesced and appends without duplicate IDs',async()=>{
+  const pending=deferred();let calls=0;const ui=page(()=>{calls++;return pending.promise;});ui.mount([product('a')],null);ui.app.state.cursor='cursor';
+  const first=ui.app.listing(true),second=ui.app.listing(true);assert.equal(first,second);assert.equal(calls,1);
+  pending.resolve(listResult([product('a'),product('b')],null,2));await first;
+  assert.deepEqual(ui.get('#grid').children.map(n=>n.dataset.productId),['a','b']);
+});
 test('Category override and reset update card and gallery immediately, without moving IDs',async()=>{
   let saved=product();const ui=page(async(path,options)=>{
     if(options){const change=JSON.parse(options.body);saved={...saved,effective_category:change.category_override||'dress',user_state:{...saved.user_state,category_override:change.category_override,revision:saved.user_state.revision+1}};return {user_state:saved.user_state};}

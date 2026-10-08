@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "E:\github-workspace\fashion-scout-harness\docs\verification\T9-live-verify.py", line 38, in <module>
+    first = request('first','new',{'limit':40})
+  File "E:\github-workspace\fashion-scout-harness\docs\verification\T9-live-verify.py", line 31, in request
+    assert result.returncode == 0, (name,result.stderr,result.stdout[:500])
+           ^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('first', '', '{"ok":false,"error":"INPUT_MUST_STAY_IN_BOUND_DATA_REQUESTS","exit_code":3}\n')

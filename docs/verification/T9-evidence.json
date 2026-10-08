@@ -1,0 +1,402 @@
+{
+  "at": "2026-10-08T02:33:33.361372+00:00",
+  "task": "t9-refresh-performance",
+  "round": "p9-list-performance",
+  "branch": "main",
+  "head": "ade9d9af8a1ef84c466e57b207a20c6c1b788651",
+  "owned_input_sha256": {
+    "skills/fashion-scout/references/commands.md": "e2e6ec92535ac72d3885c2c850bd19293b0f23e0ad1a414709f116c45f66a188",
+    "src/fashion_scout/media/images.py": "3473884afdaeab30f0bf2340773dbbe5ecd29fa254fcfa822b6017d45cea0a54",
+    "src/fashion_scout/services/listing.py": "71fb6ae14849a85143127a4fce286e8f8ce682103a57d73325543f1b4b8d50b4",
+    "src/fashion_scout/services/presentation.py": "3caf3bb83fe0c217e062f3a42df206ef570728c43c9c50ce00aaae213a7c40b1",
+    "src/fashion_scout/static/app.js": "07e5f6ef4f5da1fbf361e693c404286ed8eacc48d6cf2e56d699ec83806bf0de",
+    "tests/api/test_image_visibility.py": "f4420a4b0ddcb846b65db4e31f54570c3a11dd623312917c3e4993c305230c19",
+    "tests/api/test_listing_performance.py": "c1ab4cc95a7744081d030bf3dfcb1f3f719ea4a578ed6a30487fea8a0ed32257",
+    "tests/ui/state-transitions.test.mjs": "ab91e0b70dadfbbdb02125f3990553686503fb9b2727deab4daf9ebc00f8d420"
+  },
+  "code_snapshot_sha256": "eecc58e593eef80d7559ade583a08ac45ec189b3f06008b9ab0d1f0f777d6e8a",
+  "wheel_sha256": "231a9e5380fbc961865d1bc84f3351ae804319ee26c8298531e257e8e6b3c731",
+  "source_sha256": "1cebef61b9f3413ae79e394dd8ff141e97e0cec6b033c81247f7fb1a40d340dc",
+  "zip_sha256": "07be069a153241e7de577a43e1d239d5e1782cc201fb21797fd1ceaa7c75d9e0",
+  "manifest_sha256": "960a275997339dbb8241569fcc1ee70ef9d611e6589910976ccc0cec797970af",
+  "zip": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t8b-t9f\\.runtime\\t8b-t9r\\FashionScout-0.2.0a1-list-performance-app-231a9e5380fbc961865d1bc84f3351ae804319ee26c8298531e257e8e6b3c731.zip",
+  "freeze_receipt": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t8b-t9f\\freeze-receipt.json",
+  "checks": {
+    "python_targeted": 37,
+    "ui_state_transitions": 17,
+    "exact_candidate_package": 9,
+    "diff_check": 0,
+    "installed_integrity_check": 0,
+    "skill_open": 0,
+    "fixed_skill_requests": 6,
+    "business_writes": 0,
+    "source_requests": 0
+  },
+  "installed_benchmark": {
+    "implementation": "installed",
+    "module": "E:\\github-workspace\\FashionScout\\.local\\env\\Lib\\site-packages\\fashion_scout\\services\\presentation.py",
+    "samples": [
+      {
+        "name": "cold_first",
+        "seconds": 0.041468,
+        "total": 60,
+        "items": 40,
+        "cover_images": 40,
+        "response_bytes": 58730,
+        "full_decode": 0,
+        "cover_checks": 60
+      },
+      {
+        "name": "next",
+        "seconds": 0.016037,
+        "total": 60,
+        "items": 20,
+        "cover_images": 20,
+        "response_bytes": 31332,
+        "full_decode": 0,
+        "cover_checks": 20
+      },
+      {
+        "name": "refresh_1",
+        "seconds": 0.034691,
+        "total": 60,
+        "items": 40,
+        "cover_images": 40,
+        "response_bytes": 58730,
+        "full_decode": 0,
+        "cover_checks": 60
+      },
+      {
+        "name": "refresh_2",
+        "seconds": 0.046389,
+        "total": 60,
+        "items": 40,
+        "cover_images": 40,
+        "response_bytes": 58729,
+        "full_decode": 0,
+        "cover_checks": 60
+      },
+      {
+        "name": "refresh_3",
+        "seconds": 0.036218,
+        "total": 60,
+        "items": 40,
+        "cover_images": 40,
+        "response_bytes": 58730,
+        "full_decode": 0,
+        "cover_checks": 60
+      },
+      {
+        "name": "new_instance_first",
+        "seconds": 0.034035,
+        "total": 60,
+        "items": 40,
+        "cover_images": 40,
+        "response_bytes": 58729,
+        "full_decode": 0,
+        "cover_checks": 60
+      }
+    ],
+    "same_library": {
+      "products": 80,
+      "assets": 432,
+      "user_state_sha256": "266309af172b3da5e350d5a42e9e66466cd43285be67945b341472524e5166f4"
+    },
+    "business_read_only": true,
+    "before_equals_after": true,
+    "old_manager_benchmark": {
+      "implementation": "installed pre-T9",
+      "samples": [
+        {
+          "name": "first",
+          "seconds": 6.278,
+          "total": 60,
+          "items": 40
+        },
+        {
+          "name": "next",
+          "seconds": 2.4446,
+          "total": 60,
+          "items": 20
+        },
+        {
+          "name": "refresh",
+          "seconds": 6.6897,
+          "total": 60,
+          "items": 40
+        }
+      ],
+      "business_read_only": true
+    },
+    "cold_definition": "Fresh Presentation object, no cross-request result cache; OS disk cache is not flushed and may be warm.",
+    "comparison": "Old and new use same real library through read-only connections; existing Manager timing was measured separately."
+  },
+  "fixed_skill_live_verification": {
+    "at_live_package": "E:\\github-workspace\\FashionScout",
+    "app_sha256": "231a9e5380fbc961865d1bc84f3351ae804319ee26c8298531e257e8e6b3c731",
+    "manifest_sha256": "960a275997339dbb8241569fcc1ee70ef9d611e6589910976ccc0cec797970af",
+    "installed_integrity_check_returncode": 0,
+    "installed_integrity_result": "{\"verified\": true, \"python\": \"3.13.16\", \"sqlite\": \"3.53.1\", \"module\": \"E:\\\\github-workspace\\\\FashionScout\\\\.local\\\\env\\\\Lib\\\\site-packages\\\\fashion_scout\\\\__init__.py\", \"installed_files\": 4901}\n",
+    "fixed_skill_request_samples": [
+      {
+        "name": "first",
+        "command": "new",
+        "seconds": 1.018597,
+        "returncode": 0,
+        "ok": true,
+        "total": 60,
+        "items": 40
+      },
+      {
+        "name": "next",
+        "command": "new",
+        "seconds": 0.988281,
+        "returncode": 0,
+        "ok": true,
+        "total": 60,
+        "items": 20
+      },
+      {
+        "name": "refresh",
+        "command": "new",
+        "seconds": 1.018403,
+        "returncode": 0,
+        "ok": true,
+        "total": 60,
+        "items": 40
+      },
+      {
+        "name": "favorites",
+        "command": "favorites",
+        "seconds": 0.994775,
+        "returncode": 0,
+        "ok": true,
+        "total": 4,
+        "items": 4
+      },
+      {
+        "name": "detail",
+        "command": "product",
+        "seconds": 1.255363,
+        "returncode": 0,
+        "ok": true,
+        "total": null,
+        "items": 0
+      },
+      {
+        "name": "status",
+        "command": "status",
+        "seconds": 0.959637,
+        "returncode": 0,
+        "ok": true,
+        "total": null,
+        "items": 0
+      }
+    ],
+    "total": 60,
+    "pagination": [
+      40,
+      20
+    ],
+    "unique_ids": 60,
+    "empty_new_cards": 0,
+    "favorites": 4,
+    "detail_images": 13,
+    "detail_versions": 14,
+    "projection": "cover",
+    "full_detail_separate": true,
+    "no_source_requests": true,
+    "skill_open_receipt": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t9-upgrade-v1\\personal-open.json",
+    "business_api_commands": [
+      "new",
+      "favorites",
+      "product",
+      "status"
+    ],
+    "business_writes": 0
+  },
+  "data_preservation": {
+    "prior_tables_retained": 49,
+    "prior_data_files_unchanged": 3268,
+    "counts": {
+      "archive_journal": 533,
+      "archive_journal_events": 533,
+      "assets": 432,
+      "browser_assets": 655,
+      "browser_messages": 117,
+      "browser_requests": 131,
+      "browser_runs": 6,
+      "browser_sessions": 9,
+      "browser_uploads": 533,
+      "collection_http": 0,
+      "collection_http_results": 0,
+      "collection_images": 655,
+      "collection_page_attempts": 7,
+      "collection_products": 140,
+      "collection_runs": 6,
+      "discovery_pages": 0,
+      "export_assets": 19,
+      "export_attempts": 1,
+      "export_jobs": 1,
+      "export_members": 4,
+      "export_requests": 1,
+      "issues": 0,
+      "maintenance_findings": 0,
+      "maintenance_jobs": 0,
+      "maintenance_requests": 0,
+      "network_throttle": 0,
+      "observations": 103,
+      "operation_requests": 1,
+      "owned_temps": 533,
+      "product_user_state": 80,
+      "product_versions": 635,
+      "products": 80,
+      "restore_audit": 0,
+      "run_attempts": 9,
+      "run_events": 27,
+      "run_requests": 6,
+      "run_seen_products": 240,
+      "runs": 6,
+      "schema_migrations": 10,
+      "settings": 1,
+      "site_runs": 6,
+      "sites": 3,
+      "storage_preferences": 1,
+      "storage_roots": 1,
+      "version_images": 4887,
+      "view_events": 14,
+      "work_attempts": 533,
+      "work_items": 655,
+      "workers": 6
+    },
+    "user_state": {
+      "favorites": 4,
+      "excluded": 20
+    },
+    "old_instance": "8595ed14-2465-40a8-9062-7a312d155237",
+    "new_instance": "99579f08-976c-469f-8885-8f41b6593d88",
+    "controlled_stop_open": true,
+    "no_new_business_runs": true,
+    "migrations_unchanged": true
+  },
+  "backup": {
+    "full_backup": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t9-upgrade-v1\\backup\\FashionScout",
+    "restore_copy": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t9-upgrade-v1\\restored-copy\\FashionScout",
+    "files": 10556,
+    "bytes": 289529231,
+    "all_files_match": true,
+    "restore_copy_db_equal": true,
+    "runtime_rollback_started": false,
+    "stopped": {
+      "instance": "8595ed14-2465-40a8-9062-7a312d155237",
+      "live": {
+        "web": false,
+        "worker": false
+      }
+    },
+    "counts": {
+      "archive_journal": 533,
+      "archive_journal_events": 533,
+      "assets": 432,
+      "browser_assets": 655,
+      "browser_messages": 117,
+      "browser_requests": 131,
+      "browser_runs": 6,
+      "browser_sessions": 9,
+      "browser_uploads": 533,
+      "collection_http": 0,
+      "collection_http_results": 0,
+      "collection_images": 655,
+      "collection_page_attempts": 7,
+      "collection_products": 140,
+      "collection_runs": 6,
+      "discovery_pages": 0,
+      "export_assets": 19,
+      "export_attempts": 1,
+      "export_jobs": 1,
+      "export_members": 4,
+      "export_requests": 1,
+      "issues": 0,
+      "maintenance_findings": 0,
+      "maintenance_jobs": 0,
+      "maintenance_requests": 0,
+      "network_throttle": 0,
+      "observations": 103,
+      "operation_requests": 1,
+      "owned_temps": 533,
+      "product_user_state": 80,
+      "product_versions": 635,
+      "products": 80,
+      "restore_audit": 0,
+      "run_attempts": 9,
+      "run_events": 27,
+      "run_requests": 6,
+      "run_seen_products": 240,
+      "runs": 6,
+      "schema_migrations": 10,
+      "settings": 1,
+      "site_runs": 6,
+      "sites": 3,
+      "storage_preferences": 1,
+      "storage_roots": 1,
+      "version_images": 4887,
+      "view_events": 14,
+      "work_attempts": 533,
+      "work_items": 655,
+      "workers": 5
+    },
+    "user_state": {
+      "favorites": 4,
+      "excluded": 20
+    }
+  },
+  "installed_package": "E:\\github-workspace\\FashionScout",
+  "protection": {
+    "tracked_baseline_files": 429,
+    "unexpected_changed_files": [],
+    "release_inputs_match_frozen": true,
+    "runtime_and_dependency_pins_unchanged": true,
+    "no_commit_push_worktree": true
+  },
+  "independent_manager_native_evidence": {
+    "source_benchmark": "E:/github-workspace/.team/fashion-scout/t9-manager-source-benchmark.json",
+    "installed_benchmark": "E:/github-workspace/.team/fashion-scout/t9-manager-installed-benchmark.json",
+    "api_tests": "E:/github-workspace/.team/fashion-scout/t9-manager-api-tests.txt",
+    "ui_tests": "E:/github-workspace/.team/fashion-scout/t9-manager-ui-tests.txt",
+    "page_screenshot": "E:/github-workspace/.team/fashion-scout/t9-page-verified.png",
+    "reported_result": "Manager native message confirmed old/new six core table hashes equal; Chrome40 then60 unique then refresh60, busy=false, no errors, all visible covers loaded; no gallery open/user writes."
+  },
+  "limitations": [
+    "List projection contains one checked cover and common product/user fields; full album/history/missing reasons use product detail.",
+    "Other album images are checked on opening detail, not every list refresh; no cross-request cover cache.",
+    "Known archived cover bytes are SHA/header checked each request; unknown legacy decoder metadata fully validates only the cover.",
+    "Cold means a new Presentation object; OS disk cache was not flushed.",
+    "PowerShell Skill wrapper including integrity/startup takes about one second; service list projection is under one second.",
+    "Backup restore-copy integrity was verified; no production runtime rollback was needed/performed.",
+    "First Skill Request input outside the bound data requests path was rejected locally; corrected to supported bound path without changing validators."
+  ],
+  "artifact_sha256": {
+    "docs/verification/T9-api-tests-1.txt": "ee879c7662db82adc78cdc2a613c6092956be1c4e45bdea0dd2714f58f798843",
+    "docs/verification/T9-api-tests-1.xml": "594b837ad0df217ea3dd9e20dc28e093195eb1a5f1d8bc331a72c1daba2f976d",
+    "docs/verification/T9-benchmark.py": "0de3eb59f3b39efbf76a733f4b28db59869faed5fc22cd6db736d0a8cf538cd0",
+    "docs/verification/T9-build.json": "3d5b63ad1b3abc9a8a6e713b743daf5e99ac17fb092b55cb3011e47fdd348482",
+    "docs/verification/T9-candidate-verify.py": "f3cfbe607d9f94cb5f4761e9de9d8a2e52561cf757a792c9d7c68e630a355e92",
+    "docs/verification/T9-candidate-verify.txt": "8780a81a492a7642b98296a73182c2dda7cdfe605c3529ca00cf0616da209e65",
+    "docs/verification/T9-freeze.json": "b8b2cd22bfcac1e114780ceb0d687a8dfe010dcb9dc9642965617ebfa62370e3",
+    "docs/verification/T9-installed-benchmark.json": "4288d719cc4b977e0a1dac8f7d251188bfe8eb657e4d8a4aee78435d7bd47977",
+    "docs/verification/T9-live-verification.json": "02ba70ecec6edb6a5b6d289894791e18ec667ba3b1c8a149cd1aec68fae9e823",
+    "docs/verification/T9-live-verify-2.txt": "96163fcd6752476da67e6f115c7bfedd1014792a30cdb1db2a4a081d27adc0a1",
+    "docs/verification/T9-live-verify.py": "ebc1e0cb200298c2c928ee23b246d7de602b36e9a8261a67effd8e4735474a36",
+    "docs/verification/T9-live-verify.txt": "6ca3016582e10e39bd9132a397d14abc017e9d17819e5998b8f3c21ccb7cc47b",
+    "docs/verification/T9-source-benchmark.json": "20fa12ccf25ad81a7ec709fb75c42cf4f62f4bed2a848fd522268b7a52c3b6fc",
+    "docs/verification/T9-targeted-tests-2.txt": "3224b32d373eceef9b5d2181b9836a74c1e501aa7d4b87e9abe57d1ad4f1f71f",
+    "docs/verification/T9-targeted-tests-2.xml": "749f92d9e25ebf5a96aed2d06ce728ccda5495acd8695296ea71c288876593f8",
+    "docs/verification/T9-ui-tests.txt": "8a33681856776e0e3cf5d831fe17379c59119d047b6237f04e07efec147d01b4",
+    "docs/verification/T9-upgrade-backup.txt": "566837d139b0a6f019aaaaa066734c91b5756aac725002aab35137c4032e4c19",
+    "docs/verification/T9-upgrade-preflight.txt": "a74e34b1d08788da387ef0354e8cba78d61c9c09adbd525281c11a13b5613123",
+    "docs/verification/T9-upgrade-prepare.txt": "cbd04fc942df474f89d9db97d9dac9871f04718fe50e1258204d6876705808bc",
+    "docs/verification/T9-upgrade-replace.txt": "33a3421d53303b008e49584201f8b1c0ba1fceb07f17f44a48244f91913fd62e",
+    "docs/verification/T9-upgrade-verify.txt": "503569e6149771d8d01f65f102270d08ef2f99790edbdd412958afc44987e3f2",
+    "docs/verification/T9-upgrade.py": "dc00849c60cf1a30a371b3f6f781ce8ac166fc70c2b67c73fb5299c8b3c9602b"
+  }
+}

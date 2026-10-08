@@ -1,0 +1,25 @@
+✔ Refresh shares one read, keeps cards while loading, reuses unchanged nodes and scroll (2.8575ms)
+✔ Refresh failure preserves prior cards, cursor, selection and retry controls (1.5059ms)
+✔ A changed filter wins over an older late response (1.4191ms)
+✔ Refresh of loaded 40+20 retains the span through one fresh cursor chain (2.0199ms)
+✔ Load more is coalesced and appends without duplicate IDs (1.0164ms)
+✔ Category override and reset update card and gallery immediately, without moving IDs (1.2574ms)
+✔ Rendered latest image refreshes authoritative material badge without sorting (1.6152ms)
+✔ Rendered historical image refreshes authoritative material badge without sorting (1.5277ms)
+✔ Explicit history is not described as current missing-image fallback (15.4265ms)
+✔ retry: getItem failure shows notice, sends nothing and restores controls (1.2213ms)
+✔ retry: setItem failure shows notice, sends nothing and restores controls (0.8319ms)
+✔ retry: cleanup failure reports accepted and retry only clears retained intent (1.0932ms)
+✔ retry: lost response retains exact key for same-operation replay (0.9774ms)
+✔ cancel: getItem failure shows notice, sends nothing and restores controls (1.2335ms)
+✔ cancel: setItem failure shows notice, sends nothing and restores controls (0.6859ms)
+✔ cancel: cleanup failure reports accepted and retry only clears retained intent (0.7462ms)
+✔ cancel: lost response retains exact key for same-operation replay (0.7297ms)
+ℹ tests 17
+ℹ suites 0
+ℹ pass 17
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 110.1405

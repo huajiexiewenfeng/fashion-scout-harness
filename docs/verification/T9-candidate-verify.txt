@@ -1,0 +1,10 @@
+Running test_bundle_immutable_inputs_and_no_user_data
+Running test_prepare_rejects_before_touching_data damaged-wheel
+Running test_prepare_rejects_before_touching_data missing-resource
+Running test_prepare_rejects_before_touching_data existing-data
+Running test_prepare_rejects_before_touching_data config-conflict
+Running test_real_prepare_failure_preserves_existing_configuration
+Running test_long_path_refused_before_preparation
+Running test_fresh_prepare_configures_default_without_starting
+Running test_independent_zip_install_entries_and_synthetic_export
+{"passed": 9, "work": "E:\\github-workspace\\fashion-scout-harness\\.runtime\\t8b-t9checks", "zip_sha256": "07be069a153241e7de577a43e1d239d5e1782cc201fb21797fd1ceaa7c75d9e0", "app_sha256": "231a9e5380fbc961865d1bc84f3351ae804319ee26c8298531e257e8e6b3c731"}

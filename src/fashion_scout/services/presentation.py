@@ -203,23 +203,8 @@ class Presentation:
                 "verified_at": min((x["verified_at"] for x in images), default=None), "capability_notes": manifest.get("capability_notes", [])}
 
     def listing(self, view, category, cursor, limit):
-        asset_cache = {}
-        def ids():
-            with self.db.read() as conn:
-                conn.execute("BEGIN")
-                condition = "u.favorite=1" if view == "favorites" else "p.first_eligible_at IS NOT NULL AND u.excluded=0"
-                query = f"SELECT p.id FROM products p JOIN product_user_state u ON u.product_id=p.id WHERE {condition}"
-                args = ()
-                if category:
-                    query += " AND COALESCE(u.category_override,p.category_key)=?"
-                    args = (category,)
-                candidates = [r[0] for r in conn.execute(query + " ORDER BY (u.viewed_at IS NOT NULL),p.first_seen_at DESC,p.id ASC", args)]
-            # File decoding/hashing runs outside the database read transaction.
-            return candidates if view == "favorites" else [pid for pid in candidates if self.has_renderable_image(pid, asset_cache)]
-        page = self.snapshots.page(ids, {"view": view, "category": category, "limit": limit}, cursor, limit)
-        items = [self.detail(pid, asset_cache=asset_cache) for pid in page["ids"]]
-        return {**{k: v for k, v in page.items() if k != "ids"},
-                "items": items if view == "favorites" else [item for item in items if item["images"]]}
+        from fashion_scout.services.listing import CoverListing
+        return CoverListing(self).page(view, category, cursor, limit)
 
     def view_event(self, pid, event):
         with self.db.write() as conn:

@@ -4,7 +4,7 @@ const $ = selector => document.querySelector(selector);
 const names = {dress:"连衣裙",tops:"上装",knitwear:"针织",outerwear:"外套",bottoms:"下装",sets:"套装",other:"其他"};
 const states = {queued:"等待巡检",running:"正在巡检",interrupted:"等待恢复此前巡检",cancelling:"正在安全停止",cancelled:"已取消",succeeded:"承诺图集范围已完成",partial:"部分完成，有缺失待处理",failed:"巡检未完成"};
 const active = new Set(["queued","running","interrupted","cancelling"]);
-const state = {csrf:null,view:"new",category:"",cursor:null,items:new Map(),run:null,busy:false,gallery:null,generation:0,listGeneration:0};
+const state = {csrf:null,view:"new",category:"",cursor:null,items:new Map(),run:null,busy:false,gallery:null,generation:0,listGeneration:0,renderedSelection:null};
 function el(tag, cls, text) { const node=document.createElement(tag); if(cls)node.className=cls; if(text!==undefined)node.textContent=text; return node; }
 function notify(text) { $("#notice").textContent=text; $("#notice").hidden=!text; }
 function date(value) { if(!value)return "日期未知"; const d=new Date(value); return isNaN(d)?"日期未知":d.toLocaleDateString("zh-CN"); }
@@ -44,22 +44,53 @@ function card(product){
   return node;
 }
 function updateCard(pid){const existing=[...$("#grid").children].find(n=>n.dataset.productId===pid);if(existing)existing.replaceWith(card(state.items.get(pid)));}
-async function listing(append=false){
+let listRequest=null;
+function listing(append=false){
+  const selection=JSON.stringify([state.view,state.category]);
+  if(append&&!state.cursor)return listRequest?.promise||Promise.resolve();
+  const query=new URLSearchParams({view:state.view,limit:"40"});if(state.category)query.set("category",state.category);if(append)query.set("cursor",state.cursor);
+  const key=String(query);
+  // Repeated refresh/load-more clicks share the same in-flight read. A changed
+  // filter starts a new generation; old results cannot replace the new view.
+  if(listRequest?.selection===selection&&(append||listRequest.key===key))return listRequest.promise;
   const generation=++state.listGeneration;
-  $("#more").disabled=true;
-  if(!append){state.cursor=null;$("#empty").hidden=true;$("#grid").replaceChildren(...Array.from({length:4},()=>el("div","skeleton")));}
-  const query=new URLSearchParams({view:state.view,limit:"40"});if(state.category)query.set("category",state.category);if(append&&state.cursor)query.set("cursor",state.cursor);
-  try{
-    const data=await api("/v1/products?"+query);if(generation!==state.listGeneration)return;
-    if(!append){state.items.clear();$("#grid").replaceChildren();}
-    for(const product of data.items){if(state.items.has(product.id))continue;state.items.set(product.id,product);$("#grid").append(card(product));}
+  const keepPosition=!append&&state.renderedSelection===selection;
+  const targetCount=keepPosition?state.items.size:40;
+  const scrollY=typeof window!=="undefined"?window.scrollY:0;
+  const request={key,selection,promise:null};listRequest=request;
+  $("#more").disabled=$("#refresh").disabled=true;
+  $("#refresh").textContent="正在刷新…";$("#grid").setAttribute("aria-busy","true");
+  if(!state.items.size){$("#empty").hidden=true;$("#grid").replaceChildren(...Array.from({length:4},()=>el("div","skeleton")));}
+  request.promise=(async()=>{try{
+    let data=await api("/v1/products?"+query);if(generation!==state.listGeneration)return;
+    const received=[...data.items];
+    // Refresh the already-loaded span through one new frozen cursor chain, so
+    // a person halfway down page two keeps the same amount of content/scroll.
+    while(!append&&received.length<targetCount&&data.next_cursor){
+      const nextQuery=new URLSearchParams(query);nextQuery.set("cursor",data.next_cursor);
+      data=await api("/v1/products?"+nextQuery);if(generation!==state.listGeneration)return;
+      received.push(...data.items);
+    }
+    const previousNodes=new Map([...$("#grid").children].filter(n=>n.dataset.productId).map(n=>[n.dataset.productId,n]));
+    const nextItems=append?new Map(state.items):new Map();
+    const nodes=[];
+    for(const product of received){
+      if(nextItems.has(product.id))continue;
+      nextItems.set(product.id,product);
+      const old=state.items.get(product.id);
+      nodes.push(old&&JSON.stringify(old)===JSON.stringify(product)&&previousNodes.has(product.id)?previousNodes.get(product.id):card(product));
+    }
+    if(append)$("#grid").append(...nodes);else $("#grid").replaceChildren(...nodes);
+    state.items=nextItems;state.renderedSelection=selection;
+    if(keepPosition&&typeof window!=="undefined")window.scrollTo({top:scrollY,behavior:"instant"});
     state.cursor=data.next_cursor;$("#more").hidden=!state.cursor;$("#count").textContent=`${data.total} 款 · 未看优先`;
     $("#empty").hidden=state.items.size>0;
     $("#empty-title").textContent=state.view==="favorites"?"把喜欢的，留在这里":state.category?"这个类别还没有款式":"你的下一份灵感，从这里开始";
     $("#empty-copy").textContent=state.view==="favorites"?"点击款式旁的爱心，即可加入收藏。缺图的款式也可以先收藏。":state.category?"换个类别看看，或刷新已有结果。":"还没有收集到款式。点击「开始巡检」，完成后在这里浏览。";
     runStatus(data.latest_run_summary);
-  }catch(error){if(generation!==state.listGeneration)return;notify(error.message);if(!append)$("#grid").replaceChildren();}
-  finally{if(generation===state.listGeneration)$("#more").disabled=false;}
+  }catch(error){if(generation!==state.listGeneration)return;notify(error.message);if(!state.items.size){$("#grid").replaceChildren();$("#empty").hidden=false;$("#empty-title").textContent="暂时无法读取列表";$("#empty-copy").textContent="稍后再刷新，已保存的款式和收藏仍保留。";}}
+  finally{if(generation===state.listGeneration){$("#more").disabled=$("#refresh").disabled=false;$("#refresh").textContent="刷新列表";$("#grid").setAttribute("aria-busy","false");}if(listRequest===request)listRequest=null;}})();
+  return request.promise;
 }
 async function patchProduct(pid, changes){
   const product=state.gallery?.id===pid?state.gallery:state.items.get(pid);

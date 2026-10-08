@@ -5,7 +5,7 @@
 | COMMAND | JSON 输入 | 语义 |
 |---|---|---|
 | status / ensure / open | `{}` | 只读状态 / 启动服务 / 一次性页面会话；后两者可能恢复已接受巡检或导出 |
-| new / favorites | `{}` 或 `{"category":"tops","limit":40,"cursor":"前页游标"}` | 冻结分页；limit1–100，游标失效刷新而不拼接不同快照 |
+| new / favorites | `{}` 或 `{"category":"tops","limit":40,"cursor":"前页游标"}` | 轻量封面投影 projection=cover，images最多一张；完整图集/缺失详情/历史用product读取。冻结分页；limit1–100，游标失效刷新而不拼接不同快照 |
 | product | `{"product_id":"ID"}` | 可附 version_id 与 version_revision；修订须有版本 ID；不记浏览 |
 | latest | `{}` | 最新 Run，可为 null，含最近完成/成功时间 |
 | progress | `{"run_id":"ID"}` | Run、stage、计数、覆盖、问题与 Worker 状态 |
